@@ -53,27 +53,23 @@ This loop is how the framework improves over time.
 
 **Directory layout:**
 ```
-mockups/        # Final approved mockups (4 HTML files)
+index.html      # The live site — single static HTML file
+og-image.png    # OG preview image (1200x630) for social sharing
+og-image.html   # Template used to generate og-image.png (not deployed)
 data/           # Job dataset (jobs.json) — the core data powering the site
-docs/           # Design spec, implementation plan, and reference docs
+docs/           # Design spec, implementation plan, growth strategy
+mockups/        # Final approved mockups (4 HTML files, for reference)
 archive/        # Old files kept for reference
-  mockups/      # Previous mockup iterations (31 HTML files)
-  amicooked-progress.md  # Original brainstorming progress notes
 tools/          # Python scripts for deterministic execution
 workflows/      # Markdown SOPs defining what to do and how
 brand_assets/   # Logos, icons (currently empty)
 .env            # API keys and environment variables (NEVER store secrets anywhere else)
 ```
 
-**Final mockups (in `mockups/`):**
-- `landing-barlow-final.html` — Desktop landing page
-- `landing-mobile-v2.html` — Mobile landing page
-- `results-desktop-v1.html` — Desktop results page
-- `results-mobile-v15.html` — Mobile results page
-
 **Key docs (in `docs/`):**
 - `design-spec.md` — Single source of truth for all design decisions
 - `plan.md` — Implementation plan and progress tracker
+- `growth-strategy.md` — Launch playbook, revenue strategy, post copy
 
 **Tools (in `tools/`):**
 - `validate_jobs.py` — Job data validator (rule-based checks + fact-check state management)
@@ -85,9 +81,14 @@ brand_assets/   # Logos, icons (currently empty)
 **Data (in `data/`):**
 - `jobs-sample.json` — 10-job test batch (original sample, kept for reference)
 - `jobs.json` — Full dataset (219 jobs, rule-based validation passes, searchTerms included)
-- `jobs-validation-state.json` — Validation state from rule checks (fact-checks still pending)
+- `jobs-validation-state.json` — Validation state from rule checks
 
-**Current status:** Dataset generated (219 jobs). Rule-based validation passes. Next step is batched Perplexity fact-checking (~15 category queries), then building the site.
+**Hosting & deployment:**
+- GitHub repo: `github.com/hh1616/amicooked` (auto-deploys to Netlify on push to main)
+- Domain: `amicooked.me` (Porkbun, DNS pointed to Netlify)
+- Feedback form: Tally (`tally.so/r/BzDQq5`)
+
+**Current status:** Site built and deployed. Step 8 (growth setup) in progress. Waiting on: Coursera affiliate approval via Impact.com, HN account creation, OG tag testing. Then Step 9 (launch).
 
 ## Bottom Line
 

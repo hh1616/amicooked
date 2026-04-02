@@ -13,7 +13,7 @@
 | 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 219 jobs, all pass rule-based validation, searchTerms added |
 | 6. Fact-check dataset | Done | 15 Perplexity category queries, 12 jobs corrected, all 219 pass validation |
 | 7. Build the site | Done | `index.html` — all features wired up, tested on desktop + mobile |
-| 8. Growth setup | **Next** | Affiliate signup, OG tags, watermark — see `docs/growth-strategy.md` |
+| 8. Growth setup | **In progress** | OG image done, domain live, Tally feedback form added. Waiting on: Coursera affiliate approval, OG tag testing, HN account |
 | 9. Launch | Pending | Reddit + Hacker News — see `docs/growth-strategy.md` section 4 |
 
 ## Step 5: Build Full Dataset (~200 jobs)
@@ -49,11 +49,14 @@
 
 ## Step 8: Growth Setup (before launch)
 
-- Sign up for Coursera affiliate program via Impact.com (see `docs/growth-strategy.md` for steps)
-- Replace placeholder affiliate href with real tracking link
-- Create Hacker News account at news.ycombinator.com
-- Point domain amicooked.me to hosting
-- Test OG tags with Twitter Card Validator
+- [x] Create OG preview image (`og-image.png` — 1200x630 branded card)
+- [x] Deploy to Netlify via GitHub (repo: github.com/hh1616/amicooked)
+- [x] Buy domain `amicooked.me` (Porkbun, $8.80/yr) and point DNS to Netlify
+- [x] Add Tally feedback form ("Roast Us Back" — tally.so/r/BzDQq5)
+- [ ] Sign up for Coursera affiliate program via Impact.com (see `docs/growth-strategy.md` for steps)
+- [ ] Replace placeholder affiliate href with real tracking link
+- [ ] Create Hacker News account at news.ycombinator.com
+- [ ] Test OG tags (paste URL into Discord/iMessage or use opengraph.xyz — Twitter Card Validator is broken)
 
 ## Step 9: Launch
 
