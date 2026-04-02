@@ -1231,9 +1231,9 @@ body {
     // Calculate extra space to distribute
     const extraTotal = Math.max(0, H - contentH);
     const extra = {
-      afterStats: 48 + extraTotal * 0.35,
+      afterStats: 48 + extraTotal * 0.15,
       betweenLists: 16 + extraTotal * 0.15,
-      beforeWatermark: 48 + extraTotal * 0.50
+      beforeWatermark: 48 + extraTotal * 0.70
     };
     // Pass 2: draw with distributed spacing
     const cv = document.createElement('canvas');
