@@ -1,8 +1,8 @@
 # Am I Cooked? — Design Specification
 
-**Version:** 1.0  
-**Last updated:** 2026-04-02  
-**Status:** Ready for review
+**Version:** 1.1  
+**Last updated:** 2026-04-03  
+**Status:** Live
 
 ---
 
@@ -10,7 +10,7 @@
 
 **Am I Cooked?** is an AI Job Risk Calculator at **amicooked.me**. Users enter their job title, get a "cooked score" (0–100) showing how likely AI is to replace them, plus a breakdown of what's safe and what's not. Designed to be fun, shareable, and screenshot-optimized.
 
-**Architecture:** Static single-page site. Curated JSON dataset (~200 jobs). No backend, no cookies, hostable anywhere.
+**Architecture:** Static single-page site. Curated JSON dataset (264 jobs). No backend, no cookies, hostable anywhere.
 
 ---
 
@@ -218,8 +218,8 @@ All results pages include: `*for entertainment — not career advice` in muted t
 
 - **Job input:** Fuzzy search / autocomplete against the JSON dataset
 - **Check button:** Transitions from landing to results view
-- **Download:** Uses html-to-image library to generate a PNG of the results card
-- **Share:** Copies a share link to clipboard (or native share on mobile)
+- **Download:** Canvas-rendered story card PNG (1080x1920, Instagram story ratio) with scaled-up typography for phone screens. Score at 300px, verdict at 88px, list items at 36px. Extra vertical space distributed between sections so content fills the frame naturally.
+- **Share:** Web Share API sends story card PNG + direct `?job=` link together. Platforms that support both (WhatsApp, Discord) show image + clickable link. Others use whichever they prefer. Clipboard copy fallback on desktop. Share title: "Am I Cooked? I scored X/100 - [Verdict]"
 - **TRY ANOTHER:** Returns to landing page / clears input
 
 ---
@@ -229,8 +229,20 @@ All results pages include: `*for entertainment — not career advice` in muted t
 The results card is designed to be screenshot-friendly:
 - High contrast, readable at small sizes
 - Mobile results fit in a single screenshot
-- Downloadable PNG via html-to-image captures the results card
+- Downloadable PNG via canvas renderer (1080x1920 story ratio, separate `renderStoryCard` function with larger fonts than the page view)
+- Share sends PNG + link together via Web Share API for maximum engagement
 - No Apple emojis — SVG icons only
+
+**Platform-specific share behavior (tested 2026-04-03):**
+| Platform | Image | Link | Notes |
+|---|---|---|---|
+| WhatsApp | Yes | Yes | Best result — card + clickable link |
+| Discord | Yes | Yes | Thumbnail + OG preview |
+| Threads | OG preview | Yes | Link preview card |
+| X/Twitter | Crops to 16:9 | No | Users should download + attach manually |
+| Instagram DMs | Yes | No | Image only |
+| iMessage | No | Yes | URL bubble only |
+| LinkedIn | No | Yes | OG preview only |
 
 ---
 

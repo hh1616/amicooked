@@ -1,400 +1,688 @@
-"""One-off script to add 16 new jobs to jobs.json and re-sort by score."""
+#!/usr/bin/env python3
+"""Add new batch of jobs to jobs.json."""
 import json
+import os
 
-JOBS_FILE = "data/jobs.json"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+JOBS_FILE = os.path.join(SCRIPT_DIR, '..', 'data', 'jobs.json')
+
+VERDICT_MAP = {
+    (4, 15): ("Raw", "you're untouchable. for now."),
+    (16, 29): ("Rare", "AI's circling but hasn't landed."),
+    (31, 45): ("Lightly Toasted", "some parts of your job are already on borrowed time."),
+    (46, 59): ("Half Baked", "it's a coin flip. better have a plan B."),
+    (61, 74): ("Well Done", "the robots are warming up your seat."),
+    (76, 90): ("Extra Crispy", "most of what you do, a bot does cheaper."),
+    (91, 99): ("Fully Cooked", "update your LinkedIn. yesterday."),
+}
+
+def get_verdict(score):
+    for (lo, hi), (verdict, quip) in VERDICT_MAP.items():
+        if lo <= score <= hi:
+            return verdict, quip
+    raise ValueError(f"Score {score} out of range")
+
+def job(title, score, timeline, timeline_unit, automatable, pivot,
+        saving_graces, getting_cooked, search_terms):
+    verdict, verdict_quip = get_verdict(score)
+    job_id = title.lower().replace(' / ', '-').replace('/', '-').replace(' ', '-')
+    return {
+        "id": job_id,
+        "title": title,
+        "score": score,
+        "verdict": verdict,
+        "verdictQuip": verdict_quip,
+        "timeline": timeline,
+        "timelineUnit": timeline_unit,
+        "automatable": automatable,
+        "pivotPotential": pivot,
+        "savingGraces": [
+            {"text": sg[0], "quip": sg[1] if len(sg) > 1 else None}
+            for sg in saving_graces
+        ],
+        "gettingCooked": [
+            {"text": gc[0], "quip": gc[1] if len(gc) > 1 else None}
+            for gc in getting_cooked
+        ],
+        "searchTerms": search_terms,
+    }
 
 NEW_JOBS = [
-    {
-        "id": "paediatrician",
-        "title": "Paediatrician",
-        "score": 16,
-        "verdict": "Rare",
-        "verdictQuip": "AI's circling but hasn't landed.",
-        "timeline": "~15",
-        "timelineUnit": "YRS",
-        "automatable": "18%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Physical examination of uncooperative toddlers", "quip": "good luck getting a two-year-old to hold still for a sensor"},
-            {"text": "Developmental milestone assessment", "quip": None},
-            {"text": "Communicating with anxious parents", "quip": None},
-            {"text": "Reading nonverbal cues in kids who can't describe symptoms", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Growth chart tracking and flagging", "quip": "software already does this"},
-            {"text": "Vaccination schedule management", "quip": None},
-            {"text": "Clinical documentation", "quip": None}
-        ],
-        "searchTerms": ["pediatrician", "children's doctor", "child doctor", "kids doctor", "baby doctor", "child specialist"]
-    },
-    {
-        "id": "housewife",
-        "title": "Housewife",
-        "score": 18,
-        "verdict": "Rare",
-        "verdictQuip": "AI's circling but hasn't landed.",
-        "timeline": "~15",
-        "timelineUnit": "YRS",
-        "automatable": "20%",
-        "pivotPotential": "MED",
-        "savingGraces": [
-            {"text": "Managing a household of unpredictable humans", "quip": "no algorithm survives a toddler meltdown at 6am"},
-            {"text": "Emotional regulation and conflict mediation", "quip": None},
-            {"text": "Physical caregiving for sick kids or elderly parents", "quip": None},
-            {"text": "Real-time multitasking across competing demands", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Meal planning and grocery lists", "quip": "ChatGPT's been doing this since day one"},
-            {"text": "Household budgeting", "quip": None},
-            {"text": "Scheduling and calendar management", "quip": None}
-        ],
-        "searchTerms": ["stay-at-home mum", "stay-at-home mom", "stay-at-home parent", "homemaker", "sahm", "domestic worker", "stay at home mum", "stay at home mom", "stay at home parent"]
-    },
-    {
-        "id": "lawyer",
-        "title": "Lawyer",
-        "score": 52,
-        "verdict": "Half Baked",
-        "verdictQuip": "it's a coin flip. better have a plan B.",
-        "timeline": "~8",
-        "timelineUnit": "YRS",
-        "automatable": "44%",
-        "pivotPotential": "MED",
-        "savingGraces": [
-            {"text": "Courtroom advocacy and persuasion", "quip": "judges still prefer humans who can read the room"},
-            {"text": "Client counseling through emotional decisions", "quip": None},
-            {"text": "Negotiation strategy under uncertainty", "quip": None},
-            {"text": "Interpreting ambiguous case law", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Legal research and case discovery", "quip": "AI reads case law faster than any associate"},
-            {"text": "Contract review and due diligence", "quip": None},
-            {"text": "Document drafting from templates", "quip": None}
-        ],
-        "searchTerms": ["solicitor", "barrister", "attorney", "legal counsel", "legal advisor", "corporate lawyer", "criminal lawyer", "family lawyer", "litigation lawyer"]
-    },
-    {
-        "id": "farmer",
-        "title": "Farmer",
-        "score": 25,
-        "verdict": "Rare",
-        "verdictQuip": "AI's circling but hasn't landed.",
-        "timeline": "~12",
-        "timelineUnit": "YRS",
-        "automatable": "24%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Responding to unpredictable weather and terrain", "quip": "seasons don't follow a sprint schedule"},
-            {"text": "Animal husbandry and welfare judgment", "quip": None},
-            {"text": "Equipment repair in the field", "quip": None},
-            {"text": "Land management across variable conditions", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Crop monitoring and yield prediction", "quip": "drones and satellites are already on it"},
-            {"text": "Irrigation scheduling", "quip": None},
-            {"text": "Market price tracking and sell timing", "quip": None}
-        ],
-        "searchTerms": ["grazier", "rancher", "crop farmer", "dairy farmer", "cattle farmer", "agriculture worker", "pastoralist", "station hand"]
-    },
-    {
-        "id": "retail-sales-assistant",
-        "title": "Retail Sales Assistant",
-        "score": 62,
-        "verdict": "Well Done",
-        "verdictQuip": "the robots are warming up your seat.",
-        "timeline": "~7",
-        "timelineUnit": "YRS",
-        "automatable": "58%",
-        "pivotPotential": "MED",
-        "savingGraces": [
-            {"text": "Styling advice and personal recommendations", "quip": "algorithms suggest, but can't read your vibe"},
-            {"text": "Handling difficult or emotional customers", "quip": None},
-            {"text": "Visual merchandising and store layout", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Checkout and payment processing", "quip": "self-checkout says hi"},
-            {"text": "Inventory checks and stock queries", "quip": None},
-            {"text": "Product information lookups", "quip": None}
-        ],
-        "searchTerms": ["shop assistant", "retail worker", "sales associate", "store clerk", "shop worker", "retail associate", "sales clerk"]
-    },
-    {
-        "id": "childcare-worker",
-        "title": "Childcare Worker",
-        "score": 10,
-        "verdict": "Raw",
-        "verdictQuip": "you're untouchable. for now.",
-        "timeline": "~20",
-        "timelineUnit": "YRS",
-        "automatable": "8%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Supervising small children in chaotic environments", "quip": "a room of toddlers defeats any algorithm"},
-            {"text": "Emotional co-regulation and attachment", "quip": None},
-            {"text": "Nappy changes, feeding, and physical care", "quip": None},
-            {"text": "Recognising developmental red flags", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Activity planning and curriculum prep", "quip": "Pinterest was already doing this"},
-            {"text": "Parent communication updates", "quip": None},
-            {"text": "Attendance tracking", "quip": None}
-        ],
-        "searchTerms": ["daycare worker", "early childhood educator", "ECE", "nursery worker", "creche worker", "child carer", "nanny", "au pair"]
-    },
-    {
-        "id": "aged-care-worker",
-        "title": "Aged Care Worker",
-        "score": 12,
-        "verdict": "Raw",
-        "verdictQuip": "you're untouchable. for now.",
-        "timeline": "~20",
-        "timelineUnit": "YRS",
-        "automatable": "10%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Physical assistance with mobility and personal care", "quip": "robots can't help someone shower with dignity"},
-            {"text": "Companionship and emotional support", "quip": None},
-            {"text": "Responding to falls and medical emergencies", "quip": None},
-            {"text": "Managing dementia-related behaviours", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Medication reminders and scheduling", "quip": "apps already handle this"},
-            {"text": "Care plan documentation", "quip": None},
-            {"text": "Vitals monitoring", "quip": None}
-        ],
-        "searchTerms": ["elderly care worker", "nursing home worker", "care assistant", "personal care assistant", "PCA", "support worker", "home care worker", "aged care nurse"]
-    },
-    {
-        "id": "security-guard",
-        "title": "Security Guard",
-        "score": 55,
-        "verdict": "Half Baked",
-        "verdictQuip": "it's a coin flip. better have a plan B.",
-        "timeline": "~8",
-        "timelineUnit": "YRS",
-        "automatable": "48%",
-        "pivotPotential": "MED",
-        "savingGraces": [
-            {"text": "Physical intervention and de-escalation", "quip": "cameras can watch but they can't tackle"},
-            {"text": "Judgment calls in ambiguous situations", "quip": None},
-            {"text": "Crowd management at live events", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "CCTV monitoring and anomaly detection", "quip": "AI never blinks"},
-            {"text": "Access control and ID verification", "quip": None},
-            {"text": "Patrol route logging", "quip": None}
-        ],
-        "searchTerms": ["security officer", "bouncer", "door staff", "loss prevention", "security personnel", "night watchman"]
-    },
-    {
-        "id": "bus-driver",
-        "title": "Bus Driver",
-        "score": 45,
-        "verdict": "Lightly Toasted",
-        "verdictQuip": "some parts of your job are already on borrowed time.",
-        "timeline": "~10",
-        "timelineUnit": "YRS",
-        "automatable": "42%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Navigating chaotic urban traffic in real time", "quip": "autonomous buses exist \u2014 in controlled loops"},
-            {"text": "Passenger safety and de-escalation", "quip": None},
-            {"text": "Adapting to roadworks, detours, and weather", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Fixed-route navigation", "quip": "GPS solved this decades ago"},
-            {"text": "Fare collection", "quip": None},
-            {"text": "Schedule adherence tracking", "quip": None}
-        ],
-        "searchTerms": ["coach driver", "transit driver", "public transport driver", "shuttle driver", "school bus driver"]
-    },
-    {
-        "id": "cleaner",
-        "title": "Cleaner",
-        "score": 35,
-        "verdict": "Lightly Toasted",
-        "verdictQuip": "some parts of your job are already on borrowed time.",
-        "timeline": "~12",
-        "timelineUnit": "YRS",
-        "automatable": "32%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Deep cleaning irregular spaces", "quip": "Roombas can't scrub a shower"},
-            {"text": "Handling hazardous or biohazard materials", "quip": None},
-            {"text": "Adapting to different layouts every shift", "quip": None},
-            {"text": "Spotting maintenance issues while cleaning", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Floor vacuuming and mopping on flat surfaces", "quip": "robot vacuums already own this"},
-            {"text": "Supply inventory tracking", "quip": None},
-            {"text": "Scheduling and task checklists", "quip": None}
-        ],
-        "searchTerms": ["janitor", "custodian", "office cleaner", "commercial cleaner", "house cleaner", "domestic cleaner", "cleaning lady", "sanitation worker"]
-    },
-    {
-        "id": "rideshare-driver",
-        "title": "Rideshare Driver",
-        "score": 58,
-        "verdict": "Half Baked",
-        "verdictQuip": "it's a coin flip. better have a plan B.",
-        "timeline": "~8",
-        "timelineUnit": "YRS",
-        "automatable": "52%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Navigating unpredictable urban conditions", "quip": "self-driving still panics at construction zones"},
-            {"text": "Passenger assistance and safety judgment", "quip": None},
-            {"text": "Handling drunk, distressed, or difficult riders", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Route optimisation", "quip": "the app already tells you where to go"},
-            {"text": "Fare calculation and surge pricing", "quip": None},
-            {"text": "Ride matching and dispatch", "quip": None}
-        ],
-        "searchTerms": ["uber driver", "lyft driver", "taxi driver", "cab driver", "ola driver", "ride-hail driver", "private hire driver"]
-    },
-    {
-        "id": "mining-worker",
-        "title": "Mining Worker",
-        "score": 40,
-        "verdict": "Lightly Toasted",
-        "verdictQuip": "some parts of your job are already on borrowed time.",
-        "timeline": "~10",
-        "timelineUnit": "YRS",
-        "automatable": "38%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Underground work in unpredictable geology", "quip": "rocks don't follow a script"},
-            {"text": "Emergency response in confined spaces", "quip": None},
-            {"text": "Equipment operation in extreme conditions", "quip": None},
-            {"text": "On-site safety judgment", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Autonomous haul trucks on surface mines", "quip": "Pilbara trucks already drive themselves"},
-            {"text": "Drilling pattern optimisation", "quip": None},
-            {"text": "Geological survey data processing", "quip": None}
-        ],
-        "searchTerms": ["miner", "mine worker", "FIFO worker", "underground miner", "open cut miner", "pit worker", "drill operator", "mining operator"]
-    },
-    {
-        "id": "nail-technician",
-        "title": "Nail Technician",
-        "score": 16,
-        "verdict": "Rare",
-        "verdictQuip": "AI's circling but hasn't landed.",
-        "timeline": "~15",
-        "timelineUnit": "YRS",
-        "automatable": "14%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Precision work on ten different-shaped fingers", "quip": "every hand is a different canvas"},
-            {"text": "Client conversation and relationship building", "quip": None},
-            {"text": "Custom nail art design on the spot", "quip": None},
-            {"text": "Cuticle and skin care judgment", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Design inspiration and reference lookups", "quip": "Instagram already runs this"},
-            {"text": "Appointment booking", "quip": None},
-            {"text": "Inventory ordering", "quip": None}
-        ],
-        "searchTerms": ["nail artist", "manicurist", "nail tech", "pedicurist", "nail salon worker"]
-    },
-    {
-        "id": "makeup-artist",
-        "title": "Makeup Artist",
-        "score": 18,
-        "verdict": "Rare",
-        "verdictQuip": "AI's circling but hasn't landed.",
-        "timeline": "~15",
-        "timelineUnit": "YRS",
-        "automatable": "16%",
-        "pivotPotential": "MED",
-        "savingGraces": [
-            {"text": "Application on real skin with real texture", "quip": "foundation doesn't apply itself \u2014 yet"},
-            {"text": "Reading a client's features and bone structure", "quip": None},
-            {"text": "Adapting to lighting conditions on set", "quip": None},
-            {"text": "Calming nervous brides and performers", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Virtual try-on and colour matching", "quip": "AR filters are eating this alive"},
-            {"text": "Product recommendation engines", "quip": None},
-            {"text": "Tutorial content generation", "quip": None}
-        ],
-        "searchTerms": ["MUA", "beauty therapist", "cosmetologist", "beauty consultant", "bridal makeup artist", "film makeup artist", "special effects makeup"]
-    },
-    {
-        "id": "electrical-engineer",
-        "title": "Electrical Engineer",
-        "score": 38,
-        "verdict": "Lightly Toasted",
-        "verdictQuip": "some parts of your job are already on borrowed time.",
-        "timeline": "~10",
-        "timelineUnit": "YRS",
-        "automatable": "35%",
-        "pivotPotential": "MED",
-        "savingGraces": [
-            {"text": "Designing systems for novel constraints", "quip": "every site is a new puzzle"},
-            {"text": "On-site troubleshooting of complex installations", "quip": None},
-            {"text": "Safety-critical judgment under regulation", "quip": None},
-            {"text": "Cross-discipline coordination on builds", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Circuit simulation and modelling", "quip": "SPICE has been doing this for decades"},
-            {"text": "CAD drafting of standard layouts", "quip": None},
-            {"text": "Compliance documentation", "quip": None}
-        ],
-        "searchTerms": ["EE", "electronics engineer", "power engineer", "electrical designer", "circuit engineer", "power systems engineer"]
-    },
-    {
-        "id": "primary-school-teacher",
-        "title": "Primary School Teacher",
-        "score": 12,
-        "verdict": "Raw",
-        "verdictQuip": "you're untouchable. for now.",
-        "timeline": "~20",
-        "timelineUnit": "YRS",
-        "automatable": "10%",
-        "pivotPotential": "LOW",
-        "savingGraces": [
-            {"text": "Managing a classroom of 25 seven-year-olds", "quip": "this is a superpower, not a job task"},
-            {"text": "Emotional scaffolding and social skill development", "quip": None},
-            {"text": "Recognising learning difficulties early", "quip": None},
-            {"text": "Building trust with kids and parents", "quip": None}
-        ],
-        "gettingCooked": [
-            {"text": "Lesson plan generation", "quip": "teachers already use ChatGPT for this"},
-            {"text": "Marking standardised worksheets", "quip": None},
-            {"text": "Report card comment writing", "quip": None}
-        ],
-        "searchTerms": ["elementary school teacher", "grade school teacher", "primary teacher", "year 1 teacher", "year 2 teacher", "year 3 teacher", "year 4 teacher", "year 5 teacher", "year 6 teacher"]
-    }
+    # === MANAGEMENT / OPERATIONS ===
+    job("Business Manager", 42, "~6", "YRS", "48%", "HIGH",
+        [("Strategic decision-making under uncertainty", "spreadsheets don't read the room"),
+         ("Stakeholder relationship management",),
+         ("Navigating organisational politics",),
+         ("Crisis management and pivoting",)],
+        [("Performance report generation", "dashboards build themselves now"),
+         ("Meeting scheduling and coordination",),
+         ("Budget tracking and variance analysis",),
+         ("Email triage and follow-ups",)],
+        ["business manager", "general business manager", "business operations manager"]),
+
+    job("Clinic Manager", 36, "~8", "YRS", "40%", "MED",
+        [("Managing patient flow in real time", "no algorithm handles a waiting room meltdown"),
+         ("Staff rostering around no-shows",),
+         ("Handling sensitive patient complaints",),
+         ("Coordinating between clinicians",)],
+        [("Appointment scheduling", "online booking handles this already"),
+         ("Billing and claims processing",),
+         ("Patient record management",),
+         ("Inventory ordering for supplies",)],
+        ["clinic manager", "practice manager", "medical practice manager", "health clinic manager",
+         "allied health manager"]),
+
+    job("General Manager", 44, "~6", "YRS", "50%", "HIGH",
+        [("Cross-functional leadership", "AI can't chair a room full of egos"),
+         ("Strategic planning under ambiguity",),
+         ("Culture-building and morale",),
+         ("External partnership negotiation",)],
+        [("Operational reporting", "BI tools do this on autopilot"),
+         ("KPI tracking and dashboards",),
+         ("Routine approval workflows",),
+         ("Internal communications drafting",)],
+        ["general manager", "GM", "site manager", "branch GM"]),
+
+    job("Regional Manager", 41, "~7", "YRS", "44%", "HIGH",
+        [("Multi-site relationship management", "you can't Zoom your way through every problem"),
+         ("Reading local market dynamics",),
+         ("Coaching and developing site managers",),
+         ("Handling escalations on the ground",)],
+        [("Sales territory analysis", "CRM analytics already do this"),
+         ("Travel expense reporting",),
+         ("Consolidated performance reports",),
+         ("Scheduling store visits",)],
+        ["regional manager", "area manager", "district manager", "territory manager"]),
+
+    job("Store Manager", 34, "~8", "YRS", "38%", "MED",
+        [("Real-time floor management", "shoplifters don't wait for the algorithm"),
+         ("Training and mentoring staff",),
+         ("Handling in-person customer complaints",),
+         ("Visual merchandising judgment",)],
+        [("Inventory reordering", "auto-replenishment systems handle this"),
+         ("Staff schedule generation",),
+         ("Sales reporting",),
+         ("Price tag and signage updates",)],
+        ["store manager", "shop manager", "retail store manager", "outlet manager"]),
+
+    job("Restaurant Manager", 28, "~10", "YRS", "30%", "MED",
+        [("Managing kitchen chaos in real time", "dinner rush doesn't pause for a loading screen"),
+         ("Handling difficult customers face-to-face",),
+         ("Health and safety judgment calls",),
+         ("Building team culture under pressure",)],
+        [("Table reservation management", "OpenTable runs itself"),
+         ("Menu costing spreadsheets",),
+         ("Online review responses",),
+         ("Supplier order placement",)],
+        ["restaurant manager", "venue manager", "hospitality manager", "food and beverage manager",
+         "F&B manager", "cafe manager"]),
+
+    job("Warehouse Manager", 52, "~5", "YRS", "58%", "MED",
+        [("Exception handling and damage assessment", "robots still can't deal with a busted pallet"),
+         ("Staff safety and incident response",),
+         ("Vendor relationship management",),
+         ("Layout optimisation for mixed inventory",)],
+        [("Inventory tracking and cycle counts", "RFID and WMS handle this now"),
+         ("Pick path optimisation",),
+         ("Shipment scheduling",),
+         ("Stock level reorder triggers",)],
+        ["warehouse manager", "distribution centre manager", "DC manager",
+         "logistics warehouse manager", "fulfilment manager"]),
+
+    job("Branch Manager", 53, "~4", "YRS", "60%", "MED",
+        [("Building local community relationships", "trust isn't downloadable"),
+         ("Complex lending judgment calls",),
+         ("Coaching junior staff through difficult conversations",),
+         ("Handling fraud and security incidents on-site",)],
+        [("Routine account enquiries", "mobile banking killed the queue"),
+         ("Cash handling oversight",),
+         ("Compliance paperwork",),
+         ("Transaction processing",)],
+        ["branch manager", "bank branch manager", "bank manager"]),
+
+    # === HEALTHCARE ===
+    job("Dental Assistant", 18, "~15", "YRS", "20%", "LOW",
+        [("Chairside patient support", "someone has to hold the suction"),
+         ("Sterilising and setting up instruments",),
+         ("Calming anxious patients",),
+         ("Adapting to each dentist's workflow",)],
+        [("Appointment booking", "online scheduling handles this"),
+         ("X-ray image filing",),
+         ("Patient reminder calls",)],
+        ["dental assistant", "dental nurse", "dental chair assistant", "dental surgery assistant"]),
+
+    job("Veterinary Nurse", 16, "~15", "YRS", "18%", "LOW",
+        [("Restraining and calming animals", "try getting a cat to hold still for a robot"),
+         ("Monitoring anaesthesia in surgery",),
+         ("Wound care and bandaging",),
+         ("Reading animal pain signals",)],
+        [("Appointment scheduling", "booking platforms handle this"),
+         ("Prescription label printing",),
+         ("Inventory tracking for meds",)],
+        ["vet nurse", "veterinary nurse", "veterinary technician", "vet tech",
+         "animal nurse", "veterinary assistant"]),
+
+    job("Aged Care Nurse", 10, "~20", "YRS", "12%", "LOW",
+        [("Holistic patient assessment", "dignity can't be automated"),
+         ("Emotional support and companionship",),
+         ("Complex wound and medication management",),
+         ("End-of-life care and family communication",)],
+        [("Medication dispensing schedules", "automated pill dispensers exist"),
+         ("Vital signs logging",),
+         ("Care plan documentation",)],
+        ["aged care nurse", "geriatric nurse", "nursing home nurse", "elderly care nurse",
+         "residential care nurse"]),
+
+    job("Mental Health Nurse", 12, "~18", "YRS", "14%", "LOW",
+        [("Therapeutic rapport with patients", "trust isn't something you can patch in"),
+         ("De-escalation in crisis situations",),
+         ("Observing subtle behavioural changes",),
+         ("Coordinating multidisciplinary care",)],
+        [("Appointment scheduling", "booking systems handle this"),
+         ("Progress note templates",),
+         ("Medication tracking logs",)],
+        ["mental health nurse", "psychiatric nurse", "psych nurse", "MHN",
+         "community mental health nurse"]),
+
+    job("Disability Support Worker", 8, "~20", "YRS", "10%", "LOW",
+        [("Personalised daily living support", "every person's needs are different every day"),
+         ("Building trust and independence",),
+         ("Physical assistance and transfers",),
+         ("Community access and social participation",)],
+        [("Shift scheduling", "rostering software does this"),
+         ("Progress report writing",),
+         ("Incident documentation",)],
+        ["disability support worker", "DSW", "support worker", "NDIS worker",
+         "disability carer", "care worker"]),
+
+    job("Sonographer", 43, "~6", "YRS", "48%", "MED",
+        [("Patient positioning and scanning technique", "ultrasound gel doesn't apply itself"),
+         ("Real-time anatomy identification",),
+         ("Communicating findings to patients sensitively",),
+         ("Adapting scan approach to body type",)],
+        [("Image pattern recognition", "AI reads scans faster than humans now"),
+         ("Measurement annotations",),
+         ("Report template generation",),
+         ("Image archiving",)],
+        ["sonographer", "ultrasound technician", "ultrasound tech", "diagnostic sonographer",
+         "medical sonographer"]),
+
+    job("Orthotist", 22, "~12", "YRS", "25%", "LOW",
+        [("Custom device fitting and adjustment", "every body is literally different"),
+         ("Patient gait and movement assessment",),
+         ("Modifying devices based on feedback",),
+         ("Collaborating with surgeons and physios",)],
+        [("3D scanning for measurements", "scanners are getting very accurate"),
+         ("Design modelling in CAD",),
+         ("Standard brace ordering",)],
+        ["orthotist", "prosthetist", "orthotist prosthetist", "O&P",
+         "orthotic technician", "prosthetic technician"]),
+
+    # === TRADES / BLUE COLLAR ===
+    job("Boilermaker", 22, "~12", "YRS", "24%", "LOW",
+        [("Welding in confined and awkward spaces", "robots don't fit inside boilers"),
+         ("Reading and interpreting complex blueprints",),
+         ("Quality inspection of welds by feel",),
+         ("Working at heights and in hazardous conditions",)],
+        [("Straight-line automated welding", "welding robots handle the easy runs"),
+         ("Cut list generation from drawings",),
+         ("Material ordering",)],
+        ["boilermaker", "boiler welder", "structural welder", "pressure vessel welder"]),
+
+    job("Scaffolder", 14, "~20", "YRS", "15%", "LOW",
+        [("Assembling in unpredictable environments", "no two buildings are the same shape"),
+         ("Working safely at extreme heights",),
+         ("Load calculation on uneven ground",),
+         ("Adapting to weather conditions mid-build",)],
+        [("Scaffold design software", "CAD does the planning now"),
+         ("Material quantity estimation",),
+         ("Safety checklist documentation",)],
+        ["scaffolder", "scaffold erector", "scaffolding worker"]),
+
+    job("Concreter", 17, "~15", "YRS", "20%", "LOW",
+        [("Reading mix consistency and site conditions", "concrete doesn't care about your schedule"),
+         ("Finishing and levelling by hand",),
+         ("Working around rebar and formwork",),
+         ("Timing pours with weather",)],
+        [("Volume and mix calculations", "apps handle concrete math now"),
+         ("Batch ordering",),
+         ("Standard formwork layout",)],
+        ["concreter", "concrete finisher", "concrete worker", "concrete layer",
+         "cement worker"]),
+
+    job("Plasterer", 16, "~15", "YRS", "18%", "LOW",
+        [("Achieving smooth finishes by hand", "drywall doesn't plaster itself"),
+         ("Patching and repair work in tight spaces",),
+         ("Matching existing textures on older buildings",),
+         ("Adapting to different surface types",)],
+        [("Material quantity estimation", "calculators handle this"),
+         ("Standard quoting",),
+         ("Scheduling and job booking",)],
+        ["plasterer", "gyprocker", "drywall installer", "renderer",
+         "plaster worker", "solid plasterer"]),
+
+    job("Cabinet Maker", 24, "~10", "YRS", "28%", "MED",
+        [("Custom fitting to imperfect spaces", "walls are never straight and CNC doesn't know that"),
+         ("Client design consultation",),
+         ("Hand-finishing and detail work",),
+         ("On-site installation and adjustment",)],
+        [("CNC cutting of standard panels", "machines cut straighter than humans"),
+         ("3D design rendering",),
+         ("Material optimisation and cut lists",),
+         ("Quoting from standard templates",)],
+        ["cabinet maker", "cabinetmaker", "joiner", "kitchen maker",
+         "furniture maker", "shopfitter"]),
+
+    job("Auto Electrician", 29, "~10", "YRS", "32%", "MED",
+        [("Diagnosing intermittent electrical faults", "wiring gremlins don't show up on command"),
+         ("Working in cramped engine bays",),
+         ("Retrofitting aftermarket systems",),
+         ("Troubleshooting across different vehicle brands",)],
+        [("OBD code reading and lookup", "scan tools do the easy diagnostics"),
+         ("Wiring diagram lookup",),
+         ("Standard component testing",)],
+        ["auto electrician", "automotive electrician", "vehicle electrician",
+         "car electrician"]),
+
+    job("Fitter and Turner", 27, "~10", "YRS", "30%", "MED",
+        [("Precision hand-fitting of components", "tolerances this tight need a human touch"),
+         ("On-site machinery repair",),
+         ("Reading and adapting old engineering drawings",),
+         ("Troubleshooting mechanical failures",)],
+        [("CNC machining of standard parts", "CNC runs 24/7 without a smoko break"),
+         ("Routine maintenance scheduling",),
+         ("Parts ordering from catalogues",)],
+        ["fitter and turner", "fitter", "turner", "machinist",
+         "mechanical fitter", "maintenance fitter"]),
+
+    job("Forklift Operator", 62, "~4", "YRS", "68%", "LOW",
+        [("Navigating cluttered or uneven warehouse floors", "real warehouses aren't as tidy as Amazon's"),
+         ("Loading irregularly shaped freight",),
+         ("Communicating with truck drivers on-site",),
+         ("Operating in mixed pedestrian zones",)],
+        [("Repetitive pallet movement in grid warehouses", "autonomous forklifts already run in some DCs"),
+         ("Inventory scanning during picks",),
+         ("Standard dock loading",),
+         ("Aisle-to-aisle transport",)],
+        ["forklift operator", "forklift driver", "forkie", "fork truck operator",
+         "reach truck operator", "warehouse forklift"]),
+
+    # === OFFICE / ADMIN ===
+    job("Accounts Receivable Clerk", 78, "~2", "YRS", "85%", "LOW",
+        [("Chasing overdue payments from difficult clients", "awkward phone calls are still a human job"),
+         ("Negotiating payment plans",),
+         ("Investigating disputed invoices",)],
+        [("Invoice generation and sending", "accounting software does this automatically"),
+         ("Payment matching and reconciliation",),
+         ("Ageing report generation",),
+         ("Standard follow-up emails",)],
+        ["accounts receivable clerk", "AR clerk", "accounts receivable officer",
+         "credit control clerk", "collections clerk"]),
+
+    job("Accounts Payable Clerk", 79, "~2", "YRS", "86%", "LOW",
+        [("Resolving vendor billing discrepancies", "suppliers don't always send clean invoices"),
+         ("Managing urgent payment exceptions",),
+         ("Vendor relationship maintenance",)],
+        [("Invoice data entry and matching", "OCR and AP automation handle this now"),
+         ("Payment run processing",),
+         ("Three-way matching",),
+         ("Expense report processing",)],
+        ["accounts payable clerk", "AP clerk", "accounts payable officer",
+         "creditors clerk"]),
+
+    job("Receptionist", 48, "~5", "YRS", "55%", "MED",
+        [("Reading visitor mood and adapting", "kiosks don't notice when someone's upset"),
+         ("Handling unexpected situations",),
+         ("Being the face and vibe of the office",),
+         ("Managing physical deliveries and access",)],
+        [("Call routing and transfers", "IVR systems handle most calls now"),
+         ("Appointment booking",),
+         ("Visitor sign-in logging",),
+         ("Basic enquiry responses",)],
+        ["receptionist", "front desk", "front of house", "reception staff"]),
+
+    job("Office Administrator", 56, "~4", "YRS", "62%", "MED",
+        [("Keeping an office running when things go sideways", "someone has to fix the printer"),
+         ("Managing competing priorities from multiple managers",),
+         ("Onboarding new staff logistics",),
+         ("Vendor coordination and office maintenance",)],
+        [("Document filing and retrieval", "cloud storage replaced the filing cabinet"),
+         ("Meeting room booking",),
+         ("Supply ordering",),
+         ("Calendar management",)],
+        ["office administrator", "office admin", "admin officer",
+         "administrative officer", "office coordinator"]),
+
+    # === TECH ===
+    job("Machine Learning Engineer", 35, "~7", "YRS", "38%", "HIGH",
+        [("Framing ambiguous business problems as ML tasks", "the hard part was never the model"),
+         ("Debugging data pipelines and model drift",),
+         ("Evaluating trade-offs between approaches",),
+         ("Communicating results to non-technical stakeholders",)],
+        [("Hyperparameter tuning", "AutoML does this better and faster"),
+         ("Boilerplate model code",),
+         ("Standard data preprocessing",),
+         ("Experiment tracking setup",)],
+        ["machine learning engineer", "ML engineer", "MLE", "AI engineer",
+         "deep learning engineer"]),
+
+    job("Mobile App Developer", 46, "~5", "YRS", "52%", "HIGH",
+        [("Designing intuitive user experiences", "users don't file bug reports, they just delete the app"),
+         ("Debugging device-specific issues",),
+         ("Navigating app store review requirements",),
+         ("Integrating with flaky third-party SDKs",)],
+        [("Boilerplate UI code generation", "AI writes the CRUD screens now"),
+         ("Standard API integration code",),
+         ("Unit test generation",),
+         ("App store listing copy",)],
+        ["mobile app developer", "iOS developer", "Android developer",
+         "mobile developer", "app developer", "React Native developer",
+         "Flutter developer"]),
+
+    job("Frontend Developer", 49, "~5", "YRS", "54%", "HIGH",
+        [("Translating vague designs into pixel-perfect UI", "designers never spec the edge cases"),
+         ("Cross-browser debugging",),
+         ("Accessibility and performance optimisation",),
+         ("Complex state management decisions",)],
+        [("Component boilerplate", "AI scaffolds React components in seconds"),
+         ("CSS styling from mockups",),
+         ("Standard form implementations",),
+         ("Documentation writing",)],
+        ["frontend developer", "front-end developer", "front end developer",
+         "UI developer", "React developer", "Vue developer", "Angular developer"]),
+
+    job("Backend Developer", 47, "~5", "YRS", "52%", "HIGH",
+        [("System architecture decisions", "choosing the wrong database haunts you for years"),
+         ("Debugging distributed systems",),
+         ("Security and auth implementation",),
+         ("Performance optimisation under load",)],
+        [("CRUD endpoint generation", "AI writes boilerplate APIs now"),
+         ("Database migration scripts",),
+         ("Standard API documentation",),
+         ("Routine code reviews",)],
+        ["backend developer", "back-end developer", "back end developer",
+         "server-side developer", "API developer", "Node.js developer",
+         "Python developer", "Java developer"]),
+
+    job("Systems Administrator", 54, "~4", "YRS", "60%", "MED",
+        [("Incident response and root cause analysis", "servers crash at 3am and don't apologise"),
+         ("Legacy system maintenance and migration",),
+         ("Security hardening and access control",),
+         ("Cross-team infrastructure planning",)],
+        [("Server provisioning", "Terraform and cloud consoles handle this"),
+         ("Patch management",),
+         ("Backup scheduling",),
+         ("User account management",)],
+        ["systems administrator", "sysadmin", "system administrator",
+         "IT administrator", "infrastructure admin", "Linux admin",
+         "Windows admin"]),
+
+    job("IT Manager", 39, "~7", "YRS", "42%", "HIGH",
+        [("Vendor negotiation and contract management", "salespeople still need a human to say no to"),
+         ("IT strategy and budget planning",),
+         ("Managing team dynamics and hiring",),
+         ("Translating business needs to technical requirements",)],
+        [("Help desk ticket routing", "ticketing systems auto-triage now"),
+         ("Asset inventory tracking",),
+         ("Standard policy documentation",),
+         ("Usage reporting",)],
+        ["IT manager", "information technology manager", "IT director",
+         "technology manager", "head of IT"]),
+
+    job("Scrum Master", 58, "~4", "YRS", "64%", "MED",
+        [("Facilitating difficult team conversations", "retrospectives get awkward and bots can't handle that"),
+         ("Removing organisational blockers",),
+         ("Coaching teams through conflict",),
+         ("Reading team morale and burnout signals",)],
+        [("Sprint planning and velocity tracking", "Jira does the math already"),
+         ("Standup facilitation",),
+         ("Burn-down chart generation",),
+         ("Status report compilation",)],
+        ["scrum master", "agile coach", "agile facilitator",
+         "scrum coach", "delivery lead"]),
+
+    # === FINANCE / PROFESSIONAL SERVICES ===
+    job("Mortgage Processor", 72, "~3", "YRS", "78%", "LOW",
+        [("Handling complex edge-case applications", "not every borrower fits the checkbox"),
+         ("Communicating with stressed applicants",),
+         ("Coordinating between brokers, valuers, and lenders",)],
+        [("Document verification and data entry", "OCR reads payslips faster than you"),
+         ("Credit check processing",),
+         ("Standard approval workflows",),
+         ("Status update emails",)],
+        ["mortgage processor", "loan processor", "home loan processor",
+         "mortgage administrator", "lending processor"]),
+
+    job("Conveyancer", 57, "~5", "YRS", "62%", "MED",
+        [("Navigating unusual property title issues", "easements from 1923 don't explain themselves"),
+         ("Managing anxious buyers and sellers",),
+         ("Coordinating settlement between multiple parties",),
+         ("Identifying risks in contract conditions",)],
+        [("Standard contract preparation", "document automation handles the templates"),
+         ("Title searches",),
+         ("Settlement statement calculations",),
+         ("Standard correspondence",)],
+        ["conveyancer", "conveyancing clerk", "property lawyer",
+         "settlement agent", "conveyancing solicitor"]),
+
+    job("Migration Agent", 38, "~8", "YRS", "42%", "MED",
+        [("Navigating constantly changing immigration law", "visa rules change faster than the website updates"),
+         ("Building cases for complex visa applications",),
+         ("Supporting clients through stressful processes",),
+         ("Representing clients in tribunal hearings",)],
+        [("Eligibility checklist assessments", "online calculators handle the basics"),
+         ("Form pre-filling from documents",),
+         ("Status tracking and updates",),
+         ("Standard document checklists",)],
+        ["migration agent", "immigration consultant", "immigration agent",
+         "visa consultant", "registered migration agent", "MARA agent"]),
+
+    job("Property Manager", 38, "~7", "YRS", "43%", "MED",
+        [("Handling tenant disputes and complaints", "leaking pipes at midnight need a real person"),
+         ("Property inspections and condition assessment",),
+         ("Negotiating lease terms",),
+         ("Managing tradespeople on-site",)],
+        [("Rent collection and reminders", "direct debit handles this"),
+         ("Lease renewal notices",),
+         ("Maintenance request logging",),
+         ("Financial reporting for landlords",)],
+        ["property manager", "real estate property manager", "rental manager",
+         "strata manager", "building manager", "facilities manager"]),
+
+    job("Building Inspector", 31, "~10", "YRS", "34%", "MED",
+        [("Spotting defects hidden behind finishes", "walls hide a lot of sins"),
+         ("Interpreting building codes in edge cases",),
+         ("Navigating active construction sites safely",),
+         ("Explaining findings to non-technical homeowners",)],
+        [("Report template generation", "inspection apps populate most fields now"),
+         ("Photo organisation and labelling",),
+         ("Compliance checklist tracking",),
+         ("Scheduling inspections",)],
+        ["building inspector", "building certifier", "building surveyor",
+         "construction inspector", "code compliance inspector", "BCA inspector"]),
+
+    job("Quantity Surveyor", 48, "~5", "YRS", "54%", "MED",
+        [("Estimating costs for unique or complex builds", "no two construction sites are the same"),
+         ("Negotiating variations and claims",),
+         ("Advising on value engineering trade-offs",),
+         ("Managing disputes between contractors and clients",)],
+        [("Bill of quantities from standard drawings", "BIM software extracts quantities automatically"),
+         ("Cost database lookups",),
+         ("Progress claim calculations",),
+         ("Standard tender comparisons",)],
+        ["quantity surveyor", "QS", "cost estimator", "construction estimator",
+         "cost planner", "cost consultant"]),
+
+    # === EDUCATION / COMMUNITY ===
+    job("Library Assistant", 58, "~4", "YRS", "65%", "LOW",
+        [("Helping patrons navigate complex research needs", "not every question fits in a search bar"),
+         ("Community program facilitation",),
+         ("Assisting people with low digital literacy",),
+         ("Curating physical displays and collections",)],
+        [("Book check-in and check-out", "self-service kiosks replaced this"),
+         ("Catalogue data entry",),
+         ("Overdue notice generation",),
+         ("Shelf organisation tracking",)],
+        ["library assistant", "library technician", "library aide",
+         "library clerk", "library officer"]),
+
+    job("Youth Worker", 10, "~20", "YRS", "12%", "LOW",
+        [("Building trust with at-risk young people", "kids don't open up to chatbots"),
+         ("Crisis intervention and de-escalation",),
+         ("Mentoring through real-life activities",),
+         ("Advocating within systems on a young person's behalf",)],
+        [("Case note documentation", "templates speed this up"),
+         ("Program scheduling",),
+         ("Referral paperwork",)],
+        ["youth worker", "youth support worker", "youth development worker",
+         "youth mentor", "youth case worker"]),
+
+    job("Community Development Officer", 19, "~12", "YRS", "22%", "LOW",
+        [("Building grassroots community trust", "community doesn't form in a group chat"),
+         ("Facilitating diverse stakeholder meetings",),
+         ("Grant writing with local context",),
+         ("Navigating local politics and sensitivities",)],
+        [("Event promotion and outreach", "social media scheduling tools do this"),
+         ("Survey data collection",),
+         ("Report writing from templates",),
+         ("Contact database management",)],
+        ["community development officer", "CDO", "community engagement officer",
+         "community worker", "community coordinator"]),
+
+    job("Education Coordinator", 37, "~8", "YRS", "40%", "MED",
+        [("Designing curriculum for specific learner needs", "every cohort is different"),
+         ("Managing facilitator relationships",),
+         ("Adapting programs based on live feedback",),
+         ("Navigating accreditation requirements",)],
+        [("Enrolment processing", "LMS platforms handle registration"),
+         ("Certificate generation",),
+         ("Attendance tracking",),
+         ("Standard reporting",)],
+        ["education coordinator", "training coordinator", "learning coordinator",
+         "program coordinator", "course coordinator", "RTO coordinator"]),
+
+    # === OTHER ===
+    job("Barber", 13, "~18", "YRS", "14%", "LOW",
+        [("Reading face shape and style preferences", "every head is a different canvas"),
+         ("Hot towel shaves and straight razor work",),
+         ("Building loyal client relationships",),
+         ("Adapting to hair texture and growth patterns",)],
+        [("Appointment booking", "online booking handles this"),
+         ("Style previews with AR",),
+         ("Product recommendations",)],
+        ["barber", "men's hairdresser", "barbershop", "men's barber"]),
+
+    job("Flight Dispatcher", 59, "~4", "YRS", "65%", "MED",
+        [("Making go/no-go calls in borderline weather", "algorithms hedge, dispatchers decide"),
+         ("Coordinating emergency diversions",),
+         ("Balancing fuel, weight, and routing trade-offs",),
+         ("Communicating with multiple flight crews simultaneously",)],
+        [("Optimal route calculation", "flight planning software does the math"),
+         ("Weather data compilation",),
+         ("NOTAM review and filtering",),
+         ("Standard flight plan filing",)],
+        ["flight dispatcher", "airline dispatcher", "flight operations officer",
+         "aircraft dispatcher", "flight planner"]),
+
+    job("Air Conditioning Installer", 17, "~15", "YRS", "18%", "LOW",
+        [("Installing in awkward ceiling and wall cavities", "every house has different ductwork surprises"),
+         ("Brazing and refrigerant handling",),
+         ("Diagnosing faults by sound and feel",),
+         ("Adapting to different building structures",)],
+        [("Load calculation for room sizing", "apps calculate BTU requirements now"),
+         ("Quoting from standard templates",),
+         ("Scheduling and dispatch",)],
+        ["air conditioning installer", "aircon installer", "HVAC installer",
+         "AC installer", "split system installer", "refrigeration mechanic"]),
+
+    job("Fitness Instructor", 18, "~15", "YRS", "20%", "LOW",
+        [("Correcting form in real time", "bad squat form doesn't fix itself"),
+         ("Motivating groups with energy and presence",),
+         ("Adapting classes to mixed ability levels",),
+         ("Building community and retention in classes",)],
+        [("Workout programming", "apps generate programs for free now"),
+         ("Heart rate zone tracking",),
+         ("Class music playlist curation",),
+         ("Attendance tracking",)],
+        ["fitness instructor", "group fitness instructor", "gym instructor",
+         "exercise instructor", "aerobics instructor", "spin instructor",
+         "yoga instructor", "pilates instructor"]),
+
+    job("Call Centre Agent", 77, "~2", "YRS", "82%", "LOW",
+        [("Handling emotional or irate callers", "someone has to absorb the rage"),
+         ("Complex multi-issue resolution",),
+         ("Upselling through genuine rapport",)],
+        [("Answering FAQs", "chatbots handle 80% of tier-1 queries now"),
+         ("Password resets and account lookups",),
+         ("Order status enquiries",),
+         ("Standard complaint logging",),
+         ("Call routing and transfers",)],
+        ["call centre agent", "call center agent", "contact centre agent",
+         "phone operator", "customer service agent", "inbound call agent",
+         "outbound call agent"]),
+
+    job("Courier", 55, "~5", "YRS", "60%", "MED",
+        [("Navigating apartment buildings and locked complexes", "intercom systems defeat robots daily"),
+         ("Handling fragile or oversized items",),
+         ("Adapting to road closures and detours in real time",),
+         ("Customer interaction at the door",)],
+        [("Route optimisation", "routing algorithms already plan your day"),
+         ("Parcel scanning and tracking",),
+         ("Delivery time estimation",),
+         ("Standard notification messages",)],
+        ["courier", "delivery driver", "parcel delivery", "courier driver",
+         "bike courier", "last mile delivery"]),
+
+    job("Sous Chef", 17, "~12", "YRS", "18%", "LOW",
+        [("Tasting and adjusting seasoning in real time", "palates can't be programmed"),
+         ("Managing kitchen flow during service",),
+         ("Training junior cooks on technique",),
+         ("Improvising when ingredients run out",)],
+        [("Recipe scaling calculations", "kitchen management software does the maths"),
+         ("Inventory and ordering",),
+         ("Menu costing spreadsheets",),
+         ("Food safety documentation",)],
+        ["sous chef", "second chef", "assistant head chef", "senior chef",
+         "chef de partie", "CDP", "line cook supervisor"]),
+
+    job("Pastry Chef", 14, "~15", "YRS", "16%", "LOW",
+        [("Handcrafting intricate decorations", "sugar work doesn't automate well"),
+         ("Adjusting recipes for humidity and temperature",),
+         ("Developing new flavour combinations",),
+         ("Plating for visual impact",)],
+        [("Recipe scaling and batch calculations", "baking software handles conversions"),
+         ("Standard dough production",),
+         ("Ordering ingredients from suppliers",)],
+        ["pastry chef", "baker chef", "patissier", "dessert chef",
+         "cake decorator", "pastry cook"]),
 ]
 
 def main():
-    with open(JOBS_FILE) as f:
-        jobs = json.load(f)
+    with open(JOBS_FILE, 'r') as f:
+        existing = json.load(f)
 
-    existing_ids = {j["id"] for j in jobs}
-    added = []
-    skipped = []
+    existing_ids = {j['id'] for j in existing}
+    added = 0
+    skipped = 0
 
     for new_job in NEW_JOBS:
-        if new_job["id"] in existing_ids:
-            skipped.append(new_job["id"])
+        if new_job['id'] in existing_ids:
+            print(f"SKIP (already exists): {new_job['title']} ({new_job['id']})")
+            skipped += 1
         else:
-            jobs.append(new_job)
-            added.append(new_job["id"])
+            existing.append(new_job)
+            existing_ids.add(new_job['id'])
+            added += 1
 
     # Sort by score ascending (matching existing order)
-    jobs.sort(key=lambda j: j["score"])
+    existing.sort(key=lambda j: j['score'])
 
-    with open(JOBS_FILE, "w") as f:
-        json.dump(jobs, f, indent=2, ensure_ascii=False)
+    with open(JOBS_FILE, 'w') as f:
+        json.dump(existing, f, indent=2, ensure_ascii=False)
 
-    print(f"Added {len(added)} jobs: {', '.join(added)}")
-    if skipped:
-        print(f"Skipped {len(skipped)} (already exist): {', '.join(skipped)}")
-    print(f"Total jobs: {len(jobs)}")
+    print(f"\nAdded: {added}")
+    print(f"Skipped: {skipped}")
+    print(f"Total jobs now: {len(existing)}")
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

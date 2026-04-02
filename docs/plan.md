@@ -10,10 +10,10 @@
 | 2. Design spec | Done | `docs/design-spec.md` |
 | 3. Validator tool | Done | `tools/validate_jobs.py` + `workflows/validate-job-data.md` |
 | 4. Sample dataset (10 jobs) | Done | `data/jobs-sample.json` — passed rule-based validation |
-| 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 219 jobs, all pass rule-based validation, searchTerms added |
-| 6. Fact-check dataset | Done | 15 Perplexity category queries, 12 jobs corrected, all 219 pass validation |
+| 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 264 jobs, all pass rule-based validation, searchTerms added |
+| 6. Fact-check dataset | Done | 15 Perplexity category queries, 12 jobs corrected, all 264 pass validation |
 | 7. Build the site | Done | `index.html` — all features wired up, tested on desktop + mobile |
-| 8. Growth setup | **In progress** | OG image done, domain live, Tally feedback form added. Waiting on: Coursera affiliate approval, OG tag testing, HN account |
+| 8. Growth setup | **In progress** | OG image done, domain live, Tally feedback form added, OG tags tested. Waiting on: Coursera affiliate approval |
 | 9. Launch | Pending | Reddit + Hacker News — see `docs/growth-strategy.md` section 4 |
 
 ## Step 5: Build Full Dataset (~200 jobs)
@@ -38,8 +38,8 @@
 - Wire up landing page → results page flow
 - Load job data from JSON
 - Fuzzy search / autocomplete for job input
-- html-to-image for downloadable PNG — **must include "amicooked.me" watermark** (growth feature)
-- Share button: copy `amicooked.me/?job=job-id` to clipboard + Web Share API on mobile
+- Canvas-rendered downloadable PNG (1080x1920 story ratio, scaled-up typography) — **must include "amicooked.me" watermark** (growth feature)
+- Share button: Web Share API sends story card PNG + `amicooked.me/?job=job-id` link together (clipboard fallback on desktop)
 - `?job=` URL parameter: read on page load, show result directly if valid (enables shareable links + SEO)
 - Open Graph / Twitter Card meta tags (title, description, preview image)
 - Frictionless "try another" loop — no page reload, clear result and focus input (each extra check = another screenshot)
@@ -57,7 +57,7 @@
 - [ ] Sign up for Coursera affiliate program via Impact.com (see `docs/growth-strategy.md` for steps)
 - [ ] Replace placeholder affiliate href with real tracking link
 - [x] Create Hacker News account at news.ycombinator.com
-- [ ] Test OG tags (paste URL into Discord/iMessage or use opengraph.xyz — Twitter Card Validator is broken)
+- [x] Test OG tags (paste URL into Discord/iMessage or use opengraph.xyz — Twitter Card Validator is broken)
 
 ## Step 9: Launch
 
@@ -71,7 +71,7 @@
 - Validate JSON dataset loads and covers common job titles
 - Test the full flow: type job → see results → download PNG
 - Test on mobile and desktop
-- Screenshot test: does the results card look good as a PNG?
+- Screenshot test: does the story card PNG look good at 1080x1920? Content fills the frame, text readable?
 - Watermark visible on downloaded PNG
 - `?job=marketing-manager` URL loads result directly
 - OG preview looks correct when URL is pasted into Twitter Card Validator

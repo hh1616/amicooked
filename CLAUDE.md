@@ -80,7 +80,7 @@ brand_assets/   # Logos, icons (currently empty)
 
 **Data (in `data/`):**
 - `jobs-sample.json` — 10-job test batch (original sample, kept for reference)
-- `jobs.json` — Full dataset (219 jobs, rule-based validation passes, searchTerms included)
+- `jobs.json` — Full dataset (264 jobs, rule-based validation passes, searchTerms included)
 - `jobs-validation-state.json` — Validation state from rule checks
 
 **Hosting & deployment:**
@@ -88,7 +88,7 @@ brand_assets/   # Logos, icons (currently empty)
 - Domain: `amicooked.me` (Porkbun, DNS pointed to Netlify)
 - Feedback form: Tally (`tally.so/r/BzDQq5`)
 
-**Current status:** Site built and deployed. Step 8 (growth setup) in progress. Waiting on: Coursera affiliate approval via Impact.com, HN account creation, OG tag testing. Then Step 9 (launch).
+**Current status:** Dataset expanded to 264 jobs (2026-04-03). Site built and deployed. Download generates 1080x1920 story card (canvas-rendered, not html-to-image). Share sends PNG + link together via Web Share API. Step 8 (growth setup) nearly done. Waiting on: Coursera affiliate approval via Impact.com. Then Step 9 (launch).
 
 ## Bottom Line
 
