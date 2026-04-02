@@ -223,10 +223,10 @@ body {
 
 .results-content {
   flex: 1;
-  max-width: 620px;
+  max-width: 760px;
   width: 100%;
   margin: 0 auto;
-  padding: 48px 32px 40px;
+  padding: 56px 40px 48px;
 }
 
 /* Card header — hidden on page, shown in PNG capture */
@@ -234,19 +234,19 @@ body {
   display: none;
   background: #000;
   color: #fff;
-  padding: 12px 24px;
+  padding: 14px 28px;
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1px;
   justify-content: space-between;
   align-items: center;
 }
 
-.score-row { margin-bottom: 4px; }
+.score-row { margin-bottom: 6px; }
 .score-number {
   font-family: 'Instrument Serif', serif;
-  font-size: 96px;
+  font-size: 120px;
   font-weight: 400;
   color: #000;
   line-height: 0.85;
@@ -254,7 +254,7 @@ body {
 }
 .score-total {
   font-family: 'Instrument Serif', serif;
-  font-size: 32px;
+  font-size: 40px;
   color: #999;
   font-style: italic;
 }
@@ -262,29 +262,29 @@ body {
 .verdict {
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 44px;
   color: #000;
   text-transform: uppercase;
   line-height: 1.05;
   letter-spacing: 0.5px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .job-label {
   font-family: 'Space Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   color: #999;
   letter-spacing: 0.5px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 
 .stat-row {
   display: flex;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
 }
 .stat-box {
   flex: 1;
   border: 3px solid #000;
-  padding: 16px 12px 12px;
+  padding: 20px 16px 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -294,13 +294,13 @@ body {
 .stat-value {
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 30px;
   color: #000;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 .stat-label {
   font-family: 'Space Mono', monospace;
-  font-size: 8px;
+  font-size: 10px;
   color: #888;
   letter-spacing: 0.5px;
   line-height: 1.4;
@@ -308,26 +308,26 @@ body {
 
 .lists {
   display: flex;
-  gap: 32px;
-  margin-bottom: 28px;
+  gap: 40px;
+  margin-bottom: 32px;
 }
 .list-section {
   flex: 1;
   border-top: 3px solid #000;
-  padding-top: 14px;
+  padding-top: 16px;
 }
 .list-heading {
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.5px;
   color: #000;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 .list-items {
   font-family: 'Space Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   color: #444;
   word-spacing: -1px;
 }
@@ -353,7 +353,7 @@ body {
 .list-text { flex: 1; }
 .quip {
   color: #aaa;
-  font-size: 9px;
+  font-size: 11px;
   word-spacing: -0.5px;
 }
 
@@ -361,9 +361,9 @@ body {
 .watermark {
   display: none;
   text-align: center;
-  padding: 20px 0 12px;
+  padding: 24px 0 16px;
   font-family: 'Space Mono', monospace;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #bbb;
   letter-spacing: 2px;
@@ -373,10 +373,10 @@ body {
 .btn {
   flex: 1;
   border: 3px solid #000;
-  padding: 12px;
+  padding: 16px;
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   display: flex;
@@ -399,24 +399,44 @@ body {
 
 .disclaimer {
   text-align: center;
-  margin-top: 12px;
+  margin-top: 14px;
   font-family: 'Space Mono', monospace;
-  font-size: 8px;
+  font-size: 10px;
   color: #bbb;
   letter-spacing: 0.5px;
 }
 .affiliate-link {
   text-align: center;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 .affiliate-link a {
   font-family: 'Space Mono', monospace;
-  font-size: 9px;
+  font-size: 11px;
   color: #999;
   text-decoration: none;
   letter-spacing: 0.3px;
 }
 .affiliate-link a:hover { color: #000; }
+
+.try-another-btn {
+  display: block;
+  width: 100%;
+  margin-top: 32px;
+  padding: 14px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: transparent;
+  color: #999;
+  border: 2px solid #ddd;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.try-another-btn:hover { color: #000; border-color: #000; }
 
 .results-footer {
   border-top: 1px solid #e8e4dc;
@@ -551,7 +571,7 @@ body {
 </div>
 
 <div class="landing-footer" id="landing-footer">
-  <span>AMICOOKED.COM</span>
+  <span>AMICOOKED.ME</span>
   <span><span class="desktop-text">NO DATA &middot; NO COOKIES &middot; NO BS</span><span class="mobile-text">NO BS</span></span>
 </div>
 
@@ -601,7 +621,7 @@ body {
         </div>
       </div>
 
-      <div class="watermark" id="capture-watermark">AMICOOKED.COM</div>
+      <div class="watermark" id="capture-watermark">AMICOOKED.ME</div>
     </div>
 
     <div class="button-row">
@@ -618,10 +638,11 @@ body {
     <div class="affiliate-link">
       <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" rel="noopener">Want to un-cook yourself? Learn AI skills &rarr;</a>
     </div>
+    <button class="try-another-btn" id="try-another-main">TRY ANOTHER &nearr;</button>
   </div>
 
   <div class="results-footer">
-    <span>AMICOOKED.COM</span>
+    <span>AMICOOKED.ME</span>
     <a id="try-another">TRY ANOTHER &#8599;</a>
   </div>
 </div>
@@ -826,6 +847,7 @@ body {
   }
 
   $('try-another').addEventListener('click', goHome);
+  $('try-another-main').addEventListener('click', goHome);
   $('header-home').addEventListener('click', goHome);
 
   window.addEventListener('popstate', () => {
@@ -850,7 +872,8 @@ body {
     cardHeader.style.display = 'flex';
     watermark.style.display = 'block';
     card.style.background = '#f8f6f1';
-    card.style.paddingBottom = '4px';
+    card.style.padding = '0 24px 8px';
+    card.style.maxWidth = '640px';
 
     try {
       const { toPng } = await import('https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/+esm');
@@ -871,7 +894,8 @@ body {
     cardHeader.style.display = '';
     watermark.style.display = '';
     card.style.background = '';
-    card.style.paddingBottom = '';
+    card.style.padding = '';
+    card.style.maxWidth = '';
   });
 
   // ===== Share =====
