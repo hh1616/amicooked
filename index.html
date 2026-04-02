@@ -867,24 +867,13 @@ body {
     }
   });
 
-  // ===== Download PNG =====
+  // ===== Download PNG (9:16 story ratio via canvas) =====
   $('download-btn').addEventListener('click', async () => {
     if (!currentJob) return;
 
-    const card = $('results-card');
-    const cardHeader = $('card-header');
-    const watermark = $('capture-watermark');
-
-    // Prepare capture
-    cardHeader.style.display = 'flex';
-    watermark.style.display = 'block';
-    card.style.background = '#f8f6f1';
-    card.style.padding = '0 24px 8px';
-    card.style.maxWidth = '640px';
-
     try {
-      const { toPng } = await import('https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/+esm');
-      const dataUrl = await toPng(card, { pixelRatio: 2, backgroundColor: '#f8f6f1' });
+      const canvas = drawShareCard(currentJob, 1920);
+      const dataUrl = canvas.toDataURL('image/png');
 
       const link = document.createElement('a');
       link.download = 'amicooked-' + currentJob.id + '.png';
@@ -896,13 +885,6 @@ body {
       console.error('Download failed:', err);
       showToast('Download failed \u2014 try a screenshot instead');
     }
-
-    // Restore
-    cardHeader.style.display = '';
-    watermark.style.display = '';
-    card.style.background = '';
-    card.style.padding = '';
-    card.style.maxWidth = '';
   });
 
   // ===== Canvas share card (auto-height, 1080px wide) =====
@@ -1065,16 +1047,16 @@ body {
     return y;
   }
 
-  function drawShareCard(job) {
+  function drawShareCard(job, minHeight) {
     const W = 1080, pad = 72;
     // Pass 1: measure content height
     const tmp = document.createElement('canvas');
     tmp.width = W; tmp.height = 4000;
     const contentH = renderShareCard(tmp.getContext('2d'), job, W, pad);
-    // Pass 2: draw at exact height
+    // Pass 2: draw at exact height (or minHeight if taller needed)
     const cv = document.createElement('canvas');
     cv.width = W;
-    cv.height = contentH;
+    cv.height = minHeight ? Math.max(contentH, minHeight) : contentH;
     renderShareCard(cv.getContext('2d'), job, W, pad);
     return cv;
   }
