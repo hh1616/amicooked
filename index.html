@@ -905,13 +905,9 @@ body {
     card.style.maxWidth = '';
   });
 
-  // ===== Canvas share card (story format 1080x1920) =====
-  function drawShareCard(job) {
-    const W = 1080, H = 1920, pad = 72;
-    const cv = document.createElement('canvas');
-    cv.width = W;
-    cv.height = H;
-    const ctx = cv.getContext('2d');
+  // ===== Canvas share card (auto-height, 1080px wide) =====
+  function renderShareCard(ctx, job, W, pad) {
+    const cw = W - pad * 2;
 
     function wrap(text, maxW) {
       const words = text.split(' ');
@@ -928,11 +924,11 @@ body {
       return lines;
     }
 
-    const cw = W - pad * 2; // content width
+    let y = 0;
 
     // Background
     ctx.fillStyle = '#f8f6f1';
-    ctx.fillRect(0, 0, W, H);
+    ctx.fillRect(0, 0, W, 4000);
 
     // --- Header bar ---
     const hdrH = 80;
@@ -946,7 +942,7 @@ body {
     ctx.font = '14px sans-serif';
     ctx.fillText('\u25CF', W - pad - 14, hdrH / 2);
 
-    let y = hdrH + 60;
+    y = hdrH + 60;
     ctx.textBaseline = 'alphabetic';
 
     // --- Score ---
@@ -1056,14 +1052,30 @@ body {
       }
       y += 4;
     }
+    y += 48;
 
-    // --- Watermark at bottom ---
+    // --- Watermark ---
     ctx.fillStyle = '#bbb';
     ctx.font = '700 26px Space Mono, monospace';
     ctx.textAlign = 'center';
-    ctx.fillText('AMICOOKED.ME', W / 2, H - 60);
+    ctx.fillText('AMICOOKED.ME', W / 2, y);
     ctx.textAlign = 'left';
+    y += 60;
 
+    return y;
+  }
+
+  function drawShareCard(job) {
+    const W = 1080, pad = 72;
+    // Pass 1: measure content height
+    const tmp = document.createElement('canvas');
+    tmp.width = W; tmp.height = 4000;
+    const contentH = renderShareCard(tmp.getContext('2d'), job, W, pad);
+    // Pass 2: draw at exact height
+    const cv = document.createElement('canvas');
+    cv.width = W;
+    cv.height = contentH;
+    renderShareCard(cv.getContext('2d'), job, W, pad);
     return cv;
   }
 
@@ -1072,10 +1084,8 @@ body {
     if (!currentJob) return;
 
     const shareUrl = 'https://amicooked.me/?job=' + currentJob.id;
-    const shareTitle = "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?';
-    const shareText = 'I scored ' + currentJob.score + '/100 on the AI job risk calculator.';
 
-    // Try to generate PNG and share with image
+    // Generate PNG
     if (navigator.share) {
       let file = null;
       try {
@@ -1083,15 +1093,20 @@ body {
         const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
         file = new File([blob], 'amicooked-' + currentJob.id + '.png', { type: 'image/png' });
       } catch (e) {
-        // PNG generation failed — share without it
+        // PNG failed
       }
 
       try {
-        const shareData = { title: shareTitle, text: shareText, url: shareUrl };
+        // Share image ONLY (no url/text) so Instagram/socials treat it as a photo share
         if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
-          shareData.files = [file];
+          await navigator.share({ files: [file] });
+          return;
         }
-        await navigator.share(shareData);
+        // Fallback: share link
+        await navigator.share({
+          title: "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?',
+          text: 'I scored ' + currentJob.score + '/100 on the AI job risk calculator. ' + shareUrl
+        });
         return;
       } catch (err) {
         if (err.name === 'AbortError') return;
