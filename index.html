@@ -913,8 +913,8 @@ body {
     const shareTitle = "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?';
     const shareText = 'I scored ' + currentJob.score + '/100 on the AI job risk calculator.';
 
-    // Native share sheet on mobile
-    if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
+    // Native share sheet (works on iOS, Android, and modern desktop browsers)
+    if (navigator.share) {
       try {
         await navigator.share({ title: shareTitle, text: shareText, url: shareUrl });
         return;
