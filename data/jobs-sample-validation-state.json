@@ -1,0 +1,583 @@
+{
+  "source_file": "data/jobs-sample.json",
+  "created": "2026-04-02T23:21:18.952133",
+  "current_pass": 1,
+  "max_passes": 3,
+  "jobs": {
+    "plumber": {
+      "title": "Plumber",
+      "score": 6,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Plumber tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Plumber at 6/100 cooked (higher = more replaceable) with 8% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Plumber jobs? What do major reports say?",
+          "context": "We estimated ~15 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Physical dexterity in tight spaces' genuinely difficult for AI to replicate for Plumber roles?",
+          "context": "Physical dexterity in tight spaces"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'On-site problem solving' genuinely difficult for AI to replicate for Plumber roles?",
+          "context": "On-site problem solving"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Customer trust and rapport' genuinely difficult for AI to replicate for Plumber roles?",
+          "context": "Customer trust and rapport"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Emergency callout work' genuinely difficult for AI to replicate for Plumber roles?",
+          "context": "Emergency callout work"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Quoting and invoicing' actually being automated right now for Plumber roles? Any evidence?",
+          "context": "Quoting and invoicing"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Appointment scheduling' actually being automated right now for Plumber roles? Any evidence?",
+          "context": "Appointment scheduling"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Parts ordering' actually being automated right now for Plumber roles? Any evidence?",
+          "context": "Parts ordering"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "nurse": {
+      "title": "Registered Nurse",
+      "score": 18,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Registered Nurse tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Registered Nurse at 18/100 cooked (higher = more replaceable) with 22% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Registered Nurse jobs? What do major reports say?",
+          "context": "We estimated ~12 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Patient empathy and bedside manner' genuinely difficult for AI to replicate for Registered Nurse roles?",
+          "context": "Patient empathy and bedside manner"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Physical assessment and triage' genuinely difficult for AI to replicate for Registered Nurse roles?",
+          "context": "Physical assessment and triage"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Crisis decision-making' genuinely difficult for AI to replicate for Registered Nurse roles?",
+          "context": "Crisis decision-making"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Emotional support for families' genuinely difficult for AI to replicate for Registered Nurse roles?",
+          "context": "Emotional support for families"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Vitals monitoring and charting' actually being automated right now for Registered Nurse roles? Any evidence?",
+          "context": "Vitals monitoring and charting"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Medication scheduling' actually being automated right now for Registered Nurse roles? Any evidence?",
+          "context": "Medication scheduling"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Routine patient documentation' actually being automated right now for Registered Nurse roles? Any evidence?",
+          "context": "Routine patient documentation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "marketing-manager": {
+      "title": "Marketing Manager",
+      "score": 34,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Marketing Manager tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Marketing Manager at 34/100 cooked (higher = more replaceable) with 62% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Marketing Manager jobs? What do major reports say?",
+          "context": "We estimated ~5 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Creative strategy' genuinely difficult for AI to replicate for Marketing Manager roles?",
+          "context": "Creative strategy"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Brand storytelling' genuinely difficult for AI to replicate for Marketing Manager roles?",
+          "context": "Brand storytelling"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Client relationships' genuinely difficult for AI to replicate for Marketing Manager roles?",
+          "context": "Client relationships"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Cross-functional leadership' genuinely difficult for AI to replicate for Marketing Manager roles?",
+          "context": "Cross-functional leadership"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Reporting & analytics' actually being automated right now for Marketing Manager roles? Any evidence?",
+          "context": "Reporting & analytics"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'A/B testing setup' actually being automated right now for Marketing Manager roles? Any evidence?",
+          "context": "A/B testing setup"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Basic copywriting' actually being automated right now for Marketing Manager roles? Any evidence?",
+          "context": "Basic copywriting"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "accountant": {
+      "title": "Accountant",
+      "score": 52,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Accountant tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Accountant at 52/100 cooked (higher = more replaceable) with 72% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Accountant jobs? What do major reports say?",
+          "context": "We estimated ~4 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Strategic tax planning' genuinely difficult for AI to replicate for Accountant roles?",
+          "context": "Strategic tax planning"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Client advisory relationships' genuinely difficult for AI to replicate for Accountant roles?",
+          "context": "Client advisory relationships"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Regulatory judgment calls' genuinely difficult for AI to replicate for Accountant roles?",
+          "context": "Regulatory judgment calls"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Audit negotiation' genuinely difficult for AI to replicate for Accountant roles?",
+          "context": "Audit negotiation"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Bookkeeping and reconciliation' actually being automated right now for Accountant roles? Any evidence?",
+          "context": "Bookkeeping and reconciliation"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Standard tax returns' actually being automated right now for Accountant roles? Any evidence?",
+          "context": "Standard tax returns"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Invoice processing' actually being automated right now for Accountant roles? Any evidence?",
+          "context": "Invoice processing"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Payroll processing' actually being automated right now for Accountant roles? Any evidence?",
+          "context": "Payroll processing"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "graphic-designer": {
+      "title": "Graphic Designer",
+      "score": 61,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Graphic Designer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Graphic Designer at 61/100 cooked (higher = more replaceable) with 68% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Graphic Designer jobs? What do major reports say?",
+          "context": "We estimated ~3 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Brand identity systems' genuinely difficult for AI to replicate for Graphic Designer roles?",
+          "context": "Brand identity systems"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Art direction and taste' genuinely difficult for AI to replicate for Graphic Designer roles?",
+          "context": "Art direction and taste"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Client brief interpretation' genuinely difficult for AI to replicate for Graphic Designer roles?",
+          "context": "Client brief interpretation"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Physical/spatial design' genuinely difficult for AI to replicate for Graphic Designer roles?",
+          "context": "Physical/spatial design"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Social media graphics' actually being automated right now for Graphic Designer roles? Any evidence?",
+          "context": "Social media graphics"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Banner ads and resizing' actually being automated right now for Graphic Designer roles? Any evidence?",
+          "context": "Banner ads and resizing"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Basic photo editing' actually being automated right now for Graphic Designer roles? Any evidence?",
+          "context": "Basic photo editing"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Presentation decks' actually being automated right now for Graphic Designer roles? Any evidence?",
+          "context": "Presentation decks"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "paralegal": {
+      "title": "Paralegal",
+      "score": 71,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Paralegal tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Paralegal at 71/100 cooked (higher = more replaceable) with 78% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Paralegal jobs? What do major reports say?",
+          "context": "We estimated ~3 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Court filing procedures' genuinely difficult for AI to replicate for Paralegal roles?",
+          "context": "Court filing procedures"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Witness coordination' genuinely difficult for AI to replicate for Paralegal roles?",
+          "context": "Witness coordination"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Attorney relationship management' genuinely difficult for AI to replicate for Paralegal roles?",
+          "context": "Attorney relationship management"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Legal research' actually being automated right now for Paralegal roles? Any evidence?",
+          "context": "Legal research"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Document review and discovery' actually being automated right now for Paralegal roles? Any evidence?",
+          "context": "Document review and discovery"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Contract analysis' actually being automated right now for Paralegal roles? Any evidence?",
+          "context": "Contract analysis"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Case summarisation' actually being automated right now for Paralegal roles? Any evidence?",
+          "context": "Case summarisation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "data-entry-clerk": {
+      "title": "Data Entry Clerk",
+      "score": 84,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Data Entry Clerk tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Data Entry Clerk at 84/100 cooked (higher = more replaceable) with 91% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Data Entry Clerk jobs? What do major reports say?",
+          "context": "We estimated ~2 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Exception handling for messy data' genuinely difficult for AI to replicate for Data Entry Clerk roles?",
+          "context": "Exception handling for messy data"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Quality control spot checks' genuinely difficult for AI to replicate for Data Entry Clerk roles?",
+          "context": "Quality control spot checks"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Cross-system troubleshooting' genuinely difficult for AI to replicate for Data Entry Clerk roles?",
+          "context": "Cross-system troubleshooting"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Form data entry' actually being automated right now for Data Entry Clerk roles? Any evidence?",
+          "context": "Form data entry"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Spreadsheet population' actually being automated right now for Data Entry Clerk roles? Any evidence?",
+          "context": "Spreadsheet population"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Record deduplication' actually being automated right now for Data Entry Clerk roles? Any evidence?",
+          "context": "Record deduplication"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Copy-paste workflows' actually being automated right now for Data Entry Clerk roles? Any evidence?",
+          "context": "Copy-paste workflows"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "telemarketer": {
+      "title": "Telemarketer",
+      "score": 94,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Telemarketer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Telemarketer at 94/100 cooked (higher = more replaceable) with 97% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Telemarketer jobs? What do major reports say?",
+          "context": "We estimated ~1 YR"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'High-value relationship selling' genuinely difficult for AI to replicate for Telemarketer roles?",
+          "context": "High-value relationship selling"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Complex objection handling' genuinely difficult for AI to replicate for Telemarketer roles?",
+          "context": "Complex objection handling"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Emotional intelligence in live calls' genuinely difficult for AI to replicate for Telemarketer roles?",
+          "context": "Emotional intelligence in live calls"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Cold calling scripts' actually being automated right now for Telemarketer roles? Any evidence?",
+          "context": "Cold calling scripts"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Lead qualification' actually being automated right now for Telemarketer roles? Any evidence?",
+          "context": "Lead qualification"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Appointment setting' actually being automated right now for Telemarketer roles? Any evidence?",
+          "context": "Appointment setting"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Follow-up sequences' actually being automated right now for Telemarketer roles? Any evidence?",
+          "context": "Follow-up sequences"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "psychologist": {
+      "title": "Psychologist",
+      "score": 14,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Psychologist tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Psychologist at 14/100 cooked (higher = more replaceable) with 12% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Psychologist jobs? What do major reports say?",
+          "context": "We estimated ~20 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Therapeutic alliance' genuinely difficult for AI to replicate for Psychologist roles?",
+          "context": "Therapeutic alliance"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Clinical judgment and diagnosis' genuinely difficult for AI to replicate for Psychologist roles?",
+          "context": "Clinical judgment and diagnosis"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Crisis intervention' genuinely difficult for AI to replicate for Psychologist roles?",
+          "context": "Crisis intervention"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Ethical decision-making' genuinely difficult for AI to replicate for Psychologist roles?",
+          "context": "Ethical decision-making"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Psychometric scoring' actually being automated right now for Psychologist roles? Any evidence?",
+          "context": "Psychometric scoring"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Session note documentation' actually being automated right now for Psychologist roles? Any evidence?",
+          "context": "Session note documentation"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'CBT worksheet generation' actually being automated right now for Psychologist roles? Any evidence?",
+          "context": "CBT worksheet generation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "software-engineer": {
+      "title": "Software Engineer",
+      "score": 42,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Software Engineer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Software Engineer at 42/100 cooked (higher = more replaceable) with 55% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Software Engineer jobs? What do major reports say?",
+          "context": "We estimated ~5 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'System architecture decisions' genuinely difficult for AI to replicate for Software Engineer roles?",
+          "context": "System architecture decisions"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Ambiguous problem scoping' genuinely difficult for AI to replicate for Software Engineer roles?",
+          "context": "Ambiguous problem scoping"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Cross-team communication' genuinely difficult for AI to replicate for Software Engineer roles?",
+          "context": "Cross-team communication"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Debugging novel edge cases' genuinely difficult for AI to replicate for Software Engineer roles?",
+          "context": "Debugging novel edge cases"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Boilerplate code generation' actually being automated right now for Software Engineer roles? Any evidence?",
+          "context": "Boilerplate code generation"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Unit test writing' actually being automated right now for Software Engineer roles? Any evidence?",
+          "context": "Unit test writing"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Code review for simple PRs' actually being automated right now for Software Engineer roles? Any evidence?",
+          "context": "Code review for simple PRs"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Documentation writing' actually being automated right now for Software Engineer roles? Any evidence?",
+          "context": "Documentation writing"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barlow vs Teko — Final Comparison</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow:wght@900&family=Teko:wght@700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: system-ui; padding: 40px 20px; }
+
+  .label { text-align: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 3px; color: #555; margin-bottom: 32px; }
+
+  .compare {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .side {
+    flex: 1;
+    min-width: 340px;
+    max-width: 520px;
+    cursor: pointer;
+  }
+
+  .side-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  .frame {
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .frame:hover { border-color: #333; }
+  .frame.selected { border-color: #fff; }
+
+  .page-sim {
+    background: #f8f6f1;
+    padding: 48px 32px 72px;
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .indicator { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; z-index: 100; }
+</style>
+<script>
+  function pick(el, choice) {
+    document.querySelectorAll('.frame').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    if (window.__sp_select) window.__sp_select(choice, choice);
+    const ind = document.querySelector('.indicator');
+    ind.style.display = 'block';
+    ind.textContent = '✓ ' + choice;
+  }
+</script>
+</head>
+<body>
+
+<div class="label">BARLOW BLACK vs TEKO — ALIGNMENT + SPACING FIXED</div>
+
+<div class="compare">
+
+  <!-- BARLOW BLACK — fixed -->
+  <div class="side">
+    <div class="side-label">BARLOW BLACK</div>
+    <div class="frame" onclick="pick(this, 'Barlow Black')">
+      <div class="page-sim">
+        <!-- Live dot -->
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 2px; color: #999;">
+          <span style="width: 8px; height: 8px; background: #ff0000; border-radius: 50%; display: inline-block;"></span>
+          LIVE
+        </div>
+
+        <!-- Headline — left-aligned, negative margin to compensate font padding -->
+        <div style="font-family: 'Barlow', sans-serif; font-size: 72px; font-weight: 900; color: #000; line-height: 1; letter-spacing: -1px; text-transform: uppercase; margin-left: -4px; margin-bottom: 10px;">
+          Am I<br>Cooked?
+        </div>
+
+        <!-- Tagline — tighter gap to headline -->
+        <p style="font-family: 'Space Mono', monospace; font-size: 13px; color: #888; margin-bottom: 36px; line-height: 1.6;">
+          find out if AI is coming for your job.<br>
+          brutally honest. slightly funny. totally free.
+        </p>
+
+        <!-- Input -->
+        <div style="display: flex; gap: 0; margin-bottom: 12px;">
+          <div style="flex: 1; font-family: 'Space Mono', monospace; font-size: 14px; padding: 16px 18px; border: 3px solid #000; background: #fff; color: #bbb;">enter your job title</div>
+          <div style="font-family: 'Barlow', sans-serif; font-size: 15px; font-weight: 900; padding: 16px 22px; background: #000; color: #fff; border: 3px solid #000; border-left: 0; letter-spacing: 1px; text-transform: uppercase; display: flex; align-items: center;">Check →</div>
+        </div>
+
+        <div style="font-family: 'Space Mono', monospace; font-size: 10px; color: #bbb; letter-spacing: 1px;">200+ JOBS ANALYSED · UPDATED MARCH 2026</div>
+
+        <!-- Footer -->
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; padding: 12px 24px; font-family: 'Space Mono', monospace; font-size: 9px; color: #ccc; letter-spacing: 1px; border-top: 1px solid #e8e4dc;">
+          <span>AMICOOKED.COM</span>
+          <span>NO DATA · NO COOKIES · NO BS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEKO — fixed -->
+  <div class="side">
+    <div class="side-label">TEKO</div>
+    <div class="frame" onclick="pick(this, 'Teko')">
+      <div class="page-sim">
+        <!-- Live dot -->
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 24px; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 2px; color: #999;">
+          <span style="width: 8px; height: 8px; background: #ff0000; border-radius: 50%; display: inline-block;"></span>
+          LIVE
+        </div>
+
+        <!-- Headline — Teko is naturally tall, needs bigger size -->
+        <div style="font-family: 'Teko', sans-serif; font-size: 86px; font-weight: 700; color: #000; line-height: 0.85; letter-spacing: 2px; text-transform: uppercase; margin-left: -2px; margin-bottom: 14px;">
+          Am I<br>Cooked?
+        </div>
+
+        <!-- Tagline -->
+        <p style="font-family: 'Space Mono', monospace; font-size: 13px; color: #888; margin-bottom: 36px; line-height: 1.6;">
+          find out if AI is coming for your job.<br>
+          brutally honest. slightly funny. totally free.
+        </p>
+
+        <!-- Input -->
+        <div style="display: flex; gap: 0; margin-bottom: 12px;">
+          <div style="flex: 1; font-family: 'Space Mono', monospace; font-size: 14px; padding: 16px 18px; border: 3px solid #000; background: #fff; color: #bbb;">enter your job title</div>
+          <div style="font-family: 'Teko', sans-serif; font-size: 20px; font-weight: 700; padding: 14px 22px; background: #000; color: #fff; border: 3px solid #000; border-left: 0; letter-spacing: 2px; text-transform: uppercase; display: flex; align-items: center;">Check →</div>
+        </div>
+
+        <div style="font-family: 'Space Mono', monospace; font-size: 10px; color: #bbb; letter-spacing: 1px;">200+ JOBS ANALYSED · UPDATED MARCH 2026</div>
+
+        <!-- Footer -->
+        <div style="position: absolute; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; padding: 12px 24px; font-family: 'Space Mono', monospace; font-size: 9px; color: #ccc; letter-spacing: 1px; border-top: 1px solid #e8e4dc;">
+          <span>AMICOOKED.COM</span>
+          <span>NO DATA · NO COOKIES · NO BS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="indicator"></div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+[
+  {
+    "id": "plumber",
+    "title": "Plumber",
+    "score": 6,
+    "verdict": "Raw",
+    "verdictQuip": "you're untouchable. for now.",
+    "timeline": "~15",
+    "timelineUnit": "YRS",
+    "automatable": "8%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      { "text": "Physical dexterity in tight spaces", "quip": "robots hate crawl spaces" },
+      { "text": "On-site problem solving", "quip": null },
+      { "text": "Customer trust and rapport", "quip": null },
+      { "text": "Emergency callout work", "quip": "3am leaks don't fix themselves" }
+    ],
+    "gettingCooked": [
+      { "text": "Quoting and invoicing", "quip": null },
+      { "text": "Appointment scheduling", "quip": null },
+      { "text": "Parts ordering", "quip": "already mostly automated" }
+    ]
+  },
+  {
+    "id": "nurse",
+    "title": "Registered Nurse",
+    "score": 18,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~12",
+    "timelineUnit": "YRS",
+    "automatable": "22%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      { "text": "Patient empathy and bedside manner", "quip": "robots can't hold your hand" },
+      { "text": "Physical assessment and triage", "quip": null },
+      { "text": "Crisis decision-making", "quip": null },
+      { "text": "Emotional support for families", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Vitals monitoring and charting", "quip": "sensors do this already" },
+      { "text": "Medication scheduling", "quip": null },
+      { "text": "Routine patient documentation", "quip": null }
+    ]
+  },
+  {
+    "id": "marketing-manager",
+    "title": "Marketing Manager",
+    "score": 34,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~5",
+    "timelineUnit": "YRS",
+    "automatable": "62%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      { "text": "Creative strategy", "quip": "robots can't vibecheck" },
+      { "text": "Brand storytelling", "quip": null },
+      { "text": "Client relationships", "quip": "they're needy" },
+      { "text": "Cross-functional leadership", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Reporting & analytics", "quip": null },
+      { "text": "A/B testing setup", "quip": null },
+      { "text": "Basic copywriting", "quip": "first to go, sorry" }
+    ]
+  },
+  {
+    "id": "accountant",
+    "title": "Accountant",
+    "score": 52,
+    "verdict": "Half Baked",
+    "verdictQuip": "it's a coin flip. better have a plan B.",
+    "timeline": "~4",
+    "timelineUnit": "YRS",
+    "automatable": "72%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      { "text": "Strategic tax planning", "quip": "loopholes need a human touch" },
+      { "text": "Client advisory relationships", "quip": null },
+      { "text": "Regulatory judgment calls", "quip": null },
+      { "text": "Audit negotiation", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Bookkeeping and reconciliation", "quip": "QuickBooks is coming for this" },
+      { "text": "Standard tax returns", "quip": null },
+      { "text": "Invoice processing", "quip": null },
+      { "text": "Payroll processing", "quip": null }
+    ]
+  },
+  {
+    "id": "graphic-designer",
+    "title": "Graphic Designer",
+    "score": 61,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~3",
+    "timelineUnit": "YRS",
+    "automatable": "68%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      { "text": "Brand identity systems", "quip": null },
+      { "text": "Art direction and taste", "quip": "AI has none" },
+      { "text": "Client brief interpretation", "quip": null },
+      { "text": "Physical/spatial design", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Social media graphics", "quip": "Canva AI is getting scary good" },
+      { "text": "Banner ads and resizing", "quip": null },
+      { "text": "Basic photo editing", "quip": null },
+      { "text": "Presentation decks", "quip": null }
+    ]
+  },
+  {
+    "id": "paralegal",
+    "title": "Paralegal",
+    "score": 71,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~3",
+    "timelineUnit": "YRS",
+    "automatable": "78%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      { "text": "Court filing procedures", "quip": "bureaucracy saves jobs" },
+      { "text": "Witness coordination", "quip": null },
+      { "text": "Attorney relationship management", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Legal research", "quip": "AI already does this faster" },
+      { "text": "Document review and discovery", "quip": null },
+      { "text": "Contract analysis", "quip": null },
+      { "text": "Case summarisation", "quip": null }
+    ]
+  },
+  {
+    "id": "data-entry-clerk",
+    "title": "Data Entry Clerk",
+    "score": 84,
+    "verdict": "Extra Crispy",
+    "verdictQuip": "most of what you do, a bot does cheaper.",
+    "timeline": "~2",
+    "timelineUnit": "YRS",
+    "automatable": "91%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      { "text": "Exception handling for messy data", "quip": "humans love chaos" },
+      { "text": "Quality control spot checks", "quip": null },
+      { "text": "Cross-system troubleshooting", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Form data entry", "quip": "OCR has entered the chat" },
+      { "text": "Spreadsheet population", "quip": null },
+      { "text": "Record deduplication", "quip": null },
+      { "text": "Copy-paste workflows", "quip": "ctrl+V's final form" }
+    ]
+  },
+  {
+    "id": "telemarketer",
+    "title": "Telemarketer",
+    "score": 94,
+    "verdict": "Fully Cooked",
+    "verdictQuip": "update your LinkedIn. yesterday.",
+    "timeline": "~1",
+    "timelineUnit": "YR",
+    "automatable": "97%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      { "text": "High-value relationship selling", "quip": "if you're good, pivot to sales" },
+      { "text": "Complex objection handling", "quip": null },
+      { "text": "Emotional intelligence in live calls", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Cold calling scripts", "quip": "AI voice bots exist right now" },
+      { "text": "Lead qualification", "quip": null },
+      { "text": "Appointment setting", "quip": null },
+      { "text": "Follow-up sequences", "quip": "already automated everywhere" }
+    ]
+  },
+  {
+    "id": "psychologist",
+    "title": "Psychologist",
+    "score": 14,
+    "verdict": "Raw",
+    "verdictQuip": "you're untouchable. for now.",
+    "timeline": "~20",
+    "timelineUnit": "YRS",
+    "automatable": "12%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      { "text": "Therapeutic alliance", "quip": "the relationship IS the treatment" },
+      { "text": "Clinical judgment and diagnosis", "quip": null },
+      { "text": "Crisis intervention", "quip": null },
+      { "text": "Ethical decision-making", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Psychometric scoring", "quip": "computers do this better already" },
+      { "text": "Session note documentation", "quip": null },
+      { "text": "CBT worksheet generation", "quip": null }
+    ]
+  },
+  {
+    "id": "software-engineer",
+    "title": "Software Engineer",
+    "score": 42,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~5",
+    "timelineUnit": "YRS",
+    "automatable": "55%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      { "text": "System architecture decisions", "quip": null },
+      { "text": "Ambiguous problem scoping", "quip": "AI needs you to tell it what to build" },
+      { "text": "Cross-team communication", "quip": null },
+      { "text": "Debugging novel edge cases", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Boilerplate code generation", "quip": "Copilot says hi" },
+      { "text": "Unit test writing", "quip": null },
+      { "text": "Code review for simple PRs", "quip": null },
+      { "text": "Documentation writing", "quip": null }
+    ]
+  }
+]

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Font Options</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@700&family=Bricolage+Grotesque:wght@800&family=Unbounded:wght@900&family=Rubik+Mono+One&family=Archivo+Black&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: system-ui; padding: 40px 20px; }
+
+  .title { text-align: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 3px; color: #555; margin-bottom: 8px; }
+  .subtitle { text-align: center; font-size: 13px; color: #444; margin-bottom: 48px; }
+
+  .fonts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .font-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 360px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .font-card:hover { transform: translateY(-4px); border-color: #333; }
+  .font-card.selected { border-color: #fff; }
+
+  .font-preview {
+    padding: 32px 24px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .font-info {
+    padding: 16px;
+    background: #111;
+    border-top: 1px solid #1a1a1a;
+  }
+  .font-name {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  .font-desc {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .indicator { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; z-index: 100; }
+</style>
+<script>
+  function pick(el, choice) {
+    document.querySelectorAll('.font-card').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    if (window.__sp_select) window.__sp_select(choice, choice);
+    const ind = document.querySelector('.indicator');
+    ind.style.display = 'block';
+    ind.textContent = '✓ Selected: ' + choice;
+  }
+</script>
+</head>
+<body>
+
+<div class="title">FONT TASTING</div>
+<p class="subtitle">Same headline, different personality. Click the one that feels right.</p>
+
+<div class="fonts">
+
+  <!-- 1: Space Grotesk -->
+  <div class="font-card" onclick="pick(this, 'Space Grotesk')">
+    <div class="font-preview" style="background: #f8f6f1;">
+      <div style="font-family: 'Space Grotesk', sans-serif; font-size: 52px; font-weight: 700; color: #000; line-height: 1.05; letter-spacing: -1px;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 12px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="font-info">
+      <div class="font-name">SPACE GROTESK</div>
+      <div class="font-desc">Matches Space Mono (the body font). Geometric but with quirky details — look at the 'k'. Techy without being cold. The letters have breathing room.</div>
+    </div>
+  </div>
+
+  <!-- 2: Bricolage Grotesque -->
+  <div class="font-card" onclick="pick(this, 'Bricolage Grotesque')">
+    <div class="font-preview" style="background: #f8f6f1;">
+      <div style="font-family: 'Bricolage Grotesque', sans-serif; font-size: 52px; font-weight: 800; color: #000; line-height: 1.05; letter-spacing: -1px;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 12px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="font-info">
+      <div class="font-name">BRICOLAGE GROTESQUE</div>
+      <div class="font-desc">French design energy. Optical sizing gives it personality — the thick/thin contrast feels crafted, not generated. Slightly eccentric. Like a broadsheet newspaper headline gone rogue.</div>
+    </div>
+  </div>
+
+  <!-- 3: Unbounded -->
+  <div class="font-card" onclick="pick(this, 'Unbounded')">
+    <div class="font-preview" style="background: #f8f6f1;">
+      <div style="font-family: 'Unbounded', sans-serif; font-size: 46px; font-weight: 900; color: #000; line-height: 1.1; letter-spacing: -1px;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 12px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="font-info">
+      <div class="font-name">UNBOUNDED</div>
+      <div class="font-desc">Rounded, bold, distinctive. Feels modern and internet-native — like a game UI or tech brand. Has real personality. Nobody will mistake this for a Word doc.</div>
+    </div>
+  </div>
+
+  <!-- 4: Archivo Black -->
+  <div class="font-card" onclick="pick(this, 'Archivo Black')">
+    <div class="font-preview" style="background: #f8f6f1;">
+      <div style="font-family: 'Archivo Black', sans-serif; font-size: 52px; font-weight: 400; color: #000; line-height: 1.05; letter-spacing: -1px;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 12px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="font-info">
+      <div class="font-name">ARCHIVO BLACK</div>
+      <div class="font-desc">Heavy, punchy, takes up space unapologetically. Feels like a protest poster or a tabloid headline. The wide letterforms are bold but readable. Strong brutalist energy.</div>
+    </div>
+  </div>
+
+  <!-- 5: Rubik Mono One -->
+  <div class="font-card" onclick="pick(this, 'Rubik Mono One')">
+    <div class="font-preview" style="background: #f8f6f1;">
+      <div style="font-family: 'Rubik Mono One', monospace; font-size: 40px; font-weight: 400; color: #000; line-height: 1.1;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 12px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="font-info">
+      <div class="font-name">RUBIK MONO ONE</div>
+      <div class="font-desc">Monospace headline — yes, really. Rounded, chunky, uniform width. Feels like a terminal readout or arcade machine. Total internet culture energy. Pairs perfectly with Space Mono body text.</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="indicator"></div>
+
+</body>
+</html>

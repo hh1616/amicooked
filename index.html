@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Am I Cooked? — AI Job Risk Calculator</title>
+
+<!-- Open Graph -->
+<meta property="og:title" content="Am I Cooked? — AI Job Risk Calculator">
+<meta property="og:description" content="Find out if AI is coming for your job.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://amicooked.com">
+<meta property="og:image" content="https://amicooked.com/og-image.png">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Am I Cooked? — AI Job Risk Calculator">
+<meta name="twitter:description" content="Find out if AI is coming for your job.">
+<meta name="twitter:image" content="https://amicooked.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow:wght@800;900&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #f8f6f1;
+  min-height: 100vh;
+  font-family: system-ui;
+}
+
+/* ========== LANDING PAGE ========== */
+
+#landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+#landing.hidden { display: none; }
+
+.landing-page {
+  max-width: 580px;
+  width: 100%;
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #999;
+}
+.live-dot {
+  width: 8px;
+  height: 8px;
+  background: #ff0000;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+.landing-page h1 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+  margin-left: -4px;
+  font-size: clamp(64px, 14vw, 110px);
+}
+
+.tagline {
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 36px;
+  line-height: 1.6;
+}
+
+.mobile-text { display: none; }
+
+.input-row {
+  display: flex;
+  gap: 0;
+  margin-bottom: 12px;
+  position: relative;
+}
+.input-row input {
+  flex: 1;
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  padding: 16px 20px;
+  border: 3px solid #000;
+  background: #fff;
+  color: #000;
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  min-width: 0;
+}
+.input-row input::placeholder { color: #bbb; }
+.input-row button {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 16px 26px;
+  background: #000;
+  color: #fff;
+  border: 3px solid #000;
+  border-left: 0;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  -webkit-appearance: none;
+  white-space: nowrap;
+}
+.input-row button:hover { background: #ff0000; }
+
+.meta {
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+.landing-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  color: #ccc;
+  letter-spacing: 1px;
+  border-top: 1px solid #e8e4dc;
+  background: #f8f6f1;
+  z-index: 10;
+}
+.landing-footer.hidden { display: none; }
+
+/* ========== AUTOCOMPLETE ========== */
+
+.autocomplete-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 3px solid #000;
+  border-top: 0;
+  z-index: 100;
+  display: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.autocomplete-dropdown.active { display: block; }
+.autocomplete-item {
+  padding: 12px 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  color: #000;
+  cursor: pointer;
+  border-bottom: 1px solid #e8e4dc;
+}
+.autocomplete-item:last-child { border-bottom: 0; }
+.autocomplete-item:hover,
+.autocomplete-item.selected { background: #000; color: #fff; }
+.autocomplete-item .aka {
+  font-size: 9px;
+  color: #999;
+  margin-left: 8px;
+}
+.autocomplete-item:hover .aka,
+.autocomplete-item.selected .aka { color: #666; }
+.autocomplete-no-match {
+  padding: 12px 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: #999;
+}
+
+/* ========== RESULTS PAGE ========== */
+
+#results {
+  display: none;
+  min-height: 100vh;
+  flex-direction: column;
+}
+#results.active { display: flex; }
+
+.header {
+  background: #000;
+  color: #fff;
+  padding: 14px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+.header-dot {
+  color: #ff0000;
+  font-size: 8px;
+}
+
+.results-content {
+  flex: 1;
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 48px 32px 40px;
+}
+
+/* Card header — hidden on page, shown in PNG capture */
+.card-header {
+  display: none;
+  background: #000;
+  color: #fff;
+  padding: 12px 24px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 1px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score-row { margin-bottom: 4px; }
+.score-number {
+  font-family: 'Instrument Serif', serif;
+  font-size: 96px;
+  font-weight: 400;
+  color: #000;
+  line-height: 0.85;
+  font-style: italic;
+}
+.score-total {
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  color: #999;
+  font-style: italic;
+}
+
+.verdict {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.job-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.5px;
+  margin-bottom: 28px;
+}
+
+.stat-row {
+  display: flex;
+  margin-bottom: 28px;
+}
+.stat-box {
+  flex: 1;
+  border: 3px solid #000;
+  padding: 16px 12px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.stat-box + .stat-box { border-left: 0; }
+.stat-value {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  color: #000;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 8px;
+  color: #888;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+.lists {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+.list-section {
+  flex: 1;
+  border-top: 3px solid #000;
+  padding-top: 14px;
+}
+.list-heading {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #000;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.list-items {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  color: #444;
+  word-spacing: -1px;
+}
+.list-row {
+  display: flex;
+  align-items: baseline;
+  line-height: 2;
+}
+.num-marker {
+  width: 28px;
+  flex-shrink: 0;
+  color: #999;
+}
+.cross-marker {
+  width: 28px;
+  flex-shrink: 0;
+  color: #cc0000;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  top: -0.5px;
+}
+.list-text { flex: 1; }
+.quip {
+  color: #aaa;
+  font-size: 9px;
+  word-spacing: -0.5px;
+}
+
+/* Watermark — hidden on page, shown in PNG capture */
+.watermark {
+  display: none;
+  text-align: center;
+  padding: 20px 0 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #bbb;
+  letter-spacing: 2px;
+}
+
+.button-row { display: flex; }
+.btn {
+  flex: 1;
+  border: 3px solid #000;
+  padding: 12px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent;
+  color: #000;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+.btn-dark {
+  background: #000;
+  color: #fff;
+  border-left: 0;
+}
+.btn-dark:hover { background: #ff0000; }
+
+.disclaimer {
+  text-align: center;
+  margin-top: 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 8px;
+  color: #bbb;
+  letter-spacing: 0.5px;
+}
+.affiliate-link {
+  text-align: center;
+  margin-top: 8px;
+}
+.affiliate-link a {
+  font-family: 'Space Mono', monospace;
+  font-size: 9px;
+  color: #999;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+}
+.affiliate-link a:hover { color: #000; }
+
+.results-footer {
+  border-top: 1px solid #e8e4dc;
+  padding: 14px 32px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+  color: #ccc;
+  letter-spacing: 1px;
+  background: #f8f6f1;
+}
+.results-footer a {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+.results-footer a:hover { color: #000; }
+
+/* ========== TOAST ========== */
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #000;
+  color: #fff;
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  padding: 12px 24px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+.toast.show { transform: translateX(-50%) translateY(0); }
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 640px) {
+  /* Landing */
+  .desktop-text { display: none; }
+  .mobile-text { display: inline; }
+
+  #landing { padding: 40px 20px; }
+
+  .live { font-size: 9px; margin-bottom: 20px; }
+  .live-dot { width: 6px; height: 6px; }
+
+  .tagline { font-size: 11px; margin-bottom: 28px; }
+
+  .input-row { flex-direction: column; }
+  .input-row input { font-size: 12px; padding: 14px 16px; }
+  .input-row button {
+    border: 3px solid #000;
+    border-top: 0;
+    font-size: 13px;
+    padding: 13px;
+  }
+
+  .meta { font-size: 9px; }
+
+  .landing-footer { font-size: 8px; padding: 10px 16px; }
+
+  .autocomplete-item { padding: 12px 16px; font-size: 12px; }
+
+  /* Results */
+  .header { padding: 8px 16px; }
+  .header-title { font-size: 11px; letter-spacing: 1px; }
+  .header-dot { font-size: 6px; }
+
+  .results-content { padding: 16px 16px 4px; }
+
+  .score-row { margin-bottom: 2px; }
+  .score-number { font-size: 60px; line-height: 0.8; }
+  .score-total { font-size: 22px; }
+
+  .verdict { font-size: 24px; margin-bottom: 2px; }
+  .job-label { font-size: 9px; margin-bottom: 14px; }
+
+  .stat-row { margin-bottom: 14px; }
+  .stat-box { border: 2px solid #000; padding: 8px 4px 6px; }
+  .stat-box + .stat-box { border-left: 0; }
+  .stat-value { font-size: 18px; margin-bottom: 3px; }
+  .stat-label { font-size: 6px; letter-spacing: 0.3px; line-height: 1.3; }
+
+  .lists { flex-direction: column; gap: 0; margin-bottom: 0; }
+  .list-section { border-top: 2px solid #000; padding-top: 8px; margin-bottom: 10px; }
+  .list-section:last-child { margin-bottom: 8px; }
+  .list-heading { font-size: 12px; margin-bottom: 4px; }
+  .list-items { font-size: 8px; word-spacing: -2px; }
+  .list-row { line-height: 2.2; }
+  .num-marker { width: 22px; }
+  .cross-marker { width: 22px; font-size: 10px; }
+  .quip { font-size: 7px; word-spacing: -1px; }
+
+  .btn { border: 2px solid #000; padding: 10px; font-size: 10px; letter-spacing: 1px; gap: 4px; }
+  .btn-dark { border-left: 0; }
+  .btn svg { width: 11px; height: 11px; }
+
+  .disclaimer { margin-top: 6px; font-size: 6px; }
+  .affiliate-link { margin-top: 2px; }
+  .affiliate-link a { font-size: 7px; }
+
+  .results-footer {
+    background: #000;
+    color: #555;
+    border-top: none;
+    padding: 6px 16px;
+    font-size: 8px;
+  }
+  .results-footer a { color: #555; }
+  .results-footer a:hover { color: #ccc; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== LANDING PAGE ===== -->
+<div id="landing">
+  <div class="landing-page">
+    <div class="live"><span class="live-dot"></span> LIVE</div>
+    <h1>Am I<br>Cooked?</h1>
+    <p class="tagline"><span class="desktop-text">find out if AI is coming for your job.<br>brutally honest. slightly funny. totally free.</span><span class="mobile-text">find out if AI is coming<br>for your job.</span></p>
+    <div class="input-row" id="input-container">
+      <input type="text" id="job-input" placeholder="enter your job title" autocomplete="off" spellcheck="false">
+      <button id="check-btn">Check &rarr;</button>
+      <div class="autocomplete-dropdown" id="autocomplete"></div>
+    </div>
+    <div class="meta"><span class="desktop-text">200+ JOBS ANALYSED &middot; UPDATED MARCH 2026</span><span class="mobile-text">200+ JOBS &middot; MARCH 2026</span></div>
+  </div>
+</div>
+
+<div class="landing-footer" id="landing-footer">
+  <span>AMICOOKED.COM</span>
+  <span><span class="desktop-text">NO DATA &middot; NO COOKIES &middot; NO BS</span><span class="mobile-text">NO BS</span></span>
+</div>
+
+<!-- ===== RESULTS PAGE ===== -->
+<div id="results">
+  <div class="header">
+    <span class="header-title" id="header-home">AM I COOKED?</span>
+    <span class="header-dot">&#9679;</span>
+  </div>
+
+  <div class="results-content">
+    <div id="results-card">
+      <div class="card-header" id="card-header">
+        <span>AM I COOKED?</span>
+        <span style="color:#ff0000;font-size:8px;">&#9679;</span>
+      </div>
+
+      <div class="score-row">
+        <span class="score-number" id="r-score"></span><span class="score-total">&#8202;/&#8202;100</span>
+      </div>
+      <div class="verdict" id="r-verdict"></div>
+      <div class="job-label" id="r-job"></div>
+
+      <div class="stat-row">
+        <div class="stat-box">
+          <div class="stat-value" id="r-timeline"></div>
+          <div class="stat-label">TILL ROBOTS<br>TAKE OVER</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="r-automatable"></div>
+          <div class="stat-label">AUTOMATABLE</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="r-pivot"></div>
+          <div class="stat-label">PIVOT<br>POTENTIAL</div>
+        </div>
+      </div>
+
+      <div class="lists">
+        <div class="list-section">
+          <div class="list-heading">Your Saving Graces</div>
+          <div class="list-items" id="r-saving"></div>
+        </div>
+        <div class="list-section">
+          <div class="list-heading">What's Getting Cooked First</div>
+          <div class="list-items" id="r-cooked"></div>
+        </div>
+      </div>
+
+      <div class="watermark" id="capture-watermark">AMICOOKED.COM</div>
+    </div>
+
+    <div class="button-row">
+      <button class="btn" id="download-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M8 11l4 4 4-4"/><line x1="4" y1="19" x2="20" y2="19"/></svg>
+        DOWNLOAD
+      </button>
+      <button class="btn btn-dark" id="share-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        SHARE
+      </button>
+    </div>
+    <div class="disclaimer">*for entertainment — not career advice</div>
+    <div class="affiliate-link">
+      <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" rel="noopener">Want to un-cook yourself? Learn AI skills &rarr;</a>
+    </div>
+  </div>
+
+  <div class="results-footer">
+    <span>AMICOOKED.COM</span>
+    <a id="try-another">TRY ANOTHER &#8599;</a>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<script>
+(function() {
+  let jobs = [];
+  let selectedIdx = -1;
+  let currentJob = null;
+
+  const $ = id => document.getElementById(id);
+  const input = $('job-input');
+  const dropdown = $('autocomplete');
+  const checkBtn = $('check-btn');
+
+  // ===== Load data =====
+  fetch('data/jobs.json')
+    .then(r => r.json())
+    .then(data => {
+      jobs = data;
+      const params = new URLSearchParams(window.location.search);
+      const jobId = params.get('job');
+      if (jobId) {
+        const job = jobs.find(j => j.id === jobId);
+        if (job) showResults(job);
+      }
+    });
+
+  // ===== Search =====
+  function searchJobs(query) {
+    if (!query || query.trim().length < 1) return [];
+    const q = query.toLowerCase().trim();
+
+    return jobs.map(job => {
+      const title = job.title.toLowerCase();
+      let score = 0;
+      let aka = null;
+
+      if (title === q) score = 100;
+      else if (title.startsWith(q)) score = 80;
+      else if (title.includes(q)) score = 60;
+      else {
+        for (const term of (job.searchTerms || [])) {
+          const t = term.toLowerCase();
+          if (t === q) { score = 70; aka = term; break; }
+          if (t.startsWith(q)) { score = 50; aka = term; break; }
+          if (t.includes(q)) { score = 40; aka = term; break; }
+        }
+      }
+
+      if (score === 0) {
+        const words = q.split(/\s+/);
+        if (words.every(w => title.includes(w))) score = 35;
+        else {
+          const all = (title + ' ' + (job.searchTerms || []).join(' ')).toLowerCase();
+          if (words.every(w => all.includes(w))) score = 25;
+        }
+      }
+
+      return { job, score, aka };
+    })
+    .filter(r => r.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
+  }
+
+  // ===== Autocomplete =====
+  input.addEventListener('input', () => {
+    const q = input.value.trim();
+    selectedIdx = -1;
+
+    if (!q) {
+      dropdown.classList.remove('active');
+      dropdown.innerHTML = '';
+      return;
+    }
+
+    const results = searchJobs(q);
+
+    if (results.length === 0) {
+      dropdown.innerHTML = '<div class="autocomplete-no-match">No matches found</div>';
+      dropdown.classList.add('active');
+      return;
+    }
+
+    dropdown.innerHTML = results.map((r, i) =>
+      '<div class="autocomplete-item" data-i="' + i + '" data-id="' + r.job.id + '">' +
+        escHtml(r.job.title) +
+        (r.aka ? '<span class="aka">aka ' + escHtml(r.aka) + '</span>' : '') +
+      '</div>'
+    ).join('');
+    dropdown.classList.add('active');
+
+    dropdown.querySelectorAll('.autocomplete-item').forEach(el => {
+      el.addEventListener('mousedown', e => {
+        e.preventDefault();
+        selectJob(el.dataset.id);
+      });
+    });
+  });
+
+  input.addEventListener('keydown', e => {
+    const items = dropdown.querySelectorAll('.autocomplete-item');
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      selectedIdx = Math.min(selectedIdx + 1, items.length - 1);
+      highlightItem(items);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      selectedIdx = Math.max(selectedIdx - 1, -1);
+      highlightItem(items);
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (selectedIdx >= 0 && items[selectedIdx]) {
+        selectJob(items[selectedIdx].dataset.id);
+      } else {
+        const results = searchJobs(input.value);
+        if (results.length > 0) selectJob(results[0].job.id);
+      }
+    } else if (e.key === 'Escape') {
+      dropdown.classList.remove('active');
+    }
+  });
+
+  function highlightItem(items) {
+    items.forEach((el, i) => el.classList.toggle('selected', i === selectedIdx));
+  }
+
+  function selectJob(id) {
+    const job = jobs.find(j => j.id === id);
+    if (!job) return;
+    input.value = job.title;
+    dropdown.classList.remove('active');
+    showResults(job);
+  }
+
+  document.addEventListener('click', e => {
+    if (!e.target.closest('#input-container')) dropdown.classList.remove('active');
+  });
+
+  checkBtn.addEventListener('click', () => {
+    const results = searchJobs(input.value);
+    if (results.length > 0) selectJob(results[0].job.id);
+  });
+
+  // ===== Show Results =====
+  function showResults(job) {
+    currentJob = job;
+
+    // URL
+    const url = new URL(window.location);
+    url.searchParams.set('job', job.id);
+    history.pushState({}, '', url);
+    document.title = job.title + ' — Am I Cooked?';
+
+    // Populate
+    $('r-score').textContent = job.score;
+    $('r-verdict').textContent = job.verdict;
+    $('r-job').textContent = 'JOB: ' + job.title;
+
+    $('r-timeline').innerHTML = '<span>' + escHtml(job.timeline) + '</span><span style="margin-left:5px;">' + escHtml(job.timelineUnit) + '</span>';
+    $('r-automatable').textContent = job.automatable;
+    $('r-pivot').textContent = job.pivotPotential;
+
+    // Saving graces
+    $('r-saving').innerHTML = job.savingGraces.map((item, i) => {
+      const num = String(i + 1).padStart(2, '0');
+      const q = item.quip ? ' <span class="quip">(' + escHtml(item.quip) + ')</span>' : '';
+      return '<div class="list-row"><span class="num-marker">' + num + '.</span><span class="list-text">' + escHtml(item.text) + q + '</span></div>';
+    }).join('');
+
+    // Getting cooked
+    $('r-cooked').innerHTML = job.gettingCooked.map(item => {
+      const q = item.quip ? ' <span class="quip">(' + escHtml(item.quip) + ')</span>' : '';
+      return '<div class="list-row"><span class="cross-marker">\u2715</span><span class="list-text">' + escHtml(item.text) + q + '</span></div>';
+    }).join('');
+
+    // Switch pages
+    $('landing').classList.add('hidden');
+    $('landing-footer').classList.add('hidden');
+    $('results').classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+  // ===== Navigation =====
+  function goHome() {
+    currentJob = null;
+    $('results').classList.remove('active');
+    $('landing').classList.remove('hidden');
+    $('landing-footer').classList.remove('hidden');
+    input.value = '';
+    input.focus();
+
+    const url = new URL(window.location);
+    url.searchParams.delete('job');
+    history.pushState({}, '', url);
+    document.title = 'Am I Cooked? \u2014 AI Job Risk Calculator';
+  }
+
+  $('try-another').addEventListener('click', goHome);
+  $('header-home').addEventListener('click', goHome);
+
+  window.addEventListener('popstate', () => {
+    const jobId = new URLSearchParams(window.location.search).get('job');
+    if (jobId) {
+      const job = jobs.find(j => j.id === jobId);
+      if (job) showResults(job);
+    } else {
+      goHome();
+    }
+  });
+
+  // ===== Download PNG =====
+  $('download-btn').addEventListener('click', async () => {
+    if (!currentJob) return;
+
+    const card = $('results-card');
+    const cardHeader = $('card-header');
+    const watermark = $('capture-watermark');
+
+    // Prepare capture
+    cardHeader.style.display = 'flex';
+    watermark.style.display = 'block';
+    card.style.background = '#f8f6f1';
+    card.style.paddingBottom = '4px';
+
+    try {
+      const { toPng } = await import('https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/+esm');
+      const dataUrl = await toPng(card, { pixelRatio: 2, backgroundColor: '#f8f6f1' });
+
+      const link = document.createElement('a');
+      link.download = 'amicooked-' + currentJob.id + '.png';
+      link.href = dataUrl;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (err) {
+      console.error('Download failed:', err);
+      showToast('Download failed \u2014 try a screenshot instead');
+    }
+
+    // Restore
+    cardHeader.style.display = '';
+    watermark.style.display = '';
+    card.style.background = '';
+    card.style.paddingBottom = '';
+  });
+
+  // ===== Share =====
+  $('share-btn').addEventListener('click', async () => {
+    if (!currentJob) return;
+
+    const shareUrl = 'https://amicooked.com/?job=' + currentJob.id;
+
+    if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
+      try {
+        await navigator.share({
+          title: "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?',
+          text: 'I scored ' + currentJob.score + '/100 on the AI job risk calculator.',
+          url: shareUrl
+        });
+        return;
+      } catch (err) {
+        if (err.name === 'AbortError') return;
+      }
+    }
+
+    copyToClipboard(shareUrl);
+  });
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(
+        () => showToast('Link copied to clipboard'),
+        () => fallbackCopy(text)
+      );
+    } else {
+      fallbackCopy(text);
+    }
+  }
+
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;opacity:0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    showToast('Link copied to clipboard');
+  }
+
+  // ===== Toast =====
+  function showToast(msg) {
+    const t = $('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2500);
+  }
+
+  // ===== Util =====
+  function escHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+})();
+</script>
+
+</body>
+</html>

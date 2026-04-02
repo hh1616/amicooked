@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anti-AI Visual Directions</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;700&family=Syne:wght@400;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: 'DM Sans', sans-serif; padding: 40px 20px; }
+
+  h1 { font-family: 'Syne', sans-serif; font-size: 28px; font-weight: 800; text-align: center; margin-bottom: 8px; }
+  .subtitle { text-align: center; color: #666; font-size: 14px; margin-bottom: 48px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+  .concepts { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; max-width: 1200px; margin: 0 auto; }
+  .concept { flex: 1; min-width: 340px; max-width: 420px; cursor: pointer; transition: transform 0.2s; }
+  .concept:hover { transform: translateY(-4px); }
+
+  .concept-label { font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 2px; color: #555; margin-bottom: 12px; }
+  .concept-desc { color: #777; font-size: 13px; line-height: 1.6; margin-top: 16px; padding: 0 4px; }
+  .concept-desc strong { color: #aaa; }
+
+  .selected-indicator { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; z-index: 100; }
+
+  .concept.selected { outline: 2px solid #fff; outline-offset: 8px; border-radius: 4px; }
+</style>
+<script>
+  function selectConcept(el, choice) {
+    document.querySelectorAll('.concept').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    // Write to events file
+    if (window.__sp_select) window.__sp_select(choice, el.querySelector('.concept-label')?.textContent || choice);
+    const indicator = document.querySelector('.selected-indicator');
+    indicator.style.display = 'block';
+    indicator.textContent = '✓ Selected: ' + choice.toUpperCase();
+  }
+</script>
+</head>
+<body>
+
+<h1>Anti-AI visual directions</h1>
+<p class="subtitle">These are designed to feel like a human with taste made them, not a prompt. Each one has a distinct point of view.</p>
+
+<div class="concepts">
+
+  <!-- CONCEPT A: THE RECEIPT -->
+  <div class="concept" onclick="selectConcept(this, 'receipt')">
+    <div class="concept-label">A — THE RECEIPT</div>
+    <div style="background: #f5f0e8; border-radius: 2px; padding: 32px 28px; font-family: 'Space Mono', monospace; color: #1a1a1a; position: relative; box-shadow: 0 1px 0 rgba(0,0,0,0.1);">
+      <!-- Torn top edge effect -->
+      <div style="position: absolute; top: -4px; left: 0; right: 0; height: 8px; background: repeating-linear-gradient(90deg, transparent, transparent 8px, #f5f0e8 8px, #f5f0e8 16px); filter: drop-shadow(0 -1px 0 rgba(0,0,0,0.05));"></div>
+
+      <div style="text-align: center; margin-bottom: 20px;">
+        <div style="font-size: 18px; font-weight: 700; letter-spacing: 4px;">AM I COOKED?</div>
+        <div style="font-size: 10px; color: #999; margin-top: 4px;">career threat assessment</div>
+        <div style="border-bottom: 1px dashed #ccc; margin-top: 12px;"></div>
+      </div>
+
+      <div style="font-size: 11px; color: #888; margin-bottom: 16px;">
+        DATE: 2026-03-26&nbsp;&nbsp;&nbsp;TIME: 14:32<br>
+        SUBJECT: Marketing Manager
+      </div>
+
+      <div style="border-bottom: 1px dashed #ccc; margin-bottom: 16px;"></div>
+
+      <table style="width: 100%; font-size: 12px; border-collapse: collapse;">
+        <tr style="color: #888;">
+          <td style="padding: 4px 0;">COOKED SCORE</td>
+          <td style="text-align: right; font-weight: 700; color: #1a1a1a; font-size: 14px;">34/100</td>
+        </tr>
+        <tr>
+          <td style="padding: 4px 0;">VERDICT</td>
+          <td style="text-align: right; font-weight: 700; color: #1a1a1a;">LIGHTLY TOASTED</td>
+        </tr>
+        <tr style="color: #888;">
+          <td style="padding: 4px 0;">AI TIMELINE</td>
+          <td style="text-align: right; color: #1a1a1a;">~5 years</td>
+        </tr>
+        <tr style="color: #888;">
+          <td style="padding: 4px 0;">AUTOMATABLE</td>
+          <td style="text-align: right; color: #1a1a1a;">62%</td>
+        </tr>
+        <tr style="color: #888;">
+          <td style="padding: 4px 0;">ADAPTABILITY</td>
+          <td style="text-align: right; color: #1a1a1a;">HIGH</td>
+        </tr>
+      </table>
+
+      <div style="border-bottom: 1px dashed #ccc; margin: 16px 0;"></div>
+
+      <div style="font-size: 10px; color: #888; margin-bottom: 8px;">WHAT'LL SAVE YOU:</div>
+      <div style="font-size: 11px; color: #555; line-height: 1.8;">
+        → Creative strategy (robots can't vibe)<br>
+        → Brand voice & storytelling<br>
+        → Client relationships (they're needy)<br>
+        → Cross-functional leadership
+      </div>
+
+      <div style="border-bottom: 1px dashed #ccc; margin: 16px 0;"></div>
+
+      <div style="text-align: center; font-size: 10px; color: #bbb;">
+        THANK YOU FOR YOUR ANXIETY<br>
+        amcooked.com<br>
+        <div style="margin-top: 12px;">
+          <!-- Fake barcode -->
+          <div style="display: flex; justify-content: center; gap: 1px;">
+            <div style="width: 2px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 3px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 2px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: transparent;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 3px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 2px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: transparent;"></div>
+            <div style="width: 2px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 3px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: transparent;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 2px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 3px; height: 24px; background: #1a1a1a;"></div>
+            <div style="width: 1px; height: 24px; background: #1a1a1a;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Torn bottom edge -->
+      <div style="position: absolute; bottom: -4px; left: 0; right: 0; height: 8px; background: repeating-linear-gradient(90deg, transparent, transparent 8px, #f5f0e8 8px, #f5f0e8 16px);"></div>
+    </div>
+    <p class="concept-desc"><strong>The Receipt.</strong> Thermal printer aesthetic. Monospace type, dashed lines, fake barcode. Feels like getting a bill for your career anxiety. The format is instantly recognisable and inherently shareable — receipt-style posts go viral constantly. "THANK YOU FOR YOUR ANXIETY" is the kind of copy that makes people screenshot.</p>
+  </div>
+
+  <!-- CONCEPT B: BRUTALIST -->
+  <div class="concept" onclick="selectConcept(this, 'brutalist')">
+    <div class="concept-label">B — BRUTALIST</div>
+    <div style="background: #fff; border: 3px solid #000; padding: 0; position: relative; overflow: hidden;">
+      <!-- Top banner -->
+      <div style="background: #000; color: #fff; padding: 8px 16px; font-family: 'Syne', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 3px; display: flex; justify-content: space-between;">
+        <span>AM I COOKED?</span>
+        <span style="color: #ff0000;">●</span>
+      </div>
+
+      <div style="padding: 24px;">
+        <!-- Score - intentionally off-center -->
+        <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px;">
+          <span style="font-family: 'Instrument Serif', serif; font-size: 96px; font-weight: 400; color: #000; line-height: 0.85; font-style: italic;">34</span>
+          <span style="font-family: 'Space Mono', monospace; font-size: 12px; color: #999; transform: rotate(-90deg); display: inline-block; transform-origin: bottom left; margin-left: 8px;">/100</span>
+        </div>
+
+        <div style="font-family: 'Syne', sans-serif; font-size: 32px; font-weight: 800; color: #000; text-transform: uppercase; line-height: 1.1; margin-bottom: 4px; letter-spacing: -1px;">
+          Lightly<br>Toasted
+        </div>
+        <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #999; margin-bottom: 20px;">re: Marketing Manager</div>
+
+        <!-- Stats as brutalist blocks -->
+        <div style="display: flex; gap: 0; margin-bottom: 20px;">
+          <div style="flex: 1; border: 2px solid #000; padding: 12px 10px; text-align: center;">
+            <div style="font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800;">~5yr</div>
+            <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #888; margin-top: 2px;">UNTIL ROBOTS</div>
+          </div>
+          <div style="flex: 1; border: 2px solid #000; border-left: 0; padding: 12px 10px; text-align: center;">
+            <div style="font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800;">62%</div>
+            <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #888; margin-top: 2px;">AUTOMATABLE</div>
+          </div>
+          <div style="flex: 1; border: 2px solid #000; border-left: 0; padding: 12px 10px; text-align: center; background: #000; color: #fff;">
+            <div style="font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800;">HIGH</div>
+            <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #888; margin-top: 2px;">ADAPTABLE</div>
+          </div>
+        </div>
+
+        <div style="font-family: 'Space Mono', monospace; font-size: 10px; color: #000; line-height: 2; border-top: 2px solid #000; padding-top: 12px;">
+          YOUR SAVING GRACES:<br>
+          <span style="color: #666;">01.</span> Creative strategy<br>
+          <span style="color: #666;">02.</span> Brand storytelling<br>
+          <span style="color: #666;">03.</span> Human relationships<br>
+          <span style="color: #666;">04.</span> Cross-team leadership
+        </div>
+      </div>
+
+      <div style="background: #000; color: #666; padding: 6px 16px; font-family: 'Space Mono', monospace; font-size: 9px; text-align: right;">
+        amcooked.com
+      </div>
+    </div>
+    <p class="concept-desc"><strong>Brutalist.</strong> Thick borders, black and white, bold typography that breaks the grid. The italic serif number next to the heavy sans-serif feels intentional and human. No gradients, no glow, no bullshit. "UNTIL ROBOTS" instead of "TIMELINE." The design itself has an opinion. It looks like a poster, not an app.</p>
+  </div>
+
+  <!-- CONCEPT C: MEME NATIVE -->
+  <div class="concept" onclick="selectConcept(this, 'meme-native')">
+    <div class="concept-label">C — MEME NATIVE</div>
+    <div style="background: #000; border-radius: 20px; padding: 24px; position: relative; overflow: hidden;">
+      <!-- Noise texture overlay -->
+      <div style="position: absolute; inset: 0; opacity: 0.15; background: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%224%22 height=%224%22><rect width=%224%22 height=%224%22 fill=%22%23000%22/><rect width=%221%22 height=%221%22 fill=%22%23fff%22/></svg>'); background-size: 4px 4px;"></div>
+
+      <div style="position: relative; z-index: 1;">
+        <!-- Header like a tweet/post -->
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+          <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #ff6b35, #ff0844); display: flex; align-items: center; justify-content: center; font-size: 16px;">🔥</div>
+          <div>
+            <div style="font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 14px; color: #fff;">am i cooked?</div>
+            <div style="font-family: 'DM Sans', sans-serif; font-size: 12px; color: #555;">@marketing_manager</div>
+          </div>
+          <div style="margin-left: auto; font-family: 'Space Mono', monospace; font-size: 10px; color: #333;">just now</div>
+        </div>
+
+        <!-- The verdict - big, chaotic, opinionated -->
+        <div style="margin-bottom: 20px;">
+          <div style="font-family: 'Syne', sans-serif; font-size: 52px; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 8px;">
+            nah you're<br>
+            <span style="color: #4ade80; display: inline-block; transform: rotate(-2deg);">mostly fine</span>
+          </div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 40px; font-weight: 700; color: #333; margin-bottom: 4px;">34<span style="font-size: 16px; color: #222;">/100 cooked</span></div>
+        </div>
+
+        <!-- Stats as chat-bubble style -->
+        <div style="display: flex; flex-direction: column; gap: 6px; margin-bottom: 20px;">
+          <div style="display: inline-flex; align-self: flex-start; background: #1a1a1a; border: 1px solid #222; border-radius: 16px 16px 16px 4px; padding: 10px 14px; font-size: 13px; color: #aaa; font-family: 'DM Sans', sans-serif;">
+            robots won't fully replace you for <strong style="color: #fff;">&nbsp;~5 years&nbsp;</strong>
+          </div>
+          <div style="display: inline-flex; align-self: flex-start; background: #1a1a1a; border: 1px solid #222; border-radius: 16px 16px 16px 4px; padding: 10px 14px; font-size: 13px; color: #aaa; font-family: 'DM Sans', sans-serif;">
+            <strong style="color: #fff;">62%</strong>&nbsp;of what you do could be automated tho 💀
+          </div>
+          <div style="display: inline-flex; align-self: flex-start; background: #0a2a0a; border: 1px solid #143d14; border-radius: 16px 16px 16px 4px; padding: 10px 14px; font-size: 13px; color: #4ade80; font-family: 'DM Sans', sans-serif;">
+            but you're highly adaptable so there's hope 🫡
+          </div>
+        </div>
+
+        <!-- Skills as tags -->
+        <div style="font-family: 'Space Mono', monospace; font-size: 10px; color: #444; margin-bottom: 10px; letter-spacing: 1px;">WHAT'LL KEEP YOU EMPLOYED:</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px;">
+          <span style="background: #1a1a1a; border: 1px solid #333; color: #888; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-family: 'DM Sans', sans-serif;">creative strategy</span>
+          <span style="background: #1a1a1a; border: 1px solid #333; color: #888; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-family: 'DM Sans', sans-serif;">brand voice</span>
+          <span style="background: #1a1a1a; border: 1px solid #333; color: #888; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-family: 'DM Sans', sans-serif;">human relationships</span>
+          <span style="background: #1a1a1a; border: 1px solid #333; color: #888; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-family: 'DM Sans', sans-serif;">leadership</span>
+        </div>
+
+        <!-- Footer -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #1a1a1a; padding-top: 12px;">
+          <div style="font-family: 'Space Mono', monospace; font-size: 10px; color: #333;">amcooked.com</div>
+          <div style="display: flex; gap: 12px;">
+            <span style="font-size: 12px; color: #444;">🔗 share</span>
+            <span style="font-size: 12px; color: #444;">📸 screenshot this</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="concept-desc"><strong>Meme Native.</strong> Looks like it was born on the internet, not designed in Figma. Chat-bubble stats, slightly rotated text, casual voice ("nah you're mostly fine"), noise texture. It speaks like your group chat. The verdict feels like a friend telling you the truth, not a corporate dashboard. The "📸 screenshot this" is a nudge that works because the design earns it.</p>
+  </div>
+
+</div>
+
+<div class="selected-indicator"></div>
+
+</body>
+</html>

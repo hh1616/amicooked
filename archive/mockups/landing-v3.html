@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Am I Cooked? — Landing v3</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f8f6f1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+
+  .page {
+    max-width: 560px;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Live indicator */
+  .live {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 28px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999;
+  }
+  .live::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ff0000;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  /* Headline — fills the width, taller line-height */
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+    /* Use vw-based sizing to fill container width */
+    font-size: clamp(56px, 12vw, 100px);
+  }
+
+  .tagline {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  /* Input */
+  .input-row {
+    display: flex;
+    gap: 0;
+    margin-bottom: 12px;
+  }
+  .input-row input {
+    flex: 1;
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    padding: 16px 20px;
+    border: 3px solid #000;
+    background: #fff;
+    color: #000;
+    outline: none;
+  }
+  .input-row input::placeholder { color: #bbb; }
+  .input-row button {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 16px 24px;
+    background: #000;
+    color: #fff;
+    border: 3px solid #000;
+    border-left: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+  .input-row button:hover { background: #ff0000; }
+
+  .meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+
+  /* Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: #ccc;
+    letter-spacing: 1px;
+    border-top: 1px solid #e8e4dc;
+    background: #f8f6f1;
+  }
+
+  .mockup-label {
+    position: fixed;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: #bbb;
+    letter-spacing: 2px;
+    background: rgba(0,0,0,0.04);
+    padding: 4px 12px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-label">LANDING PAGE v3 — FULL-WIDTH SYNE, TALLER</div>
+
+<div class="page">
+  <div class="live">LIVE</div>
+
+  <h1>Am I<br>Cooked?</h1>
+
+  <p class="tagline">find out if AI is coming for your job.<br>brutally honest. slightly funny. totally free.</p>
+
+  <div class="input-row">
+    <input type="text" placeholder="enter your job title">
+    <button>CHECK →</button>
+  </div>
+
+  <div class="meta">200+ JOBS ANALYSED · UPDATED MARCH 2026</div>
+</div>
+
+<div class="footer">
+  <span>AMICOOKED.COM</span>
+  <span>NO DATA · NO COOKIES · NO BS</span>
+</div>
+
+</body>
+</html>

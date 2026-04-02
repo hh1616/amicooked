@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tall Bold Fonts</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@800&family=Outfit:wght@900&family=Urbanist:wght@900&family=Be+Vietnam+Pro:wght@900&family=Albert+Sans:wght@900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: system-ui; padding: 40px 20px; }
+
+  .title { text-align: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 3px; color: #555; margin-bottom: 8px; }
+  .sub { text-align: center; font-size: 13px; color: #444; margin-bottom: 48px; }
+
+  .options { display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin: 0 auto; }
+
+  .opt {
+    cursor: pointer;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .opt:hover { border-color: #333; }
+  .opt.selected { border-color: #fff; }
+
+  .preview { background: #f8f6f1; padding: 36px 32px; }
+  .info { padding: 12px 16px; background: #111; display: flex; justify-content: space-between; align-items: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 1px; color: #666; }
+  .info .tag { color: #888; background: #1a1a1a; padding: 3px 8px; border-radius: 3px; font-size: 9px; }
+
+  .indicator { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; z-index: 100; }
+
+  /* Reference: show Syne for comparison */
+  .ref-label { font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 2px; color: #333; margin-bottom: 8px; max-width: 600px; margin-left: auto; margin-right: auto; text-align: center; margin-top: 40px; }
+</style>
+<script>
+  function pick(el, choice) {
+    document.querySelectorAll('.opt').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    if (window.__sp_select) window.__sp_select(choice, choice);
+    const ind = document.querySelector('.indicator');
+    ind.style.display = 'block';
+    ind.textContent = '✓ ' + choice;
+  }
+</script>
+</head>
+<body>
+
+<div class="title">TALL BOLD FONTS — SAME ENERGY, NOT FLAT</div>
+<p class="sub">All have strong geometric personality but with proper vertical proportions.</p>
+
+<div class="options">
+
+  <!-- Outfit -->
+  <div class="opt" onclick="pick(this, 'Outfit')">
+    <div class="preview">
+      <div style="font-family: 'Outfit', sans-serif; font-size: 72px; font-weight: 900; color: #000; line-height: 1.05; letter-spacing: -2px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>OUTFIT — geometric, rounded corners</span>
+      <span class="tag">TALL</span>
+    </div>
+  </div>
+
+  <!-- Urbanist -->
+  <div class="opt" onclick="pick(this, 'Urbanist')">
+    <div class="preview">
+      <div style="font-family: 'Urbanist', sans-serif; font-size: 72px; font-weight: 900; color: #000; line-height: 1.05; letter-spacing: -2px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>URBANIST — clean geometric, modern</span>
+      <span class="tag">TALL</span>
+    </div>
+  </div>
+
+  <!-- Be Vietnam Pro -->
+  <div class="opt" onclick="pick(this, 'Be Vietnam Pro')">
+    <div class="preview">
+      <div style="font-family: 'Be Vietnam Pro', sans-serif; font-size: 72px; font-weight: 900; color: #000; line-height: 1.05; letter-spacing: -2px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>BE VIETNAM PRO — sharp, editorial</span>
+      <span class="tag">TALL</span>
+    </div>
+  </div>
+
+  <!-- Albert Sans -->
+  <div class="opt" onclick="pick(this, 'Albert Sans')">
+    <div class="preview">
+      <div style="font-family: 'Albert Sans', sans-serif; font-size: 72px; font-weight: 900; color: #000; line-height: 1.05; letter-spacing: -2px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>ALBERT SANS — grotesque, confident</span>
+      <span class="tag">TALL</span>
+    </div>
+  </div>
+
+</div>
+
+<!-- Reference: Syne for comparison -->
+<div class="ref-label">↓ SYNE (FOR COMPARISON — THE ONE THAT FELT FLAT) ↓</div>
+<div style="max-width: 600px; margin: 8px auto 0;">
+  <div style="background: #f8f6f1; padding: 36px 32px; border-radius: 8px; border: 2px solid #1a1a1a; opacity: 0.5;">
+    <div style="font-family: 'Syne', sans-serif; font-size: 72px; font-weight: 800; color: #000; line-height: 1.05; letter-spacing: -2px; text-transform: uppercase;">
+      Am I<br>Cooked?
+    </div>
+    <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+  </div>
+</div>
+
+<div class="indicator"></div>
+
+</body>
+</html>

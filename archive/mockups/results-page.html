@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results Page — Desktop + Mobile</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow:wght@800;900&family=Instrument+Serif:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: system-ui; padding: 40px 20px; }
+
+  .label { text-align: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 3px; color: #555; margin-bottom: 32px; }
+
+  .layout {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .d-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #444;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="label">RESULTS PAGE — THE THING PEOPLE SCREENSHOT</div>
+
+<div class="layout">
+
+  <!-- DESKTOP RESULTS -->
+  <div>
+    <div class="d-label">DESKTOP</div>
+    <div style="width: 520px; border: 2px solid #222; border-radius: 8px; overflow: hidden;">
+      <div style="background: #f8f6f1; padding: 0; position: relative;">
+
+        <!-- Top bar -->
+        <div style="background: #000; color: #fff; padding: 10px 24px; font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 2px; display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 14px; letter-spacing: 1px;">AM I COOKED?</span>
+          <span style="color: #ff0000; font-size: 8px;">●&nbsp;</span>
+        </div>
+
+        <div style="padding: 36px 36px 24px;">
+
+          <!-- Score section -->
+          <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px;">
+            <span style="font-family: 'Instrument Serif', serif; font-size: 108px; font-weight: 400; color: #000; line-height: 0.8; font-style: italic;">34</span>
+            <span style="font-family: 'Space Mono', monospace; font-size: 13px; color: #999; transform: rotate(-90deg); display: inline-block; transform-origin: bottom left; margin-left: 12px;">/100</span>
+          </div>
+
+          <!-- Verdict -->
+          <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 42px; color: #000; text-transform: uppercase; line-height: 1; letter-spacing: -1px; margin-bottom: 4px;">
+            Lightly<br>Toasted
+          </div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 12px; color: #999; margin-bottom: 28px;">re: Marketing Manager</div>
+
+          <!-- Stats row -->
+          <div style="display: flex; gap: 0; margin-bottom: 28px;">
+            <div style="flex: 1; border: 3px solid #000; padding: 14px 12px; text-align: center;">
+              <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 26px; color: #000;">~5yr</div>
+              <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #888; margin-top: 4px; letter-spacing: 1px;">UNTIL ROBOTS</div>
+            </div>
+            <div style="flex: 1; border: 3px solid #000; border-left: 0; padding: 14px 12px; text-align: center;">
+              <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 26px; color: #000;">62%</div>
+              <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #888; margin-top: 4px; letter-spacing: 1px;">AUTOMATABLE</div>
+            </div>
+            <div style="flex: 1; border: 3px solid #000; border-left: 0; padding: 14px 12px; text-align: center; background: #000;">
+              <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 26px; color: #fff;">HIGH</div>
+              <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #666; margin-top: 4px; letter-spacing: 1px;">ADAPTABLE</div>
+            </div>
+          </div>
+
+          <!-- Saving graces -->
+          <div style="border-top: 3px solid #000; padding-top: 20px; margin-bottom: 24px;">
+            <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 14px; letter-spacing: 1px; color: #000; margin-bottom: 12px; text-transform: uppercase;">Your Saving Graces</div>
+            <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #555; line-height: 2.2;">
+              <span style="color: #bbb;">01.</span>&nbsp;&nbsp;Creative strategy (robots can't vibe)<br>
+              <span style="color: #bbb;">02.</span>&nbsp;&nbsp;Brand voice & storytelling<br>
+              <span style="color: #bbb;">03.</span>&nbsp;&nbsp;Client relationships (they're needy)<br>
+              <span style="color: #bbb;">04.</span>&nbsp;&nbsp;Cross-functional leadership
+            </div>
+          </div>
+
+          <!-- What's at risk -->
+          <div style="border-top: 3px solid #000; padding-top: 20px; margin-bottom: 28px;">
+            <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 14px; letter-spacing: 1px; color: #000; margin-bottom: 12px; text-transform: uppercase;">What's Getting Cooked First</div>
+            <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #555; line-height: 2.2;">
+              <span style="color: #cc0000;">✕</span>&nbsp;&nbsp;Reporting & analytics (already automated)<br>
+              <span style="color: #cc0000;">✕</span>&nbsp;&nbsp;A/B testing setup (AI does this now)<br>
+              <span style="color: #cc0000;">✕</span>&nbsp;&nbsp;Basic copywriting (sorry)
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div style="display: flex; gap: 0;">
+            <div style="flex: 1; border: 3px solid #000; padding: 14px; text-align: center; font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 13px; letter-spacing: 1px; cursor: pointer; text-transform: uppercase; color: #000;">📸 Download Card</div>
+            <div style="flex: 1; border: 3px solid #000; border-left: 0; padding: 14px; text-align: center; font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 13px; letter-spacing: 1px; cursor: pointer; background: #000; color: #fff; text-transform: uppercase;">🔗 Share Results</div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background: #000; color: #555; padding: 8px 24px; font-family: 'Space Mono', monospace; font-size: 9px; display: flex; justify-content: space-between; letter-spacing: 1px;">
+          <span>AMICOOKED.COM</span>
+          <span>TRY ANOTHER JOB ↗</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE RESULTS -->
+  <div>
+    <div class="d-label">MOBILE (iPhone 14)</div>
+    <div style="width: 260px; border: 2px solid #222; border-radius: 24px; overflow: hidden;">
+      <div style="background: #f8f6f1; padding: 8px 0 0; text-align: center;"><div style="width: 80px; height: 5px; background: #e8e4dc; border-radius: 3px; margin: 0 auto;"></div></div>
+      <div style="background: #f8f6f1;">
+
+        <!-- Top bar -->
+        <div style="background: #000; color: #fff; padding: 8px 16px; font-family: 'Space Mono', monospace; font-size: 9px; letter-spacing: 2px; display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 11px; letter-spacing: 1px;">AM I COOKED?</span>
+          <span style="color: #ff0000; font-size: 6px;">●</span>
+        </div>
+
+        <div style="padding: 20px 16px 16px;">
+
+          <!-- Score -->
+          <div style="display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px;">
+            <span style="font-family: 'Instrument Serif', serif; font-size: 72px; font-weight: 400; color: #000; line-height: 0.8; font-style: italic;">34</span>
+            <span style="font-family: 'Space Mono', monospace; font-size: 10px; color: #999; transform: rotate(-90deg); display: inline-block; transform-origin: bottom left; margin-left: 8px;">/100</span>
+          </div>
+
+          <!-- Verdict -->
+          <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 28px; color: #000; text-transform: uppercase; line-height: 1; letter-spacing: -0.5px; margin-bottom: 2px;">
+            Lightly<br>Toasted
+          </div>
+          <div style="font-family: 'Space Mono', monospace; font-size: 10px; color: #999; margin-bottom: 20px;">re: Marketing Manager</div>
+
+          <!-- Stats — stacked on mobile -->
+          <div style="display: flex; gap: 0; margin-bottom: 20px;">
+            <div style="flex: 1; border: 2px solid #000; padding: 10px 8px; text-align: center;">
+              <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 18px;">~5yr</div>
+              <div style="font-family: 'Space Mono', monospace; font-size: 7px; color: #888; margin-top: 2px; letter-spacing: 1px;">UNTIL ROBOTS</div>
+            </div>
+            <div style="flex: 1; border: 2px solid #000; border-left: 0; padding: 10px 8px; text-align: center;">
+              <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 18px;">62%</div>
+              <div style="font-family: 'Space Mono', monospace; font-size: 7px; color: #888; margin-top: 2px; letter-spacing: 1px;">AUTO</div>
+            </div>
+            <div style="flex: 1; border: 2px solid #000; border-left: 0; padding: 10px 8px; text-align: center; background: #000;">
+              <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 18px; color: #fff;">HIGH</div>
+              <div style="font-family: 'Space Mono', monospace; font-size: 7px; color: #666; margin-top: 2px; letter-spacing: 1px;">ADAPT</div>
+            </div>
+          </div>
+
+          <!-- Saving graces -->
+          <div style="border-top: 2px solid #000; padding-top: 14px; margin-bottom: 16px;">
+            <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 11px; letter-spacing: 1px; color: #000; margin-bottom: 8px; text-transform: uppercase;">Saving Graces</div>
+            <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #555; line-height: 2;">
+              <span style="color: #bbb;">01.</span> Creative strategy<br>
+              <span style="color: #bbb;">02.</span> Brand storytelling<br>
+              <span style="color: #bbb;">03.</span> Client relationships<br>
+              <span style="color: #bbb;">04.</span> Leadership
+            </div>
+          </div>
+
+          <!-- At risk -->
+          <div style="border-top: 2px solid #000; padding-top: 14px; margin-bottom: 18px;">
+            <div style="font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 11px; letter-spacing: 1px; color: #000; margin-bottom: 8px; text-transform: uppercase;">Getting Cooked First</div>
+            <div style="font-family: 'Space Mono', monospace; font-size: 9px; color: #555; line-height: 2;">
+              <span style="color: #cc0000;">✕</span> Reporting & analytics<br>
+              <span style="color: #cc0000;">✕</span> A/B testing setup<br>
+              <span style="color: #cc0000;">✕</span> Basic copywriting
+            </div>
+          </div>
+
+          <!-- Buttons -->
+          <div style="display: flex; gap: 0;">
+            <div style="flex: 1; border: 2px solid #000; padding: 10px; text-align: center; font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 10px; letter-spacing: 1px; text-transform: uppercase;">📸 Card</div>
+            <div style="flex: 1; border: 2px solid #000; border-left: 0; padding: 10px; text-align: center; font-family: 'Barlow', sans-serif; font-weight: 900; font-size: 10px; letter-spacing: 1px; background: #000; color: #fff; text-transform: uppercase;">🔗 Share</div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div style="background: #000; color: #555; padding: 6px 16px; font-family: 'Space Mono', monospace; font-size: 8px; display: flex; justify-content: space-between; letter-spacing: 1px;">
+          <span>AMICOOKED.COM</span>
+          <span>TRY ANOTHER ↗</span>
+        </div>
+      </div>
+      <div style="background: #f8f6f1; padding: 8px 0; text-align: center;"><div style="width: 100px; height: 4px; background: #000; border-radius: 2px; margin: 0 auto; opacity: 0.2;"></div></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Content notes -->
+<div style="max-width: 700px; margin: 48px auto 0; font-family: 'Space Mono', monospace; font-size: 11px; color: #555; line-height: 2;">
+  <span style="color: #888; font-weight: 700;">DESIGN NOTES:</span><br>
+  <span style="color: #4ade80;">✓</span> <strong style="color: #888;">Italic serif number</strong> — the 34 in Instrument Serif italic creates tension with Barlow Black. Feels designed, not generated.<br>
+  <span style="color: #4ade80;">✓</span> <strong style="color: #888;">Two content sections</strong> — "Saving Graces" (positive) + "Getting Cooked First" (honest). Balances hope with reality.<br>
+  <span style="color: #4ade80;">✓</span> <strong style="color: #888;">Cheeky copy</strong> — "(robots can't vibe)", "(they're needy)", "(sorry)". The personality lives here.<br>
+  <span style="color: #4ade80;">✓</span> <strong style="color: #888;">Screenshot-ready</strong> — clean edges, no scroll needed for the card. Phone screenshot captures the whole thing.<br>
+  <span style="color: #4ade80;">✓</span> <strong style="color: #888;">Download + Share</strong> — both CTA buttons visible at bottom.
+</div>
+
+</body>
+</html>

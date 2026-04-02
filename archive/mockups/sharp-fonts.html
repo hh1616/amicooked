@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharp Tall Fonts</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Bebas+Neue&family=Barlow:wght@900&family=Saira:wght@900&family=Chakra+Petch:wght@700&family=Teko:wght@700&family=Rajdhani:wght@700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: system-ui; padding: 40px 20px; }
+
+  .title { text-align: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 3px; color: #555; margin-bottom: 8px; }
+  .sub { text-align: center; font-size: 13px; color: #444; margin-bottom: 48px; }
+
+  .options { display: flex; flex-direction: column; gap: 20px; max-width: 600px; margin: 0 auto; }
+
+  .opt {
+    cursor: pointer;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .opt:hover { border-color: #333; }
+  .opt.selected { border-color: #fff; }
+
+  .preview { background: #f8f6f1; padding: 36px 32px; }
+  .info { padding: 12px 16px; background: #111; display: flex; justify-content: space-between; align-items: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 1px; color: #666; }
+  .info .note { color: #555; max-width: 60%; font-size: 9px; line-height: 1.4; }
+
+  .indicator { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; z-index: 100; }
+</style>
+<script>
+  function pick(el, choice) {
+    document.querySelectorAll('.opt').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    if (window.__sp_select) window.__sp_select(choice, choice);
+    const ind = document.querySelector('.indicator');
+    ind.style.display = 'block';
+    ind.textContent = '✓ ' + choice;
+  }
+</script>
+</head>
+<body>
+
+<div class="title">SHARP + TALL + BOLD</div>
+<p class="sub">Angular fonts that pair with Space Mono. No soft edges.</p>
+
+<div class="options">
+
+  <!-- Bebas Neue -->
+  <div class="opt" onclick="pick(this, 'Bebas Neue')">
+    <div class="preview">
+      <div style="font-family: 'Bebas Neue', sans-serif; font-size: 84px; color: #000; line-height: 1; letter-spacing: 2px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>BEBAS NEUE</span>
+      <span class="note">Tall, sharp, all-caps. Classic poster font. Very confident.</span>
+    </div>
+  </div>
+
+  <!-- Barlow Black -->
+  <div class="opt" onclick="pick(this, 'Barlow')">
+    <div class="preview">
+      <div style="font-family: 'Barlow', sans-serif; font-size: 72px; font-weight: 900; color: #000; line-height: 1.05; letter-spacing: -1px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>BARLOW BLACK</span>
+      <span class="note">Industrial. Designed for screen signage. Sharp, functional, no-bullshit.</span>
+    </div>
+  </div>
+
+  <!-- Saira -->
+  <div class="opt" onclick="pick(this, 'Saira')">
+    <div class="preview">
+      <div style="font-family: 'Saira', sans-serif; font-size: 72px; font-weight: 900; color: #000; line-height: 1.05; letter-spacing: -1px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>SAIRA BLACK</span>
+      <span class="note">Sharp geometric. Angular joints. Has tech/racing DNA. Matches Space Mono's angularity.</span>
+    </div>
+  </div>
+
+  <!-- Chakra Petch -->
+  <div class="opt" onclick="pick(this, 'Chakra Petch')">
+    <div class="preview">
+      <div style="font-family: 'Chakra Petch', sans-serif; font-size: 72px; font-weight: 700; color: #000; line-height: 1.05; letter-spacing: -1px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>CHAKRA PETCH</span>
+      <span class="note">Angular, tech-inspired. Clipped corners like a circuit board. Very distinctive.</span>
+    </div>
+  </div>
+
+  <!-- Teko -->
+  <div class="opt" onclick="pick(this, 'Teko')">
+    <div class="preview">
+      <div style="font-family: 'Teko', sans-serif; font-size: 84px; font-weight: 700; color: #000; line-height: 0.95; letter-spacing: 1px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>TEKO</span>
+      <span class="note">Tall, condensed, sharp. Sports/gaming energy. Letters stand tall and narrow.</span>
+    </div>
+  </div>
+
+  <!-- Rajdhani -->
+  <div class="opt" onclick="pick(this, 'Rajdhani')">
+    <div class="preview">
+      <div style="font-family: 'Rajdhani', sans-serif; font-size: 76px; font-weight: 700; color: #000; line-height: 1; letter-spacing: 0px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="info">
+      <span>RAJDHANI</span>
+      <span class="note">Geometric with angular terminals. Open counters. Technical but warm. Good at large sizes.</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="indicator"></div>
+
+</body>
+</html>

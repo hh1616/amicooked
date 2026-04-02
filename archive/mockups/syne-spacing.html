@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syne Spacing Options</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #0a0a0a; color: #fff; font-family: system-ui; padding: 40px 20px; }
+
+  .title { text-align: center; font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 3px; color: #555; margin-bottom: 8px; }
+  .sub { text-align: center; font-size: 13px; color: #444; margin-bottom: 48px; }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .option {
+    cursor: pointer;
+    border: 2px solid #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .option:hover { border-color: #333; }
+  .option.selected { border-color: #fff; }
+
+  .preview {
+    background: #f8f6f1;
+    padding: 40px 32px;
+  }
+
+  .label {
+    padding: 12px 16px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #666;
+  }
+
+  .indicator { display: none; position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #fff; color: #000; padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 14px; z-index: 100; }
+</style>
+<script>
+  function pick(el, choice) {
+    document.querySelectorAll('.option').forEach(c => c.classList.remove('selected'));
+    el.classList.add('selected');
+    if (window.__sp_select) window.__sp_select(choice, choice);
+    const ind = document.querySelector('.indicator');
+    ind.style.display = 'block';
+    ind.textContent = '✓ ' + choice;
+  }
+</script>
+</head>
+<body>
+
+<div class="title">SYNE — SAME FONT, DIFFERENT BREATHING ROOM</div>
+<p class="sub">The personality you liked, just less squashed.</p>
+
+<div class="options">
+
+  <!-- Original (for reference) -->
+  <div class="option" onclick="pick(this, 'Original — too squashed')">
+    <div class="preview">
+      <div style="font-family: 'Syne', sans-serif; font-size: 72px; font-weight: 800; color: #000; line-height: 0.95; letter-spacing: -3px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="label">
+      <span>ORIGINAL — letter-spacing: -3px</span>
+      <span style="color: #ff4444;">THE SQUASHED ONE</span>
+    </div>
+  </div>
+
+  <!-- Option A: Slight opening -->
+  <div class="option" onclick="pick(this, 'A — Slightly opened')">
+    <div class="preview">
+      <div style="font-family: 'Syne', sans-serif; font-size: 72px; font-weight: 800; color: #000; line-height: 0.95; letter-spacing: -1px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="label">
+      <span>A — letter-spacing: -1px</span>
+      <span>SLIGHTLY OPENED</span>
+    </div>
+  </div>
+
+  <!-- Option B: Natural -->
+  <div class="option" onclick="pick(this, 'B — Natural spacing')">
+    <div class="preview">
+      <div style="font-family: 'Syne', sans-serif; font-size: 72px; font-weight: 800; color: #000; line-height: 0.98; letter-spacing: 0px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="label">
+      <span>B — letter-spacing: 0 (natural)</span>
+      <span>DEFAULT SPACING</span>
+    </div>
+  </div>
+
+  <!-- Option C: Opened up -->
+  <div class="option" onclick="pick(this, 'C — Opened up')">
+    <div class="preview">
+      <div style="font-family: 'Syne', sans-serif; font-size: 68px; font-weight: 800; color: #000; line-height: 1; letter-spacing: 2px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="label">
+      <span>C — letter-spacing: 2px</span>
+      <span>MORE ROOM</span>
+    </div>
+  </div>
+
+  <!-- Option D: Wide -->
+  <div class="option" onclick="pick(this, 'D — Wide and bold')">
+    <div class="preview">
+      <div style="font-family: 'Syne', sans-serif; font-size: 64px; font-weight: 800; color: #000; line-height: 1.05; letter-spacing: 5px; text-transform: uppercase;">
+        Am I<br>Cooked?
+      </div>
+      <div style="font-family: 'Space Mono', monospace; font-size: 11px; color: #888; margin-top: 16px;">find out if AI is coming for your job.</div>
+    </div>
+    <div class="label">
+      <span>D — letter-spacing: 5px</span>
+      <span>WIDE STANCE</span>
+    </div>
+  </div>
+
+</div>
+
+<div class="indicator"></div>
+
+</body>
+</html>

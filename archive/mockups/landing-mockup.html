@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Am I Cooked? — Landing Page Mockup</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Instrument+Serif:ital@0;1&family=Syne:wght@400;700;800&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f8f6f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .page {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  /* The red dot — like a live indicator */
+  .live-dot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #999;
+  }
+  .live-dot::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #ff0000;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* Main headline */
+  h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(48px, 10vw, 84px);
+    font-weight: 800;
+    color: #000;
+    line-height: 0.95;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .tagline {
+    font-family: 'Space Mono', monospace;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 48px;
+    line-height: 1.5;
+  }
+
+  /* Input area */
+  .input-group {
+    display: flex;
+    gap: 0;
+    margin-bottom: 16px;
+  }
+
+  .input-group input {
+    flex: 1;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    padding: 16px 20px;
+    border: 3px solid #000;
+    background: #fff;
+    color: #000;
+    outline: none;
+  }
+  .input-group input::placeholder {
+    color: #bbb;
+  }
+  .input-group input:focus {
+    background: #fffff0;
+  }
+
+  .input-group button {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 16px 28px;
+    background: #000;
+    color: #fff;
+    border: 3px solid #000;
+    border-left: 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.15s;
+  }
+  .input-group button:hover {
+    background: #ff0000;
+  }
+
+  .hint {
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+
+  /* Footer */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: #ccc;
+    letter-spacing: 1px;
+    border-top: 1px solid #eee;
+    background: #f8f6f1;
+  }
+
+  /* Label */
+  .label-note {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    font-family: 'Space Mono', monospace;
+    font-size: 9px;
+    color: #ddd;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,0.05);
+    padding: 4px 10px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="label-note">MOCKUP — LANDING PAGE</div>
+
+<div class="page">
+  <div class="live-dot">LIVE</div>
+
+  <h1>Am I<br>Cooked?</h1>
+
+  <p class="tagline">find out if AI is coming for your job.<br>brutally honest. slightly funny. totally free.</p>
+
+  <div class="input-group">
+    <input type="text" placeholder="enter your job title" autofocus>
+    <button>CHECK →</button>
+  </div>
+
+  <div class="hint">200+ JOBS ANALYSED · UPDATED MARCH 2026</div>
+</div>
+
+<div class="footer">
+  <span>AMICOOKED.COM</span>
+  <span>NO DATA COLLECTED · NO COOKIES · NO BS</span>
+</div>
+
+</body>
+</html>

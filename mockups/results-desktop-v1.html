@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Results Desktop v1</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow:wght@800;900&family=Instrument+Serif:ital@0;1&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f8f6f1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui;
+  }
+
+  /* Header bar */
+  .header {
+    background: #000;
+    color: #fff;
+    padding: 14px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #000;
+  }
+  .header-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  .header-dot {
+    color: #ff0000;
+    font-size: 8px;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+  /* Main content */
+  .content {
+    flex: 1;
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 48px 32px 40px;
+  }
+
+  /* Score */
+  .score-row {
+    margin-bottom: 4px;
+  }
+  .score-number {
+    font-family: 'Instrument Serif', serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: #000;
+    line-height: 0.85;
+    font-style: italic;
+  }
+  .score-total {
+    font-family: 'Instrument Serif', serif;
+    font-size: 32px;
+    color: #999;
+    font-style: italic;
+  }
+
+  /* Verdict */
+  .verdict {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: #000;
+    text-transform: uppercase;
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+  }
+  .job-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5px;
+    margin-bottom: 28px;
+  }
+
+  /* Stat boxes */
+  .stat-row {
+    display: flex;
+    margin-bottom: 28px;
+  }
+  .stat-box {
+    flex: 1;
+    border: 3px solid #000;
+    padding: 16px 12px 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .stat-box + .stat-box {
+    border-left: 0;
+  }
+  .stat-value {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    color: #000;
+    margin-bottom: 4px;
+  }
+  .stat-label {
+    font-family: 'Space Mono', monospace;
+    font-size: 8px;
+    color: #888;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+
+  /* Lists */
+  .lists {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 28px;
+  }
+  .list-section {
+    flex: 1;
+    border-top: 3px solid #000;
+    padding-top: 14px;
+  }
+  .list-heading {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #000;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .list-items {
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: #444;
+    word-spacing: -1px;
+  }
+  .list-row {
+    display: flex;
+    align-items: baseline;
+    line-height: 2;
+  }
+  .num-marker {
+    width: 28px;
+    flex-shrink: 0;
+    color: #999;
+  }
+  .cross-marker {
+    width: 28px;
+    flex-shrink: 0;
+    color: #cc0000;
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    top: -0.5px;
+  }
+  .list-text {
+    flex: 1;
+  }
+  .quip {
+    color: #aaa;
+    font-size: 9px;
+    word-spacing: -0.5px;
+  }
+
+  /* Buttons */
+  .button-row {
+    display: flex;
+  }
+  .btn {
+    flex: 1;
+    border: 3px solid #000;
+    padding: 12px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-light {
+    background: transparent;
+    color: #000;
+  }
+  .btn-dark {
+    background: #000;
+    color: #fff;
+    border-left: 0;
+  }
+  .btn-dark:hover {
+    background: #ff0000;
+  }
+
+  /* Footer */
+  .footer {
+    border-top: 1px solid #e8e4dc;
+    padding: 14px 32px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    font-size: 10px;
+    color: #ccc;
+    letter-spacing: 1px;
+    background: #f8f6f1;
+  }
+  .footer a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  .footer a:hover {
+    color: #000;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <span class="header-title">AM I COOKED?</span>
+  <span class="header-dot">●</span>
+</div>
+
+<div class="content">
+  <div class="score-row">
+    <span class="score-number">34</span><span class="score-total">&#8202;/&#8202;100</span>
+  </div>
+  <div class="verdict">Lightly Toasted</div>
+  <div class="job-label">JOB: Marketing Manager</div>
+
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-value"><span>~5</span><span style="margin-left: 5px;">YRS</span></div>
+      <div class="stat-label">TILL ROBOTS<br>TAKE OVER</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">62%</div>
+      <div class="stat-label">AUTOMATABLE</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-value">HIGH</div>
+      <div class="stat-label">PIVOT<br>POTENTIAL</div>
+    </div>
+  </div>
+
+  <div class="lists">
+    <div class="list-section">
+      <div class="list-heading">Your Saving Graces</div>
+      <div class="list-items">
+        <div class="list-row"><span class="num-marker">01.</span><span class="list-text">Creative strategy <span class="quip">(robots can't vibecheck)</span></span></div>
+        <div class="list-row"><span class="num-marker">02.</span><span class="list-text">Brand storytelling</span></div>
+        <div class="list-row"><span class="num-marker">03.</span><span class="list-text">Client relationships <span class="quip">(they're needy)</span></span></div>
+        <div class="list-row"><span class="num-marker">04.</span><span class="list-text">Cross-functional leadership</span></div>
+      </div>
+    </div>
+    <div class="list-section">
+      <div class="list-heading">What's Getting Cooked First</div>
+      <div class="list-items">
+        <div class="list-row"><span class="cross-marker">✕</span><span class="list-text">Reporting & analytics</span></div>
+        <div class="list-row"><span class="cross-marker">✕</span><span class="list-text">A/B testing setup</span></div>
+        <div class="list-row"><span class="cross-marker">✕</span><span class="list-text">Basic copywriting <span class="quip">(first to go, sorry)</span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="button-row">
+    <div class="btn btn-light">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M8 11l4 4 4-4"/><line x1="4" y1="19" x2="20" y2="19"/></svg>
+      DOWNLOAD
+    </div>
+    <div class="btn btn-dark">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+      SHARE
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 12px;">
+    <span style="font-family: 'Space Mono', monospace; font-size: 8px; color: #bbb; letter-spacing: 0.5px;">*for entertainment — not career advice</span>
+  </div>
+  <div style="text-align: center; margin-top: 8px;">
+    <a href="#" style="font-family: 'Space Mono', monospace; font-size: 9px; color: #999; text-decoration: none; letter-spacing: 0.3px;">Want to un-cook yourself? Learn AI skills →</a>
+  </div>
+</div>
+
+<div class="footer">
+  <span>AMICOOKED.COM</span>
+  <a href="#">TRY ANOTHER ↗</a>
+</div>
+
+</body>
+</html>
