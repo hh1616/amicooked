@@ -1047,17 +1047,26 @@ body {
     return y;
   }
 
-  function drawShareCard(job, minHeight) {
+  function drawShareCard(job, targetHeight) {
     const W = 1080, pad = 72;
     // Pass 1: measure content height
     const tmp = document.createElement('canvas');
     tmp.width = W; tmp.height = 4000;
     const contentH = renderShareCard(tmp.getContext('2d'), job, W, pad);
-    // Pass 2: draw at exact height (or minHeight if taller needed)
+    // Pass 2: draw centered in target height (or exact fit if no target)
     const cv = document.createElement('canvas');
     cv.width = W;
-    cv.height = minHeight ? Math.max(contentH, minHeight) : contentH;
-    renderShareCard(cv.getContext('2d'), job, W, pad);
+    const H = targetHeight ? Math.max(contentH, targetHeight) : contentH;
+    cv.height = H;
+    const ctx = cv.getContext('2d');
+    // Pre-fill entire background
+    ctx.fillStyle = '#f8f6f1';
+    ctx.fillRect(0, 0, W, H);
+    // Center content vertically if canvas is taller than content
+    if (H > contentH) {
+      ctx.translate(0, Math.floor((H - contentH) / 2));
+    }
+    renderShareCard(ctx, job, W, pad);
     return cv;
   }
 
