@@ -644,9 +644,11 @@ body {
       </button>
     </div>
     <div class="disclaimer">*for entertainment — not career advice &nbsp;&middot;&nbsp; <a href="https://tally.so/r/BzDQq5" target="_blank" rel="noopener" class="feedback-link">roast us back</a></div>
+    <!-- AFFILIATE: uncomment after launch week
     <div class="affiliate-link">
       <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" rel="noopener">Want to un-cook yourself? Learn AI skills &rarr;</a>
     </div>
+    -->
   </div>
 
   <div class="results-footer">
@@ -667,6 +669,28 @@ body {
   const $ = id => document.getElementById(id);
   const input = $('job-input');
   const dropdown = $('autocomplete');
+
+  // ===== Search Tracking =====
+  const SUPABASE_URL = 'https://ffhbajcdtefkvgxrwfpr.supabase.co';
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZmaGJhamNkdGVma3ZneHJ3ZnByIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUxNjk4NTIsImV4cCI6MjA5MDc0NTg1Mn0.J1nBD54OR00T5LHW9R2Z0sNLYE34XFGNlctPLkYkJxw';
+  let noMatchTimeout = null;
+
+  function trackSearch(query, matched, selectedJob) {
+    fetch(SUPABASE_URL + '/rest/v1/search_tracks', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_KEY
+      },
+      body: JSON.stringify({
+        query: query,
+        matched: matched,
+        selected_job: selectedJob || null,
+        device: window.innerWidth <= 768 ? 'mobile' : 'desktop'
+      })
+    }).catch(() => {});
+  }
   const checkBtn = $('check-btn');
 
   // ===== Load data =====
@@ -736,6 +760,8 @@ body {
     if (results.length === 0) {
       dropdown.innerHTML = '<div class="autocomplete-no-match">No matches found</div>';
       dropdown.classList.add('active');
+      clearTimeout(noMatchTimeout);
+      noMatchTimeout = setTimeout(() => trackSearch(q, false), 1000);
       return;
     }
 
@@ -786,6 +812,8 @@ body {
   function selectJob(id) {
     const job = jobs.find(j => j.id === id);
     if (!job) return;
+    clearTimeout(noMatchTimeout);
+    trackSearch(input.value.trim(), true, job.title);
     input.value = job.title;
     dropdown.classList.remove('active');
     showResults(job);
