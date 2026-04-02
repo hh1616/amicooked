@@ -12,8 +12,8 @@
 | 4. Sample dataset (10 jobs) | Done | `data/jobs-sample.json` — passed rule-based validation |
 | 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 219 jobs, all pass rule-based validation, searchTerms added |
 | 6. Fact-check dataset | Done | 15 Perplexity category queries, 12 jobs corrected, all 219 pass validation |
-| 7. Build the site | **Next** | Single HTML file, static, hostable anywhere |
-| 8. Growth setup | Pending | Affiliate signup, OG tags, watermark — see `docs/growth-strategy.md` |
+| 7. Build the site | Done | `index.html` — all features wired up, tested on desktop + mobile |
+| 8. Growth setup | **Next** | Affiliate signup, OG tags, watermark — see `docs/growth-strategy.md` |
 | 9. Launch | Pending | Reddit + Hacker News — see `docs/growth-strategy.md` section 4 |
 
 ## Step 5: Build Full Dataset (~200 jobs)

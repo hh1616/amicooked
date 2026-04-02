@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OG Image — Am I Cooked?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Barlow:wght@800;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1200px;
+  height: 630px;
+  overflow: hidden;
+  background: #f8f6f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 1200px;
+  height: 630px;
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.live {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #999;
+  text-transform: uppercase;
+}
+.live-dot {
+  width: 10px;
+  height: 10px;
+  background: #ff0000;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 900;
+  font-size: 140px;
+  color: #000;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+  margin-left: -6px;
+}
+
+.tagline {
+  font-family: 'Space Mono', monospace;
+  font-size: 22px;
+  color: #888;
+  line-height: 1.5;
+}
+
+.url {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  color: #bbb;
+  letter-spacing: 1px;
+}
+
+/* Decorative border — brutalist style */
+.border-frame {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  border: 3px solid #000;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="border-frame"></div>
+  <div class="live">
+    <div class="live-dot"></div>
+    AI Job Risk Calculator
+  </div>
+  <h1>AM I<br>COOKED?</h1>
+  <div class="tagline">Find out if AI is coming for your job.</div>
+  <div class="url">amicooked.com</div>
+</div>
+</body>
+</html>

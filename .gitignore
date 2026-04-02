@@ -1,3 +1,6 @@
 .env
 .playwright-mcp/
+.superpowers/
+.claude/
 .DS_Store
+CLAUDE\ (2).md
