@@ -56,7 +56,7 @@
 - [x] Install Plausible analytics (cookieless, privacy-friendly)
 - [ ] Sign up for Coursera affiliate program via Impact.com (see `docs/growth-strategy.md` for steps)
 - [ ] Replace placeholder affiliate href with real tracking link
-- [ ] Create Hacker News account at news.ycombinator.com
+- [x] Create Hacker News account at news.ycombinator.com
 - [ ] Test OG tags (paste URL into Discord/iMessage or use opengraph.xyz — Twitter Card Validator is broken)
 
 ## Step 9: Launch
