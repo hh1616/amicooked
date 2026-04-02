@@ -913,21 +913,22 @@ body {
     const shareTitle = "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?';
     const shareText = 'I scored ' + currentJob.score + '/100 on the AI job risk calculator.';
 
-    // Try sharing watermarked PNG on mobile
+    // On mobile: try to attach watermarked PNG, but always show native share sheet
     if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
+      let file = null;
+
+      // Best-effort PNG generation — if it fails, we still share the link
       try {
         const card = $('results-card');
         const cardHeader = $('card-header');
         const watermark = $('capture-watermark');
 
-        // Prepare capture (same as download)
         cardHeader.style.display = 'flex';
         watermark.style.display = 'block';
         card.style.background = '#f8f6f1';
         card.style.padding = '0 24px 8px';
         card.style.maxWidth = '640px';
 
-        // Use html2canvas (more reliable on mobile Safari than html-to-image)
         const html2canvas = (await import('https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/+esm')).default;
         const canvas = await html2canvas(card, {
           scale: 2,
@@ -935,40 +936,28 @@ body {
           useCORS: true
         });
 
-        // Restore card styling
         cardHeader.style.display = '';
         watermark.style.display = '';
         card.style.background = '';
         card.style.padding = '';
         card.style.maxWidth = '';
 
-        // Convert canvas to File
         const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-        const file = new File([blob], 'amicooked-' + currentJob.id + '.png', { type: 'image/png' });
+        file = new File([blob], 'amicooked-' + currentJob.id + '.png', { type: 'image/png' });
+      } catch (e) {
+        // PNG failed — that's fine, share without it
+      }
 
-        // Share with image if supported
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({
-            files: [file],
-            title: shareTitle,
-            text: shareText,
-            url: shareUrl
-          });
-          return;
+      // Always show native share sheet
+      try {
+        const shareData = { title: shareTitle, text: shareText, url: shareUrl };
+        if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
+          shareData.files = [file];
         }
-
-        // Fallback: share without image
-        await navigator.share({ title: shareTitle, text: shareText, url: shareUrl });
+        await navigator.share(shareData);
         return;
       } catch (err) {
         if (err.name === 'AbortError') return;
-        // If PNG generation failed, try text-only share
-        try {
-          await navigator.share({ title: shareTitle, text: shareText, url: shareUrl });
-          return;
-        } catch (e) {
-          if (e.name === 'AbortError') return;
-        }
       }
     }
 
