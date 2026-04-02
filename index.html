@@ -927,8 +927,13 @@ body {
         card.style.padding = '0 24px 8px';
         card.style.maxWidth = '640px';
 
-        const { toPng } = await import('https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/+esm');
-        const dataUrl = await toPng(card, { pixelRatio: 2, backgroundColor: '#f8f6f1' });
+        // Use html2canvas (more reliable on mobile Safari than html-to-image)
+        const html2canvas = (await import('https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/+esm')).default;
+        const canvas = await html2canvas(card, {
+          scale: 2,
+          backgroundColor: '#f8f6f1',
+          useCORS: true
+        });
 
         // Restore card styling
         cardHeader.style.display = '';
@@ -937,9 +942,8 @@ body {
         card.style.padding = '';
         card.style.maxWidth = '';
 
-        // Convert data URL to File
-        const res = await fetch(dataUrl);
-        const blob = await res.blob();
+        // Convert canvas to File
+        const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
         const file = new File([blob], 'amicooked-' + currentJob.id + '.png', { type: 'image/png' });
 
         // Share with image if supported
