@@ -1261,16 +1261,17 @@ body {
       }
 
       try {
-        // Share image ONLY (no url/text) so Instagram/socials treat it as a photo share
-        if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({ files: [file] });
+        const shareData = {
+          title: "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?',
+          url: shareUrl
+        };
+        // Share image + link so recipients see the card AND can tap through
+        if (file && navigator.canShare && navigator.canShare({ files: [file], ...shareData })) {
+          await navigator.share({ files: [file], ...shareData });
           return;
         }
-        // Fallback: share link
-        await navigator.share({
-          title: "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?',
-          text: 'I scored ' + currentJob.score + '/100 on the AI job risk calculator. ' + shareUrl
-        });
+        // Fallback: share link only
+        await navigator.share(shareData);
         return;
       } catch (err) {
         if (err.name === 'AbortError') return;
