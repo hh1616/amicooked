@@ -1080,7 +1080,7 @@ body {
     if (navigator.share) {
       let file = null;
       try {
-        const canvas = drawShareCard(currentJob);
+        const canvas = drawShareCard(currentJob, 1920);
         const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
         file = new File([blob], 'amicooked-' + currentJob.id + '.png', { type: 'image/png' });
       } catch (e) {
