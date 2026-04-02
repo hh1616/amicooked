@@ -8,7 +8,7 @@
 
 ## 1. Overview
 
-**Am I Cooked?** is an AI Job Risk Calculator at **amicooked.com**. Users enter their job title, get a "cooked score" (0–100) showing how likely AI is to replace them, plus a breakdown of what's safe and what's not. Designed to be fun, shareable, and screenshot-optimized.
+**Am I Cooked?** is an AI Job Risk Calculator at **amicooked.me**. Users enter their job title, get a "cooked score" (0–100) showing how likely AI is to replace them, plus a breakdown of what's safe and what's not. Designed to be fun, shareable, and screenshot-optimized.
 
 **Architecture:** Static single-page site. Curated JSON dataset (~200 jobs). No backend, no cookies, hostable anywhere.
 

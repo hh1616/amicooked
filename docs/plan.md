@@ -38,8 +38,8 @@
 - Wire up landing page → results page flow
 - Load job data from JSON
 - Fuzzy search / autocomplete for job input
-- html-to-image for downloadable PNG — **must include "amicooked.com" watermark** (growth feature)
-- Share button: copy `amicooked.com/?job=job-id` to clipboard + Web Share API on mobile
+- html-to-image for downloadable PNG — **must include "amicooked.me" watermark** (growth feature)
+- Share button: copy `amicooked.me/?job=job-id` to clipboard + Web Share API on mobile
 - `?job=` URL parameter: read on page load, show result directly if valid (enables shareable links + SEO)
 - Open Graph / Twitter Card meta tags (title, description, preview image)
 - Frictionless "try another" loop — no page reload, clear result and focus input (each extra check = another screenshot)
@@ -52,7 +52,7 @@
 - Sign up for Coursera affiliate program via Impact.com (see `docs/growth-strategy.md` for steps)
 - Replace placeholder affiliate href with real tracking link
 - Create Hacker News account at news.ycombinator.com
-- Point domain amicooked.com to hosting
+- Point domain amicooked.me to hosting
 - Test OG tags with Twitter Card Validator
 
 ## Step 9: Launch
