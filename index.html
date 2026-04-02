@@ -226,7 +226,7 @@ body {
   max-width: 760px;
   width: 100%;
   margin: 0 auto;
-  padding: 56px 40px 48px;
+  padding: 48px 40px 56px;
 }
 
 /* Card header — hidden on page, shown in PNG capture */
@@ -243,10 +243,10 @@ body {
   align-items: center;
 }
 
-.score-row { margin-bottom: 6px; }
+.score-row { margin-bottom: 4px; }
 .score-number {
   font-family: 'Instrument Serif', serif;
-  font-size: 120px;
+  font-size: 108px;
   font-weight: 400;
   color: #000;
   line-height: 0.85;
@@ -254,7 +254,7 @@ body {
 }
 .score-total {
   font-family: 'Instrument Serif', serif;
-  font-size: 40px;
+  font-size: 36px;
   color: #999;
   font-style: italic;
 }
@@ -262,19 +262,19 @@ body {
 .verdict {
   font-family: 'Barlow', sans-serif;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 40px;
   color: #000;
   text-transform: uppercase;
   line-height: 1.05;
   letter-spacing: 0.5px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .job-label {
   font-family: 'Space Mono', monospace;
-  font-size: 13px;
+  font-size: 12px;
   color: #999;
   letter-spacing: 0.5px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .stat-row {
@@ -418,41 +418,30 @@ body {
 }
 .affiliate-link a:hover { color: #000; }
 
-.try-another-btn {
-  display: block;
-  width: 100%;
-  margin-top: 32px;
-  padding: 14px;
-  font-family: 'Barlow', sans-serif;
-  font-weight: 900;
-  font-size: 14px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  background: transparent;
-  color: #999;
-  border: 2px solid #ddd;
-  cursor: pointer;
-  text-align: center;
-  border-radius: 0;
-  -webkit-appearance: none;
-}
-.try-another-btn:hover { color: #000; border-color: #000; }
 
 .results-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border-top: 1px solid #e8e4dc;
   padding: 14px 32px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-family: 'Space Mono', monospace;
   font-size: 10px;
   color: #ccc;
   letter-spacing: 1px;
   background: #f8f6f1;
+  z-index: 10;
 }
 .results-footer a {
-  color: #ccc;
+  color: #999;
   text-decoration: none;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
 }
 .results-footer a:hover { color: #000; }
 
@@ -533,9 +522,11 @@ body {
   .cross-marker { width: 22px; font-size: 10px; }
   .quip { font-size: 7px; word-spacing: -1px; }
 
+  .button-row { flex-wrap: wrap; }
   .btn { border: 2px solid #000; padding: 10px; font-size: 10px; letter-spacing: 1px; gap: 4px; }
   .btn-dark { border-left: 0; }
   .btn svg { width: 11px; height: 11px; }
+  #try-another { border-left: 0 !important; }
 
   .disclaimer { margin-top: 6px; font-size: 6px; }
   .affiliate-link { margin-top: 2px; }
@@ -633,17 +624,20 @@ body {
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
         SHARE
       </button>
+      <button class="btn" id="try-another" style="border-left:0;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+        TRY ANOTHER
+      </button>
     </div>
     <div class="disclaimer">*for entertainment — not career advice</div>
     <div class="affiliate-link">
       <a href="https://www.coursera.org/learn/ai-for-everyone" target="_blank" rel="noopener">Want to un-cook yourself? Learn AI skills &rarr;</a>
     </div>
-    <button class="try-another-btn" id="try-another-main">TRY ANOTHER &nearr;</button>
   </div>
 
   <div class="results-footer">
     <span>AMICOOKED.ME</span>
-    <a id="try-another">TRY ANOTHER &#8599;</a>
+    <span><span class="desktop-text">NO DATA &middot; NO COOKIES &middot; NO BS</span><span class="mobile-text">NO BS</span></span>
   </div>
 </div>
 
@@ -847,7 +841,6 @@ body {
   }
 
   $('try-another').addEventListener('click', goHome);
-  $('try-another-main').addEventListener('click', goHome);
   $('header-home').addEventListener('click', goHome);
 
   window.addEventListener('popstate', () => {
