@@ -1,6 +1,6 @@
 {
   "source_file": "data/jobs.json",
-  "created": "2026-04-03T00:16:50.676492",
+  "created": "2026-04-03T02:51:46.011704",
   "current_pass": 1,
   "max_passes": 3,
   "jobs": {
@@ -116,67 +116,6 @@
       "passes": [],
       "final_status": "pending"
     },
-    "diesel-mechanic": {
-      "title": "Diesel Mechanic",
-      "score": 28,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Diesel Mechanic tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Diesel Mechanic at 28/100 cooked (higher = more replaceable) with 32% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Diesel Mechanic jobs? What do major reports say?",
-          "context": "We estimated ~10 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Diagnosing problems by sound and feel' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
-          "context": "Diagnosing problems by sound and feel"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Working in cramped engine bays' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
-          "context": "Working in cramped engine bays"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Field repairs on remote sites' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
-          "context": "Field repairs on remote sites"
-        },
-        {
-          "field": "savingGraces[3]",
-          "query": "Is 'Adapting fixes with available parts' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
-          "context": "Adapting fixes with available parts"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Diagnostic code reading' actually being automated right now for Diesel Mechanic roles? Any evidence?",
-          "context": "Diagnostic code reading"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Predictive maintenance scheduling' actually being automated right now for Diesel Mechanic roles? Any evidence?",
-          "context": "Predictive maintenance scheduling"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Parts ordering' actually being automated right now for Diesel Mechanic roles? Any evidence?",
-          "context": "Parts ordering"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Service scheduling' actually being automated right now for Diesel Mechanic roles? Any evidence?",
-          "context": "Service scheduling"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
     "firefighter": {
       "title": "Firefighter",
       "score": 5,
@@ -227,72 +166,6 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Dispatch routing optimisation' actually being automated right now for Firefighter roles? Any evidence?",
           "context": "Dispatch routing optimisation"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
-    "crane-operator": {
-      "title": "Crane Operator",
-      "score": 38,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Crane Operator tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Crane Operator at 38/100 cooked (higher = more replaceable) with 45% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Crane Operator jobs? What do major reports say?",
-          "context": "We estimated ~6 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Spatial awareness in 3D' genuinely difficult for AI to replicate for Crane Operator roles?",
-          "context": "Spatial awareness in 3D"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Reading load dynamics in real time' genuinely difficult for AI to replicate for Crane Operator roles?",
-          "context": "Reading load dynamics in real time"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Communicating with ground crews' genuinely difficult for AI to replicate for Crane Operator roles?",
-          "context": "Communicating with ground crews"
-        },
-        {
-          "field": "savingGraces[3]",
-          "query": "Is 'Operating in unpredictable weather' genuinely difficult for AI to replicate for Crane Operator roles?",
-          "context": "Operating in unpredictable weather"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Repetitive lifts in controlled environments' actually being automated right now for Crane Operator roles? Any evidence?",
-          "context": "Repetitive lifts in controlled environments"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Remote crane operation' actually being automated right now for Crane Operator roles? Any evidence?",
-          "context": "Remote crane operation"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Lift planning calculations' actually being automated right now for Crane Operator roles? Any evidence?",
-          "context": "Lift planning calculations"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Load chart lookups' actually being automated right now for Crane Operator roles? Any evidence?",
-          "context": "Load chart lookups"
-        },
-        {
-          "field": "gettingCooked[4]",
-          "query": "Is 'Maintenance logging' actually being automated right now for Crane Operator roles? Any evidence?",
-          "context": "Maintenance logging"
         }
       ],
       "fact_check_results": [],
@@ -1012,61 +885,56 @@
       "passes": [],
       "final_status": "pending"
     },
-    "welder": {
-      "title": "Welder",
-      "score": 22,
+    "childcare-worker": {
+      "title": "Childcare Worker",
+      "score": 10,
       "rule_issues": [],
       "rule_status": "pass",
       "fact_checks": [
         {
           "field": "score",
-          "query": "What percentage of Welder tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Welder at 22/100 cooked (higher = more replaceable) with 25% automatable"
+          "query": "What percentage of Childcare Worker tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Childcare Worker at 10/100 cooked (higher = more replaceable) with 15% automatable"
         },
         {
           "field": "timeline",
-          "query": "How many years until AI significantly impacts Welder jobs? What do major reports say?",
-          "context": "We estimated ~10 YRS"
+          "query": "How many years until AI significantly impacts Childcare Worker jobs? What do major reports say?",
+          "context": "We estimated ~20 YRS"
         },
         {
           "field": "savingGraces[0]",
-          "query": "Is 'Welding in awkward positions and tight spaces' genuinely difficult for AI to replicate for Welder roles?",
-          "context": "Welding in awkward positions and tight spaces"
+          "query": "Is 'Supervising small children in chaotic environments' genuinely difficult for AI to replicate for Childcare Worker roles?",
+          "context": "Supervising small children in chaotic environments"
         },
         {
           "field": "savingGraces[1]",
-          "query": "Is 'Reading metal conditions' genuinely difficult for AI to replicate for Welder roles?",
-          "context": "Reading metal conditions"
+          "query": "Is 'Emotional co-regulation and attachment' genuinely difficult for AI to replicate for Childcare Worker roles?",
+          "context": "Emotional co-regulation and attachment"
         },
         {
           "field": "savingGraces[2]",
-          "query": "Is 'Field repair work' genuinely difficult for AI to replicate for Welder roles?",
-          "context": "Field repair work"
+          "query": "Is 'Nappy changes, feeding, and physical care' genuinely difficult for AI to replicate for Childcare Worker roles?",
+          "context": "Nappy changes, feeding, and physical care"
         },
         {
           "field": "savingGraces[3]",
-          "query": "Is 'Quality judgment by eye' genuinely difficult for AI to replicate for Welder roles?",
-          "context": "Quality judgment by eye"
+          "query": "Is 'Recognising developmental red flags' genuinely difficult for AI to replicate for Childcare Worker roles?",
+          "context": "Recognising developmental red flags"
         },
         {
           "field": "gettingCooked[0]",
-          "query": "Is 'Repetitive production line welds' actually being automated right now for Welder roles? Any evidence?",
-          "context": "Repetitive production line welds"
+          "query": "Is 'Activity planning and curriculum prep' actually being automated right now for Childcare Worker roles? Any evidence?",
+          "context": "Activity planning and curriculum prep"
         },
         {
           "field": "gettingCooked[1]",
-          "query": "Is 'Straight-line welding on flat stock' actually being automated right now for Welder roles? Any evidence?",
-          "context": "Straight-line welding on flat stock"
+          "query": "Is 'Parent communication updates' actually being automated right now for Childcare Worker roles? Any evidence?",
+          "context": "Parent communication updates"
         },
         {
           "field": "gettingCooked[2]",
-          "query": "Is 'Weld inspection documentation' actually being automated right now for Welder roles? Any evidence?",
-          "context": "Weld inspection documentation"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Material calculations' actually being automated right now for Welder roles? Any evidence?",
-          "context": "Material calculations"
+          "query": "Is 'Attendance tracking' actually being automated right now for Childcare Worker roles? Any evidence?",
+          "context": "Attendance tracking"
         }
       ],
       "fact_check_results": [],
@@ -1241,67 +1109,6 @@
       "passes": [],
       "final_status": "pending"
     },
-    "auto-mechanic": {
-      "title": "Auto Mechanic",
-      "score": 27,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Auto Mechanic tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Auto Mechanic at 27/100 cooked (higher = more replaceable) with 30% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Auto Mechanic jobs? What do major reports say?",
-          "context": "We estimated ~10 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Diagnosing intermittent faults' genuinely difficult for AI to replicate for Auto Mechanic roles?",
-          "context": "Diagnosing intermittent faults"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Working in cramped engine bays' genuinely difficult for AI to replicate for Auto Mechanic roles?",
-          "context": "Working in cramped engine bays"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Customer trust and explanation' genuinely difficult for AI to replicate for Auto Mechanic roles?",
-          "context": "Customer trust and explanation"
-        },
-        {
-          "field": "savingGraces[3]",
-          "query": "Is 'Improvising with older vehicles' genuinely difficult for AI to replicate for Auto Mechanic roles?",
-          "context": "Improvising with older vehicles"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'OBD diagnostic code reading' actually being automated right now for Auto Mechanic roles? Any evidence?",
-          "context": "OBD diagnostic code reading"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Predictive maintenance alerts' actually being automated right now for Auto Mechanic roles? Any evidence?",
-          "context": "Predictive maintenance alerts"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Parts lookup and ordering' actually being automated right now for Auto Mechanic roles? Any evidence?",
-          "context": "Parts lookup and ordering"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Service scheduling' actually being automated right now for Auto Mechanic roles? Any evidence?",
-          "context": "Service scheduling"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
     "occupational-therapist": {
       "title": "Occupational Therapist",
       "score": 12,
@@ -1352,6 +1159,118 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Home modification checklists' actually being automated right now for Occupational Therapist roles? Any evidence?",
           "context": "Home modification checklists"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "aged-care-worker": {
+      "title": "Aged Care Worker",
+      "score": 12,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Aged Care Worker tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Aged Care Worker at 12/100 cooked (higher = more replaceable) with 18% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Aged Care Worker jobs? What do major reports say?",
+          "context": "We estimated ~20 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Physical assistance with mobility and personal care' genuinely difficult for AI to replicate for Aged Care Worker roles?",
+          "context": "Physical assistance with mobility and personal care"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Companionship and emotional support' genuinely difficult for AI to replicate for Aged Care Worker roles?",
+          "context": "Companionship and emotional support"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Responding to falls and medical emergencies' genuinely difficult for AI to replicate for Aged Care Worker roles?",
+          "context": "Responding to falls and medical emergencies"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Managing dementia-related behaviours' genuinely difficult for AI to replicate for Aged Care Worker roles?",
+          "context": "Managing dementia-related behaviours"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Medication reminders and scheduling' actually being automated right now for Aged Care Worker roles? Any evidence?",
+          "context": "Medication reminders and scheduling"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Care plan documentation' actually being automated right now for Aged Care Worker roles? Any evidence?",
+          "context": "Care plan documentation"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Vitals monitoring' actually being automated right now for Aged Care Worker roles? Any evidence?",
+          "context": "Vitals monitoring"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "primary-school-teacher": {
+      "title": "Primary School Teacher",
+      "score": 12,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Primary School Teacher tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Primary School Teacher at 12/100 cooked (higher = more replaceable) with 10% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Primary School Teacher jobs? What do major reports say?",
+          "context": "We estimated ~20 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Managing a classroom of 25 seven-year-olds' genuinely difficult for AI to replicate for Primary School Teacher roles?",
+          "context": "Managing a classroom of 25 seven-year-olds"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Emotional scaffolding and social skill development' genuinely difficult for AI to replicate for Primary School Teacher roles?",
+          "context": "Emotional scaffolding and social skill development"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Recognising learning difficulties early' genuinely difficult for AI to replicate for Primary School Teacher roles?",
+          "context": "Recognising learning difficulties early"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Building trust with kids and parents' genuinely difficult for AI to replicate for Primary School Teacher roles?",
+          "context": "Building trust with kids and parents"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Lesson plan generation' actually being automated right now for Primary School Teacher roles? Any evidence?",
+          "context": "Lesson plan generation"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Marking standardised worksheets' actually being automated right now for Primary School Teacher roles? Any evidence?",
+          "context": "Marking standardised worksheets"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Report card comment writing' actually being automated right now for Primary School Teacher roles? Any evidence?",
+          "context": "Report card comment writing"
         }
       ],
       "fact_check_results": [],
@@ -1520,67 +1439,6 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Record keeping' actually being automated right now for Veterinarian roles? Any evidence?",
           "context": "Record keeping"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
-    "construction-worker": {
-      "title": "Construction Worker",
-      "score": 28,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Construction Worker tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Construction Worker at 28/100 cooked (higher = more replaceable) with 30% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Construction Worker jobs? What do major reports say?",
-          "context": "We estimated ~10 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Adapting to every job site' genuinely difficult for AI to replicate for Construction Worker roles?",
-          "context": "Adapting to every job site"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Physical labour in all conditions' genuinely difficult for AI to replicate for Construction Worker roles?",
-          "context": "Physical labour in all conditions"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Safety judgment in real time' genuinely difficult for AI to replicate for Construction Worker roles?",
-          "context": "Safety judgment in real time"
-        },
-        {
-          "field": "savingGraces[3]",
-          "query": "Is 'Multi-trade coordination on site' genuinely difficult for AI to replicate for Construction Worker roles?",
-          "context": "Multi-trade coordination on site"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Bricklaying on flat walls' actually being automated right now for Construction Worker roles? Any evidence?",
-          "context": "Bricklaying on flat walls"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Concrete pouring in standard forms' actually being automated right now for Construction Worker roles? Any evidence?",
-          "context": "Concrete pouring in standard forms"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Site measurement and surveying' actually being automated right now for Construction Worker roles? Any evidence?",
-          "context": "Site measurement and surveying"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Progress photo documentation' actually being automated right now for Construction Worker roles? Any evidence?",
-          "context": "Progress photo documentation"
         }
       ],
       "fact_check_results": [],
@@ -1968,6 +1826,118 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Booking and scheduling' actually being automated right now for Tattoo Artist roles? Any evidence?",
           "context": "Booking and scheduling"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "paediatrician": {
+      "title": "Paediatrician",
+      "score": 16,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Paediatrician tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Paediatrician at 16/100 cooked (higher = more replaceable) with 18% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Paediatrician jobs? What do major reports say?",
+          "context": "We estimated ~15 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Physical examination of uncooperative toddlers' genuinely difficult for AI to replicate for Paediatrician roles?",
+          "context": "Physical examination of uncooperative toddlers"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Developmental milestone assessment' genuinely difficult for AI to replicate for Paediatrician roles?",
+          "context": "Developmental milestone assessment"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Communicating with anxious parents' genuinely difficult for AI to replicate for Paediatrician roles?",
+          "context": "Communicating with anxious parents"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Reading nonverbal cues in kids who can't describe symptoms' genuinely difficult for AI to replicate for Paediatrician roles?",
+          "context": "Reading nonverbal cues in kids who can't describe symptoms"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Growth chart tracking and flagging' actually being automated right now for Paediatrician roles? Any evidence?",
+          "context": "Growth chart tracking and flagging"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Vaccination schedule management' actually being automated right now for Paediatrician roles? Any evidence?",
+          "context": "Vaccination schedule management"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Clinical documentation' actually being automated right now for Paediatrician roles? Any evidence?",
+          "context": "Clinical documentation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "nail-technician": {
+      "title": "Nail Technician",
+      "score": 16,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Nail Technician tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Nail Technician at 16/100 cooked (higher = more replaceable) with 14% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Nail Technician jobs? What do major reports say?",
+          "context": "We estimated ~15 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Precision work on ten different-shaped fingers' genuinely difficult for AI to replicate for Nail Technician roles?",
+          "context": "Precision work on ten different-shaped fingers"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Client conversation and relationship building' genuinely difficult for AI to replicate for Nail Technician roles?",
+          "context": "Client conversation and relationship building"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Custom nail art design on the spot' genuinely difficult for AI to replicate for Nail Technician roles?",
+          "context": "Custom nail art design on the spot"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Cuticle and skin care judgment' genuinely difficult for AI to replicate for Nail Technician roles?",
+          "context": "Cuticle and skin care judgment"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Design inspiration and reference lookups' actually being automated right now for Nail Technician roles? Any evidence?",
+          "context": "Design inspiration and reference lookups"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Appointment booking' actually being automated right now for Nail Technician roles? Any evidence?",
+          "context": "Appointment booking"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Inventory ordering' actually being automated right now for Nail Technician roles? Any evidence?",
+          "context": "Inventory ordering"
         }
       ],
       "fact_check_results": [],
@@ -2429,6 +2399,118 @@
       "passes": [],
       "final_status": "pending"
     },
+    "housewife": {
+      "title": "Housewife",
+      "score": 18,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Housewife tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Housewife at 18/100 cooked (higher = more replaceable) with 20% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Housewife jobs? What do major reports say?",
+          "context": "We estimated ~15 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Managing a household of unpredictable humans' genuinely difficult for AI to replicate for Housewife roles?",
+          "context": "Managing a household of unpredictable humans"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Emotional regulation and conflict mediation' genuinely difficult for AI to replicate for Housewife roles?",
+          "context": "Emotional regulation and conflict mediation"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Physical caregiving for sick kids or elderly parents' genuinely difficult for AI to replicate for Housewife roles?",
+          "context": "Physical caregiving for sick kids or elderly parents"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Real-time multitasking across competing demands' genuinely difficult for AI to replicate for Housewife roles?",
+          "context": "Real-time multitasking across competing demands"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Meal planning and grocery lists' actually being automated right now for Housewife roles? Any evidence?",
+          "context": "Meal planning and grocery lists"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Household budgeting' actually being automated right now for Housewife roles? Any evidence?",
+          "context": "Household budgeting"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Scheduling and calendar management' actually being automated right now for Housewife roles? Any evidence?",
+          "context": "Scheduling and calendar management"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "makeup-artist": {
+      "title": "Makeup Artist",
+      "score": 18,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Makeup Artist tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Makeup Artist at 18/100 cooked (higher = more replaceable) with 16% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Makeup Artist jobs? What do major reports say?",
+          "context": "We estimated ~15 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Application on real skin with real texture' genuinely difficult for AI to replicate for Makeup Artist roles?",
+          "context": "Application on real skin with real texture"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Reading a client's features and bone structure' genuinely difficult for AI to replicate for Makeup Artist roles?",
+          "context": "Reading a client's features and bone structure"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Adapting to lighting conditions on set' genuinely difficult for AI to replicate for Makeup Artist roles?",
+          "context": "Adapting to lighting conditions on set"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Calming nervous brides and performers' genuinely difficult for AI to replicate for Makeup Artist roles?",
+          "context": "Calming nervous brides and performers"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Virtual try-on and colour matching' actually being automated right now for Makeup Artist roles? Any evidence?",
+          "context": "Virtual try-on and colour matching"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Product recommendation engines' actually being automated right now for Makeup Artist roles? Any evidence?",
+          "context": "Product recommendation engines"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Tutorial content generation' actually being automated right now for Makeup Artist roles? Any evidence?",
+          "context": "Tutorial content generation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "bartender": {
       "title": "Bartender",
       "score": 19,
@@ -2867,67 +2949,6 @@
       "passes": [],
       "final_status": "pending"
     },
-    "museum-curator": {
-      "title": "Museum Curator",
-      "score": 32,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Museum Curator tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Museum Curator at 32/100 cooked (higher = more replaceable) with 36% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Museum Curator jobs? What do major reports say?",
-          "context": "We estimated ~7 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Narrative storytelling through exhibitions' genuinely difficult for AI to replicate for Museum Curator roles?",
-          "context": "Narrative storytelling through exhibitions"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Art and artefact authentication' genuinely difficult for AI to replicate for Museum Curator roles?",
-          "context": "Art and artefact authentication"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Donor and community relationships' genuinely difficult for AI to replicate for Museum Curator roles?",
-          "context": "Donor and community relationships"
-        },
-        {
-          "field": "savingGraces[3]",
-          "query": "Is 'Cultural sensitivity in curation' genuinely difficult for AI to replicate for Museum Curator roles?",
-          "context": "Cultural sensitivity in curation"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Collection cataloguing' actually being automated right now for Museum Curator roles? Any evidence?",
-          "context": "Collection cataloguing"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Provenance research' actually being automated right now for Museum Curator roles? Any evidence?",
-          "context": "Provenance research"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Visitor analytics' actually being automated right now for Museum Curator roles? Any evidence?",
-          "context": "Visitor analytics"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Digital archive management' actually being automated right now for Museum Curator roles? Any evidence?",
-          "context": "Digital archive management"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
     "waiter": {
       "title": "Waiter/Waitress",
       "score": 20,
@@ -3141,6 +3162,67 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Supply ordering' actually being automated right now for Art Teacher roles? Any evidence?",
           "context": "Supply ordering"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "welder": {
+      "title": "Welder",
+      "score": 22,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Welder tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Welder at 22/100 cooked (higher = more replaceable) with 25% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Welder jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Welding in awkward positions and tight spaces' genuinely difficult for AI to replicate for Welder roles?",
+          "context": "Welding in awkward positions and tight spaces"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Reading metal conditions' genuinely difficult for AI to replicate for Welder roles?",
+          "context": "Reading metal conditions"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Field repair work' genuinely difficult for AI to replicate for Welder roles?",
+          "context": "Field repair work"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Quality judgment by eye' genuinely difficult for AI to replicate for Welder roles?",
+          "context": "Quality judgment by eye"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Repetitive production line welds' actually being automated right now for Welder roles? Any evidence?",
+          "context": "Repetitive production line welds"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Straight-line welding on flat stock' actually being automated right now for Welder roles? Any evidence?",
+          "context": "Straight-line welding on flat stock"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Weld inspection documentation' actually being automated right now for Welder roles? Any evidence?",
+          "context": "Weld inspection documentation"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Material calculations' actually being automated right now for Welder roles? Any evidence?",
+          "context": "Material calculations"
         }
       ],
       "fact_check_results": [],
@@ -3763,6 +3845,62 @@
       "passes": [],
       "final_status": "pending"
     },
+    "farmer": {
+      "title": "Farmer",
+      "score": 25,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Farmer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Farmer at 25/100 cooked (higher = more replaceable) with 24% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Farmer jobs? What do major reports say?",
+          "context": "We estimated ~12 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Responding to unpredictable weather and terrain' genuinely difficult for AI to replicate for Farmer roles?",
+          "context": "Responding to unpredictable weather and terrain"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Animal husbandry and welfare judgment' genuinely difficult for AI to replicate for Farmer roles?",
+          "context": "Animal husbandry and welfare judgment"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Equipment repair in the field' genuinely difficult for AI to replicate for Farmer roles?",
+          "context": "Equipment repair in the field"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Land management across variable conditions' genuinely difficult for AI to replicate for Farmer roles?",
+          "context": "Land management across variable conditions"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Crop monitoring and yield prediction' actually being automated right now for Farmer roles? Any evidence?",
+          "context": "Crop monitoring and yield prediction"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Irrigation scheduling' actually being automated right now for Farmer roles? Any evidence?",
+          "context": "Irrigation scheduling"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Market price tracking and sell timing' actually being automated right now for Farmer roles? Any evidence?",
+          "context": "Market price tracking and sell timing"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "housekeeper": {
       "title": "Housekeeper",
       "score": 26,
@@ -3926,6 +4064,67 @@
       "passes": [],
       "final_status": "pending"
     },
+    "auto-mechanic": {
+      "title": "Auto Mechanic",
+      "score": 27,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Auto Mechanic tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Auto Mechanic at 27/100 cooked (higher = more replaceable) with 30% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Auto Mechanic jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Diagnosing intermittent faults' genuinely difficult for AI to replicate for Auto Mechanic roles?",
+          "context": "Diagnosing intermittent faults"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Working in cramped engine bays' genuinely difficult for AI to replicate for Auto Mechanic roles?",
+          "context": "Working in cramped engine bays"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Customer trust and explanation' genuinely difficult for AI to replicate for Auto Mechanic roles?",
+          "context": "Customer trust and explanation"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Improvising with older vehicles' genuinely difficult for AI to replicate for Auto Mechanic roles?",
+          "context": "Improvising with older vehicles"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'OBD diagnostic code reading' actually being automated right now for Auto Mechanic roles? Any evidence?",
+          "context": "OBD diagnostic code reading"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Predictive maintenance alerts' actually being automated right now for Auto Mechanic roles? Any evidence?",
+          "context": "Predictive maintenance alerts"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Parts lookup and ordering' actually being automated right now for Auto Mechanic roles? Any evidence?",
+          "context": "Parts lookup and ordering"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Service scheduling' actually being automated right now for Auto Mechanic roles? Any evidence?",
+          "context": "Service scheduling"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "interior-designer": {
       "title": "Interior Designer",
       "score": 27,
@@ -3976,6 +4175,128 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Furniture layout optimisation' actually being automated right now for Interior Designer roles? Any evidence?",
           "context": "Furniture layout optimisation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "diesel-mechanic": {
+      "title": "Diesel Mechanic",
+      "score": 28,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Diesel Mechanic tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Diesel Mechanic at 28/100 cooked (higher = more replaceable) with 32% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Diesel Mechanic jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Diagnosing problems by sound and feel' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
+          "context": "Diagnosing problems by sound and feel"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Working in cramped engine bays' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
+          "context": "Working in cramped engine bays"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Field repairs on remote sites' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
+          "context": "Field repairs on remote sites"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Adapting fixes with available parts' genuinely difficult for AI to replicate for Diesel Mechanic roles?",
+          "context": "Adapting fixes with available parts"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Diagnostic code reading' actually being automated right now for Diesel Mechanic roles? Any evidence?",
+          "context": "Diagnostic code reading"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Predictive maintenance scheduling' actually being automated right now for Diesel Mechanic roles? Any evidence?",
+          "context": "Predictive maintenance scheduling"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Parts ordering' actually being automated right now for Diesel Mechanic roles? Any evidence?",
+          "context": "Parts ordering"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Service scheduling' actually being automated right now for Diesel Mechanic roles? Any evidence?",
+          "context": "Service scheduling"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "construction-worker": {
+      "title": "Construction Worker",
+      "score": 28,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Construction Worker tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Construction Worker at 28/100 cooked (higher = more replaceable) with 30% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Construction Worker jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Adapting to every job site' genuinely difficult for AI to replicate for Construction Worker roles?",
+          "context": "Adapting to every job site"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Physical labour in all conditions' genuinely difficult for AI to replicate for Construction Worker roles?",
+          "context": "Physical labour in all conditions"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Safety judgment in real time' genuinely difficult for AI to replicate for Construction Worker roles?",
+          "context": "Safety judgment in real time"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Multi-trade coordination on site' genuinely difficult for AI to replicate for Construction Worker roles?",
+          "context": "Multi-trade coordination on site"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Bricklaying on flat walls' actually being automated right now for Construction Worker roles? Any evidence?",
+          "context": "Bricklaying on flat walls"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Concrete pouring in standard forms' actually being automated right now for Construction Worker roles? Any evidence?",
+          "context": "Concrete pouring in standard forms"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Site measurement and surveying' actually being automated right now for Construction Worker roles? Any evidence?",
+          "context": "Site measurement and surveying"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Progress photo documentation' actually being automated right now for Construction Worker roles? Any evidence?",
+          "context": "Progress photo documentation"
         }
       ],
       "fact_check_results": [],
@@ -4246,6 +4567,67 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Appointment scheduling' actually being automated right now for Dental Hygienist roles? Any evidence?",
           "context": "Appointment scheduling"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "museum-curator": {
+      "title": "Museum Curator",
+      "score": 32,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Museum Curator tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Museum Curator at 32/100 cooked (higher = more replaceable) with 36% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Museum Curator jobs? What do major reports say?",
+          "context": "We estimated ~7 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Narrative storytelling through exhibitions' genuinely difficult for AI to replicate for Museum Curator roles?",
+          "context": "Narrative storytelling through exhibitions"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Art and artefact authentication' genuinely difficult for AI to replicate for Museum Curator roles?",
+          "context": "Art and artefact authentication"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Donor and community relationships' genuinely difficult for AI to replicate for Museum Curator roles?",
+          "context": "Donor and community relationships"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Cultural sensitivity in curation' genuinely difficult for AI to replicate for Museum Curator roles?",
+          "context": "Cultural sensitivity in curation"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Collection cataloguing' actually being automated right now for Museum Curator roles? Any evidence?",
+          "context": "Collection cataloguing"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Provenance research' actually being automated right now for Museum Curator roles? Any evidence?",
+          "context": "Provenance research"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Visitor analytics' actually being automated right now for Museum Curator roles? Any evidence?",
+          "context": "Visitor analytics"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Digital archive management' actually being automated right now for Museum Curator roles? Any evidence?",
+          "context": "Digital archive management"
         }
       ],
       "fact_check_results": [],
@@ -4526,67 +4908,6 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Lab order management' actually being automated right now for Nurse Practitioner roles? Any evidence?",
           "context": "Lab order management"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
-    "real-estate-agent": {
-      "title": "Real Estate Agent",
-      "score": 48,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Real Estate Agent tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Real Estate Agent at 48/100 cooked (higher = more replaceable) with 55% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Real Estate Agent jobs? What do major reports say?",
-          "context": "We estimated ~4 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Negotiation under emotional pressure' genuinely difficult for AI to replicate for Real Estate Agent roles?",
-          "context": "Negotiation under emotional pressure"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Reading buyer intent' genuinely difficult for AI to replicate for Real Estate Agent roles?",
-          "context": "Reading buyer intent"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Local market intuition' genuinely difficult for AI to replicate for Real Estate Agent roles?",
-          "context": "Local market intuition"
-        },
-        {
-          "field": "savingGraces[3]",
-          "query": "Is 'Open house presence and selling' genuinely difficult for AI to replicate for Real Estate Agent roles?",
-          "context": "Open house presence and selling"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Property listing generation' actually being automated right now for Real Estate Agent roles? Any evidence?",
-          "context": "Property listing generation"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Comparable market analysis' actually being automated right now for Real Estate Agent roles? Any evidence?",
-          "context": "Comparable market analysis"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Virtual tour creation' actually being automated right now for Real Estate Agent roles? Any evidence?",
-          "context": "Virtual tour creation"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Lead qualification' actually being automated right now for Real Estate Agent roles? Any evidence?",
-          "context": "Lead qualification"
         }
       ],
       "fact_check_results": [],
@@ -5306,6 +5627,72 @@
       "passes": [],
       "final_status": "pending"
     },
+    "crane-operator": {
+      "title": "Crane Operator",
+      "score": 38,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Crane Operator tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Crane Operator at 38/100 cooked (higher = more replaceable) with 45% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Crane Operator jobs? What do major reports say?",
+          "context": "We estimated ~6 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Spatial awareness in 3D' genuinely difficult for AI to replicate for Crane Operator roles?",
+          "context": "Spatial awareness in 3D"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Reading load dynamics in real time' genuinely difficult for AI to replicate for Crane Operator roles?",
+          "context": "Reading load dynamics in real time"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Communicating with ground crews' genuinely difficult for AI to replicate for Crane Operator roles?",
+          "context": "Communicating with ground crews"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Operating in unpredictable weather' genuinely difficult for AI to replicate for Crane Operator roles?",
+          "context": "Operating in unpredictable weather"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Repetitive lifts in controlled environments' actually being automated right now for Crane Operator roles? Any evidence?",
+          "context": "Repetitive lifts in controlled environments"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Remote crane operation' actually being automated right now for Crane Operator roles? Any evidence?",
+          "context": "Remote crane operation"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Lift planning calculations' actually being automated right now for Crane Operator roles? Any evidence?",
+          "context": "Lift planning calculations"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Load chart lookups' actually being automated right now for Crane Operator roles? Any evidence?",
+          "context": "Load chart lookups"
+        },
+        {
+          "field": "gettingCooked[4]",
+          "query": "Is 'Maintenance logging' actually being automated right now for Crane Operator roles? Any evidence?",
+          "context": "Maintenance logging"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "game-designer": {
       "title": "Game Designer",
       "score": 38,
@@ -5626,6 +6013,62 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Flashcard and quiz creation' actually being automated right now for Tutor roles? Any evidence?",
           "context": "Flashcard and quiz creation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "electrical-engineer": {
+      "title": "Electrical Engineer",
+      "score": 38,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Electrical Engineer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Electrical Engineer at 38/100 cooked (higher = more replaceable) with 28% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Electrical Engineer jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Designing systems for novel constraints' genuinely difficult for AI to replicate for Electrical Engineer roles?",
+          "context": "Designing systems for novel constraints"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'On-site troubleshooting of complex installations' genuinely difficult for AI to replicate for Electrical Engineer roles?",
+          "context": "On-site troubleshooting of complex installations"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Safety-critical judgment under regulation' genuinely difficult for AI to replicate for Electrical Engineer roles?",
+          "context": "Safety-critical judgment under regulation"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Cross-discipline coordination on builds' genuinely difficult for AI to replicate for Electrical Engineer roles?",
+          "context": "Cross-discipline coordination on builds"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Circuit simulation and modelling' actually being automated right now for Electrical Engineer roles? Any evidence?",
+          "context": "Circuit simulation and modelling"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'CAD drafting of standard layouts' actually being automated right now for Electrical Engineer roles? Any evidence?",
+          "context": "CAD drafting of standard layouts"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Compliance documentation' actually being automated right now for Electrical Engineer roles? Any evidence?",
+          "context": "Compliance documentation"
         }
       ],
       "fact_check_results": [],
@@ -6018,6 +6461,62 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Usability heuristic audits' actually being automated right now for UX Designer roles? Any evidence?",
           "context": "Usability heuristic audits"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "mining-worker": {
+      "title": "Mining Worker",
+      "score": 40,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Mining Worker tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Mining Worker at 40/100 cooked (higher = more replaceable) with 38% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Mining Worker jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Underground work in unpredictable geology' genuinely difficult for AI to replicate for Mining Worker roles?",
+          "context": "Underground work in unpredictable geology"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Emergency response in confined spaces' genuinely difficult for AI to replicate for Mining Worker roles?",
+          "context": "Emergency response in confined spaces"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Equipment operation in extreme conditions' genuinely difficult for AI to replicate for Mining Worker roles?",
+          "context": "Equipment operation in extreme conditions"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'On-site safety judgment' genuinely difficult for AI to replicate for Mining Worker roles?",
+          "context": "On-site safety judgment"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Autonomous haul trucks on surface mines' actually being automated right now for Mining Worker roles? Any evidence?",
+          "context": "Autonomous haul trucks on surface mines"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Drilling pattern optimisation' actually being automated right now for Mining Worker roles? Any evidence?",
+          "context": "Drilling pattern optimisation"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Geological survey data processing' actually being automated right now for Mining Worker roles? Any evidence?",
+          "context": "Geological survey data processing"
         }
       ],
       "fact_check_results": [],
@@ -6625,6 +7124,57 @@
       "passes": [],
       "final_status": "pending"
     },
+    "bus-driver": {
+      "title": "Bus Driver",
+      "score": 45,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Bus Driver tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Bus Driver at 45/100 cooked (higher = more replaceable) with 42% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Bus Driver jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Navigating chaotic urban traffic in real time' genuinely difficult for AI to replicate for Bus Driver roles?",
+          "context": "Navigating chaotic urban traffic in real time"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Passenger safety and de-escalation' genuinely difficult for AI to replicate for Bus Driver roles?",
+          "context": "Passenger safety and de-escalation"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Adapting to roadworks, detours, and weather' genuinely difficult for AI to replicate for Bus Driver roles?",
+          "context": "Adapting to roadworks, detours, and weather"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Fixed-route navigation' actually being automated right now for Bus Driver roles? Any evidence?",
+          "context": "Fixed-route navigation"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Fare collection' actually being automated right now for Bus Driver roles? Any evidence?",
+          "context": "Fare collection"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Schedule adherence tracking' actually being automated right now for Bus Driver roles? Any evidence?",
+          "context": "Schedule adherence tracking"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "advertising-executive": {
       "title": "Advertising Executive",
       "score": 46,
@@ -6828,6 +7378,67 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Staff scheduling' actually being automated right now for Retail Manager roles? Any evidence?",
           "context": "Staff scheduling"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "real-estate-agent": {
+      "title": "Real Estate Agent",
+      "score": 48,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Real Estate Agent tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Real Estate Agent at 48/100 cooked (higher = more replaceable) with 55% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Real Estate Agent jobs? What do major reports say?",
+          "context": "We estimated ~4 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Negotiation under emotional pressure' genuinely difficult for AI to replicate for Real Estate Agent roles?",
+          "context": "Negotiation under emotional pressure"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Reading buyer intent' genuinely difficult for AI to replicate for Real Estate Agent roles?",
+          "context": "Reading buyer intent"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Local market intuition' genuinely difficult for AI to replicate for Real Estate Agent roles?",
+          "context": "Local market intuition"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Open house presence and selling' genuinely difficult for AI to replicate for Real Estate Agent roles?",
+          "context": "Open house presence and selling"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Property listing generation' actually being automated right now for Real Estate Agent roles? Any evidence?",
+          "context": "Property listing generation"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Comparable market analysis' actually being automated right now for Real Estate Agent roles? Any evidence?",
+          "context": "Comparable market analysis"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Virtual tour creation' actually being automated right now for Real Estate Agent roles? Any evidence?",
+          "context": "Virtual tour creation"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Lead qualification' actually being automated right now for Real Estate Agent roles? Any evidence?",
+          "context": "Lead qualification"
         }
       ],
       "fact_check_results": [],
@@ -7303,67 +7914,6 @@
       "passes": [],
       "final_status": "pending"
     },
-    "freight-broker": {
-      "title": "Freight Broker",
-      "score": 66,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Freight Broker tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Freight Broker at 66/100 cooked (higher = more replaceable) with 78% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Freight Broker jobs? What do major reports say?",
-          "context": "We estimated ~3 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Carrier relationship management' genuinely difficult for AI to replicate for Freight Broker roles?",
-          "context": "Carrier relationship management"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Exception handling for delays' genuinely difficult for AI to replicate for Freight Broker roles?",
-          "context": "Exception handling for delays"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Negotiation under time pressure' genuinely difficult for AI to replicate for Freight Broker roles?",
-          "context": "Negotiation under time pressure"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Load matching' actually being automated right now for Freight Broker roles? Any evidence?",
-          "context": "Load matching"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Carrier vetting and selection' actually being automated right now for Freight Broker roles? Any evidence?",
-          "context": "Carrier vetting and selection"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Rate quoting' actually being automated right now for Freight Broker roles? Any evidence?",
-          "context": "Rate quoting"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Shipment tracking' actually being automated right now for Freight Broker roles? Any evidence?",
-          "context": "Shipment tracking"
-        },
-        {
-          "field": "gettingCooked[4]",
-          "query": "Is 'Invoice reconciliation' actually being automated right now for Freight Broker roles? Any evidence?",
-          "context": "Invoice reconciliation"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
     "network-administrator": {
       "title": "Network Administrator",
       "score": 50,
@@ -7731,6 +8281,62 @@
       "passes": [],
       "final_status": "pending"
     },
+    "lawyer": {
+      "title": "Lawyer",
+      "score": 52,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Lawyer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Lawyer at 52/100 cooked (higher = more replaceable) with 44% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Lawyer jobs? What do major reports say?",
+          "context": "We estimated ~8 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Courtroom advocacy and persuasion' genuinely difficult for AI to replicate for Lawyer roles?",
+          "context": "Courtroom advocacy and persuasion"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Client counseling through emotional decisions' genuinely difficult for AI to replicate for Lawyer roles?",
+          "context": "Client counseling through emotional decisions"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Negotiation strategy under uncertainty' genuinely difficult for AI to replicate for Lawyer roles?",
+          "context": "Negotiation strategy under uncertainty"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Interpreting ambiguous case law' genuinely difficult for AI to replicate for Lawyer roles?",
+          "context": "Interpreting ambiguous case law"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Legal research and case discovery' actually being automated right now for Lawyer roles? Any evidence?",
+          "context": "Legal research and case discovery"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Contract review and due diligence' actually being automated right now for Lawyer roles? Any evidence?",
+          "context": "Contract review and due diligence"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Document drafting from templates' actually being automated right now for Lawyer roles? Any evidence?",
+          "context": "Document drafting from templates"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "illustrator": {
       "title": "Illustrator",
       "score": 53,
@@ -8042,56 +8648,56 @@
       "passes": [],
       "final_status": "pending"
     },
-    "claims-adjuster": {
-      "title": "Claims Adjuster",
-      "score": 68,
+    "cleaner": {
+      "title": "Cleaner",
+      "score": 55,
       "rule_issues": [],
       "rule_status": "pass",
       "fact_checks": [
         {
           "field": "score",
-          "query": "What percentage of Claims Adjuster tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Claims Adjuster at 68/100 cooked (higher = more replaceable) with 78% automatable"
+          "query": "What percentage of Cleaner tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Cleaner at 55/100 cooked (higher = more replaceable) with 50% automatable"
         },
         {
           "field": "timeline",
-          "query": "How many years until AI significantly impacts Claims Adjuster jobs? What do major reports say?",
-          "context": "We estimated ~3 YRS"
+          "query": "How many years until AI significantly impacts Cleaner jobs? What do major reports say?",
+          "context": "We estimated ~8 YRS"
         },
         {
           "field": "savingGraces[0]",
-          "query": "Is 'On-site damage assessment' genuinely difficult for AI to replicate for Claims Adjuster roles?",
-          "context": "On-site damage assessment"
+          "query": "Is 'Deep cleaning irregular spaces' genuinely difficult for AI to replicate for Cleaner roles?",
+          "context": "Deep cleaning irregular spaces"
         },
         {
           "field": "savingGraces[1]",
-          "query": "Is 'Fraud detection instinct' genuinely difficult for AI to replicate for Claims Adjuster roles?",
-          "context": "Fraud detection instinct"
+          "query": "Is 'Handling hazardous or biohazard materials' genuinely difficult for AI to replicate for Cleaner roles?",
+          "context": "Handling hazardous or biohazard materials"
         },
         {
           "field": "savingGraces[2]",
-          "query": "Is 'Negotiation with claimants' genuinely difficult for AI to replicate for Claims Adjuster roles?",
-          "context": "Negotiation with claimants"
+          "query": "Is 'Adapting to different layouts every shift' genuinely difficult for AI to replicate for Cleaner roles?",
+          "context": "Adapting to different layouts every shift"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Spotting maintenance issues while cleaning' genuinely difficult for AI to replicate for Cleaner roles?",
+          "context": "Spotting maintenance issues while cleaning"
         },
         {
           "field": "gettingCooked[0]",
-          "query": "Is 'Simple auto claims processing' actually being automated right now for Claims Adjuster roles? Any evidence?",
-          "context": "Simple auto claims processing"
+          "query": "Is 'Floor vacuuming and mopping on flat surfaces' actually being automated right now for Cleaner roles? Any evidence?",
+          "context": "Floor vacuuming and mopping on flat surfaces"
         },
         {
           "field": "gettingCooked[1]",
-          "query": "Is 'Documentation and reporting' actually being automated right now for Claims Adjuster roles? Any evidence?",
-          "context": "Documentation and reporting"
+          "query": "Is 'Supply inventory tracking' actually being automated right now for Cleaner roles? Any evidence?",
+          "context": "Supply inventory tracking"
         },
         {
           "field": "gettingCooked[2]",
-          "query": "Is 'Coverage verification' actually being automated right now for Claims Adjuster roles? Any evidence?",
-          "context": "Coverage verification"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Damage estimation from photos' actually being automated right now for Claims Adjuster roles? Any evidence?",
-          "context": "Damage estimation from photos"
+          "query": "Is 'Scheduling and task checklists' actually being automated right now for Cleaner roles? Any evidence?",
+          "context": "Scheduling and task checklists"
         }
       ],
       "fact_check_results": [],
@@ -8256,6 +8862,57 @@
       "passes": [],
       "final_status": "pending"
     },
+    "security-guard": {
+      "title": "Security Guard",
+      "score": 55,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Security Guard tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Security Guard at 55/100 cooked (higher = more replaceable) with 48% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Security Guard jobs? What do major reports say?",
+          "context": "We estimated ~8 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Physical intervention and de-escalation' genuinely difficult for AI to replicate for Security Guard roles?",
+          "context": "Physical intervention and de-escalation"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Judgment calls in ambiguous situations' genuinely difficult for AI to replicate for Security Guard roles?",
+          "context": "Judgment calls in ambiguous situations"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Crowd management at live events' genuinely difficult for AI to replicate for Security Guard roles?",
+          "context": "Crowd management at live events"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'CCTV monitoring and anomaly detection' actually being automated right now for Security Guard roles? Any evidence?",
+          "context": "CCTV monitoring and anomaly detection"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Access control and ID verification' actually being automated right now for Security Guard roles? Any evidence?",
+          "context": "Access control and ID verification"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Patrol route logging' actually being automated right now for Security Guard roles? Any evidence?",
+          "context": "Patrol route logging"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "administrative-assistant": {
       "title": "Administrative Assistant",
       "score": 56,
@@ -8408,62 +9065,6 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Application processing' actually being automated right now for Insurance Underwriter roles? Any evidence?",
           "context": "Application processing"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
-    "medical-coder": {
-      "title": "Medical Coder",
-      "score": 68,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Medical Coder tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Medical Coder at 68/100 cooked (higher = more replaceable) with 80% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Medical Coder jobs? What do major reports say?",
-          "context": "We estimated ~2 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Complex case coding with ambiguity' genuinely difficult for AI to replicate for Medical Coder roles?",
-          "context": "Complex case coding with ambiguity"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Audit defense and compliance' genuinely difficult for AI to replicate for Medical Coder roles?",
-          "context": "Audit defense and compliance"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Payer dispute resolution' genuinely difficult for AI to replicate for Medical Coder roles?",
-          "context": "Payer dispute resolution"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Routine diagnosis code assignment' actually being automated right now for Medical Coder roles? Any evidence?",
-          "context": "Routine diagnosis code assignment"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Procedure code lookups' actually being automated right now for Medical Coder roles? Any evidence?",
-          "context": "Procedure code lookups"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Claims submission' actually being automated right now for Medical Coder roles? Any evidence?",
-          "context": "Claims submission"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Charge capture review' actually being automated right now for Medical Coder roles? Any evidence?",
-          "context": "Charge capture review"
         }
       ],
       "fact_check_results": [],
@@ -8638,6 +9239,57 @@
       "passes": [],
       "final_status": "pending"
     },
+    "rideshare-driver": {
+      "title": "Rideshare Driver",
+      "score": 58,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Rideshare Driver tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Rideshare Driver at 58/100 cooked (higher = more replaceable) with 52% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Rideshare Driver jobs? What do major reports say?",
+          "context": "We estimated ~8 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Navigating unpredictable urban conditions' genuinely difficult for AI to replicate for Rideshare Driver roles?",
+          "context": "Navigating unpredictable urban conditions"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Passenger assistance and safety judgment' genuinely difficult for AI to replicate for Rideshare Driver roles?",
+          "context": "Passenger assistance and safety judgment"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Handling drunk, distressed, or difficult riders' genuinely difficult for AI to replicate for Rideshare Driver roles?",
+          "context": "Handling drunk, distressed, or difficult riders"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Route optimisation' actually being automated right now for Rideshare Driver roles? Any evidence?",
+          "context": "Route optimisation"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Fare calculation and surge pricing' actually being automated right now for Rideshare Driver roles? Any evidence?",
+          "context": "Fare calculation and surge pricing"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Ride matching and dispatch' actually being automated right now for Rideshare Driver roles? Any evidence?",
+          "context": "Ride matching and dispatch"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "tax-preparer": {
       "title": "Tax Preparer",
       "score": 59,
@@ -8734,62 +9386,6 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Quality control data logging' actually being automated right now for Medical Lab Technician roles? Any evidence?",
           "context": "Quality control data logging"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
-    "proofreader": {
-      "title": "Proofreader",
-      "score": 72,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of Proofreader tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored Proofreader at 72/100 cooked (higher = more replaceable) with 84% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts Proofreader jobs? What do major reports say?",
-          "context": "We estimated ~2 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Catching context-dependent errors' genuinely difficult for AI to replicate for Proofreader roles?",
-          "context": "Catching context-dependent errors"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Style guide consistency judgment' genuinely difficult for AI to replicate for Proofreader roles?",
-          "context": "Style guide consistency judgment"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Formatting and layout review' genuinely difficult for AI to replicate for Proofreader roles?",
-          "context": "Formatting and layout review"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Spelling and grammar checking' actually being automated right now for Proofreader roles? Any evidence?",
-          "context": "Spelling and grammar checking"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Punctuation corrections' actually being automated right now for Proofreader roles? Any evidence?",
-          "context": "Punctuation corrections"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Consistency checking' actually being automated right now for Proofreader roles? Any evidence?",
-          "context": "Consistency checking"
-        },
-        {
-          "field": "gettingCooked[3]",
-          "query": "Is 'Fact reference verification' actually being automated right now for Proofreader roles? Any evidence?",
-          "context": "Fact reference verification"
         }
       ],
       "fact_check_results": [],
@@ -8953,6 +9549,57 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Capacity calculation' actually being automated right now for Production Planner roles? Any evidence?",
           "context": "Capacity calculation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "retail-sales-assistant": {
+      "title": "Retail Sales Assistant",
+      "score": 62,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Retail Sales Assistant tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Retail Sales Assistant at 62/100 cooked (higher = more replaceable) with 58% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Retail Sales Assistant jobs? What do major reports say?",
+          "context": "We estimated ~7 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Styling advice and personal recommendations' genuinely difficult for AI to replicate for Retail Sales Assistant roles?",
+          "context": "Styling advice and personal recommendations"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Handling difficult or emotional customers' genuinely difficult for AI to replicate for Retail Sales Assistant roles?",
+          "context": "Handling difficult or emotional customers"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Visual merchandising and store layout' genuinely difficult for AI to replicate for Retail Sales Assistant roles?",
+          "context": "Visual merchandising and store layout"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Checkout and payment processing' actually being automated right now for Retail Sales Assistant roles? Any evidence?",
+          "context": "Checkout and payment processing"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Inventory checks and stock queries' actually being automated right now for Retail Sales Assistant roles? Any evidence?",
+          "context": "Inventory checks and stock queries"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Product information lookups' actually being automated right now for Retail Sales Assistant roles? Any evidence?",
+          "context": "Product information lookups"
         }
       ],
       "fact_check_results": [],
@@ -9214,6 +9861,67 @@
       "passes": [],
       "final_status": "pending"
     },
+    "freight-broker": {
+      "title": "Freight Broker",
+      "score": 66,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Freight Broker tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Freight Broker at 66/100 cooked (higher = more replaceable) with 78% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Freight Broker jobs? What do major reports say?",
+          "context": "We estimated ~3 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Carrier relationship management' genuinely difficult for AI to replicate for Freight Broker roles?",
+          "context": "Carrier relationship management"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Exception handling for delays' genuinely difficult for AI to replicate for Freight Broker roles?",
+          "context": "Exception handling for delays"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Negotiation under time pressure' genuinely difficult for AI to replicate for Freight Broker roles?",
+          "context": "Negotiation under time pressure"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Load matching' actually being automated right now for Freight Broker roles? Any evidence?",
+          "context": "Load matching"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Carrier vetting and selection' actually being automated right now for Freight Broker roles? Any evidence?",
+          "context": "Carrier vetting and selection"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Rate quoting' actually being automated right now for Freight Broker roles? Any evidence?",
+          "context": "Rate quoting"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Shipment tracking' actually being automated right now for Freight Broker roles? Any evidence?",
+          "context": "Shipment tracking"
+        },
+        {
+          "field": "gettingCooked[4]",
+          "query": "Is 'Invoice reconciliation' actually being automated right now for Freight Broker roles? Any evidence?",
+          "context": "Invoice reconciliation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "stock-analyst": {
       "title": "Stock Analyst",
       "score": 66,
@@ -9412,6 +10120,118 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Document collection' actually being automated right now for Mortgage Broker roles? Any evidence?",
           "context": "Document collection"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "claims-adjuster": {
+      "title": "Claims Adjuster",
+      "score": 68,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Claims Adjuster tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Claims Adjuster at 68/100 cooked (higher = more replaceable) with 78% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Claims Adjuster jobs? What do major reports say?",
+          "context": "We estimated ~3 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'On-site damage assessment' genuinely difficult for AI to replicate for Claims Adjuster roles?",
+          "context": "On-site damage assessment"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Fraud detection instinct' genuinely difficult for AI to replicate for Claims Adjuster roles?",
+          "context": "Fraud detection instinct"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Negotiation with claimants' genuinely difficult for AI to replicate for Claims Adjuster roles?",
+          "context": "Negotiation with claimants"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Simple auto claims processing' actually being automated right now for Claims Adjuster roles? Any evidence?",
+          "context": "Simple auto claims processing"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Documentation and reporting' actually being automated right now for Claims Adjuster roles? Any evidence?",
+          "context": "Documentation and reporting"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Coverage verification' actually being automated right now for Claims Adjuster roles? Any evidence?",
+          "context": "Coverage verification"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Damage estimation from photos' actually being automated right now for Claims Adjuster roles? Any evidence?",
+          "context": "Damage estimation from photos"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "medical-coder": {
+      "title": "Medical Coder",
+      "score": 68,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Medical Coder tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Medical Coder at 68/100 cooked (higher = more replaceable) with 80% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Medical Coder jobs? What do major reports say?",
+          "context": "We estimated ~2 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Complex case coding with ambiguity' genuinely difficult for AI to replicate for Medical Coder roles?",
+          "context": "Complex case coding with ambiguity"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Audit defense and compliance' genuinely difficult for AI to replicate for Medical Coder roles?",
+          "context": "Audit defense and compliance"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Payer dispute resolution' genuinely difficult for AI to replicate for Medical Coder roles?",
+          "context": "Payer dispute resolution"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Routine diagnosis code assignment' actually being automated right now for Medical Coder roles? Any evidence?",
+          "context": "Routine diagnosis code assignment"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Procedure code lookups' actually being automated right now for Medical Coder roles? Any evidence?",
+          "context": "Procedure code lookups"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Claims submission' actually being automated right now for Medical Coder roles? Any evidence?",
+          "context": "Claims submission"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Charge capture review' actually being automated right now for Medical Coder roles? Any evidence?",
+          "context": "Charge capture review"
         }
       ],
       "fact_check_results": [],
@@ -9836,6 +10656,62 @@
       "passes": [],
       "final_status": "pending"
     },
+    "proofreader": {
+      "title": "Proofreader",
+      "score": 72,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Proofreader tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Proofreader at 72/100 cooked (higher = more replaceable) with 84% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Proofreader jobs? What do major reports say?",
+          "context": "We estimated ~2 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Catching context-dependent errors' genuinely difficult for AI to replicate for Proofreader roles?",
+          "context": "Catching context-dependent errors"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Style guide consistency judgment' genuinely difficult for AI to replicate for Proofreader roles?",
+          "context": "Style guide consistency judgment"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Formatting and layout review' genuinely difficult for AI to replicate for Proofreader roles?",
+          "context": "Formatting and layout review"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Spelling and grammar checking' actually being automated right now for Proofreader roles? Any evidence?",
+          "context": "Spelling and grammar checking"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Punctuation corrections' actually being automated right now for Proofreader roles? Any evidence?",
+          "context": "Punctuation corrections"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Consistency checking' actually being automated right now for Proofreader roles? Any evidence?",
+          "context": "Consistency checking"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Fact reference verification' actually being automated right now for Proofreader roles? Any evidence?",
+          "context": "Fact reference verification"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
     "claims-processor": {
       "title": "Claims Processor",
       "score": 72,
@@ -10136,57 +11012,6 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Message taking' actually being automated right now for Telephone Operator roles? Any evidence?",
           "context": "Message taking"
-        }
-      ],
-      "fact_check_results": [],
-      "passes": [],
-      "final_status": "pending"
-    },
-    "file-clerk": {
-      "title": "File Clerk",
-      "score": 85,
-      "rule_issues": [],
-      "rule_status": "pass",
-      "fact_checks": [
-        {
-          "field": "score",
-          "query": "What percentage of File Clerk tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
-          "context": "We scored File Clerk at 85/100 cooked (higher = more replaceable) with 92% automatable"
-        },
-        {
-          "field": "timeline",
-          "query": "How many years until AI significantly impacts File Clerk jobs? What do major reports say?",
-          "context": "We estimated ~1 YRS"
-        },
-        {
-          "field": "savingGraces[0]",
-          "query": "Is 'Locating misfiled physical documents' genuinely difficult for AI to replicate for File Clerk roles?",
-          "context": "Locating misfiled physical documents"
-        },
-        {
-          "field": "savingGraces[1]",
-          "query": "Is 'Confidential document handling' genuinely difficult for AI to replicate for File Clerk roles?",
-          "context": "Confidential document handling"
-        },
-        {
-          "field": "savingGraces[2]",
-          "query": "Is 'Legacy system knowledge' genuinely difficult for AI to replicate for File Clerk roles?",
-          "context": "Legacy system knowledge"
-        },
-        {
-          "field": "gettingCooked[0]",
-          "query": "Is 'Digital document filing' actually being automated right now for File Clerk roles? Any evidence?",
-          "context": "Digital document filing"
-        },
-        {
-          "field": "gettingCooked[1]",
-          "query": "Is 'Records retrieval' actually being automated right now for File Clerk roles? Any evidence?",
-          "context": "Records retrieval"
-        },
-        {
-          "field": "gettingCooked[2]",
-          "query": "Is 'Archive management' actually being automated right now for File Clerk roles? Any evidence?",
-          "context": "Archive management"
         }
       ],
       "fact_check_results": [],
@@ -10814,6 +11639,57 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Podcast transcription' actually being automated right now for Transcriptionist roles? Any evidence?",
           "context": "Podcast transcription"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "file-clerk": {
+      "title": "File Clerk",
+      "score": 85,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of File Clerk tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored File Clerk at 85/100 cooked (higher = more replaceable) with 92% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts File Clerk jobs? What do major reports say?",
+          "context": "We estimated ~1 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Locating misfiled physical documents' genuinely difficult for AI to replicate for File Clerk roles?",
+          "context": "Locating misfiled physical documents"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Confidential document handling' genuinely difficult for AI to replicate for File Clerk roles?",
+          "context": "Confidential document handling"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Legacy system knowledge' genuinely difficult for AI to replicate for File Clerk roles?",
+          "context": "Legacy system knowledge"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Digital document filing' actually being automated right now for File Clerk roles? Any evidence?",
+          "context": "Digital document filing"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Records retrieval' actually being automated right now for File Clerk roles? Any evidence?",
+          "context": "Records retrieval"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Archive management' actually being automated right now for File Clerk roles? Any evidence?",
+          "context": "Archive management"
         }
       ],
       "fact_check_results": [],

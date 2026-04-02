@@ -103,60 +103,6 @@
     ]
   },
   {
-    "id": "diesel-mechanic",
-    "title": "Diesel Mechanic",
-    "score": 28,
-    "verdict": "Rare",
-    "verdictQuip": "AI's circling but hasn't landed.",
-    "timeline": "~10",
-    "timelineUnit": "YRS",
-    "automatable": "32%",
-    "pivotPotential": "MED",
-    "savingGraces": [
-      {
-        "text": "Diagnosing problems by sound and feel",
-        "quip": "vibes-based engineering"
-      },
-      {
-        "text": "Working in cramped engine bays",
-        "quip": null
-      },
-      {
-        "text": "Field repairs on remote sites",
-        "quip": null
-      },
-      {
-        "text": "Adapting fixes with available parts",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Diagnostic code reading",
-        "quip": "OBD scanners do this already"
-      },
-      {
-        "text": "Predictive maintenance scheduling",
-        "quip": "telematics sees failures coming"
-      },
-      {
-        "text": "Parts ordering",
-        "quip": null
-      },
-      {
-        "text": "Service scheduling",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "diesel fitter",
-      "heavy vehicle mechanic",
-      "truck mechanic",
-      "diesel tech",
-      "heavy diesel mechanic"
-    ]
-  },
-  {
     "id": "firefighter",
     "title": "Firefighter",
     "score": 5,
@@ -204,63 +150,6 @@
       "fire fighter",
       "firey",
       "firie"
-    ]
-  },
-  {
-    "id": "crane-operator",
-    "title": "Crane Operator",
-    "score": 38,
-    "verdict": "Lightly Toasted",
-    "verdictQuip": "some parts of your job are already on borrowed time.",
-    "timeline": "~6",
-    "timelineUnit": "YRS",
-    "automatable": "45%",
-    "pivotPotential": "MED",
-    "savingGraces": [
-      {
-        "text": "Spatial awareness in 3D",
-        "quip": "wind doesn't follow algorithms"
-      },
-      {
-        "text": "Reading load dynamics in real time",
-        "quip": null
-      },
-      {
-        "text": "Communicating with ground crews",
-        "quip": null
-      },
-      {
-        "text": "Operating in unpredictable weather",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Repetitive lifts in controlled environments",
-        "quip": "port cranes already run themselves"
-      },
-      {
-        "text": "Remote crane operation",
-        "quip": null
-      },
-      {
-        "text": "Lift planning calculations",
-        "quip": null
-      },
-      {
-        "text": "Load chart lookups",
-        "quip": null
-      },
-      {
-        "text": "Maintenance logging",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "crane driver",
-      "crane rigger",
-      "tower crane operator",
-      "mobile crane operator"
     ]
   },
   {
@@ -902,58 +791,56 @@
     ]
   },
   {
-    "id": "welder",
-    "title": "Welder",
-    "score": 22,
-    "verdict": "Rare",
-    "verdictQuip": "AI's circling but hasn't landed.",
-    "timeline": "~10",
+    "id": "childcare-worker",
+    "title": "Childcare Worker",
+    "score": 10,
+    "verdict": "Raw",
+    "verdictQuip": "you're untouchable. for now.",
+    "timeline": "~20",
     "timelineUnit": "YRS",
-    "automatable": "25%",
+    "automatable": "15%",
     "pivotPotential": "LOW",
     "savingGraces": [
       {
-        "text": "Welding in awkward positions and tight spaces",
-        "quip": "robots need flat surfaces and good lighting"
+        "text": "Supervising small children in chaotic environments",
+        "quip": "a room of toddlers defeats any algorithm"
       },
       {
-        "text": "Reading metal conditions",
+        "text": "Emotional co-regulation and attachment",
         "quip": null
       },
       {
-        "text": "Field repair work",
+        "text": "Nappy changes, feeding, and physical care",
         "quip": null
       },
       {
-        "text": "Quality judgment by eye",
+        "text": "Recognising developmental red flags",
         "quip": null
       }
     ],
     "gettingCooked": [
       {
-        "text": "Repetitive production line welds",
-        "quip": "robot arms own this already"
+        "text": "Activity planning and curriculum prep",
+        "quip": "Pinterest was already doing this"
       },
       {
-        "text": "Straight-line welding on flat stock",
+        "text": "Parent communication updates",
         "quip": null
       },
       {
-        "text": "Weld inspection documentation",
-        "quip": null
-      },
-      {
-        "text": "Material calculations",
+        "text": "Attendance tracking",
         "quip": null
       }
     ],
     "searchTerms": [
-      "boilermaker",
-      "fabricator",
-      "metal fabricator",
-      "welding technician",
-      "MIG welder",
-      "TIG welder"
+      "daycare worker",
+      "early childhood educator",
+      "ECE",
+      "nursery worker",
+      "creche worker",
+      "child carer",
+      "nanny",
+      "au pair"
     ]
   },
   {
@@ -1107,61 +994,6 @@
     ]
   },
   {
-    "id": "auto-mechanic",
-    "title": "Auto Mechanic",
-    "score": 27,
-    "verdict": "Rare",
-    "verdictQuip": "AI's circling but hasn't landed.",
-    "timeline": "~10",
-    "timelineUnit": "YRS",
-    "automatable": "30%",
-    "pivotPotential": "MED",
-    "savingGraces": [
-      {
-        "text": "Diagnosing intermittent faults",
-        "quip": "the noise only happens on Tuesdays"
-      },
-      {
-        "text": "Working in cramped engine bays",
-        "quip": null
-      },
-      {
-        "text": "Customer trust and explanation",
-        "quip": null
-      },
-      {
-        "text": "Improvising with older vehicles",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "OBD diagnostic code reading",
-        "quip": "plug-in scanners do this for $20"
-      },
-      {
-        "text": "Predictive maintenance alerts",
-        "quip": "your car already knows what's wrong"
-      },
-      {
-        "text": "Parts lookup and ordering",
-        "quip": null
-      },
-      {
-        "text": "Service scheduling",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "car mechanic",
-      "automotive technician",
-      "motor mechanic",
-      "mechanic",
-      "auto technician",
-      "car technician"
-    ]
-  },
-  {
     "id": "occupational-therapist",
     "title": "Occupational Therapist",
     "score": 12,
@@ -1207,6 +1039,113 @@
       "OT",
       "occupational therapy",
       "rehab therapist"
+    ]
+  },
+  {
+    "id": "aged-care-worker",
+    "title": "Aged Care Worker",
+    "score": 12,
+    "verdict": "Raw",
+    "verdictQuip": "you're untouchable. for now.",
+    "timeline": "~20",
+    "timelineUnit": "YRS",
+    "automatable": "18%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Physical assistance with mobility and personal care",
+        "quip": "robots can't help someone shower with dignity"
+      },
+      {
+        "text": "Companionship and emotional support",
+        "quip": null
+      },
+      {
+        "text": "Responding to falls and medical emergencies",
+        "quip": null
+      },
+      {
+        "text": "Managing dementia-related behaviours",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Medication reminders and scheduling",
+        "quip": "apps already handle this"
+      },
+      {
+        "text": "Care plan documentation",
+        "quip": null
+      },
+      {
+        "text": "Vitals monitoring",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "elderly care worker",
+      "nursing home worker",
+      "care assistant",
+      "personal care assistant",
+      "PCA",
+      "support worker",
+      "home care worker",
+      "aged care nurse"
+    ]
+  },
+  {
+    "id": "primary-school-teacher",
+    "title": "Primary School Teacher",
+    "score": 12,
+    "verdict": "Raw",
+    "verdictQuip": "you're untouchable. for now.",
+    "timeline": "~20",
+    "timelineUnit": "YRS",
+    "automatable": "10%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Managing a classroom of 25 seven-year-olds",
+        "quip": "this is a superpower, not a job task"
+      },
+      {
+        "text": "Emotional scaffolding and social skill development",
+        "quip": null
+      },
+      {
+        "text": "Recognising learning difficulties early",
+        "quip": null
+      },
+      {
+        "text": "Building trust with kids and parents",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Lesson plan generation",
+        "quip": "teachers already use ChatGPT for this"
+      },
+      {
+        "text": "Marking standardised worksheets",
+        "quip": null
+      },
+      {
+        "text": "Report card comment writing",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "elementary school teacher",
+      "grade school teacher",
+      "primary teacher",
+      "year 1 teacher",
+      "year 2 teacher",
+      "year 3 teacher",
+      "year 4 teacher",
+      "year 5 teacher",
+      "year 6 teacher"
     ]
   },
   {
@@ -1361,61 +1300,6 @@
     ]
   },
   {
-    "id": "construction-worker",
-    "title": "Construction Worker",
-    "score": 28,
-    "verdict": "Rare",
-    "verdictQuip": "AI's circling but hasn't landed.",
-    "timeline": "~10",
-    "timelineUnit": "YRS",
-    "automatable": "30%",
-    "pivotPotential": "LOW",
-    "savingGraces": [
-      {
-        "text": "Adapting to every job site",
-        "quip": "no two sites are the same"
-      },
-      {
-        "text": "Physical labour in all conditions",
-        "quip": null
-      },
-      {
-        "text": "Safety judgment in real time",
-        "quip": null
-      },
-      {
-        "text": "Multi-trade coordination on site",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Bricklaying on flat walls",
-        "quip": "robot bricklayers exist now"
-      },
-      {
-        "text": "Concrete pouring in standard forms",
-        "quip": null
-      },
-      {
-        "text": "Site measurement and surveying",
-        "quip": null
-      },
-      {
-        "text": "Progress photo documentation",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "builder",
-      "labourer",
-      "laborer",
-      "construction labourer",
-      "building labourer",
-      "tradesman"
-    ]
-  },
-  {
     "id": "psychologist",
     "title": "Psychologist",
     "score": 14,
@@ -1450,7 +1334,7 @@
       },
       {
         "text": "Session note documentation",
-        "quip": null
+        "quip": "AI writes SOAP notes in seconds now"
       },
       {
         "text": "CBT worksheet generation",
@@ -1762,6 +1646,107 @@
       "ink artist",
       "tattooer",
       "body artist"
+    ]
+  },
+  {
+    "id": "paediatrician",
+    "title": "Paediatrician",
+    "score": 16,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~15",
+    "timelineUnit": "YRS",
+    "automatable": "18%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Physical examination of uncooperative toddlers",
+        "quip": "try getting a two-year-old to hold still for a sensor"
+      },
+      {
+        "text": "Developmental milestone assessment",
+        "quip": null
+      },
+      {
+        "text": "Communicating with anxious parents",
+        "quip": null
+      },
+      {
+        "text": "Reading nonverbal cues in kids who can't describe symptoms",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Growth chart tracking and flagging",
+        "quip": "software already does this"
+      },
+      {
+        "text": "Vaccination schedule management",
+        "quip": null
+      },
+      {
+        "text": "Clinical documentation",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "pediatrician",
+      "children's doctor",
+      "child doctor",
+      "kids doctor",
+      "baby doctor",
+      "child specialist"
+    ]
+  },
+  {
+    "id": "nail-technician",
+    "title": "Nail Technician",
+    "score": 16,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~15",
+    "timelineUnit": "YRS",
+    "automatable": "14%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Precision work on ten different-shaped fingers",
+        "quip": "every hand is a different canvas"
+      },
+      {
+        "text": "Client conversation and relationship building",
+        "quip": null
+      },
+      {
+        "text": "Custom nail art design on the spot",
+        "quip": null
+      },
+      {
+        "text": "Cuticle and skin care judgment",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Design inspiration and reference lookups",
+        "quip": "Instagram already runs this"
+      },
+      {
+        "text": "Appointment booking",
+        "quip": null
+      },
+      {
+        "text": "Inventory ordering",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "nail artist",
+      "manicurist",
+      "nail tech",
+      "pedicurist",
+      "nail salon worker"
     ]
   },
   {
@@ -2179,6 +2164,112 @@
     ]
   },
   {
+    "id": "housewife",
+    "title": "Housewife",
+    "score": 18,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~15",
+    "timelineUnit": "YRS",
+    "automatable": "20%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Managing a household of unpredictable humans",
+        "quip": "no algorithm survives a toddler meltdown at 6am"
+      },
+      {
+        "text": "Emotional regulation and conflict mediation",
+        "quip": null
+      },
+      {
+        "text": "Physical caregiving for sick kids or elderly parents",
+        "quip": null
+      },
+      {
+        "text": "Real-time multitasking across competing demands",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Meal planning and grocery lists",
+        "quip": "ChatGPT's been doing this since day one"
+      },
+      {
+        "text": "Household budgeting",
+        "quip": null
+      },
+      {
+        "text": "Scheduling and calendar management",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "stay-at-home mum",
+      "stay-at-home mom",
+      "stay-at-home parent",
+      "homemaker",
+      "sahm",
+      "domestic worker",
+      "stay at home mum",
+      "stay at home mom",
+      "stay at home parent"
+    ]
+  },
+  {
+    "id": "makeup-artist",
+    "title": "Makeup Artist",
+    "score": 18,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~15",
+    "timelineUnit": "YRS",
+    "automatable": "16%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Application on real skin with real texture",
+        "quip": "foundation doesn't apply itself \u2014 yet"
+      },
+      {
+        "text": "Reading a client's features and bone structure",
+        "quip": null
+      },
+      {
+        "text": "Adapting to lighting conditions on set",
+        "quip": null
+      },
+      {
+        "text": "Calming nervous brides and performers",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Virtual try-on and colour matching",
+        "quip": "AR filters are eating this alive"
+      },
+      {
+        "text": "Product recommendation engines",
+        "quip": null
+      },
+      {
+        "text": "Tutorial content generation",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "MUA",
+      "beauty therapist",
+      "cosmetologist",
+      "beauty consultant",
+      "bridal makeup artist",
+      "film makeup artist",
+      "special effects makeup"
+    ]
+  },
+  {
     "id": "bartender",
     "title": "Bartender",
     "score": 19,
@@ -2574,60 +2665,6 @@
     ]
   },
   {
-    "id": "museum-curator",
-    "title": "Museum Curator",
-    "score": 32,
-    "verdict": "Lightly Toasted",
-    "verdictQuip": "some parts of your job are already on borrowed time.",
-    "timeline": "~7",
-    "timelineUnit": "YRS",
-    "automatable": "36%",
-    "pivotPotential": "MED",
-    "savingGraces": [
-      {
-        "text": "Narrative storytelling through exhibitions",
-        "quip": "context is everything"
-      },
-      {
-        "text": "Art and artefact authentication",
-        "quip": null
-      },
-      {
-        "text": "Donor and community relationships",
-        "quip": null
-      },
-      {
-        "text": "Cultural sensitivity in curation",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Collection cataloguing",
-        "quip": "databases do this already"
-      },
-      {
-        "text": "Provenance research",
-        "quip": "AI crawls archives faster than you"
-      },
-      {
-        "text": "Visitor analytics",
-        "quip": null
-      },
-      {
-        "text": "Digital archive management",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "curator",
-      "gallery curator",
-      "art curator",
-      "collections manager",
-      "museum director"
-    ]
-  },
-  {
     "id": "waiter",
     "title": "Waiter/Waitress",
     "score": 20,
@@ -2825,6 +2862,61 @@
       "art educator",
       "painting teacher",
       "drawing teacher"
+    ]
+  },
+  {
+    "id": "welder",
+    "title": "Welder",
+    "score": 22,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "25%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Welding in awkward positions and tight spaces",
+        "quip": "robots need flat surfaces and good lighting"
+      },
+      {
+        "text": "Reading metal conditions",
+        "quip": null
+      },
+      {
+        "text": "Field repair work",
+        "quip": null
+      },
+      {
+        "text": "Quality judgment by eye",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Repetitive production line welds",
+        "quip": "robot arms own this already"
+      },
+      {
+        "text": "Straight-line welding on flat stock",
+        "quip": null
+      },
+      {
+        "text": "Weld inspection documentation",
+        "quip": null
+      },
+      {
+        "text": "Material calculations",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "boilermaker",
+      "fabricator",
+      "metal fabricator",
+      "welding technician",
+      "MIG welder",
+      "TIG welder"
     ]
   },
   {
@@ -3383,6 +3475,59 @@
     ]
   },
   {
+    "id": "farmer",
+    "title": "Farmer",
+    "score": 25,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~12",
+    "timelineUnit": "YRS",
+    "automatable": "24%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Responding to unpredictable weather and terrain",
+        "quip": "seasons don't follow a sprint schedule"
+      },
+      {
+        "text": "Animal husbandry and welfare judgment",
+        "quip": null
+      },
+      {
+        "text": "Equipment repair in the field",
+        "quip": null
+      },
+      {
+        "text": "Land management across variable conditions",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Crop monitoring and yield prediction",
+        "quip": "drones and satellites are already on it"
+      },
+      {
+        "text": "Irrigation scheduling",
+        "quip": null
+      },
+      {
+        "text": "Market price tracking and sell timing",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "grazier",
+      "rancher",
+      "crop farmer",
+      "dairy farmer",
+      "cattle farmer",
+      "agriculture worker",
+      "pastoralist",
+      "station hand"
+    ]
+  },
+  {
     "id": "housekeeper",
     "title": "Housekeeper",
     "score": 26,
@@ -3530,6 +3675,61 @@
     ]
   },
   {
+    "id": "auto-mechanic",
+    "title": "Auto Mechanic",
+    "score": 27,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "30%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Diagnosing intermittent faults",
+        "quip": "the noise only happens on Tuesdays"
+      },
+      {
+        "text": "Working in cramped engine bays",
+        "quip": null
+      },
+      {
+        "text": "Customer trust and explanation",
+        "quip": null
+      },
+      {
+        "text": "Improvising with older vehicles",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "OBD diagnostic code reading",
+        "quip": "plug-in scanners do this for $20"
+      },
+      {
+        "text": "Predictive maintenance alerts",
+        "quip": "your car already knows what's wrong"
+      },
+      {
+        "text": "Parts lookup and ordering",
+        "quip": null
+      },
+      {
+        "text": "Service scheduling",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "car mechanic",
+      "automotive technician",
+      "motor mechanic",
+      "mechanic",
+      "auto technician",
+      "car technician"
+    ]
+  },
+  {
     "id": "interior-designer",
     "title": "Interior Designer",
     "score": 27,
@@ -3577,6 +3777,115 @@
       "home decorator",
       "interior architect",
       "space planner"
+    ]
+  },
+  {
+    "id": "diesel-mechanic",
+    "title": "Diesel Mechanic",
+    "score": 28,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "32%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Diagnosing problems by sound and feel",
+        "quip": "vibes-based engineering"
+      },
+      {
+        "text": "Working in cramped engine bays",
+        "quip": null
+      },
+      {
+        "text": "Field repairs on remote sites",
+        "quip": null
+      },
+      {
+        "text": "Adapting fixes with available parts",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Diagnostic code reading",
+        "quip": "OBD scanners do this already"
+      },
+      {
+        "text": "Predictive maintenance scheduling",
+        "quip": "telematics sees failures coming"
+      },
+      {
+        "text": "Parts ordering",
+        "quip": null
+      },
+      {
+        "text": "Service scheduling",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "diesel fitter",
+      "heavy vehicle mechanic",
+      "truck mechanic",
+      "diesel tech",
+      "heavy diesel mechanic"
+    ]
+  },
+  {
+    "id": "construction-worker",
+    "title": "Construction Worker",
+    "score": 28,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "30%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Adapting to every job site",
+        "quip": "no two sites are the same"
+      },
+      {
+        "text": "Physical labour in all conditions",
+        "quip": null
+      },
+      {
+        "text": "Safety judgment in real time",
+        "quip": null
+      },
+      {
+        "text": "Multi-trade coordination on site",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Bricklaying on flat walls",
+        "quip": "robot bricklayers exist now"
+      },
+      {
+        "text": "Concrete pouring in standard forms",
+        "quip": null
+      },
+      {
+        "text": "Site measurement and surveying",
+        "quip": null
+      },
+      {
+        "text": "Progress photo documentation",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "builder",
+      "labourer",
+      "laborer",
+      "construction labourer",
+      "building labourer",
+      "tradesman"
     ]
   },
   {
@@ -3818,6 +4127,60 @@
       "oral hygienist",
       "dental therapist",
       "teeth cleaner"
+    ]
+  },
+  {
+    "id": "museum-curator",
+    "title": "Museum Curator",
+    "score": 32,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~7",
+    "timelineUnit": "YRS",
+    "automatable": "36%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Narrative storytelling through exhibitions",
+        "quip": "context is everything"
+      },
+      {
+        "text": "Art and artefact authentication",
+        "quip": null
+      },
+      {
+        "text": "Donor and community relationships",
+        "quip": null
+      },
+      {
+        "text": "Cultural sensitivity in curation",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Collection cataloguing",
+        "quip": "databases do this already"
+      },
+      {
+        "text": "Provenance research",
+        "quip": "AI crawls archives faster than you"
+      },
+      {
+        "text": "Visitor analytics",
+        "quip": null
+      },
+      {
+        "text": "Digital archive management",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "curator",
+      "gallery curator",
+      "art curator",
+      "collections manager",
+      "museum director"
     ]
   },
   {
@@ -4071,63 +4434,6 @@
     ]
   },
   {
-    "id": "real-estate-agent",
-    "title": "Real Estate Agent",
-    "score": 48,
-    "verdict": "Half Baked",
-    "verdictQuip": "it's a coin flip. better have a plan B.",
-    "timeline": "~4",
-    "timelineUnit": "YRS",
-    "automatable": "55%",
-    "pivotPotential": "HIGH",
-    "savingGraces": [
-      {
-        "text": "Negotiation under emotional pressure",
-        "quip": "buying a home isn't a rational decision"
-      },
-      {
-        "text": "Reading buyer intent",
-        "quip": null
-      },
-      {
-        "text": "Local market intuition",
-        "quip": null
-      },
-      {
-        "text": "Open house presence and selling",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Property listing generation",
-        "quip": "AI writes listings already"
-      },
-      {
-        "text": "Comparable market analysis",
-        "quip": "algorithms crunch this faster"
-      },
-      {
-        "text": "Virtual tour creation",
-        "quip": null
-      },
-      {
-        "text": "Lead qualification",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "realtor",
-      "real estate salesperson",
-      "property agent",
-      "estate agent",
-      "real estate broker",
-      "buyer's agent",
-      "listing agent",
-      "property manager"
-    ]
-  },
-  {
     "id": "research-scientist",
     "title": "Research Scientist",
     "score": 33,
@@ -4339,7 +4645,7 @@
     "savingGraces": [
       {
         "text": "Threat hunting with creative thinking",
-        "quip": "attackers are human — defenders should be too"
+        "quip": "attackers are human \u2014 defenders should be too"
       },
       {
         "text": "Incident response under pressure",
@@ -4782,6 +5088,63 @@
     ]
   },
   {
+    "id": "crane-operator",
+    "title": "Crane Operator",
+    "score": 38,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~6",
+    "timelineUnit": "YRS",
+    "automatable": "45%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Spatial awareness in 3D",
+        "quip": "wind doesn't follow algorithms"
+      },
+      {
+        "text": "Reading load dynamics in real time",
+        "quip": null
+      },
+      {
+        "text": "Communicating with ground crews",
+        "quip": null
+      },
+      {
+        "text": "Operating in unpredictable weather",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Repetitive lifts in controlled environments",
+        "quip": "port cranes already run themselves"
+      },
+      {
+        "text": "Remote crane operation",
+        "quip": null
+      },
+      {
+        "text": "Lift planning calculations",
+        "quip": null
+      },
+      {
+        "text": "Load chart lookups",
+        "quip": null
+      },
+      {
+        "text": "Maintenance logging",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "crane driver",
+      "crane rigger",
+      "tower crane operator",
+      "mobile crane operator"
+    ]
+  },
+  {
     "id": "game-designer",
     "title": "Game Designer",
     "score": 38,
@@ -5078,6 +5441,57 @@
       "math tutor",
       "English tutor",
       "tutoring"
+    ]
+  },
+  {
+    "id": "electrical-engineer",
+    "title": "Electrical Engineer",
+    "score": 38,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "28%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Designing systems for novel constraints",
+        "quip": "every site is a new puzzle"
+      },
+      {
+        "text": "On-site troubleshooting of complex installations",
+        "quip": null
+      },
+      {
+        "text": "Safety-critical judgment under regulation",
+        "quip": null
+      },
+      {
+        "text": "Cross-discipline coordination on builds",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Circuit simulation and modelling",
+        "quip": "SPICE has been doing this for decades"
+      },
+      {
+        "text": "CAD drafting of standard layouts",
+        "quip": null
+      },
+      {
+        "text": "Compliance documentation",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "EE",
+      "electronics engineer",
+      "power engineer",
+      "electrical designer",
+      "circuit engineer",
+      "power systems engineer"
     ]
   },
   {
@@ -5434,6 +5848,59 @@
       "product designer",
       "UI/UX",
       "experience designer"
+    ]
+  },
+  {
+    "id": "mining-worker",
+    "title": "Mining Worker",
+    "score": 40,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "38%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Underground work in unpredictable geology",
+        "quip": "geology doesn't follow a playbook"
+      },
+      {
+        "text": "Emergency response in confined spaces",
+        "quip": null
+      },
+      {
+        "text": "Equipment operation in extreme conditions",
+        "quip": null
+      },
+      {
+        "text": "On-site safety judgment",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Autonomous haul trucks on surface mines",
+        "quip": "Pilbara trucks already drive themselves"
+      },
+      {
+        "text": "Drilling pattern optimisation",
+        "quip": null
+      },
+      {
+        "text": "Geological survey data processing",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "miner",
+      "mine worker",
+      "FIFO worker",
+      "underground miner",
+      "open cut miner",
+      "pit worker",
+      "drill operator",
+      "mining operator"
     ]
   },
   {
@@ -5992,6 +6459,52 @@
     ]
   },
   {
+    "id": "bus-driver",
+    "title": "Bus Driver",
+    "score": 45,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "42%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Navigating chaotic urban traffic in real time",
+        "quip": "autonomous buses exist \u2014 in controlled loops"
+      },
+      {
+        "text": "Passenger safety and de-escalation",
+        "quip": null
+      },
+      {
+        "text": "Adapting to roadworks, detours, and weather",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Fixed-route navigation",
+        "quip": "GPS solved this decades ago"
+      },
+      {
+        "text": "Fare collection",
+        "quip": null
+      },
+      {
+        "text": "Schedule adherence tracking",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "coach driver",
+      "transit driver",
+      "public transport driver",
+      "shuttle driver",
+      "school bus driver"
+    ]
+  },
+  {
     "id": "advertising-executive",
     "title": "Advertising Executive",
     "score": 46,
@@ -6176,6 +6689,63 @@
       "retail supervisor",
       "assistant manager retail",
       "department manager"
+    ]
+  },
+  {
+    "id": "real-estate-agent",
+    "title": "Real Estate Agent",
+    "score": 48,
+    "verdict": "Half Baked",
+    "verdictQuip": "it's a coin flip. better have a plan B.",
+    "timeline": "~4",
+    "timelineUnit": "YRS",
+    "automatable": "55%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      {
+        "text": "Negotiation under emotional pressure",
+        "quip": "buying a home isn't a rational decision"
+      },
+      {
+        "text": "Reading buyer intent",
+        "quip": null
+      },
+      {
+        "text": "Local market intuition",
+        "quip": null
+      },
+      {
+        "text": "Open house presence and selling",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Property listing generation",
+        "quip": "AI writes listings already"
+      },
+      {
+        "text": "Comparable market analysis",
+        "quip": "algorithms crunch this faster"
+      },
+      {
+        "text": "Virtual tour creation",
+        "quip": null
+      },
+      {
+        "text": "Lead qualification",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "realtor",
+      "real estate salesperson",
+      "property agent",
+      "estate agent",
+      "real estate broker",
+      "buyer's agent",
+      "listing agent",
+      "property manager"
     ]
   },
   {
@@ -6608,60 +7178,6 @@
     ]
   },
   {
-    "id": "freight-broker",
-    "title": "Freight Broker",
-    "score": 66,
-    "verdict": "Well Done",
-    "verdictQuip": "the robots are warming up your seat.",
-    "timeline": "~3",
-    "timelineUnit": "YRS",
-    "automatable": "78%",
-    "pivotPotential": "MED",
-    "savingGraces": [
-      {
-        "text": "Carrier relationship management",
-        "quip": "trust matters when loads go wrong"
-      },
-      {
-        "text": "Exception handling for delays",
-        "quip": null
-      },
-      {
-        "text": "Negotiation under time pressure",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Load matching",
-        "quip": "digital freight platforms do this instantly"
-      },
-      {
-        "text": "Carrier vetting and selection",
-        "quip": "AI agents handle this end-to-end now"
-      },
-      {
-        "text": "Rate quoting",
-        "quip": null
-      },
-      {
-        "text": "Shipment tracking",
-        "quip": null
-      },
-      {
-        "text": "Invoice reconciliation",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "freight forwarder",
-      "customs broker",
-      "shipping broker",
-      "logistics broker",
-      "freight agent"
-    ]
-  },
-  {
     "id": "network-administrator",
     "title": "Network Administrator",
     "score": 50,
@@ -6996,6 +7512,60 @@
     ]
   },
   {
+    "id": "lawyer",
+    "title": "Lawyer",
+    "score": 52,
+    "verdict": "Half Baked",
+    "verdictQuip": "it's a coin flip. better have a plan B.",
+    "timeline": "~8",
+    "timelineUnit": "YRS",
+    "automatable": "44%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Courtroom advocacy and persuasion",
+        "quip": "judges still prefer humans who can read the room"
+      },
+      {
+        "text": "Client counseling through emotional decisions",
+        "quip": null
+      },
+      {
+        "text": "Negotiation strategy under uncertainty",
+        "quip": null
+      },
+      {
+        "text": "Interpreting ambiguous case law",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Legal research and case discovery",
+        "quip": "AI reads case law faster than any associate"
+      },
+      {
+        "text": "Contract review and due diligence",
+        "quip": null
+      },
+      {
+        "text": "Document drafting from templates",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "solicitor",
+      "barrister",
+      "attorney",
+      "legal counsel",
+      "legal advisor",
+      "corporate lawyer",
+      "criminal lawyer",
+      "family lawyer",
+      "litigation lawyer"
+    ]
+  },
+  {
     "id": "illustrator",
     "title": "Illustrator",
     "score": 53,
@@ -7278,52 +7848,56 @@
     ]
   },
   {
-    "id": "claims-adjuster",
-    "title": "Claims Adjuster",
-    "score": 68,
-    "verdict": "Well Done",
-    "verdictQuip": "the robots are warming up your seat.",
-    "timeline": "~3",
+    "id": "cleaner",
+    "title": "Cleaner",
+    "score": 55,
+    "verdict": "Half Baked",
+    "verdictQuip": "it's a coin flip. better have a plan B.",
+    "timeline": "~8",
     "timelineUnit": "YRS",
-    "automatable": "78%",
-    "pivotPotential": "MED",
+    "automatable": "50%",
+    "pivotPotential": "LOW",
     "savingGraces": [
       {
-        "text": "On-site damage assessment",
-        "quip": "photos don't tell the whole story"
+        "text": "Deep cleaning irregular spaces",
+        "quip": "Roombas can't scrub a shower"
       },
       {
-        "text": "Fraud detection instinct",
+        "text": "Handling hazardous or biohazard materials",
         "quip": null
       },
       {
-        "text": "Negotiation with claimants",
+        "text": "Adapting to different layouts every shift",
+        "quip": null
+      },
+      {
+        "text": "Spotting maintenance issues while cleaning",
         "quip": null
       }
     ],
     "gettingCooked": [
       {
-        "text": "Simple auto claims processing",
-        "quip": "photo-based AI estimates are live"
+        "text": "Floor vacuuming and mopping on flat surfaces",
+        "quip": "robot vacuums already own this"
       },
       {
-        "text": "Documentation and reporting",
+        "text": "Supply inventory tracking",
         "quip": null
       },
       {
-        "text": "Coverage verification",
-        "quip": null
-      },
-      {
-        "text": "Damage estimation from photos",
+        "text": "Scheduling and task checklists",
         "quip": null
       }
     ],
     "searchTerms": [
-      "loss adjuster",
-      "insurance adjuster",
-      "claims assessor",
-      "claims investigator"
+      "janitor",
+      "custodian",
+      "office cleaner",
+      "commercial cleaner",
+      "house cleaner",
+      "domestic cleaner",
+      "cleaning lady",
+      "sanitation worker"
     ]
   },
   {
@@ -7469,6 +8043,53 @@
     ]
   },
   {
+    "id": "security-guard",
+    "title": "Security Guard",
+    "score": 55,
+    "verdict": "Half Baked",
+    "verdictQuip": "it's a coin flip. better have a plan B.",
+    "timeline": "~8",
+    "timelineUnit": "YRS",
+    "automatable": "48%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Physical intervention and de-escalation",
+        "quip": "cameras can watch but they can't tackle"
+      },
+      {
+        "text": "Judgment calls in ambiguous situations",
+        "quip": null
+      },
+      {
+        "text": "Crowd management at live events",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "CCTV monitoring and anomaly detection",
+        "quip": "AI never blinks"
+      },
+      {
+        "text": "Access control and ID verification",
+        "quip": null
+      },
+      {
+        "text": "Patrol route logging",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "security officer",
+      "bouncer",
+      "door staff",
+      "loss prevention",
+      "security personnel",
+      "night watchman"
+    ]
+  },
+  {
     "id": "administrative-assistant",
     "title": "Administrative Assistant",
     "score": 56,
@@ -7610,56 +8231,6 @@
       "risk assessor",
       "insurance analyst",
       "commercial underwriter"
-    ]
-  },
-  {
-    "id": "medical-coder",
-    "title": "Medical Coder",
-    "score": 68,
-    "verdict": "Well Done",
-    "verdictQuip": "the robots are warming up your seat.",
-    "timeline": "~2",
-    "timelineUnit": "YRS",
-    "automatable": "80%",
-    "pivotPotential": "MED",
-    "savingGraces": [
-      {
-        "text": "Complex case coding with ambiguity",
-        "quip": "doctors' notes are a puzzle"
-      },
-      {
-        "text": "Audit defense and compliance",
-        "quip": null
-      },
-      {
-        "text": "Payer dispute resolution",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Routine diagnosis code assignment",
-        "quip": "NLP tools code 90% of standard claims"
-      },
-      {
-        "text": "Procedure code lookups",
-        "quip": null
-      },
-      {
-        "text": "Claims submission",
-        "quip": null
-      },
-      {
-        "text": "Charge capture review",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "clinical coder",
-      "health information coder",
-      "medical coding specialist",
-      "ICD coder",
-      "HIM specialist"
     ]
   },
   {
@@ -7815,6 +8386,54 @@
     ]
   },
   {
+    "id": "rideshare-driver",
+    "title": "Rideshare Driver",
+    "score": 58,
+    "verdict": "Half Baked",
+    "verdictQuip": "it's a coin flip. better have a plan B.",
+    "timeline": "~8",
+    "timelineUnit": "YRS",
+    "automatable": "52%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Navigating unpredictable urban conditions",
+        "quip": "self-driving still panics at construction zones"
+      },
+      {
+        "text": "Passenger assistance and safety judgment",
+        "quip": null
+      },
+      {
+        "text": "Handling drunk, distressed, or difficult riders",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Route optimisation",
+        "quip": "the app already tells you where to go"
+      },
+      {
+        "text": "Fare calculation and surge pricing",
+        "quip": null
+      },
+      {
+        "text": "Ride matching and dispatch",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "uber driver",
+      "lyft driver",
+      "taxi driver",
+      "cab driver",
+      "ola driver",
+      "ride-hail driver",
+      "private hire driver"
+    ]
+  },
+  {
     "id": "tax-preparer",
     "title": "Tax Preparer",
     "score": 59,
@@ -7904,56 +8523,6 @@
       "medical scientist",
       "lab scientist",
       "clinical laboratory technician"
-    ]
-  },
-  {
-    "id": "proofreader",
-    "title": "Proofreader",
-    "score": 72,
-    "verdict": "Well Done",
-    "verdictQuip": "the robots are warming up your seat.",
-    "timeline": "~2",
-    "timelineUnit": "YRS",
-    "automatable": "84%",
-    "pivotPotential": "MED",
-    "savingGraces": [
-      {
-        "text": "Catching context-dependent errors",
-        "quip": "spellcheck doesn't know you meant 'their'"
-      },
-      {
-        "text": "Style guide consistency judgment",
-        "quip": null
-      },
-      {
-        "text": "Formatting and layout review",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Spelling and grammar checking",
-        "quip": "Grammarly has been doing this for years"
-      },
-      {
-        "text": "Punctuation corrections",
-        "quip": null
-      },
-      {
-        "text": "Consistency checking",
-        "quip": "AI spots every mismatch in seconds"
-      },
-      {
-        "text": "Fact reference verification",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "copy editor",
-      "editor",
-      "sub-editor",
-      "subeditor",
-      "manuscript editor"
     ]
   },
   {
@@ -8103,6 +8672,54 @@
       "manufacturing planner",
       "production controller",
       "materials planner"
+    ]
+  },
+  {
+    "id": "retail-sales-assistant",
+    "title": "Retail Sales Assistant",
+    "score": 62,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~7",
+    "timelineUnit": "YRS",
+    "automatable": "58%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Styling advice and personal recommendations",
+        "quip": "algorithms suggest, but can't read your vibe"
+      },
+      {
+        "text": "Handling difficult or emotional customers",
+        "quip": null
+      },
+      {
+        "text": "Visual merchandising and store layout",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Checkout and payment processing",
+        "quip": "self-checkout says hi"
+      },
+      {
+        "text": "Inventory checks and stock queries",
+        "quip": null
+      },
+      {
+        "text": "Product information lookups",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "shop assistant",
+      "retail worker",
+      "sales associate",
+      "store clerk",
+      "shop worker",
+      "retail associate",
+      "sales clerk"
     ]
   },
   {
@@ -8335,6 +8952,60 @@
     ]
   },
   {
+    "id": "freight-broker",
+    "title": "Freight Broker",
+    "score": 66,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~3",
+    "timelineUnit": "YRS",
+    "automatable": "78%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Carrier relationship management",
+        "quip": "trust matters when loads go wrong"
+      },
+      {
+        "text": "Exception handling for delays",
+        "quip": null
+      },
+      {
+        "text": "Negotiation under time pressure",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Load matching",
+        "quip": "digital freight platforms do this instantly"
+      },
+      {
+        "text": "Carrier vetting and selection",
+        "quip": "AI agents handle this end-to-end now"
+      },
+      {
+        "text": "Rate quoting",
+        "quip": null
+      },
+      {
+        "text": "Shipment tracking",
+        "quip": null
+      },
+      {
+        "text": "Invoice reconciliation",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "freight forwarder",
+      "customs broker",
+      "shipping broker",
+      "logistics broker",
+      "freight agent"
+    ]
+  },
+  {
     "id": "stock-analyst",
     "title": "Stock Analyst",
     "score": 66,
@@ -8514,6 +9185,105 @@
       "mortgage advisor",
       "mortgage consultant",
       "home loan specialist"
+    ]
+  },
+  {
+    "id": "claims-adjuster",
+    "title": "Claims Adjuster",
+    "score": 68,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~3",
+    "timelineUnit": "YRS",
+    "automatable": "78%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "On-site damage assessment",
+        "quip": "photos don't tell the whole story"
+      },
+      {
+        "text": "Fraud detection instinct",
+        "quip": null
+      },
+      {
+        "text": "Negotiation with claimants",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Simple auto claims processing",
+        "quip": "photo-based AI estimates are live"
+      },
+      {
+        "text": "Documentation and reporting",
+        "quip": null
+      },
+      {
+        "text": "Coverage verification",
+        "quip": null
+      },
+      {
+        "text": "Damage estimation from photos",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "loss adjuster",
+      "insurance adjuster",
+      "claims assessor",
+      "claims investigator"
+    ]
+  },
+  {
+    "id": "medical-coder",
+    "title": "Medical Coder",
+    "score": 68,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~2",
+    "timelineUnit": "YRS",
+    "automatable": "80%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Complex case coding with ambiguity",
+        "quip": "doctors' notes are a puzzle"
+      },
+      {
+        "text": "Audit defense and compliance",
+        "quip": null
+      },
+      {
+        "text": "Payer dispute resolution",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Routine diagnosis code assignment",
+        "quip": "NLP tools code 90% of standard claims"
+      },
+      {
+        "text": "Procedure code lookups",
+        "quip": null
+      },
+      {
+        "text": "Claims submission",
+        "quip": null
+      },
+      {
+        "text": "Charge capture review",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "clinical coder",
+      "health information coder",
+      "medical coding specialist",
+      "ICD coder",
+      "HIM specialist"
     ]
   },
   {
@@ -8888,6 +9658,56 @@
     ]
   },
   {
+    "id": "proofreader",
+    "title": "Proofreader",
+    "score": 72,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~2",
+    "timelineUnit": "YRS",
+    "automatable": "84%",
+    "pivotPotential": "MED",
+    "savingGraces": [
+      {
+        "text": "Catching context-dependent errors",
+        "quip": "spellcheck doesn't know you meant 'their'"
+      },
+      {
+        "text": "Style guide consistency judgment",
+        "quip": null
+      },
+      {
+        "text": "Formatting and layout review",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Spelling and grammar checking",
+        "quip": "Grammarly has been doing this for years"
+      },
+      {
+        "text": "Punctuation corrections",
+        "quip": null
+      },
+      {
+        "text": "Consistency checking",
+        "quip": "AI spots every mismatch in seconds"
+      },
+      {
+        "text": "Fact reference verification",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "copy editor",
+      "editor",
+      "sub-editor",
+      "subeditor",
+      "manuscript editor"
+    ]
+  },
+  {
     "id": "claims-processor",
     "title": "Claims Processor",
     "score": 72,
@@ -9156,52 +9976,6 @@
       "switchboard assistant",
       "telecommunications operator",
       "PBX operator"
-    ]
-  },
-  {
-    "id": "file-clerk",
-    "title": "File Clerk",
-    "score": 85,
-    "verdict": "Extra Crispy",
-    "verdictQuip": "most of what you do, a bot does cheaper.",
-    "timeline": "~1",
-    "timelineUnit": "YRS",
-    "automatable": "92%",
-    "pivotPotential": "LOW",
-    "savingGraces": [
-      {
-        "text": "Locating misfiled physical documents",
-        "quip": "someone still has to dig through the basement"
-      },
-      {
-        "text": "Confidential document handling",
-        "quip": null
-      },
-      {
-        "text": "Legacy system knowledge",
-        "quip": null
-      }
-    ],
-    "gettingCooked": [
-      {
-        "text": "Digital document filing",
-        "quip": "auto-tagging and OCR handle this"
-      },
-      {
-        "text": "Records retrieval",
-        "quip": null
-      },
-      {
-        "text": "Archive management",
-        "quip": null
-      }
-    ],
-    "searchTerms": [
-      "filing clerk",
-      "records clerk",
-      "records officer",
-      "document clerk",
-      "archive clerk"
     ]
   },
   {
@@ -9764,6 +10538,52 @@
       "audio transcriber",
       "legal transcriptionist",
       "court reporter"
+    ]
+  },
+  {
+    "id": "file-clerk",
+    "title": "File Clerk",
+    "score": 85,
+    "verdict": "Extra Crispy",
+    "verdictQuip": "most of what you do, a bot does cheaper.",
+    "timeline": "~1",
+    "timelineUnit": "YRS",
+    "automatable": "92%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      {
+        "text": "Locating misfiled physical documents",
+        "quip": "someone still has to dig through the basement"
+      },
+      {
+        "text": "Confidential document handling",
+        "quip": null
+      },
+      {
+        "text": "Legacy system knowledge",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Digital document filing",
+        "quip": "auto-tagging and OCR handle this"
+      },
+      {
+        "text": "Records retrieval",
+        "quip": null
+      },
+      {
+        "text": "Archive management",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "filing clerk",
+      "records clerk",
+      "records officer",
+      "document clerk",
+      "archive clerk"
     ]
   },
   {

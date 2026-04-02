@@ -221,6 +221,22 @@ SEARCH_TERMS = {
     "photo-lab-technician": ["photo lab tech", "darkroom technician", "photo processor", "film developer"],
     "directory-assistance-operator": ["directory enquiries", "information operator", "411 operator"],
     "classified-ad-taker": ["classified advertising clerk", "ad taker", "advertising clerk"],
+    "paediatrician": ["pediatrician", "children's doctor", "child doctor", "kids doctor", "baby doctor", "child specialist"],
+    "housewife": ["stay-at-home mum", "stay-at-home mom", "stay-at-home parent", "homemaker", "sahm", "domestic worker", "stay at home mum", "stay at home mom", "stay at home parent"],
+    "lawyer": ["solicitor", "barrister", "attorney", "legal counsel", "legal advisor", "corporate lawyer", "criminal lawyer", "family lawyer", "litigation lawyer"],
+    "farmer": ["grazier", "rancher", "crop farmer", "dairy farmer", "cattle farmer", "agriculture worker", "pastoralist", "station hand"],
+    "retail-sales-assistant": ["shop assistant", "retail worker", "sales associate", "store clerk", "shop worker", "retail associate", "sales clerk"],
+    "childcare-worker": ["daycare worker", "early childhood educator", "ECE", "nursery worker", "creche worker", "child carer", "nanny", "au pair"],
+    "aged-care-worker": ["elderly care worker", "nursing home worker", "care assistant", "personal care assistant", "PCA", "support worker", "home care worker", "aged care nurse"],
+    "security-guard": ["security officer", "bouncer", "door staff", "loss prevention", "security personnel", "night watchman"],
+    "bus-driver": ["coach driver", "transit driver", "public transport driver", "shuttle driver", "school bus driver"],
+    "cleaner": ["janitor", "custodian", "office cleaner", "commercial cleaner", "house cleaner", "domestic cleaner", "cleaning lady", "sanitation worker"],
+    "rideshare-driver": ["uber driver", "lyft driver", "taxi driver", "cab driver", "ola driver", "ride-hail driver", "private hire driver"],
+    "mining-worker": ["miner", "mine worker", "FIFO worker", "underground miner", "open cut miner", "pit worker", "drill operator", "mining operator"],
+    "nail-technician": ["nail artist", "manicurist", "nail tech", "pedicurist", "nail salon worker"],
+    "makeup-artist": ["MUA", "beauty therapist", "cosmetologist", "beauty consultant", "bridal makeup artist", "film makeup artist", "special effects makeup"],
+    "electrical-engineer": ["EE", "electronics engineer", "power engineer", "electrical designer", "circuit engineer", "power systems engineer"],
+    "primary-school-teacher": ["elementary school teacher", "grade school teacher", "primary teacher", "year 1 teacher", "year 2 teacher", "year 3 teacher", "year 4 teacher", "year 5 teacher", "year 6 teacher"],
 }
 
 def main():
