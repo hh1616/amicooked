@@ -1156,11 +1156,11 @@ body {
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 4;
     ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W - pad, y); ctx.stroke();
-    y += 36;
+    y += 64;
     ctx.fillStyle = '#000';
     ctx.font = '900 44px Barlow, sans-serif';
     ctx.fillText('YOUR SAVING GRACES', pad, y);
-    y += 32;
+    y += 52;
 
     for (let i = 0; i < job.savingGraces.length; i++) {
       const item = job.savingGraces[i];
@@ -1178,7 +1178,7 @@ body {
         const ql = wrap('(' + item.quip + ')', cw - 80);
         for (const q of ql) { ctx.fillText(q, pad + 80, y); y += 42; }
       }
-      y += 8;
+      y += 12;
     }
     y += (e.betweenLists || 16);
 
@@ -1186,11 +1186,11 @@ body {
     ctx.strokeStyle = '#000';
     ctx.lineWidth = 4;
     ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W - pad, y); ctx.stroke();
-    y += 36;
+    y += 64;
     ctx.fillStyle = '#000';
     ctx.font = '900 44px Barlow, sans-serif';
     ctx.fillText("WHAT'S GETTING COOKED FIRST", pad, y);
-    y += 32;
+    y += 52;
 
     for (const item of job.gettingCooked) {
       ctx.fillStyle = '#cc0000';
@@ -1207,7 +1207,7 @@ body {
         const ql = wrap('(' + item.quip + ')', cw - 80);
         for (const q of ql) { ctx.fillText(q, pad + 80, y); y += 42; }
       }
-      y += 8;
+      y += 12;
     }
     y += (e.beforeWatermark || 48);
 
