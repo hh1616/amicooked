@@ -905,28 +905,14 @@ body {
     card.style.maxWidth = '';
   });
 
-  // ===== Canvas share card =====
+  // ===== Canvas share card (story format 1080x1920) =====
   function drawShareCard(job) {
-    // First pass: measure height
-    const measureCv = document.createElement('canvas');
-    measureCv.width = 1280;
-    measureCv.height = 4000; // tall enough for measurement
-    const mCtx = measureCv.getContext('2d');
-    mCtx.scale(2, 2);
-    const totalH = renderCard(mCtx, job, 640, 36);
-
-    // Second pass: draw at correct height
+    const W = 1080, H = 1920, pad = 72;
     const cv = document.createElement('canvas');
-    cv.width = 1280;
-    cv.height = totalH * 2;
+    cv.width = W;
+    cv.height = H;
     const ctx = cv.getContext('2d');
-    ctx.scale(2, 2);
-    renderCard(ctx, job, 640, 36);
-    return cv;
-  }
 
-  function renderCard(ctx, job, W, pad) {
-    // Helper: wrap text
     function wrap(text, maxW) {
       const words = text.split(' ');
       const lines = [];
@@ -936,64 +922,60 @@ body {
         if (ctx.measureText(test).width > maxW) {
           if (line) lines.push(line);
           line = word;
-        } else {
-          line = test;
-        }
+        } else { line = test; }
       }
       if (line) lines.push(line);
       return lines;
     }
 
-    let y = 0;
+    const cw = W - pad * 2; // content width
 
-    // Background (full canvas)
+    // Background
     ctx.fillStyle = '#f8f6f1';
-    ctx.fillRect(0, 0, W, 2000);
+    ctx.fillRect(0, 0, W, H);
 
     // --- Header bar ---
-    const hdrH = 44;
+    const hdrH = 80;
     ctx.fillStyle = '#000';
-    ctx.fillRect(0, y, W, hdrH);
+    ctx.fillRect(0, 0, W, hdrH);
     ctx.fillStyle = '#fff';
-    ctx.font = '900 15px Barlow, sans-serif';
     ctx.textBaseline = 'middle';
-    ctx.fillText('AM I COOKED?', pad, y + hdrH / 2);
+    ctx.font = '900 28px Barlow, sans-serif';
+    ctx.fillText('AM I COOKED?', pad, hdrH / 2);
     ctx.fillStyle = '#ff0000';
-    ctx.font = '8px sans-serif';
-    ctx.fillText('\u25CF', W - pad - 8, y + hdrH / 2);
-    y += hdrH + 32;
+    ctx.font = '14px sans-serif';
+    ctx.fillText('\u25CF', W - pad - 14, hdrH / 2);
+
+    let y = hdrH + 60;
+    ctx.textBaseline = 'alphabetic';
 
     // --- Score ---
-    ctx.textBaseline = 'alphabetic';
     ctx.fillStyle = '#000';
-    ctx.font = 'italic 100px Instrument Serif, serif';
-    ctx.fillText(String(job.score), pad, y + 80);
+    ctx.font = 'italic 180px Instrument Serif, serif';
+    ctx.fillText(String(job.score), pad, y + 140);
     const scoreW = ctx.measureText(String(job.score)).width;
     ctx.fillStyle = '#999';
-    ctx.font = 'italic 34px Instrument Serif, serif';
-    ctx.fillText('\u2009/\u2009100', pad + scoreW, y + 80);
-    y += 88;
+    ctx.font = 'italic 60px Instrument Serif, serif';
+    ctx.fillText('/100', pad + scoreW + 4, y + 140);
+    y += 160;
 
     // --- Verdict ---
     ctx.fillStyle = '#000';
-    ctx.font = '900 38px Barlow, sans-serif';
-    const verdictLines = wrap(job.verdict.toUpperCase(), W - pad * 2);
-    for (const line of verdictLines) {
-      y += 40;
-      ctx.fillText(line, pad, y);
-    }
-    y += 4;
+    ctx.font = '900 64px Barlow, sans-serif';
+    const vLines = wrap(job.verdict.toUpperCase(), cw);
+    for (const line of vLines) { y += 70; ctx.fillText(line, pad, y); }
+    y += 8;
 
     // --- Job label ---
     ctx.fillStyle = '#999';
-    ctx.font = '400 12px Space Mono, monospace';
-    y += 16;
+    ctx.font = '400 22px Space Mono, monospace';
+    y += 32;
     ctx.fillText('JOB: ' + job.title, pad, y);
-    y += 24;
+    y += 48;
 
     // --- Stat boxes ---
-    const boxW = (W - pad * 2) / 3;
-    const boxH = 70;
+    const boxW = Math.floor(cw / 3);
+    const boxH = 120;
     const stats = [
       { value: job.timeline + ' ' + job.timelineUnit, label: ['TILL ROBOTS', 'TAKE OVER'] },
       { value: job.automatable, label: ['AUTOMATABLE'] },
@@ -1002,101 +984,87 @@ body {
     for (let i = 0; i < 3; i++) {
       const bx = pad + i * boxW;
       ctx.strokeStyle = '#000';
-      ctx.lineWidth = 3;
+      ctx.lineWidth = 4;
       ctx.strokeRect(bx, y, boxW, boxH);
       ctx.fillStyle = '#000';
-      ctx.font = '900 24px Barlow, sans-serif';
+      ctx.font = '900 40px Barlow, sans-serif';
       ctx.textAlign = 'center';
-      ctx.fillText(stats[i].value, bx + boxW / 2, y + 30);
+      ctx.fillText(stats[i].value, bx + boxW / 2, y + 52);
       ctx.fillStyle = '#888';
-      ctx.font = '400 8px Space Mono, monospace';
+      ctx.font = '400 14px Space Mono, monospace';
       for (let li = 0; li < stats[i].label.length; li++) {
-        ctx.fillText(stats[i].label[li], bx + boxW / 2, y + 46 + li * 11);
+        ctx.fillText(stats[i].label[li], bx + boxW / 2, y + 78 + li * 18);
       }
       ctx.textAlign = 'left';
     }
-    y += boxH + 26;
+    y += boxH + 48;
 
-    // --- Lists ---
-    const colW = (W - pad * 2 - 36) / 2;
-    const listY = y;
-
-    // Divider lines
+    // --- Saving Graces ---
     ctx.strokeStyle = '#000';
-    ctx.lineWidth = 3;
-    ctx.beginPath(); ctx.moveTo(pad, listY); ctx.lineTo(pad + colW, listY); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(pad + colW + 36, listY); ctx.lineTo(W - pad, listY); ctx.stroke();
-    y += 18;
-
-    // Headings
+    ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W - pad, y); ctx.stroke();
+    y += 36;
     ctx.fillStyle = '#000';
-    ctx.font = '900 15px Barlow, sans-serif';
+    ctx.font = '900 26px Barlow, sans-serif';
     ctx.fillText('YOUR SAVING GRACES', pad, y);
-    ctx.fillText("WHAT'S GETTING", pad + colW + 36, y);
-    y += 16;
-    ctx.fillText('COOKED FIRST', pad + colW + 36, y);
-    const savingStartY = y + 14;
-    const cookedStartY = y + 14;
-    y += 14;
+    y += 28;
 
-    // Saving graces
-    let sy = savingStartY;
     for (let i = 0; i < job.savingGraces.length; i++) {
       const item = job.savingGraces[i];
       const num = String(i + 1).padStart(2, '0') + '.';
       ctx.fillStyle = '#999';
-      ctx.font = '400 12px Space Mono, monospace';
-      ctx.fillText(num, pad, sy);
+      ctx.font = '400 20px Space Mono, monospace';
+      ctx.fillText(num, pad, y);
       ctx.fillStyle = '#444';
-      const lines = wrap(item.text, colW - 28);
-      for (let li = 0; li < lines.length; li++) {
-        ctx.fillText(lines[li], pad + 28, sy + li * 20);
-      }
-      sy += lines.length * 20;
+      const lines = wrap(item.text, cw - 52);
+      for (let li = 0; li < lines.length; li++) { ctx.fillText(lines[li], pad + 52, y + li * 28); }
+      y += lines.length * 28;
       if (item.quip) {
         ctx.fillStyle = '#aaa';
-        ctx.font = '400 10px Space Mono, monospace';
-        const ql = wrap('(' + item.quip + ')', colW - 28);
-        for (const q of ql) { ctx.fillText(q, pad + 28, sy); sy += 16; }
+        ctx.font = '400 17px Space Mono, monospace';
+        const ql = wrap('(' + item.quip + ')', cw - 52);
+        for (const q of ql) { ctx.fillText(q, pad + 52, y); y += 24; }
       }
+      y += 4;
     }
+    y += 20;
 
-    // Getting cooked
-    let cy = cookedStartY;
+    // --- Getting Cooked ---
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W - pad, y); ctx.stroke();
+    y += 36;
+    ctx.fillStyle = '#000';
+    ctx.font = '900 26px Barlow, sans-serif';
+    ctx.fillText("WHAT'S GETTING COOKED FIRST", pad, y);
+    y += 28;
+
     for (const item of job.gettingCooked) {
       ctx.fillStyle = '#cc0000';
-      ctx.font = '700 12px Space Mono, monospace';
-      ctx.fillText('\u2715', pad + colW + 36, cy);
+      ctx.font = '700 20px Space Mono, monospace';
+      ctx.fillText('\u2715', pad, y);
       ctx.fillStyle = '#444';
-      ctx.font = '400 12px Space Mono, monospace';
-      const lines = wrap(item.text, colW - 28);
-      for (let li = 0; li < lines.length; li++) {
-        ctx.fillText(lines[li], pad + colW + 36 + 28, cy + li * 20);
-      }
-      cy += lines.length * 20;
+      ctx.font = '400 20px Space Mono, monospace';
+      const lines = wrap(item.text, cw - 52);
+      for (let li = 0; li < lines.length; li++) { ctx.fillText(lines[li], pad + 52, y + li * 28); }
+      y += lines.length * 28;
       if (item.quip) {
         ctx.fillStyle = '#aaa';
-        ctx.font = '400 10px Space Mono, monospace';
-        const ql = wrap('(' + item.quip + ')', colW - 28);
-        for (const q of ql) { ctx.fillText(q, pad + colW + 36 + 28, cy); cy += 16; }
+        ctx.font = '400 17px Space Mono, monospace';
+        const ql = wrap('(' + item.quip + ')', cw - 52);
+        for (const q of ql) { ctx.fillText(q, pad + 52, y); y += 24; }
       }
+      y += 4;
     }
 
-    y = Math.max(sy, cy) + 24;
-
-    // --- Watermark ---
+    // --- Watermark at bottom ---
     ctx.fillStyle = '#bbb';
-    ctx.font = '700 15px Space Mono, monospace';
+    ctx.font = '700 26px Space Mono, monospace';
     ctx.textAlign = 'center';
-    ctx.fillText('AMICOOKED.ME', W / 2, y);
+    ctx.fillText('AMICOOKED.ME', W / 2, H - 60);
     ctx.textAlign = 'left';
-    y += 24;
 
-    // Clear below content
-    ctx.fillStyle = '#f8f6f1';
-    ctx.fillRect(0, y, W, 2000 - y);
-
-    return y;
+    return cv;
   }
 
   // ===== Share =====
