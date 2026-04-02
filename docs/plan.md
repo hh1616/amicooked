@@ -53,6 +53,7 @@
 - [x] Deploy to Netlify via GitHub (repo: github.com/hh1616/amicooked)
 - [x] Buy domain `amicooked.me` (Porkbun, $8.80/yr) and point DNS to Netlify
 - [x] Add Tally feedback form ("Roast Us Back" — tally.so/r/BzDQq5)
+- [x] Install Plausible analytics (cookieless, privacy-friendly)
 - [ ] Sign up for Coursera affiliate program via Impact.com (see `docs/growth-strategy.md` for steps)
 - [ ] Replace placeholder affiliate href with real tracking link
 - [ ] Create Hacker News account at news.ycombinator.com
