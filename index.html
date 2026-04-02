@@ -872,7 +872,7 @@ body {
     if (!currentJob) return;
 
     try {
-      const canvas = drawShareCard(currentJob, 1920);
+      const canvas = drawStoryCard(currentJob);
       const dataUrl = canvas.toDataURL('image/png');
 
       const link = document.createElement('a');
@@ -1047,26 +1047,199 @@ body {
     return y;
   }
 
-  function drawShareCard(job, targetHeight) {
+  function drawShareCard(job) {
     const W = 1080, pad = 72;
-    // Pass 1: measure content height
     const tmp = document.createElement('canvas');
     tmp.width = W; tmp.height = 4000;
     const contentH = renderShareCard(tmp.getContext('2d'), job, W, pad);
-    // Pass 2: draw centered in target height (or exact fit if no target)
     const cv = document.createElement('canvas');
     cv.width = W;
-    const H = targetHeight ? Math.max(contentH, targetHeight) : contentH;
-    cv.height = H;
-    const ctx = cv.getContext('2d');
-    // Pre-fill entire background
+    cv.height = contentH;
+    renderShareCard(cv.getContext('2d'), job, W, pad);
+    return cv;
+  }
+
+  // ===== Story card (1080x1920, sized for Instagram stories) =====
+  function renderStoryCard(ctx, job, extra) {
+    const W = 1080, H = 1920, pad = 80;
+    const cw = W - pad * 2;
+    const e = extra || {};
+
+    function wrap(text, maxW) {
+      const words = text.split(' ');
+      const lines = [];
+      let line = '';
+      for (const word of words) {
+        const test = line ? line + ' ' + word : word;
+        if (ctx.measureText(test).width > maxW) {
+          if (line) lines.push(line);
+          line = word;
+        } else { line = test; }
+      }
+      if (line) lines.push(line);
+      return lines;
+    }
+
+    let y = 0;
+
+    // Background
     ctx.fillStyle = '#f8f6f1';
     ctx.fillRect(0, 0, W, H);
-    // Center content vertically if canvas is taller than content
-    if (H > contentH) {
-      ctx.translate(0, Math.floor((H - contentH) / 2));
+
+    // --- Header bar ---
+    const hdrH = 100;
+    ctx.fillStyle = '#000';
+    ctx.fillRect(0, 0, W, hdrH);
+    ctx.fillStyle = '#fff';
+    ctx.textBaseline = 'middle';
+    ctx.font = '900 34px Barlow, sans-serif';
+    ctx.fillText('AM I COOKED?', pad, hdrH / 2);
+    ctx.fillStyle = '#ff0000';
+    ctx.font = '16px sans-serif';
+    ctx.fillText('\u25CF', W - pad - 16, hdrH / 2);
+
+    y = hdrH + 70;
+    ctx.textBaseline = 'alphabetic';
+
+    // --- Score (hero) ---
+    ctx.fillStyle = '#000';
+    ctx.font = 'italic 300px Instrument Serif, serif';
+    ctx.fillText(String(job.score), pad, y + 220);
+    const scoreW = ctx.measureText(String(job.score)).width;
+    ctx.fillStyle = '#999';
+    ctx.font = 'italic 90px Instrument Serif, serif';
+    ctx.fillText('/100', pad + scoreW + 4, y + 220);
+    y += 240;
+
+    // --- Verdict ---
+    ctx.fillStyle = '#000';
+    ctx.font = '900 88px Barlow, sans-serif';
+    const vLines = wrap(job.verdict.toUpperCase(), cw);
+    for (const line of vLines) { y += 92; ctx.fillText(line, pad, y); }
+    y += 12;
+
+    // --- Job label ---
+    ctx.fillStyle = '#999';
+    ctx.font = '400 26px Space Mono, monospace';
+    y += 36;
+    ctx.fillText('JOB: ' + job.title, pad, y);
+    y += 56;
+
+    // --- Stat boxes ---
+    const boxW = Math.floor(cw / 3);
+    const boxH = 150;
+    const stats = [
+      { value: job.timeline + ' ' + job.timelineUnit, label: ['TILL ROBOTS', 'TAKE OVER'] },
+      { value: job.automatable, label: ['AUTOMATABLE'] },
+      { value: job.pivotPotential, label: ['PIVOT', 'POTENTIAL'] }
+    ];
+    for (let i = 0; i < 3; i++) {
+      const bx = pad + i * boxW;
+      ctx.strokeStyle = '#000';
+      ctx.lineWidth = 4;
+      ctx.strokeRect(bx, y, boxW, boxH);
+      ctx.fillStyle = '#000';
+      ctx.font = '900 56px Barlow, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(stats[i].value, bx + boxW / 2, y + 68);
+      ctx.fillStyle = '#888';
+      ctx.font = '400 22px Space Mono, monospace';
+      for (let li = 0; li < stats[i].label.length; li++) {
+        ctx.fillText(stats[i].label[li], bx + boxW / 2, y + 100 + li * 26);
+      }
+      ctx.textAlign = 'left';
     }
-    renderShareCard(ctx, job, W, pad);
+    y += boxH;
+    y += (e.afterStats || 48);
+
+    // --- Saving Graces ---
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W - pad, y); ctx.stroke();
+    y += 36;
+    ctx.fillStyle = '#000';
+    ctx.font = '900 44px Barlow, sans-serif';
+    ctx.fillText('YOUR SAVING GRACES', pad, y);
+    y += 32;
+
+    for (let i = 0; i < job.savingGraces.length; i++) {
+      const item = job.savingGraces[i];
+      const num = String(i + 1).padStart(2, '0') + '.';
+      ctx.fillStyle = '#999';
+      ctx.font = '400 36px Space Mono, monospace';
+      ctx.fillText(num, pad, y);
+      ctx.fillStyle = '#444';
+      const lines = wrap(item.text, cw - 80);
+      for (let li = 0; li < lines.length; li++) { ctx.fillText(lines[li], pad + 80, y + li * 52); }
+      y += lines.length * 52;
+      if (item.quip) {
+        ctx.fillStyle = '#aaa';
+        ctx.font = '400 28px Space Mono, monospace';
+        const ql = wrap('(' + item.quip + ')', cw - 80);
+        for (const q of ql) { ctx.fillText(q, pad + 80, y); y += 42; }
+      }
+      y += 8;
+    }
+    y += (e.betweenLists || 16);
+
+    // --- Getting Cooked ---
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 4;
+    ctx.beginPath(); ctx.moveTo(pad, y); ctx.lineTo(W - pad, y); ctx.stroke();
+    y += 36;
+    ctx.fillStyle = '#000';
+    ctx.font = '900 44px Barlow, sans-serif';
+    ctx.fillText("WHAT'S GETTING COOKED FIRST", pad, y);
+    y += 32;
+
+    for (const item of job.gettingCooked) {
+      ctx.fillStyle = '#cc0000';
+      ctx.font = '700 36px Space Mono, monospace';
+      ctx.fillText('\u2715', pad, y);
+      ctx.fillStyle = '#444';
+      ctx.font = '400 36px Space Mono, monospace';
+      const lines = wrap(item.text, cw - 80);
+      for (let li = 0; li < lines.length; li++) { ctx.fillText(lines[li], pad + 80, y + li * 52); }
+      y += lines.length * 52;
+      if (item.quip) {
+        ctx.fillStyle = '#aaa';
+        ctx.font = '400 28px Space Mono, monospace';
+        const ql = wrap('(' + item.quip + ')', cw - 80);
+        for (const q of ql) { ctx.fillText(q, pad + 80, y); y += 42; }
+      }
+      y += 8;
+    }
+    y += (e.beforeWatermark || 48);
+
+    // --- Watermark ---
+    ctx.fillStyle = '#bbb';
+    ctx.font = '700 36px Space Mono, monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('AMICOOKED.ME', W / 2, y);
+    ctx.textAlign = 'left';
+    y += 60;
+
+    return y;
+  }
+
+  function drawStoryCard(job) {
+    const W = 1080, H = 1920;
+    // Pass 1: measure content with default spacing
+    const tmp = document.createElement('canvas');
+    tmp.width = W; tmp.height = 4000;
+    const contentH = renderStoryCard(tmp.getContext('2d'), job);
+    // Calculate extra space to distribute
+    const extraTotal = Math.max(0, H - contentH);
+    const extra = {
+      afterStats: 48 + extraTotal * 0.35,
+      betweenLists: 16 + extraTotal * 0.15,
+      beforeWatermark: 48 + extraTotal * 0.50
+    };
+    // Pass 2: draw with distributed spacing
+    const cv = document.createElement('canvas');
+    cv.width = W;
+    cv.height = H;
+    renderStoryCard(cv.getContext('2d'), job, extra);
     return cv;
   }
 
@@ -1080,7 +1253,7 @@ body {
     if (navigator.share) {
       let file = null;
       try {
-        const canvas = drawShareCard(currentJob, 1920);
+        const canvas = drawStoryCard(currentJob);
         const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
         file = new File([blob], 'amicooked-' + currentJob.id + '.png', { type: 'image/png' });
       } catch (e) {
