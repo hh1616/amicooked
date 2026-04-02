@@ -913,48 +913,10 @@ body {
     const shareTitle = "I'm " + currentJob.verdict + ' \u2014 Am I Cooked?';
     const shareText = 'I scored ' + currentJob.score + '/100 on the AI job risk calculator.';
 
-    // On mobile: try to attach watermarked PNG, but always show native share sheet
+    // Native share sheet on mobile
     if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
-      let file = null;
-
-      // Best-effort PNG generation — if it fails, we still share the link
       try {
-        const card = $('results-card');
-        const cardHeader = $('card-header');
-        const watermark = $('capture-watermark');
-
-        cardHeader.style.display = 'flex';
-        watermark.style.display = 'block';
-        card.style.background = '#f8f6f1';
-        card.style.padding = '0 24px 8px';
-        card.style.maxWidth = '640px';
-
-        const html2canvas = (await import('https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/+esm')).default;
-        const canvas = await html2canvas(card, {
-          scale: 2,
-          backgroundColor: '#f8f6f1',
-          useCORS: true
-        });
-
-        cardHeader.style.display = '';
-        watermark.style.display = '';
-        card.style.background = '';
-        card.style.padding = '';
-        card.style.maxWidth = '';
-
-        const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
-        file = new File([blob], 'amicooked-' + currentJob.id + '.png', { type: 'image/png' });
-      } catch (e) {
-        // PNG failed — that's fine, share without it
-      }
-
-      // Always show native share sheet
-      try {
-        const shareData = { title: shareTitle, text: shareText, url: shareUrl };
-        if (file && navigator.canShare && navigator.canShare({ files: [file] })) {
-          shareData.files = [file];
-        }
-        await navigator.share(shareData);
+        await navigator.share({ title: shareTitle, text: shareText, url: shareUrl });
         return;
       } catch (err) {
         if (err.name === 'AbortError') return;
