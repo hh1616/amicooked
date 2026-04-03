@@ -1,0 +1,522 @@
+[
+  {
+    "job_id": "backend-developer",
+    "title": "Backend Developer",
+    "our_years": 5,
+    "estimated_years": 6,
+    "agree": true,
+    "reason": "AI coding agents (Copilot, Cursor, Devin) accelerating fast but backend work involves system design, debugging distributed systems, and understanding business logic. McKinsey (2023) estimates 60-70% of coding tasks automatable by 2030. 5y is slightly aggressive given enterprise adoption lag, but within range."
+  },
+  {
+    "job_id": "cloud-architect",
+    "title": "Cloud Architect",
+    "our_years": 6,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Cloud architecture requires cross-system strategic thinking, cost optimization trade-offs, and security posture decisions. IaC automation handles provisioning but architectural decisions need human judgment. AI assists but doesn't replace the design thinking layer for several more years."
+  },
+  {
+    "job_id": "cybersecurity-analyst",
+    "title": "Cybersecurity Analyst",
+    "our_years": 7,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "AI already handles threat detection and log analysis well, but adversarial nature of cybersecurity means humans must stay ahead of AI-augmented attackers. WEF ranks cybersecurity as growing demand. Paradox: AI creates more threats, requiring more analysts even as AI assists them."
+  },
+  {
+    "job_id": "data-scientist",
+    "title": "Data Scientist",
+    "our_years": 5,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "AutoML, AI-generated analysis, and natural language data querying are rapidly commoditizing standard data science. Goldman Sachs (2023) flagged data analysis as highly exposed. Routine modeling is already largely automatable; what remains is problem framing and domain expertise."
+  },
+  {
+    "job_id": "database-administrator",
+    "title": "Database Administrator",
+    "our_years": 4,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "Managed cloud databases (RDS, Cloud SQL), auto-tuning, auto-scaling, and AI-driven query optimization are already displacing routine DBA tasks. Self-healing databases are maturing. Frey-Osborne scored this role highly automatable. 4y is reasonable."
+  },
+  {
+    "job_id": "devops-engineer",
+    "title": "DevOps Engineer",
+    "our_years": 6,
+    "estimated_years": 6,
+    "agree": true,
+    "reason": "CI/CD pipelines, infrastructure-as-code, and AI-assisted incident response are automating much of DevOps. However, the role keeps expanding into platform engineering and reliability. AI handles the repetitive parts but complex system interactions still need humans."
+  },
+  {
+    "job_id": "electrical-engineer",
+    "title": "Electrical Engineer",
+    "our_years": 10,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Physical design work, site visits, testing real circuits, and regulatory compliance create strong barriers. AI assists with simulation and CAD but the physical-digital gap persists. McKinsey places engineering in the moderate automation category with long timelines."
+  },
+  {
+    "job_id": "frontend-developer",
+    "title": "Frontend Developer",
+    "our_years": 5,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "AI tools already generate functional UI code from designs/prompts (v0, Bolt, Claude artifacts). Frontend is more pattern-based than backend, making it more susceptible. Goldman Sachs flagged web development as high exposure. Complex UX decisions and accessibility still need humans."
+  },
+  {
+    "job_id": "machine-learning-engineer",
+    "title": "Machine Learning Engineer",
+    "our_years": 7,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Ironic position: ML engineers build the AI that automates others, but AutoML and foundation model fine-tuning are reducing the need for bespoke model building. What persists is novel architecture research, production systems, and edge cases. The role evolves rather than disappears."
+  },
+  {
+    "job_id": "mechanical-engineer",
+    "title": "Mechanical Engineer",
+    "our_years": 10,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Physical prototyping, testing, manufacturing oversight, and hands-on problem-solving create strong automation barriers. AI helps with generative design and simulation but can't replace the physical loop. Similar to electrical engineering with long timelines."
+  },
+  {
+    "job_id": "mobile-app-developer",
+    "title": "Mobile App Developer",
+    "our_years": 5,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Cross-platform frameworks and AI code generation are rapidly commoditizing standard app development. No-code/low-code platforms eat into the simpler end. Complex native features, performance optimization, and platform-specific quirks persist longer."
+  },
+  {
+    "job_id": "network-administrator",
+    "title": "Network Administrator",
+    "our_years": 4,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Software-defined networking, cloud-managed networks, and AI-driven monitoring automate much of traditional network admin. However, physical infrastructure, legacy systems, and on-site troubleshooting slow full automation. 4y is slightly aggressive but within range."
+  },
+  {
+    "job_id": "penetration-tester",
+    "title": "Penetration Tester",
+    "our_years": 6,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "AI pen-testing tools automate vulnerability scanning and basic exploitation, but creative attack chains, social engineering, and novel zero-day discovery require human ingenuity. The adversarial cat-and-mouse dynamic protects this role longer than pure defensive roles."
+  },
+  {
+    "job_id": "quality-assurance-tester",
+    "title": "QA Tester",
+    "our_years": 4,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "AI-generated test suites, visual regression testing, and automated QA are already mature. Manual testing of routine flows is rapidly being eliminated. What remains is exploratory testing and UX judgment. Frey-Osborne and McKinsey both flag this as highly automatable."
+  },
+  {
+    "job_id": "robotics-engineer",
+    "title": "Robotics Engineer",
+    "our_years": 7,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "Robotics engineers work at the hardware-software intersection, requiring physical prototyping, sensor integration, and real-world testing. AI assists with control algorithms and simulation but the physical engineering loop is hard to automate. Higher barrier than pure software roles."
+  },
+  {
+    "job_id": "software-engineer",
+    "title": "Software Engineer",
+    "our_years": 5,
+    "estimated_years": 6,
+    "agree": true,
+    "reason": "Goldman Sachs (2023) estimated 25-30% of coding tasks already automatable. By 2026, AI coding agents handle significant portions. However, architecture decisions, system thinking, debugging complex interactions, and understanding stakeholder needs persist. McKinsey gives ~60% task automation by 2030."
+  },
+  {
+    "job_id": "systems-administrator",
+    "title": "Systems Administrator",
+    "our_years": 4,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "Cloud migration, managed services, and automation tools (Ansible, Terraform, AI-driven ops) are already displacing traditional sysadmin work. Server management is increasingly automated. Physical server rooms becoming niche. 4y is well-calibrated."
+  },
+  {
+    "job_id": "web-developer",
+    "title": "Web Developer",
+    "our_years": 4,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "Among the most AI-exposed developer roles. AI tools generate functional websites from prompts, no-code platforms handle standard sites, and template-based development is highly automatable. Goldman Sachs flagged this as high exposure. Complex web apps persist longer but standard sites are nearly automatable now."
+  },
+  {
+    "job_id": "it-manager",
+    "title": "IT Manager",
+    "our_years": 7,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Management roles involve people leadership, vendor relationships, budget decisions, and strategic planning that AI assists but doesn't replace. However, as the teams they manage shrink due to automation, the role itself contracts. WEF identifies management as augmented rather than replaced."
+  },
+  {
+    "job_id": "it-support-specialist",
+    "title": "IT Support Specialist",
+    "our_years": 4,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "AI chatbots and self-service portals already handle Tier 1 support. Automated diagnostics, remote management, and knowledge base search are mature. Physical hardware support persists but the majority of tickets are increasingly resolved by AI. Well-calibrated estimate."
+  },
+  {
+    "job_id": "technical-support-specialist",
+    "title": "Technical Support Specialist",
+    "our_years": 4,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "Similar to IT support but for specific products/services. AI-powered support bots, automated troubleshooting flows, and documentation search handle most routine queries. Complex escalations persist but represent a shrinking portion of total work."
+  },
+  {
+    "job_id": "air-conditioning-installer",
+    "title": "Air Conditioning Installer",
+    "our_years": 15,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Requires working in varied residential/commercial spaces, running ductwork through walls/ceilings, electrical connections, refrigerant handling, and code compliance. Each install is unique. Construction robotics for HVAC installation barely exists. Frey-Osborne gives low automation probability to HVAC installers."
+  },
+  {
+    "job_id": "arborist",
+    "title": "Arborist",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Climbing, rigging, and chainsaw work in unpredictable natural environments with unique tree structures. Every job is different. Extremely low automation potential due to unstructured physical environment. One of the safest trades from AI disruption."
+  },
+  {
+    "job_id": "auto-electrician",
+    "title": "Auto Electrician",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "Diagnostic tools are increasingly AI-assisted, but physical wiring repairs, retrofits, and troubleshooting in diverse vehicle models require manual dexterity. EV transition adds complexity. Moderate automation timeline as diagnostics improve but physical work persists."
+  },
+  {
+    "job_id": "auto-mechanic",
+    "title": "Auto Mechanic",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "AI-enhanced diagnostics are already in use, but physical repairs in cramped engine bays across thousands of vehicle models require human adaptability. EVs reduce some mechanical work but add electrical complexity. McKinsey places vehicle repair in moderate automation category."
+  },
+  {
+    "job_id": "boilermaker",
+    "title": "Boilermaker",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Welding automation exists in factory settings but boilermakers work on-site with large, custom pressure vessels and industrial equipment. Confined space work, custom fabrication, and safety inspections in varied environments resist automation. 12y is reasonable."
+  },
+  {
+    "job_id": "bricklayer",
+    "title": "Bricklayer",
+    "our_years": 18,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Hadrian X (bricklaying robot) exists but is limited to specific block types and ideal conditions. Real-world bricklaying involves uneven surfaces, custom cuts, varied bond patterns, and weather. However, 18y may be slightly generous given robotic progress. Still within 3y range."
+  },
+  {
+    "job_id": "building-inspector",
+    "title": "Building Inspector",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "AI-assisted inspection via drones, thermal imaging, and automated code checking is advancing. But physical site access, judgment calls on defects, and regulatory authority require human presence. Moderate timeline as AI handles documentation and standard checks first."
+  },
+  {
+    "job_id": "cabinet-maker",
+    "title": "Cabinet Maker",
+    "our_years": 10,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "CNC machines automate cutting and shaping, but custom cabinetry requires on-site measurement, fitting in imperfect spaces, finish work, and client customization. Factory cabinets are already partially automated but bespoke work persists. Within range."
+  },
+  {
+    "job_id": "carpenter",
+    "title": "Carpenter",
+    "our_years": 18,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Carpentry spans framing, finishing, and custom work in unique environments. Prefabrication automates some framing but on-site fitting, renovation work, and finishing require human judgment and dexterity. 18y is on the high end but construction adoption is slow. Within 3y range."
+  },
+  {
+    "job_id": "concreter",
+    "title": "Concreter",
+    "our_years": 15,
+    "estimated_years": 14,
+    "agree": true,
+    "reason": "3D concrete printing is advancing for simple structures, and automated screeding/finishing exists. But site prep, formwork in varied conditions, and quality control on-site remain manual. Weather sensitivity and timing add unpredictability AI struggles with."
+  },
+  {
+    "job_id": "construction-manager",
+    "title": "Construction Manager",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "AI project management tools, BIM, and scheduling optimization are advancing, but construction management requires on-site presence, subcontractor coordination, conflict resolution, and real-time decision-making. Leadership and stakeholder management persist."
+  },
+  {
+    "job_id": "construction-worker",
+    "title": "Construction Worker",
+    "our_years": 10,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "General construction involves diverse physical tasks in unstructured environments. Prefabrication and modular construction shift some work to factories (more automatable), but on-site work in varied conditions persists. McKinsey places construction in the slower adoption category."
+  },
+  {
+    "job_id": "crane-operator",
+    "title": "Crane Operator",
+    "our_years": 6,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Autonomous and semi-autonomous cranes exist and are being deployed in ports and controlled environments. However, construction site crane operation involves complex lifts, changing conditions, and safety-critical decisions. 6y is slightly aggressive for full construction deployment but port cranes are closer."
+  },
+  {
+    "job_id": "diesel-mechanic",
+    "title": "Diesel Mechanic",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "Similar to auto mechanic but working on larger, more complex equipment. AI diagnostics help but physical repairs on heavy machinery in the field require hands-on work. Fleet electrification will eventually reduce diesel work but the transition is slow for heavy vehicles."
+  },
+  {
+    "job_id": "electrician",
+    "title": "Electrician",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Electrical work requires navigating unique building structures, running wires through walls, troubleshooting in varied conditions, and strict safety/code compliance. No viable robotic electrician exists. Frey-Osborne gives electricians very low automation probability (15%). 18y is well-calibrated."
+  },
+  {
+    "job_id": "elevator-installer",
+    "title": "Elevator Installer",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Highly specialized work in confined vertical spaces, heavy equipment installation, precise alignment, electrical and mechanical integration, and strict safety regulations. Each building is different. Virtually no automation path exists currently. Very safe from AI."
+  },
+  {
+    "job_id": "fitter-and-turner",
+    "title": "Fitter and Turner",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "CNC automation handles standard machining, but fitting, alignment, and assembly of custom mechanical components in maintenance/repair contexts requires human adaptability. Factory settings are more automatable than field work."
+  },
+  {
+    "job_id": "glazier",
+    "title": "Glazier",
+    "our_years": 20,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Working with heavy, fragile glass in unique architectural openings at height. Each installation is custom. Handling large glass panels safely requires human coordination and judgment. Very limited automation path. 20y is reasonable, 18y would also work. Within range."
+  },
+  {
+    "job_id": "house-painter",
+    "title": "House Painter",
+    "our_years": 18,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Painting robots exist for large flat surfaces but residential painting involves prep work, trim, cutting in, varied surfaces, furniture navigation, and client preferences. However, commercial/industrial painting drones are advancing. 18y may be slightly high for commercial but fits residential. Within range."
+  },
+  {
+    "job_id": "hvac-technician",
+    "title": "HVAC Technician",
+    "our_years": 18,
+    "estimated_years": 16,
+    "agree": true,
+    "reason": "Diagnostics are increasingly automated and IoT-enabled, but repair and maintenance in varied building systems requires physical access, refrigerant handling, ductwork modification, and electrical work. Smart building systems reduce call-outs but don't eliminate hands-on work."
+  },
+  {
+    "job_id": "landscaper",
+    "title": "Landscaper",
+    "our_years": 18,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Robotic mowing exists for flat lawns, but landscaping involves design, planting, hardscaping, grading, and working with natural terrain. Each site is unique. AI assists with design visualization but physical work in varied outdoor environments resists automation. 18y is slightly generous but within range."
+  },
+  {
+    "job_id": "locksmith",
+    "title": "Locksmith",
+    "our_years": 15,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Smart locks and electronic access reduce traditional locksmith demand, but emergency access, safe work, automotive locksmithing, and security consulting persist. The trade evolves toward electronic security. Demand may shrink more from technology shift than AI automation per se."
+  },
+  {
+    "job_id": "plasterer",
+    "title": "Plasterer",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Plastering requires working on varied surfaces, around obstacles, achieving smooth finishes on ceilings and walls. Automated plastering machines exist for large flat walls but renovation and detail work remains manual. 15y is reasonable."
+  },
+  {
+    "job_id": "plumber",
+    "title": "Plumber",
+    "our_years": 15,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Plumbing involves working in tight, varied spaces within walls and under floors. Each building is unique. Diagnosis increasingly AI-assisted (camera inspection, leak detection) but physical repair work is highly resistant to automation. Frey-Osborne gives plumbers very low automation probability."
+  },
+  {
+    "job_id": "pool-technician",
+    "title": "Pool Technician",
+    "our_years": 15,
+    "estimated_years": 14,
+    "agree": true,
+    "reason": "Smart pool monitoring automates water chemistry testing and some maintenance scheduling. Robotic pool cleaners exist. But equipment repair, plumbing, electrical work, and renovations remain manual. Partial automation already happening but full displacement is far off."
+  },
+  {
+    "job_id": "roofer",
+    "title": "Roofer",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Working at height on varied roof structures with heavy materials. Each roof is unique in pitch, material, and condition. Extremely dangerous and physically demanding work that robots cannot perform in unstructured environments. Very low automation potential."
+  },
+  {
+    "job_id": "scaffolder",
+    "title": "Scaffolder",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Assembling scaffolding around unique building structures at height, heavy lifting, safety-critical connections. Each setup is custom. No viable robotic scaffolding exists. Extremely safe from automation."
+  },
+  {
+    "job_id": "tiler",
+    "title": "Tiler",
+    "our_years": 18,
+    "estimated_years": 16,
+    "agree": true,
+    "reason": "Tiling requires precision cutting, layout planning for unique spaces, waterproofing, and working around fixtures. Each room is different. Robotic tiling research exists but is far from practical deployment in varied residential settings. 18y is reasonable."
+  },
+  {
+    "job_id": "welder",
+    "title": "Welder",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "Robotic welding is well-established in manufacturing/factory settings, but field welding, repair welding, and custom fabrication in varied positions require human skill. The split is factory (already partially automated) vs field (very hard to automate). 10y is a good average."
+  },
+  {
+    "job_id": "air-traffic-controller",
+    "title": "Air Traffic Controller",
+    "our_years": 12,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "AI-assisted traffic management is advancing (NASA NextGen, SESAR), but the safety-critical nature, regulatory barriers, and union protections create long adoption timelines. Aviation regulators are extremely conservative. Automated conflict detection assists but full autonomy faces massive regulatory hurdles."
+  },
+  {
+    "job_id": "bus-driver",
+    "title": "Bus Driver",
+    "our_years": 10,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Autonomous buses are in pilot programs in controlled environments (Phoenix, Singapore) but urban driving with pedestrians, cyclists, and varied conditions remains challenging. Regulatory approval, public trust, and union resistance slow deployment. 10y is slightly aggressive for widespread adoption but within range."
+  },
+  {
+    "job_id": "courier",
+    "title": "Courier",
+    "our_years": 5,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Last-mile delivery automation via drones and autonomous vehicles is advancing but faces regulatory barriers, building access challenges, and varied delivery environments. Urban delivery to apartments is much harder than suburban. 5y is aggressive for 50% automation but autonomous delivery pods are growing. Within 3y range."
+  },
+  {
+    "job_id": "drone-operator",
+    "title": "Drone Operator",
+    "our_years": 8,
+    "estimated_years": 7,
+    "agree": true,
+    "reason": "Ironic role: as drone autonomy improves, the operator becomes less necessary. Autonomous flight paths, obstacle avoidance, and AI-based inspection are advancing. What persists is complex operations (confined spaces, emergency response) and regulatory requirements for human oversight."
+  },
+  {
+    "job_id": "flight-attendant",
+    "title": "Flight Attendant",
+    "our_years": 12,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Safety-critical role with strong regulatory protection. Passenger interaction, emergency response, and cabin management require human presence. Airlines might automate beverage service but evacuation procedures and passenger safety management need humans. Regulatory barriers are enormous in aviation."
+  },
+  {
+    "job_id": "flight-dispatcher",
+    "title": "Flight Dispatcher",
+    "our_years": 4,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Largely data-driven role: weather analysis, fuel calculations, route optimization, and regulatory compliance. AI handles these calculations well. Automated dispatch systems are advancing. What persists is edge case judgment and regulatory sign-off requirements."
+  },
+  {
+    "job_id": "food-delivery-driver",
+    "title": "Food Delivery Driver",
+    "our_years": 6,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Autonomous delivery robots (Starship, Nuro) operate in limited areas. Urban navigation, building access, stairs, and customer handoff remain challenging. Regulatory approval varies by jurisdiction. 6y is optimistic for widespread deployment but some markets will be earlier."
+  },
+  {
+    "job_id": "forklift-operator",
+    "title": "Forklift Operator",
+    "our_years": 4,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Autonomous forklifts are commercially deployed in warehouses (Amazon, KION). Controlled indoor environments with mapped layouts are ideal for automation. Outdoor and varied-environment forklift work lags behind. 4y is reasonable for warehouse settings."
+  },
+  {
+    "job_id": "logistics-coordinator",
+    "title": "Logistics Coordinator",
+    "our_years": 5,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Route optimization, shipment tracking, carrier selection, and scheduling are highly data-driven tasks. AI logistics platforms (Flexport, Project44) automate much of this already. Complex exception handling and relationship management persist. McKinsey flags logistics coordination as highly automatable."
+  },
+  {
+    "job_id": "pilot",
+    "title": "Pilot",
+    "our_years": 12,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Autopilot handles most cruising but takeoff, landing, and emergency situations require human judgment. Single-pilot operations may come first before full autonomy. Aviation regulators are the most conservative of any industry. Public trust is a massive barrier. 12y is slightly aggressive but within range."
+  },
+  {
+    "job_id": "rideshare-driver",
+    "title": "Rideshare Driver",
+    "our_years": 8,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Waymo operates commercially in Phoenix, SF, LA. But scaling to all cities, weather conditions, and edge cases takes years. Regulatory approval is jurisdiction-by-jurisdiction. McKinsey estimates widespread autonomous rideshare by early-to-mid 2030s. 8y is well-calibrated."
+  },
+  {
+    "job_id": "supply-chain-analyst",
+    "title": "Supply Chain Analyst",
+    "our_years": 5,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Demand forecasting, inventory optimization, and supply chain modeling are highly data-driven. AI excels at pattern recognition in supply chain data. Goldman Sachs flags analytical roles as high exposure. What persists is strategic supplier relationships and crisis management."
+  },
+  {
+    "job_id": "truck-driver",
+    "title": "Truck Driver",
+    "our_years": 6,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Autonomous trucking (TuSimple, Aurora, Kodiak) is advancing on highways but last-mile, urban delivery, loading/unloading, and varied road conditions persist. Hub-to-hub autonomy comes first. Regulatory and union barriers significant. 6y is slightly aggressive for 50% task disruption but highway autonomy is close."
+  },
+  {
+    "job_id": "warehouse-manager",
+    "title": "Warehouse Manager",
+    "our_years": 5,
+    "estimated_years": 6,
+    "agree": true,
+    "reason": "Warehouse management systems, AI inventory optimization, and automated workforce scheduling handle much of the analytical work. But people management, exception handling, and facility operations require human presence. As warehouses automate, the manager role evolves but shrinks."
+  },
+  {
+    "job_id": "warehouse-picker",
+    "title": "Warehouse Picker",
+    "our_years": 2,
+    "estimated_years": 3,
+    "agree": true,
+    "reason": "Amazon and others have deployed robotic picking systems extensively. Goods-to-person systems, robotic arms with improved grasping, and fully automated fulfillment centers are scaling rapidly. Varied product shapes remain a challenge but the technology is advancing fast. 2y is aggressive but not unreasonable."
+  }
+]

@@ -10,8 +10,8 @@
 | 2. Design spec | Done | `docs/design-spec.md` |
 | 3. Validator tool | Done | `tools/validate_jobs.py` + `workflows/validate-job-data.md` |
 | 4. Sample dataset (10 jobs) | Done | `data/jobs-sample.json` — passed rule-based validation |
-| 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 264 jobs, all pass rule-based validation, searchTerms added |
-| 6. Fact-check dataset | Done | 15 Perplexity category queries, 12 jobs corrected, all 264 pass validation |
+| 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 316 jobs (expanded from 264), all pass rule-based validation, searchTerms added |
+| 6. Fact-check dataset | Done | 15 Perplexity category queries, 12 jobs corrected, all 316 pass validation |
 | 7. Build the site | Done | `index.html` — all features wired up, tested on desktop + mobile |
 | 8. Growth setup | **In progress** | OG image done, domain live, Tally feedback form added, OG tags tested. Waiting on: Coursera affiliate approval |
 | 9. Launch | Pending | Reddit + Hacker News — see `docs/growth-strategy.md` section 4 |
@@ -54,6 +54,7 @@
 - [x] Buy domain `amicooked.me` (Porkbun, $8.80/yr) and point DNS to Netlify
 - [x] Add Tally feedback form ("Roast Us Back" — tally.so/r/BzDQq5)
 - [x] Install Plausible analytics (cookieless, privacy-friendly)
+- [x] Add search tracking via Supabase (logs queries, matches, selected jobs, device — `search_tracks` table)
 - [ ] Sign up for Coursera affiliate program via Impact.com (see `docs/growth-strategy.md` for steps)
 - [ ] Replace placeholder affiliate href with real tracking link
 - [x] Create Hacker News account at news.ycombinator.com

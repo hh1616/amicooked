@@ -112,7 +112,7 @@ SEARCH_TERMS = {
     "ux-designer": ["UI designer", "UX/UI designer", "user experience designer", "interaction designer", "product designer", "UI/UX", "experience designer"],
     "business-analyst": ["BA", "systems analyst", "business systems analyst", "requirements analyst", "process analyst"],
     "financial-analyst": ["finance analyst", "FP&A", "financial planning", "investment analyst", "equity analyst", "credit analyst"],
-    "software-engineer": ["software developer", "programmer", "coder", "dev", "backend developer", "frontend developer", "full stack developer", "fullstack", "software dev", "SWE", "application developer"],
+    "software-engineer": ["software developer", "programmer", "coder", "dev", "backend developer", "frontend developer", "full stack developer", "fullstack", "software dev", "SWE", "application developer", "systems developer"],
     "video-editor": ["film editor", "post-production", "post production", "video producer", "editor", "colour grader", "color grader"],
     "animator": ["3D animator", "2D animator", "motion designer", "motion graphics artist", "character animator", "VFX artist"],
     "journalist": ["reporter", "news reporter", "correspondent", "investigative journalist", "features writer", "news writer"],
@@ -291,6 +291,11 @@ SEARCH_TERMS = {
     "courier": ["courier", "delivery driver", "parcel delivery", "courier driver", "bike courier", "last mile delivery"],
     "sous-chef": ["sous chef", "second chef", "assistant head chef", "senior chef", "chef de partie", "CDP", "line cook supervisor"],
     "pastry-chef": ["pastry chef", "baker chef", "patissier", "dessert chef", "cake decorator", "pastry cook"],
+    # Batch 4 — new jobs from Supabase search gaps (2026-04-03)
+    "sales-representative": ["sales", "sales rep", "sales representative", "BDR", "SDR", "account executive", "inside sales", "outside sales", "B2B sales", "business development", "sales associate", "sales consultant"],
+    "account-manager": ["account manager", "client manager", "key account manager", "customer success manager", "relationship manager", "client services", "client relations", "KAM"],
+    "violinist": ["violin", "violinist", "cellist", "cello", "orchestra", "symphony", "chamber musician", "viola", "double bass", "classical musician", "string player", "concert musician"],
+    "founder": ["founder", "entrepreneur", "startup founder", "business owner", "co-founder", "solopreneur", "startup CEO", "small business owner"],
 }
 
 def main():

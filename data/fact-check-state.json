@@ -1,0 +1,869 @@
+{
+  "source_file": "data/jobs.json",
+  "created": "2026-04-03T10:41:33.122520",
+  "batch_size": 15,
+  "total_jobs": 316,
+  "total_batches": 22,
+  "batches": [
+    {
+      "batch_num": 1,
+      "job_ids": [
+        "arborist",
+        "surgeon",
+        "firefighter",
+        "emergency-medicine-doctor",
+        "massage-therapist",
+        "plumber",
+        "roofer",
+        "electrician",
+        "glazier",
+        "midwife",
+        "tiler",
+        "anaesthesiologist",
+        "bricklayer",
+        "carpenter",
+        "dog-groomer"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. arborist \u2014 \"Arborist\" (our score: 4/100, 6% automatable)\n2. surgeon \u2014 \"Surgeon\" (our score: 4/100, 5% automatable)\n3. firefighter \u2014 \"Firefighter\" (our score: 5/100, 6% automatable)\n4. emergency-medicine-doctor \u2014 \"Emergency Medicine Doctor\" (our score: 6/100, 7% automatable)\n5. massage-therapist \u2014 \"Massage Therapist\" (our score: 6/100, 7% automatable)\n6. plumber \u2014 \"Plumber\" (our score: 6/100, 8% automatable)\n7. roofer \u2014 \"Roofer\" (our score: 6/100, 7% automatable)\n8. electrician \u2014 \"Electrician\" (our score: 7/100, 9% automatable)\n9. glazier \u2014 \"Glazier\" (our score: 7/100, 8% automatable)\n10. midwife \u2014 \"Midwife\" (our score: 7/100, 8% automatable)\n11. tiler \u2014 \"Tiler\" (our score: 7/100, 8% automatable)\n12. anaesthesiologist \u2014 \"Anaesthesiologist\" (our score: 8/100, 10% automatable)\n13. bricklayer \u2014 \"Bricklayer\" (our score: 8/100, 9% automatable)\n14. carpenter \u2014 \"Carpenter\" (our score: 8/100, 10% automatable)\n15. dog-groomer \u2014 \"Dog Groomer\" (our score: 8/100, 9% automatable)",
+      "status": "done",
+      "results": [
+        {
+          "id": "arborist",
+          "perplexity_score": 12,
+          "agree": true,
+          "reason": "Physical tree work, climbing, hazard assessment require dexterity beyond 2026 capabilities"
+        },
+        {
+          "id": "surgeon",
+          "perplexity_score": 28,
+          "agree": false,
+          "reason": "AI assists imaging/planning, robotic surgery needs human oversight for precision and complications"
+        },
+        {
+          "id": "firefighter",
+          "perplexity_score": 15,
+          "agree": true,
+          "reason": "Unpredictable environments, physical endurance, real-time decisions exceed current robotics"
+        },
+        {
+          "id": "emergency-medicine-doctor",
+          "perplexity_score": 32,
+          "agree": false,
+          "reason": "AI aids triage/diagnosis but hands-on procedures and rapid judgment remain human-essential"
+        },
+        {
+          "id": "massage-therapist",
+          "perplexity_score": 18,
+          "agree": true,
+          "reason": "Tactile feedback, customized pressure, client interaction not replicable by current robotics"
+        },
+        {
+          "id": "plumber",
+          "perplexity_score": 22,
+          "agree": true,
+          "reason": "Tight-space diagnostics, improvised repairs, physical maneuvering challenge current AI/robotics"
+        },
+        {
+          "id": "roofer",
+          "perplexity_score": 25,
+          "agree": true,
+          "reason": "Heights, weather variability, material handling demand human agility beyond 2026 tech"
+        },
+        {
+          "id": "electrician",
+          "perplexity_score": 20,
+          "agree": true,
+          "reason": "Complex wiring, safety judgments, troubleshooting in varied settings resist full automation"
+        },
+        {
+          "id": "glazier",
+          "perplexity_score": 24,
+          "agree": true,
+          "reason": "Precise glass handling, cutting, installation on uneven surfaces need human finesse"
+        },
+        {
+          "id": "midwife",
+          "perplexity_score": 30,
+          "agree": true,
+          "reason": "Emotional support, physical delivery assistance, real-time maternal monitoring require human empathy"
+        },
+        {
+          "id": "tiler",
+          "perplexity_score": 23,
+          "agree": true,
+          "reason": "Surface prep, pattern layout, grout adjustments involve craft not automated by current AI"
+        },
+        {
+          "id": "anaesthesiologist",
+          "perplexity_score": 35,
+          "agree": false,
+          "reason": "AI monitors vitals but real-time airway management and crisis response demand expert intervention"
+        },
+        {
+          "id": "bricklayer",
+          "perplexity_score": 21,
+          "agree": true,
+          "reason": "Mortar mixing, leveling, structural adaptations exceed robotic precision in real-world builds"
+        },
+        {
+          "id": "carpenter",
+          "perplexity_score": 26,
+          "agree": true,
+          "reason": "Custom measurements, on-site adjustments, woodworking creativity beyond current robotics"
+        },
+        {
+          "id": "dog-groomer",
+          "perplexity_score": 16,
+          "agree": true,
+          "reason": "Animal handling, behavior reading, gentle grooming need human touch and intuition"
+        }
+      ],
+      "completed": "2026-04-03T10:42:36.087747"
+    },
+    {
+      "batch_num": 2,
+      "job_ids": [
+        "elevator-installer",
+        "paramedic",
+        "disability-support-worker",
+        "hvac-technician",
+        "kindergarten-teacher",
+        "speech-pathologist",
+        "childcare-worker",
+        "dentist",
+        "house-painter",
+        "special-education-teacher",
+        "aged-care-nurse",
+        "youth-worker",
+        "athletic-trainer",
+        "landscaper",
+        "physical-therapist"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. elevator-installer \u2014 \"Elevator Installer\" (our score: 8/100, 9% automatable)\n2. paramedic \u2014 \"Paramedic\" (our score: 8/100, 9% automatable)\n3. disability-support-worker \u2014 \"Disability Support Worker\" (our score: 8/100, 10% automatable)\n4. hvac-technician \u2014 \"HVAC Technician\" (our score: 9/100, 10% automatable)\n5. kindergarten-teacher \u2014 \"Kindergarten Teacher\" (our score: 9/100, 10% automatable)\n6. speech-pathologist \u2014 \"Speech Pathologist\" (our score: 9/100, 10% automatable)\n7. childcare-worker \u2014 \"Childcare Worker\" (our score: 10/100, 15% automatable)\n8. dentist \u2014 \"Dentist\" (our score: 10/100, 11% automatable)\n9. house-painter \u2014 \"House Painter\" (our score: 10/100, 11% automatable)\n10. special-education-teacher \u2014 \"Special Education Teacher\" (our score: 10/100, 11% automatable)\n11. aged-care-nurse \u2014 \"Aged Care Nurse\" (our score: 10/100, 12% automatable)\n12. youth-worker \u2014 \"Youth Worker\" (our score: 10/100, 12% automatable)\n13. athletic-trainer \u2014 \"Athletic Trainer\" (our score: 11/100, 12% automatable)\n14. landscaper \u2014 \"Landscaper\" (our score: 11/100, 12% automatable)\n15. physical-therapist \u2014 \"Physical Therapist\" (our score: 11/100, 12% automatable)",
+      "status": "done",
+      "results": [
+        {
+          "id": "elevator-installer",
+          "perplexity_score": 12,
+          "agree": true,
+          "reason": "Physical installation, dexterity, on-site troubleshooting beyond current robotics"
+        },
+        {
+          "id": "paramedic",
+          "perplexity_score": 18,
+          "agree": false,
+          "reason": "Emergency physical care, real-time decisions exceed AI/robotics despite some diagnostics"
+        },
+        {
+          "id": "disability-support-worker",
+          "perplexity_score": 15,
+          "agree": true,
+          "reason": "Core empathy, physical assistance, adaptive care hard for AI to replicate"
+        },
+        {
+          "id": "hvac-technician",
+          "perplexity_score": 14,
+          "agree": true,
+          "reason": "Hands-on repairs, diagnostics in varied environments resist full automation"
+        },
+        {
+          "id": "kindergarten-teacher",
+          "perplexity_score": 16,
+          "agree": true,
+          "reason": "Emotional bonding, improvisation, child management require human touch"
+        },
+        {
+          "id": "speech-pathologist",
+          "perplexity_score": 20,
+          "agree": false,
+          "reason": "Personalized therapy partially augmentable but hands-on elements persist"
+        },
+        {
+          "id": "childcare-worker",
+          "perplexity_score": 17,
+          "agree": true,
+          "reason": "Nurturing, safety oversight, spontaneous interaction safe from current AI"
+        },
+        {
+          "id": "dentist",
+          "perplexity_score": 25,
+          "agree": false,
+          "reason": "Precision procedures see AI diagnostics/augmentation but not replacement"
+        },
+        {
+          "id": "house-painter",
+          "perplexity_score": 13,
+          "agree": true,
+          "reason": "Manual labor, surface prep, adaptability in homes evade current robotics"
+        },
+        {
+          "id": "special-education-teacher",
+          "perplexity_score": 18,
+          "agree": true,
+          "reason": "Tailored emotional/physical support for diverse needs protects from AI"
+        },
+        {
+          "id": "aged-care-nurse",
+          "perplexity_score": 22,
+          "agree": false,
+          "reason": "Hands-on care, empathy, monitoring partially AI-assisted but human-essential"
+        },
+        {
+          "id": "youth-worker",
+          "perplexity_score": 16,
+          "agree": true,
+          "reason": "Counseling and relationship-building resist automation"
+        },
+        {
+          "id": "athletic-trainer",
+          "perplexity_score": 14,
+          "agree": true,
+          "reason": "Hands-on rehab and real-time assessment low-risk per 2025/2026 data"
+        },
+        {
+          "id": "landscaper",
+          "perplexity_score": 12,
+          "agree": true,
+          "reason": "Outdoor physical work, creativity, variability beyond current robotics"
+        },
+        {
+          "id": "physical-therapist",
+          "perplexity_score": 20,
+          "agree": false,
+          "reason": "Manual therapy and patient-specific adjustments see AI augmentation but core remains human"
+        }
+      ],
+      "completed": "2026-04-03T10:43:03.400802"
+    },
+    {
+      "batch_num": 3,
+      "job_ids": [
+        "aged-care-worker",
+        "butcher",
+        "occupational-therapist",
+        "pest-control-technician",
+        "primary-school-teacher",
+        "psychiatrist",
+        "mental-health-nurse",
+        "marine-biologist",
+        "social-worker",
+        "veterinarian",
+        "barber",
+        "pool-technician",
+        "psychologist",
+        "scaffolder",
+        "pastry-chef"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. aged-care-worker \u2014 \"Aged Care Worker\" (our score: 12/100, 18% automatable)\n2. butcher \u2014 \"Butcher\" (our score: 12/100, 13% automatable)\n3. occupational-therapist \u2014 \"Occupational Therapist\" (our score: 12/100, 13% automatable)\n4. pest-control-technician \u2014 \"Pest Control Technician\" (our score: 12/100, 13% automatable)\n5. primary-school-teacher \u2014 \"Primary School Teacher\" (our score: 12/100, 10% automatable)\n6. psychiatrist \u2014 \"Psychiatrist\" (our score: 12/100, 10% automatable)\n7. mental-health-nurse \u2014 \"Mental Health Nurse\" (our score: 12/100, 14% automatable)\n8. marine-biologist \u2014 \"Marine Biologist\" (our score: 13/100, 14% automatable)\n9. social-worker \u2014 \"Social Worker\" (our score: 13/100, 14% automatable)\n10. veterinarian \u2014 \"Veterinarian\" (our score: 13/100, 14% automatable)\n11. barber \u2014 \"Barber\" (our score: 13/100, 14% automatable)\n12. pool-technician \u2014 \"Pool Technician\" (our score: 14/100, 15% automatable)\n13. psychologist \u2014 \"Psychologist\" (our score: 14/100, 12% automatable)\n14. scaffolder \u2014 \"Scaffolder\" (our score: 14/100, 15% automatable)\n15. pastry-chef \u2014 \"Pastry Chef\" (our score: 14/100, 16% automatable)",
+      "status": "done",
+      "results": [
+        {
+          "id": "aged-care-worker",
+          "perplexity_score": 18,
+          "agree": true,
+          "reason": "Hands-on physical care, empathy, unpredictable patient needs exceed current robotics"
+        },
+        {
+          "id": "butcher",
+          "perplexity_score": 15,
+          "agree": true,
+          "reason": "Precise meat cutting requires dexterity and sensory judgment beyond 2026 robotics"
+        },
+        {
+          "id": "occupational-therapist",
+          "perplexity_score": 25,
+          "agree": false,
+          "reason": "Human interaction and customized therapy hard for AI but assessment aids possible"
+        },
+        {
+          "id": "pest-control-technician",
+          "perplexity_score": 20,
+          "agree": true,
+          "reason": "On-site adaptation, physical application, variable environments limit automation"
+        },
+        {
+          "id": "primary-school-teacher",
+          "perplexity_score": 28,
+          "agree": false,
+          "reason": "Classroom management safe but lesson planning aids raise risk to Rare tier"
+        },
+        {
+          "id": "psychiatrist",
+          "perplexity_score": 22,
+          "agree": false,
+          "reason": "Deep empathy and diagnosis nuance beyond LLMs; AI assists but not replaces"
+        },
+        {
+          "id": "mental-health-nurse",
+          "perplexity_score": 20,
+          "agree": true,
+          "reason": "Direct patient care and crisis response demand physical/human presence"
+        },
+        {
+          "id": "marine-biologist",
+          "perplexity_score": 25,
+          "agree": true,
+          "reason": "Fieldwork and observation in dynamic environments not fully automatable"
+        },
+        {
+          "id": "social-worker",
+          "perplexity_score": 24,
+          "agree": false,
+          "reason": "Complex family dynamics and advocacy require human trust; slight admin automation"
+        },
+        {
+          "id": "veterinarian",
+          "perplexity_score": 28,
+          "agree": false,
+          "reason": "Hands-on exams, surgeries, animal handling beyond robotics; diagnostics aided"
+        },
+        {
+          "id": "barber",
+          "perplexity_score": 12,
+          "agree": true,
+          "reason": "Fine motor skills, client interaction, styling creativity resist automation"
+        },
+        {
+          "id": "pool-technician",
+          "perplexity_score": 18,
+          "agree": true,
+          "reason": "Physical maintenance, troubleshooting variables limit AI/robotics"
+        },
+        {
+          "id": "psychologist",
+          "perplexity_score": 29,
+          "agree": false,
+          "reason": "Interpersonal therapy partially exposed per data (29-57%) but core human"
+        },
+        {
+          "id": "scaffolder",
+          "perplexity_score": 12,
+          "agree": true,
+          "reason": "High-risk physical construction, safety judgments exceed current robotics"
+        },
+        {
+          "id": "pastry-chef",
+          "perplexity_score": 22,
+          "agree": false,
+          "reason": "Artistic creativity, texture sensing raise risk slightly with recipe AI but hands-on core"
+        }
+      ],
+      "completed": "2026-04-03T10:43:34.100324"
+    },
+    {
+      "batch_num": 4,
+      "job_ids": [
+        "auto-detailer",
+        "chef",
+        "locksmith",
+        "air-traffic-controller",
+        "archaeologist",
+        "daycare-director",
+        "nail-technician",
+        "paediatrician",
+        "personal-trainer",
+        "sommelier",
+        "tattoo-artist",
+        "veterinary-nurse",
+        "plasterer",
+        "hair-stylist",
+        "musician"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. auto-detailer \u2014 \"Auto Detailer\" (our score: 15/100, 16% automatable)\n2. chef \u2014 \"Chef\" (our score: 15/100, 15% automatable)\n3. locksmith \u2014 \"Locksmith\" (our score: 15/100, 14% automatable)\n4. air-traffic-controller \u2014 \"Air Traffic Controller\" (our score: 16/100, 18% automatable)\n5. archaeologist \u2014 \"Archaeologist\" (our score: 16/100, 17% automatable)\n6. daycare-director \u2014 \"Daycare Director\" (our score: 16/100, 18% automatable)\n7. nail-technician \u2014 \"Nail Technician\" (our score: 16/100, 14% automatable)\n8. paediatrician \u2014 \"Paediatrician\" (our score: 16/100, 18% automatable)\n9. personal-trainer \u2014 \"Personal Trainer\" (our score: 16/100, 18% automatable)\n10. sommelier \u2014 \"Sommelier\" (our score: 16/100, 18% automatable)\n11. tattoo-artist \u2014 \"Tattoo Artist\" (our score: 16/100, 16% automatable)\n12. veterinary-nurse \u2014 \"Veterinary Nurse\" (our score: 16/100, 18% automatable)\n13. plasterer \u2014 \"Plasterer\" (our score: 16/100, 18% automatable)\n14. hair-stylist \u2014 \"Hair Stylist\" (our score: 17/100, 18% automatable)\n15. musician \u2014 \"Musician/Performer\" (our score: 17/100, 19% automatable)",
+      "status": "done",
+      "results": [
+        {
+          "id": "auto-detailer",
+          "perplexity_score": 25,
+          "agree": false,
+          "reason": "Manual dexterity and on-site variability limit robotics; mostly safe but higher than 15"
+        },
+        {
+          "id": "chef",
+          "perplexity_score": 28,
+          "agree": false,
+          "reason": "LLMs aid recipes/inventory, robotics handle prep in controlled settings but creativity requires humans"
+        },
+        {
+          "id": "locksmith",
+          "perplexity_score": 22,
+          "agree": false,
+          "reason": "Key cutting and diagnostics AI-enabled but physical installs and emergencies need human skill"
+        },
+        {
+          "id": "air-traffic-controller",
+          "perplexity_score": 55,
+          "agree": false,
+          "reason": "AI systems like ERAM handle routine monitoring but high-stakes decisions remain human; half baked"
+        },
+        {
+          "id": "archaeologist",
+          "perplexity_score": 12,
+          "agree": true,
+          "reason": "Field excavation and interpretation demand physical/human judgment beyond current AI"
+        },
+        {
+          "id": "daycare-director",
+          "perplexity_score": 35,
+          "agree": false,
+          "reason": "Admin/planning AI-automatable but child oversight/relationships irreplaceable"
+        },
+        {
+          "id": "nail-technician",
+          "perplexity_score": 24,
+          "agree": false,
+          "reason": "Precision tools emerging but client interaction/customization human"
+        },
+        {
+          "id": "paediatrician",
+          "perplexity_score": 32,
+          "agree": false,
+          "reason": "Diagnostics/imaging AI-strong but empathy/exams need humans"
+        },
+        {
+          "id": "personal-trainer",
+          "perplexity_score": 26,
+          "agree": false,
+          "reason": "Apps track form/plans but motivation/adaptation personal"
+        },
+        {
+          "id": "sommelier",
+          "perplexity_score": 18,
+          "agree": true,
+          "reason": "AI apps analyze pairings but sensory expertise human"
+        },
+        {
+          "id": "tattoo-artist",
+          "perplexity_score": 14,
+          "agree": true,
+          "reason": "Custom art/design AI-aided but skin application artistic/physical"
+        },
+        {
+          "id": "veterinary-nurse",
+          "perplexity_score": 30,
+          "agree": false,
+          "reason": "Monitoring/diagnostics AI but hands-on care/animal handling key"
+        },
+        {
+          "id": "plasterer",
+          "perplexity_score": 45,
+          "agree": false,
+          "reason": "Conflicting data (94% old vs 52% recent); robotics limited on-site, some tasks at risk"
+        },
+        {
+          "id": "hair-stylist",
+          "perplexity_score": 23,
+          "agree": false,
+          "reason": "AI styling apps but tactile cutting/client prefs human"
+        },
+        {
+          "id": "musician",
+          "perplexity_score": 20,
+          "agree": true,
+          "reason": "AI generates music but live performance/emotion human"
+        }
+      ],
+      "completed": "2026-04-03T10:44:05.579567"
+    },
+    {
+      "batch_num": 5,
+      "job_ids": [
+        "police-officer",
+        "wedding-planner",
+        "concreter",
+        "air-conditioning-installer",
+        "sous-chef",
+        "baker",
+        "choreographer",
+        "film-director",
+        "funeral-director",
+        "housewife",
+        "makeup-artist",
+        "park-ranger",
+        "nurse",
+        "dental-assistant",
+        "fitness-instructor"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. police-officer \u2014 \"Police Officer\" (our score: 17/100, 18% automatable)\n2. wedding-planner \u2014 \"Wedding Planner\" (our score: 17/100, 19% automatable)\n3. concreter \u2014 \"Concreter\" (our score: 17/100, 20% automatable)\n4. air-conditioning-installer \u2014 \"Air Conditioning Installer\" (our score: 17/100, 18% automatable)\n5. sous-chef \u2014 \"Sous Chef\" (our score: 17/100, 18% automatable)\n6. baker \u2014 \"Baker\" (our score: 18/100, 20% automatable)\n7. choreographer \u2014 \"Choreographer\" (our score: 18/100, 19% automatable)\n8. film-director \u2014 \"Film Director\" (our score: 18/100, 20% automatable)\n9. funeral-director \u2014 \"Funeral Director\" (our score: 18/100, 19% automatable)\n10. housewife \u2014 \"Housewife\" (our score: 18/100, 20% automatable)\n11. makeup-artist \u2014 \"Makeup Artist\" (our score: 18/100, 16% automatable)\n12. park-ranger \u2014 \"Park Ranger\" (our score: 18/100, 19% automatable)\n13. nurse \u2014 \"Registered Nurse\" (our score: 18/100, 22% automatable)\n14. dental-assistant \u2014 \"Dental Assistant\" (our score: 18/100, 20% automatable)\n15. fitness-instructor \u2014 \"Fitness Instructor\" (our score: 18/100, 20% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 6,
+      "job_ids": [
+        "bartender",
+        "diplomat",
+        "nutritionist",
+        "school-counselor",
+        "sports-coach",
+        "community-development-officer",
+        "chiropractor",
+        "florist",
+        "doctor-gp",
+        "waiter",
+        "art-teacher",
+        "geologist",
+        "pilot",
+        "construction-manager",
+        "environmental-scientist"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. bartender \u2014 \"Bartender\" (our score: 19/100, 20% automatable)\n2. diplomat \u2014 \"Diplomat\" (our score: 19/100, 18% automatable)\n3. nutritionist \u2014 \"Nutritionist/Dietitian\" (our score: 19/100, 21% automatable)\n4. school-counselor \u2014 \"School Counselor\" (our score: 19/100, 20% automatable)\n5. sports-coach \u2014 \"Sports Coach\" (our score: 19/100, 21% automatable)\n6. community-development-officer \u2014 \"Community Development Officer\" (our score: 19/100, 22% automatable)\n7. chiropractor \u2014 \"Chiropractor\" (our score: 20/100, 20% automatable)\n8. florist \u2014 \"Florist\" (our score: 20/100, 22% automatable)\n9. doctor-gp \u2014 \"General Practitioner\" (our score: 20/100, 22% automatable)\n10. waiter \u2014 \"Waiter/Waitress\" (our score: 20/100, 23% automatable)\n11. art-teacher \u2014 \"Art Teacher\" (our score: 21/100, 22% automatable)\n12. geologist \u2014 \"Geologist\" (our score: 21/100, 23% automatable)\n13. pilot \u2014 \"Pilot\" (our score: 21/100, 23% automatable)\n14. construction-manager \u2014 \"Construction Manager\" (our score: 22/100, 24% automatable)\n15. environmental-scientist \u2014 \"Environmental Scientist\" (our score: 22/100, 24% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 7,
+      "job_ids": [
+        "high-school-teacher",
+        "optometrist",
+        "physiotherapy-assistant",
+        "welder",
+        "orthotist",
+        "boilermaker",
+        "flight-attendant",
+        "urban-planner",
+        "civil-engineer",
+        "esl-teacher",
+        "sound-engineer",
+        "cabinet-maker",
+        "barista",
+        "farmer",
+        "pharmacist"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. high-school-teacher \u2014 \"High School Teacher\" (our score: 22/100, 24% automatable)\n2. optometrist \u2014 \"Optometrist\" (our score: 22/100, 24% automatable)\n3. physiotherapy-assistant \u2014 \"Physiotherapy Assistant\" (our score: 22/100, 24% automatable)\n4. welder \u2014 \"Welder\" (our score: 22/100, 25% automatable)\n5. orthotist \u2014 \"Orthotist\" (our score: 22/100, 25% automatable)\n6. boilermaker \u2014 \"Boilermaker\" (our score: 22/100, 24% automatable)\n7. flight-attendant \u2014 \"Flight Attendant\" (our score: 23/100, 25% automatable)\n8. urban-planner \u2014 \"Urban Planner\" (our score: 23/100, 25% automatable)\n9. civil-engineer \u2014 \"Civil Engineer\" (our score: 24/100, 26% automatable)\n10. esl-teacher \u2014 \"ESL Teacher\" (our score: 24/100, 26% automatable)\n11. sound-engineer \u2014 \"Sound Engineer\" (our score: 24/100, 26% automatable)\n12. cabinet-maker \u2014 \"Cabinet Maker\" (our score: 24/100, 28% automatable)\n13. barista \u2014 \"Barista\" (our score: 25/100, 27% automatable)\n14. farmer \u2014 \"Farmer\" (our score: 25/100, 24% automatable)\n15. pharmacist \u2014 \"Pharmacist\" (our score: 25/100, 28% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 8,
+      "job_ids": [
+        "housekeeper",
+        "mechanical-engineer",
+        "music-producer",
+        "auto-mechanic",
+        "interior-designer",
+        "fitter-and-turner",
+        "architect",
+        "construction-worker",
+        "dermatologist",
+        "diesel-mechanic",
+        "drone-operator",
+        "pathologist",
+        "university-professor",
+        "restaurant-manager",
+        "radiologist"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. housekeeper \u2014 \"Housekeeper\" (our score: 26/100, 28% automatable)\n2. mechanical-engineer \u2014 \"Mechanical Engineer\" (our score: 26/100, 28% automatable)\n3. music-producer \u2014 \"Music Producer\" (our score: 26/100, 28% automatable)\n4. auto-mechanic \u2014 \"Auto Mechanic\" (our score: 27/100, 30% automatable)\n5. interior-designer \u2014 \"Interior Designer\" (our score: 27/100, 29% automatable)\n6. fitter-and-turner \u2014 \"Fitter and Turner\" (our score: 27/100, 30% automatable)\n7. architect \u2014 \"Architect\" (our score: 28/100, 30% automatable)\n8. construction-worker \u2014 \"Construction Worker\" (our score: 28/100, 30% automatable)\n9. dermatologist \u2014 \"Dermatologist\" (our score: 28/100, 30% automatable)\n10. diesel-mechanic \u2014 \"Diesel Mechanic\" (our score: 28/100, 32% automatable)\n11. drone-operator \u2014 \"Drone Operator\" (our score: 28/100, 30% automatable)\n12. pathologist \u2014 \"Pathologist\" (our score: 28/100, 30% automatable)\n13. university-professor \u2014 \"University Professor\" (our score: 28/100, 30% automatable)\n14. restaurant-manager \u2014 \"Restaurant Manager\" (our score: 28/100, 30% automatable)\n15. radiologist \u2014 \"Radiologist\" (our score: 29/100, 32% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 9,
+      "job_ids": [
+        "auto-electrician",
+        "dental-hygienist",
+        "building-inspector",
+        "ceo",
+        "event-planner",
+        "sports-coach-head",
+        "museum-curator",
+        "robotics-engineer",
+        "compliance-officer",
+        "nurse-practitioner",
+        "research-scientist",
+        "audiologist",
+        "forensic-scientist",
+        "immigration-consultant",
+        "marketing-manager"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. auto-electrician \u2014 \"Auto Electrician\" (our score: 29/100, 32% automatable)\n2. dental-hygienist \u2014 \"Dental Hygienist\" (our score: 31/100, 35% automatable)\n3. building-inspector \u2014 \"Building Inspector\" (our score: 31/100, 34% automatable)\n4. ceo \u2014 \"CEO\" (our score: 32/100, 30% automatable)\n5. event-planner \u2014 \"Event Planner\" (our score: 32/100, 38% automatable)\n6. sports-coach-head \u2014 \"Head Coach\" (our score: 32/100, 35% automatable)\n7. museum-curator \u2014 \"Museum Curator\" (our score: 32/100, 36% automatable)\n8. robotics-engineer \u2014 \"Robotics Engineer\" (our score: 32/100, 36% automatable)\n9. compliance-officer \u2014 \"Compliance Officer\" (our score: 33/100, 38% automatable)\n10. nurse-practitioner \u2014 \"Nurse Practitioner\" (our score: 33/100, 36% automatable)\n11. research-scientist \u2014 \"Research Scientist\" (our score: 33/100, 37% automatable)\n12. audiologist \u2014 \"Audiologist\" (our score: 34/100, 38% automatable)\n13. forensic-scientist \u2014 \"Forensic Scientist\" (our score: 34/100, 38% automatable)\n14. immigration-consultant \u2014 \"Immigration Consultant\" (our score: 34/100, 36% automatable)\n15. marketing-manager \u2014 \"Marketing Manager\" (our score: 34/100, 62% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 10,
+      "job_ids": [
+        "store-manager",
+        "cybersecurity-analyst",
+        "hotel-manager",
+        "hr-manager",
+        "management-consultant",
+        "penetration-tester",
+        "machine-learning-engineer",
+        "corporate-trainer",
+        "podcast-producer",
+        "sales-manager",
+        "sustainability-consultant",
+        "clinic-manager",
+        "librarian",
+        "project-manager",
+        "education-coordinator"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. store-manager \u2014 \"Store Manager\" (our score: 34/100, 38% automatable)\n2. cybersecurity-analyst \u2014 \"Cybersecurity Analyst\" (our score: 35/100, 40% automatable)\n3. hotel-manager \u2014 \"Hotel Manager\" (our score: 35/100, 40% automatable)\n4. hr-manager \u2014 \"HR Manager\" (our score: 35/100, 42% automatable)\n5. management-consultant \u2014 \"Management Consultant\" (our score: 35/100, 42% automatable)\n6. penetration-tester \u2014 \"Penetration Tester\" (our score: 35/100, 38% automatable)\n7. machine-learning-engineer \u2014 \"Machine Learning Engineer\" (our score: 35/100, 38% automatable)\n8. corporate-trainer \u2014 \"Corporate Trainer\" (our score: 36/100, 43% automatable)\n9. podcast-producer \u2014 \"Podcast Producer\" (our score: 36/100, 42% automatable)\n10. sales-manager \u2014 \"Sales Manager\" (our score: 36/100, 43% automatable)\n11. sustainability-consultant \u2014 \"Sustainability Consultant\" (our score: 36/100, 38% automatable)\n12. clinic-manager \u2014 \"Clinic Manager\" (our score: 36/100, 40% automatable)\n13. librarian \u2014 \"Librarian\" (our score: 37/100, 44% automatable)\n14. project-manager \u2014 \"Project Manager\" (our score: 37/100, 44% automatable)\n15. education-coordinator \u2014 \"Education Coordinator\" (our score: 37/100, 40% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 11,
+      "job_ids": [
+        "cloud-architect",
+        "crane-operator",
+        "devops-engineer",
+        "electrical-engineer",
+        "game-designer",
+        "influencer",
+        "insurance-agent",
+        "product-manager",
+        "public-relations-specialist",
+        "tutor",
+        "migration-agent",
+        "property-manager",
+        "fashion-designer",
+        "photographer",
+        "it-manager"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. cloud-architect \u2014 \"Cloud Architect\" (our score: 38/100, 42% automatable)\n2. crane-operator \u2014 \"Crane Operator\" (our score: 38/100, 45% automatable)\n3. devops-engineer \u2014 \"DevOps Engineer\" (our score: 38/100, 44% automatable)\n4. electrical-engineer \u2014 \"Electrical Engineer\" (our score: 38/100, 28% automatable)\n5. game-designer \u2014 \"Game Designer\" (our score: 38/100, 44% automatable)\n6. influencer \u2014 \"Influencer / Content Creator\" (our score: 38/100, 40% automatable)\n7. insurance-agent \u2014 \"Insurance Agent\" (our score: 38/100, 45% automatable)\n8. product-manager \u2014 \"Product Manager\" (our score: 38/100, 44% automatable)\n9. public-relations-specialist \u2014 \"Public Relations Specialist\" (our score: 38/100, 44% automatable)\n10. tutor \u2014 \"Tutor\" (our score: 38/100, 45% automatable)\n11. migration-agent \u2014 \"Migration Agent\" (our score: 38/100, 42% automatable)\n12. property-manager \u2014 \"Property Manager\" (our score: 38/100, 43% automatable)\n13. fashion-designer \u2014 \"Fashion Designer\" (our score: 39/100, 45% automatable)\n14. photographer \u2014 \"Photographer\" (our score: 39/100, 45% automatable)\n15. it-manager \u2014 \"IT Manager\" (our score: 39/100, 42% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 12,
+      "job_ids": [
+        "data-scientist",
+        "market-researcher",
+        "mining-worker",
+        "operations-manager",
+        "screenwriter",
+        "ux-designer",
+        "business-analyst",
+        "financial-analyst",
+        "regional-manager",
+        "software-engineer",
+        "video-editor",
+        "business-manager",
+        "animator",
+        "journalist",
+        "logistics-coordinator"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. data-scientist \u2014 \"Data Scientist\" (our score: 40/100, 48% automatable)\n2. market-researcher \u2014 \"Market Researcher\" (our score: 40/100, 48% automatable)\n3. mining-worker \u2014 \"Mining Worker\" (our score: 40/100, 38% automatable)\n4. operations-manager \u2014 \"Operations Manager\" (our score: 40/100, 47% automatable)\n5. screenwriter \u2014 \"Screenwriter\" (our score: 40/100, 47% automatable)\n6. ux-designer \u2014 \"UX Designer\" (our score: 40/100, 48% automatable)\n7. business-analyst \u2014 \"Business Analyst\" (our score: 41/100, 50% automatable)\n8. financial-analyst \u2014 \"Financial Analyst\" (our score: 41/100, 50% automatable)\n9. regional-manager \u2014 \"Regional Manager\" (our score: 41/100, 44% automatable)\n10. software-engineer \u2014 \"Software Engineer\" (our score: 42/100, 55% automatable)\n11. video-editor \u2014 \"Video Editor\" (our score: 42/100, 50% automatable)\n12. business-manager \u2014 \"Business Manager\" (our score: 42/100, 48% automatable)\n13. animator \u2014 \"Animator\" (our score: 43/100, 50% automatable)\n14. journalist \u2014 \"Journalist\" (our score: 43/100, 50% automatable)\n15. logistics-coordinator \u2014 \"Logistics Coordinator\" (our score: 43/100, 52% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 13,
+      "job_ids": [
+        "sonographer",
+        "supply-chain-analyst",
+        "technical-writer",
+        "truck-driver",
+        "general-manager",
+        "bus-driver",
+        "teaching-assistant",
+        "advertising-executive",
+        "mobile-app-developer",
+        "economist",
+        "office-manager",
+        "retail-manager",
+        "backend-developer",
+        "concierge",
+        "executive-assistant"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. sonographer \u2014 \"Sonographer\" (our score: 43/100, 48% automatable)\n2. supply-chain-analyst \u2014 \"Supply Chain Analyst\" (our score: 44/100, 52% automatable)\n3. technical-writer \u2014 \"Technical Writer\" (our score: 44/100, 52% automatable)\n4. truck-driver \u2014 \"Truck Driver\" (our score: 44/100, 50% automatable)\n5. general-manager \u2014 \"General Manager\" (our score: 44/100, 50% automatable)\n6. bus-driver \u2014 \"Bus Driver\" (our score: 45/100, 42% automatable)\n7. teaching-assistant \u2014 \"Teaching Assistant\" (our score: 45/100, 52% automatable)\n8. advertising-executive \u2014 \"Advertising Executive\" (our score: 46/100, 55% automatable)\n9. mobile-app-developer \u2014 \"Mobile App Developer\" (our score: 46/100, 52% automatable)\n10. economist \u2014 \"Economist\" (our score: 47/100, 55% automatable)\n11. office-manager \u2014 \"Office Manager\" (our score: 47/100, 56% automatable)\n12. retail-manager \u2014 \"Retail Manager\" (our score: 47/100, 56% automatable)\n13. backend-developer \u2014 \"Backend Developer\" (our score: 47/100, 52% automatable)\n14. concierge \u2014 \"Concierge\" (our score: 48/100, 45% automatable)\n15. executive-assistant \u2014 \"Executive Assistant\" (our score: 48/100, 58% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 14,
+      "job_ids": [
+        "lab-technician",
+        "procurement-manager",
+        "real-estate-agent",
+        "voice-actor",
+        "web-developer",
+        "receptionist",
+        "quantity-surveyor",
+        "actuary",
+        "quality-assurance-tester",
+        "video-game-tester",
+        "frontend-developer",
+        "customer-service-manager",
+        "financial-planner",
+        "network-administrator",
+        "optician"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. lab-technician \u2014 \"Lab Technician\" (our score: 48/100, 57% automatable)\n2. procurement-manager \u2014 \"Procurement Manager\" (our score: 48/100, 45% automatable)\n3. real-estate-agent \u2014 \"Real Estate Agent\" (our score: 48/100, 55% automatable)\n4. voice-actor \u2014 \"Voice Actor\" (our score: 48/100, 57% automatable)\n5. web-developer \u2014 \"Web Developer\" (our score: 48/100, 58% automatable)\n6. receptionist \u2014 \"Receptionist\" (our score: 48/100, 55% automatable)\n7. quantity-surveyor \u2014 \"Quantity Surveyor\" (our score: 48/100, 54% automatable)\n8. actuary \u2014 \"Actuary\" (our score: 49/100, 58% automatable)\n9. quality-assurance-tester \u2014 \"QA Tester\" (our score: 49/100, 58% automatable)\n10. video-game-tester \u2014 \"Video Game Tester\" (our score: 49/100, 58% automatable)\n11. frontend-developer \u2014 \"Frontend Developer\" (our score: 49/100, 54% automatable)\n12. customer-service-manager \u2014 \"Customer Service Manager\" (our score: 50/100, 60% automatable)\n13. financial-planner \u2014 \"Financial Planner\" (our score: 50/100, 60% automatable)\n14. network-administrator \u2014 \"Network Administrator\" (our score: 50/100, 60% automatable)\n15. optician \u2014 \"Optician\" (our score: 51/100, 60% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 15,
+      "job_ids": [
+        "purchasing-agent",
+        "accountant",
+        "database-administrator",
+        "lawyer",
+        "radio-broadcaster",
+        "technical-support-specialist",
+        "warehouse-manager",
+        "illustrator",
+        "pharmacy-technician",
+        "recruitment-consultant",
+        "branch-manager",
+        "auditor",
+        "loan-officer",
+        "sports-journalist",
+        "systems-administrator"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. purchasing-agent \u2014 \"Purchasing Agent\" (our score: 51/100, 62% automatable)\n2. accountant \u2014 \"Accountant\" (our score: 52/100, 72% automatable)\n3. database-administrator \u2014 \"Database Administrator\" (our score: 52/100, 62% automatable)\n4. lawyer \u2014 \"Lawyer\" (our score: 52/100, 44% automatable)\n5. radio-broadcaster \u2014 \"Radio Broadcaster\" (our score: 52/100, 62% automatable)\n6. technical-support-specialist \u2014 \"Technical Support Specialist\" (our score: 52/100, 63% automatable)\n7. warehouse-manager \u2014 \"Warehouse Manager\" (our score: 52/100, 58% automatable)\n8. illustrator \u2014 \"Illustrator\" (our score: 53/100, 63% automatable)\n9. pharmacy-technician \u2014 \"Pharmacy Technician\" (our score: 53/100, 64% automatable)\n10. recruitment-consultant \u2014 \"Recruitment Consultant\" (our score: 53/100, 64% automatable)\n11. branch-manager \u2014 \"Branch Manager\" (our score: 53/100, 60% automatable)\n12. auditor \u2014 \"Auditor\" (our score: 54/100, 65% automatable)\n13. loan-officer \u2014 \"Loan Officer\" (our score: 54/100, 65% automatable)\n14. sports-journalist \u2014 \"Sports Journalist\" (our score: 54/100, 64% automatable)\n15. systems-administrator \u2014 \"Systems Administrator\" (our score: 54/100, 60% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 16,
+      "job_ids": [
+        "bank-teller",
+        "cleaner",
+        "copywriter",
+        "it-support-specialist",
+        "risk-analyst",
+        "security-guard",
+        "courier",
+        "administrative-assistant",
+        "drafter",
+        "insurance-underwriter",
+        "office-administrator",
+        "social-media-manager",
+        "conveyancer",
+        "content-writer",
+        "rideshare-driver"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. bank-teller \u2014 \"Bank Teller\" (our score: 55/100, 68% automatable)\n2. cleaner \u2014 \"Cleaner\" (our score: 55/100, 50% automatable)\n3. copywriter \u2014 \"Copywriter\" (our score: 55/100, 68% automatable)\n4. it-support-specialist \u2014 \"IT Support Specialist\" (our score: 55/100, 66% automatable)\n5. risk-analyst \u2014 \"Risk Analyst\" (our score: 55/100, 58% automatable)\n6. security-guard \u2014 \"Security Guard\" (our score: 55/100, 48% automatable)\n7. courier \u2014 \"Courier\" (our score: 55/100, 60% automatable)\n8. administrative-assistant \u2014 \"Administrative Assistant\" (our score: 56/100, 68% automatable)\n9. drafter \u2014 \"Drafter\" (our score: 56/100, 67% automatable)\n10. insurance-underwriter \u2014 \"Insurance Underwriter\" (our score: 56/100, 67% automatable)\n11. office-administrator \u2014 \"Office Administrator\" (our score: 56/100, 62% automatable)\n12. social-media-manager \u2014 \"Social Media Manager\" (our score: 57/100, 70% automatable)\n13. conveyancer \u2014 \"Conveyancer\" (our score: 57/100, 62% automatable)\n14. content-writer \u2014 \"Content Writer\" (our score: 58/100, 72% automatable)\n15. rideshare-driver \u2014 \"Rideshare Driver\" (our score: 58/100, 52% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 17,
+      "job_ids": [
+        "translator",
+        "scrum-master",
+        "library-assistant",
+        "medical-lab-technician",
+        "tax-preparer",
+        "flight-dispatcher",
+        "graphic-designer",
+        "food-delivery-driver",
+        "news-anchor",
+        "production-planner",
+        "retail-sales-assistant",
+        "forklift-operator",
+        "inventory-manager",
+        "patent-examiner",
+        "scheduling-coordinator"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. translator \u2014 \"Translator\" (our score: 58/100, 72% automatable)\n2. scrum-master \u2014 \"Scrum Master\" (our score: 58/100, 64% automatable)\n3. library-assistant \u2014 \"Library Assistant\" (our score: 58/100, 65% automatable)\n4. medical-lab-technician \u2014 \"Medical Lab Technician\" (our score: 59/100, 70% automatable)\n5. tax-preparer \u2014 \"Tax Preparer\" (our score: 59/100, 73% automatable)\n6. flight-dispatcher \u2014 \"Flight Dispatcher\" (our score: 59/100, 65% automatable)\n7. graphic-designer \u2014 \"Graphic Designer\" (our score: 61/100, 68% automatable)\n8. food-delivery-driver \u2014 \"Food Delivery Driver\" (our score: 62/100, 58% automatable)\n9. news-anchor \u2014 \"News Anchor\" (our score: 62/100, 70% automatable)\n10. production-planner \u2014 \"Production Planner\" (our score: 62/100, 72% automatable)\n11. retail-sales-assistant \u2014 \"Retail Sales Assistant\" (our score: 62/100, 58% automatable)\n12. forklift-operator \u2014 \"Forklift Operator\" (our score: 62/100, 68% automatable)\n13. inventory-manager \u2014 \"Inventory Manager\" (our score: 63/100, 73% automatable)\n14. patent-examiner \u2014 \"Patent Examiner\" (our score: 63/100, 73% automatable)\n15. scheduling-coordinator \u2014 \"Scheduling Coordinator\" (our score: 64/100, 75% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 18,
+      "job_ids": [
+        "credit-analyst",
+        "front-desk-receptionist",
+        "freight-broker",
+        "stock-analyst",
+        "survey-researcher",
+        "desktop-publisher",
+        "mortgage-broker",
+        "billing-specialist",
+        "bookkeeper",
+        "claims-adjuster",
+        "medical-coder",
+        "loan-processor",
+        "payroll-specialist",
+        "legal-secretary",
+        "statistical-assistant"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. credit-analyst \u2014 \"Credit Analyst\" (our score: 65/100, 76% automatable)\n2. front-desk-receptionist \u2014 \"Front Desk Receptionist\" (our score: 65/100, 76% automatable)\n3. freight-broker \u2014 \"Freight Broker\" (our score: 66/100, 78% automatable)\n4. stock-analyst \u2014 \"Stock Analyst\" (our score: 66/100, 76% automatable)\n5. survey-researcher \u2014 \"Survey Researcher\" (our score: 66/100, 76% automatable)\n6. desktop-publisher \u2014 \"Desktop Publisher\" (our score: 67/100, 78% automatable)\n7. mortgage-broker \u2014 \"Mortgage Broker\" (our score: 67/100, 78% automatable)\n8. billing-specialist \u2014 \"Billing Specialist\" (our score: 68/100, 80% automatable)\n9. bookkeeper \u2014 \"Bookkeeper\" (our score: 68/100, 80% automatable)\n10. claims-adjuster \u2014 \"Claims Adjuster\" (our score: 68/100, 78% automatable)\n11. medical-coder \u2014 \"Medical Coder\" (our score: 68/100, 80% automatable)\n12. loan-processor \u2014 \"Loan Processor\" (our score: 69/100, 80% automatable)\n13. payroll-specialist \u2014 \"Payroll Specialist\" (our score: 69/100, 80% automatable)\n14. legal-secretary \u2014 \"Legal Secretary\" (our score: 70/100, 80% automatable)\n15. statistical-assistant \u2014 \"Statistical Assistant\" (our score: 70/100, 82% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 19,
+      "job_ids": [
+        "paralegal",
+        "title-examiner",
+        "claims-processor",
+        "proofreader",
+        "travel-agent",
+        "mortgage-processor",
+        "order-clerk",
+        "word-processor-operator",
+        "correspondence-clerk",
+        "telephone-operator",
+        "textile-worker",
+        "photo-retoucher",
+        "call-centre-agent",
+        "parking-lot-attendant",
+        "accounts-receivable-clerk"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. paralegal \u2014 \"Paralegal\" (our score: 71/100, 78% automatable)\n2. title-examiner \u2014 \"Title Examiner\" (our score: 71/100, 82% automatable)\n3. claims-processor \u2014 \"Claims Processor\" (our score: 72/100, 83% automatable)\n4. proofreader \u2014 \"Proofreader\" (our score: 72/100, 84% automatable)\n5. travel-agent \u2014 \"Travel Agent\" (our score: 72/100, 83% automatable)\n6. mortgage-processor \u2014 \"Mortgage Processor\" (our score: 72/100, 78% automatable)\n7. order-clerk \u2014 \"Order Clerk\" (our score: 73/100, 85% automatable)\n8. word-processor-operator \u2014 \"Word Processor Operator\" (our score: 73/100, 85% automatable)\n9. correspondence-clerk \u2014 \"Correspondence Clerk\" (our score: 74/100, 86% automatable)\n10. telephone-operator \u2014 \"Telephone Operator\" (our score: 74/100, 86% automatable)\n11. textile-worker \u2014 \"Textile Worker\" (our score: 76/100, 85% automatable)\n12. photo-retoucher \u2014 \"Photo Retoucher\" (our score: 77/100, 86% automatable)\n13. call-centre-agent \u2014 \"Call Centre Agent\" (our score: 77/100, 82% automatable)\n14. parking-lot-attendant \u2014 \"Parking Lot Attendant\" (our score: 78/100, 87% automatable)\n15. accounts-receivable-clerk \u2014 \"Accounts Receivable Clerk\" (our score: 78/100, 85% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 20,
+      "job_ids": [
+        "factory-quality-inspector",
+        "fast-food-cook",
+        "accounts-payable-clerk",
+        "basic-bookkeeper",
+        "print-shop-operator",
+        "assembly-line-worker",
+        "medical-transcriptionist",
+        "warehouse-picker",
+        "data-entry-clerk",
+        "transcriptionist",
+        "document-scanner",
+        "file-clerk",
+        "postal-sorter",
+        "cashier",
+        "invoice-processor"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. factory-quality-inspector \u2014 \"Factory Quality Inspector\" (our score: 79/100, 88% automatable)\n2. fast-food-cook \u2014 \"Fast Food Cook\" (our score: 79/100, 88% automatable)\n3. accounts-payable-clerk \u2014 \"Accounts Payable Clerk\" (our score: 79/100, 86% automatable)\n4. basic-bookkeeper \u2014 \"Junior Bookkeeper\" (our score: 80/100, 89% automatable)\n5. print-shop-operator \u2014 \"Print Shop Operator\" (our score: 81/100, 89% automatable)\n6. assembly-line-worker \u2014 \"Assembly Line Worker\" (our score: 82/100, 90% automatable)\n7. medical-transcriptionist \u2014 \"Medical Transcriptionist\" (our score: 82/100, 91% automatable)\n8. warehouse-picker \u2014 \"Warehouse Picker\" (our score: 83/100, 90% automatable)\n9. data-entry-clerk \u2014 \"Data Entry Clerk\" (our score: 84/100, 91% automatable)\n10. transcriptionist \u2014 \"Transcriptionist\" (our score: 84/100, 92% automatable)\n11. document-scanner \u2014 \"Document Scanner Operator\" (our score: 85/100, 92% automatable)\n12. file-clerk \u2014 \"File Clerk\" (our score: 85/100, 92% automatable)\n13. postal-sorter \u2014 \"Postal Sorter\" (our score: 85/100, 92% automatable)\n14. cashier \u2014 \"Cashier\" (our score: 86/100, 92% automatable)\n15. invoice-processor \u2014 \"Invoice Processor\" (our score: 86/100, 93% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 21,
+      "job_ids": [
+        "meter-reader",
+        "mail-room-clerk",
+        "toll-booth-operator",
+        "typist",
+        "switchboard-operator",
+        "sports-scorekeeper",
+        "library-catalog-clerk",
+        "telephone-survey-interviewer",
+        "map-drafter",
+        "telemarketer",
+        "travel-booking-agent",
+        "check-processing-clerk",
+        "ticket-agent",
+        "photo-lab-technician",
+        "directory-assistance-operator"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. meter-reader \u2014 \"Meter Reader\" (our score: 87/100, 94% automatable)\n2. mail-room-clerk \u2014 \"Mail Room Clerk\" (our score: 88/100, 94% automatable)\n3. toll-booth-operator \u2014 \"Toll Booth Operator\" (our score: 88/100, 95% automatable)\n4. typist \u2014 \"Typist\" (our score: 89/100, 95% automatable)\n5. switchboard-operator \u2014 \"Switchboard Operator\" (our score: 90/100, 96% automatable)\n6. sports-scorekeeper \u2014 \"Sports Scorekeeper\" (our score: 91/100, 95% automatable)\n7. library-catalog-clerk \u2014 \"Library Catalog Clerk\" (our score: 93/100, 96% automatable)\n8. telephone-survey-interviewer \u2014 \"Telephone Survey Interviewer\" (our score: 93/100, 96% automatable)\n9. map-drafter \u2014 \"Map Drafter\" (our score: 94/100, 97% automatable)\n10. telemarketer \u2014 \"Telemarketer\" (our score: 94/100, 97% automatable)\n11. travel-booking-agent \u2014 \"Travel Booking Agent\" (our score: 95/100, 97% automatable)\n12. check-processing-clerk \u2014 \"Check Processing Clerk\" (our score: 96/100, 98% automatable)\n13. ticket-agent \u2014 \"Ticket Agent\" (our score: 96/100, 98% automatable)\n14. photo-lab-technician \u2014 \"Photo Lab Technician\" (our score: 97/100, 98% automatable)\n15. directory-assistance-operator \u2014 \"Directory Assistance Operator\" (our score: 98/100, 99% automatable)",
+      "status": "pending",
+      "results": []
+    },
+    {
+      "batch_num": 22,
+      "job_ids": [
+        "classified-ad-taker"
+      ],
+      "prompt": "I'm fact-checking an AI job automation risk dataset. For each job below, assess the AI automation risk on a 0-100 scale where:\n- 0-15 = Raw (very safe from AI)\n- 16-30 = Rare (mostly safe)\n- 31-45 = Lightly Toasted (some tasks at risk)\n- 46-60 = Half Baked (significant portions automatable)\n- 61-75 = Well Done (majority of tasks at risk)\n- 76-90 = Extra Crispy (heavily automatable)\n- 91-100 = Fully Cooked (almost entirely replaceable)\n\nConsider CURRENT AI capabilities as of 2026 (LLMs, computer vision, robotics, coding agents, etc). Not theoretical future \u2014 what's real now.\n\nI'll show our current score. Tell me if you agree or disagree.\n\nIMPORTANT: Format each response as exactly one line per job:\njob_id | your_score | AGREE or DISAGREE | brief reason\n\nJobs to assess:\n1. classified-ad-taker \u2014 \"Classified Ad Taker\" (our score: 99/100, 99% automatable)",
+      "status": "pending",
+      "results": []
+    }
+  ]
+}

@@ -120,6 +120,42 @@ Quips need extra scrutiny because they're the most likely source of controversy:
 
 ---
 
+## Batch Fact-Checking at Scale (Learned 2026-04-03)
+
+When fact-checking the full dataset (300+ jobs), a one-by-one Perplexity approach is too slow and expensive. Use the batch approach instead:
+
+### Score Fact-Check
+
+**Tool:** `tools/batch_fact_check.py`
+
+1. Group jobs by sector (healthcare, trades, tech, admin/clerical, creative, education, etc.)
+2. Run batches of ~30 jobs per Perplexity query, asking for estimated automation scores
+3. Compare Perplexity's scores against ours
+4. Flag jobs where the delta exceeds a threshold (we used >15 points; in practice this was too strict — Perplexity scores averaged +10.8 points higher than ours, likely due to AI-bullish bias)
+5. Results land in `data/fact-check-results.json` and flagged items in `data/fact-check-flagged.json`
+
+**Key finding:** Perplexity consistently scores ~10 points higher (more AI-bullish). We decided NOT to do blanket score corrections because we don't fully trust Perplexity's numbers as ground truth. Use the comparison as a sanity check, not an auto-correction.
+
+### Timeline Fact-Check
+
+**Tool:** `tools/timeline_fact_check.py`
+
+1. Split all jobs into 4 batches (~80 each)
+2. Run 4 parallel subagents, each using AI research knowledge (McKinsey, WEF, Oxford, Goldman Sachs) to assess timelines
+3. Each subagent writes results to `data/timeline-results-batchN.json`
+4. Merge results and identify disagreements
+
+**Key finding:** 98.7% agreement (312/316 jobs). The 4 disagreements were all defensible adjustments, not errors. This approach is fast (minutes vs hours) and reliable.
+
+### What We Learned
+
+- **Sector grouping** works well — similar jobs get more accurate comparisons when batched together
+- **Parallel subagents** are effective for splitting large datasets across independent workers
+- **Perplexity has AI-bullish bias** — don't blindly accept its scores, but timeline estimates are solid
+- **Threshold for flagging** should be ~20 points, not 15 — the natural bias inflates deltas
+
+---
+
 ## Edge Cases
 
 - **Jobs with no clear research:** Flag for human review. Don't guess.

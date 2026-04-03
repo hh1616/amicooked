@@ -1,0 +1,1544 @@
+[
+  {
+    "id": "administrative-assistant",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "High exposure to LLMs and RPA for scheduling, email, data processing"
+  },
+  {
+    "id": "executive-assistant",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Routine admin automatable with RPA/AI; executive judgment reduces full replaceability"
+  },
+  {
+    "id": "receptionist",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Greeting, call routing automated by AI chatbots and virtual reception systems"
+  },
+  {
+    "id": "office-administrator",
+    "perplexity_score": 82,
+    "agree": false,
+    "reason": "Supplies, filing, compliance checks vulnerable to RPA and document AI"
+  },
+  {
+    "id": "office-manager",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "Coordination automatable via workflow AI; human leadership provides buffer"
+  },
+  {
+    "id": "scheduling-coordinator",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "Calendar optimization fully handled by AI scheduling tools already deployed"
+  },
+  {
+    "id": "data-entry-clerk",
+    "perplexity_score": 96,
+    "agree": false,
+    "reason": "Replaced by OCR, RPA platforms, and LLMs extracting from documents"
+  },
+  {
+    "id": "file-clerk",
+    "perplexity_score": 92,
+    "agree": false,
+    "reason": "Digital filing and retrieval automated by AI document management"
+  },
+  {
+    "id": "mail-room-clerk",
+    "perplexity_score": 88,
+    "agree": true,
+    "reason": "Sorting, scanning, distribution via AI-powered mail robots and OCR"
+  },
+  {
+    "id": "payroll-specialist",
+    "perplexity_score": 94,
+    "agree": false,
+    "reason": "Calculations, deductions, reporting automated by payroll software with AI"
+  },
+  {
+    "id": "billing-specialist",
+    "perplexity_score": 93,
+    "agree": false,
+    "reason": "Invoice generation, tracking, payments processed by RPA and AI billing tools"
+  },
+  {
+    "id": "bookkeeper",
+    "perplexity_score": 95,
+    "agree": false,
+    "reason": "Ledger, reconciliations, reporting replaced by AI accounting platforms"
+  },
+  {
+    "id": "basic-bookkeeper",
+    "perplexity_score": 96,
+    "agree": false,
+    "reason": "Entry-level routine tasks fully automatable with current tools"
+  },
+  {
+    "id": "order-clerk",
+    "perplexity_score": 96,
+    "agree": false,
+    "reason": "Order processing topped lists at 95.53% exposure"
+  },
+  {
+    "id": "correspondence-clerk",
+    "perplexity_score": 89,
+    "agree": false,
+    "reason": "Email drafting, response generation via LLMs in office suites"
+  },
+  {
+    "id": "word-processor-operator",
+    "perplexity_score": 98,
+    "agree": false,
+    "reason": "Obsolete with voice-to-text LLMs and auto-formatting AI"
+  },
+  {
+    "id": "typist",
+    "perplexity_score": 99,
+    "agree": false,
+    "reason": "Pure transcription replaced by real-time speech recognition"
+  },
+  {
+    "id": "switchboard-operator",
+    "perplexity_score": 95,
+    "agree": false,
+    "reason": "Call routing automated by AI phone systems with NLP"
+  },
+  {
+    "id": "document-scanner",
+    "perplexity_score": 97,
+    "agree": false,
+    "reason": "Scanning and indexing done by AI scanners with auto-OCR"
+  },
+  {
+    "id": "invoice-processor",
+    "perplexity_score": 95,
+    "agree": false,
+    "reason": "Extraction, validation, approval workflows fully RPA-enabled"
+  },
+  {
+    "id": "software-engineer",
+    "perplexity_score": 45,
+    "agree": true,
+    "reason": "Coding tasks automated by agents but roles evolve to architecture and AI integration"
+  },
+  {
+    "id": "frontend-developer",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "UI generation via AI raises risk for routine coding, custom UX needs oversight"
+  },
+  {
+    "id": "backend-developer",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "API and logic coding automated but complex system design resists replacement"
+  },
+  {
+    "id": "mobile-app-developer",
+    "perplexity_score": 52,
+    "agree": false,
+    "reason": "Cross-platform tools and AI code gen handle much app building"
+  },
+  {
+    "id": "web-developer",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "High automation for static sites via no-code/AI builders"
+  },
+  {
+    "id": "devops-engineer",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "Pipeline automation but strategic orchestration persists"
+  },
+  {
+    "id": "cloud-architect",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "Complex enterprise system design needing judgment; AI-resistant"
+  },
+  {
+    "id": "data-scientist",
+    "perplexity_score": 35,
+    "agree": true,
+    "reason": "Routine analysis automated but advanced judgment safeguards role"
+  },
+  {
+    "id": "machine-learning-engineer",
+    "perplexity_score": 20,
+    "agree": false,
+    "reason": "Builds AI systems; demand surges as job creator not replacer"
+  },
+  {
+    "id": "quality-assurance-tester",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Testing and bug detection dominated by AI tools; entry-level declining"
+  },
+  {
+    "id": "video-game-tester",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Repetitive playtesting automated by AI agents"
+  },
+  {
+    "id": "database-administrator",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "Query optimization and maintenance via AI/cloud automation"
+  },
+  {
+    "id": "network-administrator",
+    "perplexity_score": 50,
+    "agree": true,
+    "reason": "Monitoring automated but physical troubleshooting needs humans"
+  },
+  {
+    "id": "systems-administrator",
+    "perplexity_score": 55,
+    "agree": true,
+    "reason": "Routine server management automated; complex integration resists"
+  },
+  {
+    "id": "it-support-specialist",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Basic troubleshooting via chatbots and AI diagnostics"
+  },
+  {
+    "id": "technical-support-specialist",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "AI handling tier-1 issues effectively"
+  },
+  {
+    "id": "it-manager",
+    "perplexity_score": 15,
+    "agree": false,
+    "reason": "Leadership, accountability, human judgment; low-risk"
+  },
+  {
+    "id": "cybersecurity-analyst",
+    "perplexity_score": 30,
+    "agree": true,
+    "reason": "Threat detection automated but ethical decisions human-essential"
+  },
+  {
+    "id": "penetration-tester",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "Creative ethical hacking evades AI; resistant role"
+  },
+  {
+    "id": "robotics-engineer",
+    "perplexity_score": 20,
+    "agree": false,
+    "reason": "Designs physical systems needing complex skill; AI-resistant"
+  },
+  {
+    "id": "accountant",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "Routine tasks automatable via RPA/LLMs but strategic advisory needs judgment"
+  },
+  {
+    "id": "auditor",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "AI enables continuous auditing but oversight and regulatory interpretation human-centric"
+  },
+  {
+    "id": "financial-analyst",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "FP&A heavily impacted by AI predictive modeling but needs human interpretation"
+  },
+  {
+    "id": "financial-planner",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "Client trust and complex judgment; AI aids data but not holistic planning"
+  },
+  {
+    "id": "actuary",
+    "perplexity_score": 50,
+    "agree": true,
+    "reason": "Algorithmic risk scoring augments work but regulatory decisions limit replacement"
+  },
+  {
+    "id": "tax-preparer",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Routine filings automated; shifts to strategic planning"
+  },
+  {
+    "id": "bank-teller",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Pattern-based transactions fully handled by RPA and self-service kiosks"
+  },
+  {
+    "id": "loan-officer",
+    "perplexity_score": 50,
+    "agree": true,
+    "reason": "Relationship-building safe but AI assesses eligibility"
+  },
+  {
+    "id": "loan-processor",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "Routine data verification ideal for RPA"
+  },
+  {
+    "id": "credit-analyst",
+    "perplexity_score": 60,
+    "agree": true,
+    "reason": "AI excels at risk scoring but needs oversight"
+  },
+  {
+    "id": "stock-analyst",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "AI processes market data rapidly but judgment keeps it augmented"
+  },
+  {
+    "id": "risk-analyst",
+    "perplexity_score": 50,
+    "agree": true,
+    "reason": "Algorithmic tools handle modeling; human needed for uncertainty"
+  },
+  {
+    "id": "insurance-underwriter",
+    "perplexity_score": 55,
+    "agree": true,
+    "reason": "AI automates scoring but complex cases require judgment"
+  },
+  {
+    "id": "insurance-agent",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Client trust and sales persuasion resist AI"
+  },
+  {
+    "id": "claims-adjuster",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "AI aids assessment but investigations need humans"
+  },
+  {
+    "id": "claims-processor",
+    "perplexity_score": 75,
+    "agree": true,
+    "reason": "Routine processing via RPA; high automation pressure"
+  },
+  {
+    "id": "mortgage-broker",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Relationship and negotiation safe; AI handles rates"
+  },
+  {
+    "id": "mortgage-processor",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "Data entry and verification fully RPA-susceptible"
+  },
+  {
+    "id": "lawyer",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "AI crushes research/drafting but courtroom and ethics demand humans"
+  },
+  {
+    "id": "paralegal",
+    "perplexity_score": 70,
+    "agree": true,
+    "reason": "Document review and routine prep automated by LLMs"
+  },
+  {
+    "id": "legal-secretary",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Admin tasks like scheduling and filing replaced by AI tools"
+  },
+  {
+    "id": "patent-examiner",
+    "perplexity_score": 60,
+    "agree": true,
+    "reason": "AI scans prior art but nuanced novelty judgment persists"
+  },
+  {
+    "id": "conveyancer",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Standardized property docs automatable via RPA"
+  },
+  {
+    "id": "graphic-designer",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "AI image generators handle routine designs; humans shift to strategy/oversight"
+  },
+  {
+    "id": "illustrator",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "Generative AI excels at creating illustrations from prompts"
+  },
+  {
+    "id": "animator",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Video AI produces rough animations from text reducing manual work"
+  },
+  {
+    "id": "photographer",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "On-site capture and lighting make full replacement low; editing more at risk"
+  },
+  {
+    "id": "photo-retoucher",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "AI tools automate retouching, color correction with high precision"
+  },
+  {
+    "id": "video-editor",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "AI auto-edits footage, generates cuts from scripts"
+  },
+  {
+    "id": "film-director",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "Requires human vision, on-set leadership, emotional intuition"
+  },
+  {
+    "id": "screenwriter",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "LLMs generate scripts but original narrative depth demands human strategy"
+  },
+  {
+    "id": "journalist",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "AI drafts articles but fact-checking and investigative work keep it mid-risk"
+  },
+  {
+    "id": "sports-journalist",
+    "perplexity_score": 55,
+    "agree": true,
+    "reason": "LLMs handle recaps and stats but live analysis needs human insight"
+  },
+  {
+    "id": "news-anchor",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "AI avatars and voice synthesis enable synthetic delivery"
+  },
+  {
+    "id": "content-writer",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "LLMs produce high volumes quickly reducing need for routine writing"
+  },
+  {
+    "id": "copywriter",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "AI generates ad copy variations instantly"
+  },
+  {
+    "id": "technical-writer",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "LLMs excel at documentation and structured text from data"
+  },
+  {
+    "id": "social-media-manager",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "AI schedules posts and generates content; strategy safer"
+  },
+  {
+    "id": "influencer",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "AI aids production but personal brand and authenticity rely on human charisma"
+  },
+  {
+    "id": "music-producer",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Music AI composes and mixes; artistic arrangement human-led"
+  },
+  {
+    "id": "sound-engineer",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "AI handles mixing, noise reduction, mastering precisely"
+  },
+  {
+    "id": "voice-actor",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "Voice AI clones speech realistically but nuanced emotion lags"
+  },
+  {
+    "id": "podcast-producer",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "AI transcribes, edits audio, generates intros; human hosting remains"
+  },
+  {
+    "id": "desktop-publisher",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "Layout and formatting fully automatable by AI design tools"
+  },
+  {
+    "id": "radio-broadcaster",
+    "perplexity_score": 68,
+    "agree": false,
+    "reason": "AI generates scripts and voices but live interaction mid-risk"
+  },
+  {
+    "id": "proofreader",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "LLMs detect errors with near-perfect accuracy"
+  },
+  {
+    "id": "doctor-gp",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "Low vulnerability due to human judgment, empathy, complex decision-making"
+  },
+  {
+    "id": "dermatologist",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "AI excels in image-based skin diagnostics but hands-on procedures need humans"
+  },
+  {
+    "id": "radiologist",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "High exposure from AI image analysis; final interpretation limits full replacement"
+  },
+  {
+    "id": "pathologist",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "AI aids slide analysis and pattern recognition; complex judgment persists"
+  },
+  {
+    "id": "optometrist",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "AI supports retinal scans but physical exams and fitting remain human-centric"
+  },
+  {
+    "id": "chiropractor",
+    "perplexity_score": 15,
+    "agree": true,
+    "reason": "Physical manipulation and tactile feedback; low risk as AI lacks dexterity"
+  },
+  {
+    "id": "dentist",
+    "perplexity_score": 20,
+    "agree": false,
+    "reason": "Manual procedures demand physical skill; AI assists imaging but not replacement"
+  },
+  {
+    "id": "dental-hygienist",
+    "perplexity_score": 30,
+    "agree": true,
+    "reason": "Routine cleanings partially automatable but direct patient care protects"
+  },
+  {
+    "id": "dental-assistant",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Admin and prep tasks vulnerable but chairside assistance needs human presence"
+  },
+  {
+    "id": "pharmacist",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "AI handles dispensing and checks but counseling needs human accountability"
+  },
+  {
+    "id": "pharmacy-technician",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "High vulnerability for routine filling, inventory, and admin"
+  },
+  {
+    "id": "nurse-practitioner",
+    "perplexity_score": 20,
+    "agree": false,
+    "reason": "Low risk due to advanced judgment, empathy, physical care"
+  },
+  {
+    "id": "nurse",
+    "perplexity_score": 15,
+    "agree": true,
+    "reason": "Consistently low vulnerability from hands-on care and empathy"
+  },
+  {
+    "id": "sonographer",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "AI improves interpretation but probe manipulation needs skilled operation"
+  },
+  {
+    "id": "medical-lab-technician",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "Routine testing automatable but oversight reduces full replacement"
+  },
+  {
+    "id": "medical-coder",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Highly automatable via AI NLP for billing and records"
+  },
+  {
+    "id": "medical-transcriptionist",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "Generative AI and voice tools fully replace routine transcription"
+  },
+  {
+    "id": "lab-technician",
+    "perplexity_score": 45,
+    "agree": true,
+    "reason": "AI automates analysis but humans needed for prep and quality control"
+  },
+  {
+    "id": "audiologist",
+    "perplexity_score": 30,
+    "agree": true,
+    "reason": "AI aids hearing tests but fitting devices needs hands-on expertise"
+  },
+  {
+    "id": "nutritionist",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "Personalized counseling relies on empathy; AI supports plans not relationships"
+  },
+  {
+    "id": "optician",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "AI assists measurements but custom fitting needs manual skill"
+  },
+  {
+    "id": "truck-driver",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Autonomous trucks advancing with Level 4 on highways; urban deployment and regulation limit full replacement"
+  },
+  {
+    "id": "bus-driver",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Autonomous shuttles in controlled routes but public trust and safety regulations keep humans"
+  },
+  {
+    "id": "rideshare-driver",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "Robotaxis like Waymo scaling in urban areas by 2026"
+  },
+  {
+    "id": "food-delivery-driver",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Autonomous vehicles and drones handle last-mile; dense urban navigation poses challenges"
+  },
+  {
+    "id": "courier",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "Drone and ground robot couriers automate package handoffs"
+  },
+  {
+    "id": "flight-attendant",
+    "perplexity_score": 20,
+    "agree": true,
+    "reason": "Human-centric passenger service and safety; robots cannot replicate"
+  },
+  {
+    "id": "pilot",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "AI co-pilots assist routine flights but regulatory mandates keep humans in cockpits"
+  },
+  {
+    "id": "crane-operator",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "AI-guided cranes automate lifts but remote human oversight remains"
+  },
+  {
+    "id": "forklift-operator",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "AGVs and AI forklifts dominate warehouses"
+  },
+  {
+    "id": "warehouse-picker",
+    "perplexity_score": 85,
+    "agree": true,
+    "reason": "Robotic arms and mobile picking robots handle order fulfillment"
+  },
+  {
+    "id": "warehouse-manager",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "Strategy and exceptions need human judgment; agentic AI aids decisions"
+  },
+  {
+    "id": "assembly-line-worker",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Industrial robots with AI perform repetitive assembly precisely"
+  },
+  {
+    "id": "factory-quality-inspector",
+    "perplexity_score": 95,
+    "agree": false,
+    "reason": "AI-driven machine vision detects defects in real-time with sub-mm accuracy"
+  },
+  {
+    "id": "welder",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Robotic welding arms handle most tasks; custom/field welding needs humans"
+  },
+  {
+    "id": "auto-mechanic",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "AI diagnostics assist but complex repairs and dexterity limit automation"
+  },
+  {
+    "id": "diesel-mechanic",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "AI aids heavy equipment diagnostics but rugged environments hinder robots"
+  },
+  {
+    "id": "auto-electrician",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "AI streamlines wiring diagnostics but intricate troubleshooting needs humans"
+  },
+  {
+    "id": "construction-worker",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Drones and exoskeletons aid but site variability demands human labor"
+  },
+  {
+    "id": "construction-manager",
+    "perplexity_score": 30,
+    "agree": false,
+    "reason": "Manages teams and regulations; AI supports planning not leadership"
+  },
+  {
+    "id": "building-inspector",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "AI with drones and laser scanning automates structural checks"
+  },
+  {
+    "id": "mining-worker",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Autonomous haul trucks operate but hazardous work still needs humans"
+  },
+  {
+    "id": "textile-worker",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "Automated looms and AI quality control dominate repetitive production"
+  },
+  {
+    "id": "print-shop-operator",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "AI-driven digital presses automate most operations"
+  },
+  {
+    "id": "ceo",
+    "perplexity_score": 15,
+    "agree": false,
+    "reason": "Strategic vision and leadership; least at risk"
+  },
+  {
+    "id": "operations-manager",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Process optimization augmented by AI but on-site coordination limits replacement"
+  },
+  {
+    "id": "project-manager",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "PM tools handle scheduling but human negotiation and motivation essential"
+  },
+  {
+    "id": "product-manager",
+    "perplexity_score": 35,
+    "agree": true,
+    "reason": "LLMs aid analysis but customer empathy and innovation demand human insight"
+  },
+  {
+    "id": "sales-manager",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "AI automates lead gen/CRM but relationship-building resists automation"
+  },
+  {
+    "id": "marketing-manager",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Content and analytics automatable but creative strategy needs oversight"
+  },
+  {
+    "id": "hr-manager",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "Recruitment/admin face displacement but employee relations need human touch"
+  },
+  {
+    "id": "hotel-manager",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "Scheduling/inventory use AI but guest interactions and crisis management need judgment"
+  },
+  {
+    "id": "store-manager",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Inventory and staffing automatable but customer service leadership persists"
+  },
+  {
+    "id": "retail-manager",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Routine retail ops vulnerable but customer service leadership persists"
+  },
+  {
+    "id": "restaurant-manager",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Scheduling/ordering use AI but staff motivation limits replacement"
+  },
+  {
+    "id": "regional-manager",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "Data analytics helps but travel and team leadership require humans"
+  },
+  {
+    "id": "general-manager",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "P&L and cross-department coordination exceed current AI capabilities"
+  },
+  {
+    "id": "branch-manager",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Branch ops advancing but local relationships remain human-led"
+  },
+  {
+    "id": "business-manager",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "Admin augmentable by AI but strategic development needs judgment"
+  },
+  {
+    "id": "clinic-manager",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "Scheduling/compliance automate but patient/staff empathy persists"
+  },
+  {
+    "id": "customer-service-manager",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Reps vulnerable to chatbots; management shifts to AI supervision"
+  },
+  {
+    "id": "procurement-manager",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Vendor analysis partially automatable but deal-making needs humans"
+  },
+  {
+    "id": "business-analyst",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Data analysis and reporting 90% automatable with current LLMs"
+  },
+  {
+    "id": "management-consultant",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "Routine consulting analysis at high risk from LLMs"
+  },
+  {
+    "id": "sustainability-consultant",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "ESG reporting automates but stakeholder engagement needs expertise"
+  },
+  {
+    "id": "corporate-trainer",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Content delivery via AI platforms replaces much training"
+  },
+  {
+    "id": "compliance-officer",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Monitoring tools automate checks but ethical judgment needs humans"
+  },
+  {
+    "id": "real-estate-agent",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Listings and valuations use AI but negotiations endure"
+  },
+  {
+    "id": "recruitment-consultant",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "Sourcing and screening highly automatable"
+  },
+  {
+    "id": "high-school-teacher",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "AI tutoring augments but doesnt replace classroom dynamics or emotional support"
+  },
+  {
+    "id": "art-teacher",
+    "perplexity_score": 15,
+    "agree": false,
+    "reason": "Hands-on creativity and subjective feedback AI struggles to replicate"
+  },
+  {
+    "id": "esl-teacher",
+    "perplexity_score": 30,
+    "agree": false,
+    "reason": "AI language apps handle basics but cultural nuance needs human empathy"
+  },
+  {
+    "id": "university-professor",
+    "perplexity_score": 20,
+    "agree": false,
+    "reason": "Research and complex debates resist AI; aids grading not scholarship"
+  },
+  {
+    "id": "tutor",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "AI tutoring platforms excel at personalized drills; live adaptation lowers risk"
+  },
+  {
+    "id": "teaching-assistant",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "Routine grading and admin automatable; human oversight still needed"
+  },
+  {
+    "id": "school-counselor",
+    "perplexity_score": 10,
+    "agree": false,
+    "reason": "Deep emotional intelligence and crisis intervention far beyond current AI"
+  },
+  {
+    "id": "education-coordinator",
+    "perplexity_score": 35,
+    "agree": true,
+    "reason": "Planning partially automatable but stakeholder coordination needs judgment"
+  },
+  {
+    "id": "librarian",
+    "perplexity_score": 30,
+    "agree": false,
+    "reason": "AI search tools reduce needs but curation and community events persist"
+  },
+  {
+    "id": "library-assistant",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Shelving, checkouts susceptible to robotic automation and self-service"
+  },
+  {
+    "id": "sports-coach",
+    "perplexity_score": 20,
+    "agree": true,
+    "reason": "Physical demonstration and team dynamics resist AI"
+  },
+  {
+    "id": "sports-coach-head",
+    "perplexity_score": 15,
+    "agree": false,
+    "reason": "Strategic planning and player psychology demand experienced human insight"
+  },
+  {
+    "id": "baker",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Repetitive mixing/baking ideal for kitchen robots; routine high-volume at risk"
+  },
+  {
+    "id": "sous-chef",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Kitchen coordination partially automatable but real-time problem-solving protects"
+  },
+  {
+    "id": "bartender",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Robotic mixers handle pours; social flair reduces full replacement"
+  },
+  {
+    "id": "barista",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "High risk from automated coffee machines for repetitive brewing"
+  },
+  {
+    "id": "waiter",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Order-taking vulnerable to kiosks and robots; charm lingers in upscale"
+  },
+  {
+    "id": "fast-food-cook",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Repetitive assembly fully targeted by AI robotics"
+  },
+  {
+    "id": "concierge",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "Chatbots handle recommendations; nuanced hospitality resists"
+  },
+  {
+    "id": "housekeeper",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Cleaning robots advancing rapidly for repetitive tasks"
+  },
+  {
+    "id": "cleaner",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "Routine cleaning highly automatable by service robots"
+  },
+  {
+    "id": "security-guard",
+    "perplexity_score": 50,
+    "agree": true,
+    "reason": "Surveillance AI covers monitoring; patrols and judgment lower risk"
+  },
+  {
+    "id": "fitness-instructor",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "Motivation and form correction require physical human presence"
+  },
+  {
+    "id": "event-planner",
+    "perplexity_score": 35,
+    "agree": true,
+    "reason": "Logistics automatable but vendor negotiation needs human networks"
+  },
+  {
+    "id": "wedding-planner",
+    "perplexity_score": 20,
+    "agree": true,
+    "reason": "High-emotion customization and client rapport defy AI replacement"
+  },
+  {
+    "id": "architect",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "Design creativity and licensing but AI aids drafting/simulations"
+  },
+  {
+    "id": "civil-engineer",
+    "perplexity_score": 32,
+    "agree": false,
+    "reason": "On-site assessments and licensed sign-offs resist automation"
+  },
+  {
+    "id": "mechanical-engineer",
+    "perplexity_score": 38,
+    "agree": false,
+    "reason": "Complex problem-solving and prototyping human-led"
+  },
+  {
+    "id": "electrical-engineer",
+    "perplexity_score": 30,
+    "agree": false,
+    "reason": "Design automation advances but physical implementation needs humans"
+  },
+  {
+    "id": "environmental-scientist",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Field sampling and regulatory interpretation hard to automate"
+  },
+  {
+    "id": "geologist",
+    "perplexity_score": 42,
+    "agree": false,
+    "reason": "On-site fieldwork and geological interpretation demand physical presence"
+  },
+  {
+    "id": "research-scientist",
+    "perplexity_score": 28,
+    "agree": true,
+    "reason": "AI accelerates data analysis but original hypothesis generation needs humans"
+  },
+  {
+    "id": "forensic-scientist",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Lab analysis partially automatable but evidence handling needs licensed humans"
+  },
+  {
+    "id": "urban-planner",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "AI optimizes layouts but stakeholder negotiations need human empathy"
+  },
+  {
+    "id": "drone-operator",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "Routine flights automatable but complex missions need oversight"
+  },
+  {
+    "id": "farmer",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Robotics handle planting/harvesting but variable weather needs humans"
+  },
+  {
+    "id": "interior-designer",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "AI generates layouts but client taste and spatial empathy resist replacement"
+  },
+  {
+    "id": "fashion-designer",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Generative AI creates patterns but trend sensing relies on creativity"
+  },
+  {
+    "id": "ux-designer",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "AI prototypes interfaces rapidly disrupting routine design"
+  },
+  {
+    "id": "game-designer",
+    "perplexity_score": 52,
+    "agree": false,
+    "reason": "AI assists asset creation but narrative design needs originality"
+  },
+  {
+    "id": "museum-curator",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "Cultural interpretation and relationship-building protect"
+  },
+  {
+    "id": "diplomat",
+    "perplexity_score": 15,
+    "agree": true,
+    "reason": "Empathy negotiation and geopolitical nuance irreplaceable"
+  },
+  {
+    "id": "police-officer",
+    "perplexity_score": 40,
+    "agree": false,
+    "reason": "Physical presence and split-second decisions required; admin automatable"
+  },
+  {
+    "id": "park-ranger",
+    "perplexity_score": 20,
+    "agree": true,
+    "reason": "On-site enforcement and environmental adaptation need human body"
+  },
+  {
+    "id": "funeral-director",
+    "perplexity_score": 12,
+    "agree": true,
+    "reason": "Deep empathy and ritual handling build trust machines cant replicate"
+  },
+  {
+    "id": "immigration-consultant",
+    "perplexity_score": 35,
+    "agree": true,
+    "reason": "Licensed advice resists but personalized trust needs humans"
+  },
+  {
+    "id": "migration-agent",
+    "perplexity_score": 32,
+    "agree": false,
+    "reason": "Licensed advice resists though form processing automates"
+  },
+  {
+    "id": "property-manager",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "Tenant relations need humans but leasing admin at risk"
+  },
+  {
+    "id": "florist",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Custom events and sensory creativity; arrangement design AI-aided"
+  },
+  {
+    "id": "concreter",
+    "perplexity_score": 55,
+    "agree": false,
+    "reason": "Advancing robotics in construction targeting repetitive tasks; manual dexterity a barrier"
+  },
+  {
+    "id": "air-conditioning-installer",
+    "perplexity_score": 45,
+    "agree": false,
+    "reason": "AI-driven planning and robotic assistance but on-site variability limits replacement"
+  },
+  {
+    "id": "choreographer",
+    "perplexity_score": 15,
+    "agree": true,
+    "reason": "Creative human-judgment-heavy role resists AI automation"
+  },
+  {
+    "id": "housewife",
+    "perplexity_score": 20,
+    "agree": true,
+    "reason": "Unpredictable caregiving and emotional intelligence beyond current AI"
+  },
+  {
+    "id": "makeup-artist",
+    "perplexity_score": 25,
+    "agree": false,
+    "reason": "Tactile artistry and client interaction hard to automate; robotics lag"
+  },
+  {
+    "id": "community-development-officer",
+    "perplexity_score": 30,
+    "agree": false,
+    "reason": "Nuanced social engagement and relationship-building not replaceable"
+  },
+  {
+    "id": "physiotherapy-assistant",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "Hands-on patient manipulation needs human touch despite AI planning"
+  },
+  {
+    "id": "orthotist",
+    "perplexity_score": 50,
+    "agree": false,
+    "reason": "CAD/CAM and 3D printing advance but fitting needs manual skill"
+  },
+  {
+    "id": "boilermaker",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Robotics handle welding in controlled settings; field variability persists"
+  },
+  {
+    "id": "cabinet-maker",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "CNC machines and AI design tools automate precision woodworking"
+  },
+  {
+    "id": "fitter-and-turner",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Advanced CNC and AI-optimized machining replace routine fitting"
+  },
+  {
+    "id": "public-relations-specialist",
+    "perplexity_score": 40,
+    "agree": true,
+    "reason": "LLMs generate content but human networking and crisis nuance essential"
+  },
+  {
+    "id": "market-researcher",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "AI analytics and LLMs automate surveys and sentiment analysis"
+  },
+  {
+    "id": "logistics-coordinator",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "AI platforms optimize routing, tracking, coordination"
+  },
+  {
+    "id": "supply-chain-analyst",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Predictive AI fully automates forecasting and optimization"
+  },
+  {
+    "id": "advertising-executive",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Generative AI creates campaigns and targets audiences"
+  },
+  {
+    "id": "economist",
+    "perplexity_score": 65,
+    "agree": false,
+    "reason": "LLMs excel at data analysis, forecasting, report generation"
+  },
+  {
+    "id": "quantity-surveyor",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "AI tools for cost estimation and predictive planning dominate"
+  },
+  {
+    "id": "purchasing-agent",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "AI automates procurement, vendor analysis, pricing"
+  },
+  {
+    "id": "drafter",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "Generative AI and CAD with LLMs fully automate technical drawings"
+  },
+  {
+    "id": "translator",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Advanced LLMs provide near-human fluency in real-time translation"
+  },
+  {
+    "id": "scrum-master",
+    "perplexity_score": 60,
+    "agree": true,
+    "reason": "AI agile tools automate facilitation but team dynamics need humans"
+  },
+  {
+    "id": "flight-dispatcher",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "AI systems handle flight planning with real-time data integration"
+  },
+  {
+    "id": "production-planner",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "AI forecasting and scheduling replace manual planning"
+  },
+  {
+    "id": "retail-sales-assistant",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Self-checkout, AI kiosks, chatbots manage sales"
+  },
+  {
+    "id": "inventory-manager",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "AI-driven systems automate tracking and demand prediction"
+  },
+  {
+    "id": "front-desk-receptionist",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "AI virtual assistants and kiosks handle check-ins and scheduling"
+  },
+  {
+    "id": "freight-broker",
+    "perplexity_score": 35,
+    "agree": false,
+    "reason": "AI automates quotes and matching but negotiation and relationships need humans"
+  },
+  {
+    "id": "survey-researcher",
+    "perplexity_score": 65,
+    "agree": true,
+    "reason": "LLMs design surveys and analyze data; complex methodology may persist"
+  },
+  {
+    "id": "statistical-assistant",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "LLMs excel at data cleaning, analysis, visualization making routine work automatable"
+  },
+  {
+    "id": "title-examiner",
+    "perplexity_score": 75,
+    "agree": true,
+    "reason": "AI document analysis scans legal records and flags issues accurately"
+  },
+  {
+    "id": "travel-agent",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "AI booking platforms and chatbots handle itineraries and queries"
+  },
+  {
+    "id": "telephone-operator",
+    "perplexity_score": 95,
+    "agree": false,
+    "reason": "Voice AI and IVR fully handle call routing; obsolete role"
+  },
+  {
+    "id": "call-centre-agent",
+    "perplexity_score": 70,
+    "agree": true,
+    "reason": "LLM chatbots handle routine inquiries; 70%+ volume automatable"
+  },
+  {
+    "id": "parking-lot-attendant",
+    "perplexity_score": 60,
+    "agree": false,
+    "reason": "Automated gates and license plate recognition; robotics emerging"
+  },
+  {
+    "id": "accounts-receivable-clerk",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "AI automates invoicing, payment tracking via OCR and LLMs"
+  },
+  {
+    "id": "accounts-payable-clerk",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "AI handles vendor matching, approvals, fraud checks seamlessly"
+  },
+  {
+    "id": "transcriptionist",
+    "perplexity_score": 95,
+    "agree": false,
+    "reason": "Speech-to-text LLMs achieve near-human accuracy"
+  },
+  {
+    "id": "postal-sorter",
+    "perplexity_score": 80,
+    "agree": true,
+    "reason": "Robotics and machine vision sort mail at scale"
+  },
+  {
+    "id": "cashier",
+    "perplexity_score": 75,
+    "agree": false,
+    "reason": "Self-checkout kiosks and mobile payments dominant"
+  },
+  {
+    "id": "meter-reader",
+    "perplexity_score": 90,
+    "agree": true,
+    "reason": "Smart meters transmit data automatically"
+  },
+  {
+    "id": "toll-booth-operator",
+    "perplexity_score": 95,
+    "agree": false,
+    "reason": "All-electronic tolling standard; booths phased out"
+  },
+  {
+    "id": "sports-scorekeeper",
+    "perplexity_score": 70,
+    "agree": false,
+    "reason": "Computer vision and sensors track stats in real-time"
+  },
+  {
+    "id": "library-catalog-clerk",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "AI automates metadata extraction, classification, digitization"
+  },
+  {
+    "id": "telephone-survey-interviewer",
+    "perplexity_score": 90,
+    "agree": true,
+    "reason": "AI voice agents conduct surveys scalably"
+  },
+  {
+    "id": "map-drafter",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "GIS software with AI generates maps; manual drafting obsolete"
+  },
+  {
+    "id": "telemarketer",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "AI voice bots and personalized LLM scripts handle outbound calls"
+  },
+  {
+    "id": "travel-booking-agent",
+    "perplexity_score": 85,
+    "agree": false,
+    "reason": "Online platforms and AI fully manage bookings"
+  },
+  {
+    "id": "check-processing-clerk",
+    "perplexity_score": 95,
+    "agree": true,
+    "reason": "OCR and AI validate/process checks digitally"
+  },
+  {
+    "id": "ticket-agent",
+    "perplexity_score": 80,
+    "agree": false,
+    "reason": "Self-service kiosks, apps, and chatbots issue tickets"
+  },
+  {
+    "id": "photo-lab-technician",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "Digital printing kiosks and cloud services eliminate wet lab work"
+  },
+  {
+    "id": "directory-assistance-operator",
+    "perplexity_score": 98,
+    "agree": true,
+    "reason": "Search engines and voice assistants provide instant results"
+  },
+  {
+    "id": "classified-ad-taker",
+    "perplexity_score": 90,
+    "agree": false,
+    "reason": "Online platforms with AI categorization automate ad intake"
+  }
+]

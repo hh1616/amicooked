@@ -1,0 +1,109 @@
+[
+  {
+    "id": "sales-representative",
+    "title": "Sales Representative",
+    "score": 42,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~6",
+    "timelineUnit": "YRS",
+    "automatable": "45%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      { "text": "Client relationship building", "quip": "trust takes years — AI has minutes" },
+      { "text": "Complex deal negotiation", "quip": null },
+      { "text": "Reading body language and intent", "quip": null },
+      { "text": "Navigating client org politics", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Lead generation and prospecting", "quip": "CRMs already do the cold outreach" },
+      { "text": "Pipeline reporting and forecasting", "quip": null },
+      { "text": "Follow-up email sequences", "quip": null }
+    ],
+    "searchTerms": [
+      "sales", "sales rep", "sales representative", "BDR", "SDR",
+      "account executive", "inside sales", "outside sales", "B2B sales",
+      "business development", "sales associate", "sales consultant"
+    ]
+  },
+  {
+    "id": "account-manager",
+    "title": "Account Manager",
+    "score": 38,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~6",
+    "timelineUnit": "YRS",
+    "automatable": "40%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      { "text": "Client retention through rapport", "quip": "nobody renews a contract because a chatbot remembered their birthday" },
+      { "text": "Upselling through trust", "quip": null },
+      { "text": "Escalation and conflict handling", "quip": null },
+      { "text": "Cross-functional coordination", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Account health dashboards", "quip": null },
+      { "text": "Contract renewal tracking", "quip": null },
+      { "text": "Meeting prep and summary docs", "quip": null }
+    ],
+    "searchTerms": [
+      "account manager", "client manager", "key account manager",
+      "customer success manager", "relationship manager", "client services",
+      "client relations", "KAM"
+    ]
+  },
+  {
+    "id": "violinist",
+    "title": "Violinist / Classical Musician",
+    "score": 14,
+    "verdict": "Raw",
+    "verdictQuip": "you're untouchable. for now.",
+    "timeline": "~20",
+    "timelineUnit": "YRS",
+    "automatable": "12%",
+    "pivotPotential": "LOW",
+    "savingGraces": [
+      { "text": "Live orchestral performance", "quip": "audiences pay for the human on stage, not the speaker" },
+      { "text": "Physical expression and stagecraft", "quip": null },
+      { "text": "Decades of muscle memory and technique", "quip": null },
+      { "text": "Ensemble dynamics and improvisation", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Studio session work for film and ads", "quip": null },
+      { "text": "Practice accompaniment tracks", "quip": null },
+      { "text": "Sheet music transcription", "quip": null }
+    ],
+    "searchTerms": [
+      "violin", "violinist", "cellist", "cello", "orchestra",
+      "symphony", "chamber musician", "viola", "double bass",
+      "classical musician", "string player", "concert musician"
+    ]
+  },
+  {
+    "id": "founder",
+    "title": "Founder / Entrepreneur",
+    "score": 22,
+    "verdict": "Rare",
+    "verdictQuip": "AI's circling but hasn't landed.",
+    "timeline": "~15",
+    "timelineUnit": "YRS",
+    "automatable": "25%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      { "text": "Vision and risk tolerance", "quip": "AI doesn't quit a stable job to chase a hunch" },
+      { "text": "Fundraising and investor relationships", "quip": null },
+      { "text": "Team building and culture", "quip": null },
+      { "text": "Pivoting under chaos", "quip": null }
+    ],
+    "gettingCooked": [
+      { "text": "Market research and competitor analysis", "quip": null },
+      { "text": "Financial modelling and projections", "quip": null },
+      { "text": "Pitch deck creation", "quip": null }
+    ],
+    "searchTerms": [
+      "founder", "entrepreneur", "startup founder", "business owner",
+      "co-founder", "solopreneur", "startup CEO", "small business owner"
+    ]
+  }
+]

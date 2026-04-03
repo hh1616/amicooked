@@ -1,0 +1,2857 @@
+{
+  "generated": "2026-04-03T11:01:05.714921",
+  "total_checked": 316,
+  "total_agreed": 80,
+  "total_flagged": 236,
+  "total_missing": 0,
+  "threshold": 15,
+  "flagged": [
+    {
+      "id": "baker",
+      "title": "Baker",
+      "our_score": 18,
+      "perplexity_score": 70,
+      "delta": 52,
+      "agree": false,
+      "reason": "Repetitive mixing/baking ideal for kitchen robots; routine high-volume at risk"
+    },
+    {
+      "id": "sound-engineer",
+      "title": "Sound Engineer",
+      "our_score": 24,
+      "perplexity_score": 75,
+      "delta": 51,
+      "agree": false,
+      "reason": "AI handles mixing, noise reduction, mastering precisely"
+    },
+    {
+      "id": "waiter",
+      "title": "Waiter/Waitress",
+      "our_score": 20,
+      "perplexity_score": 70,
+      "delta": 50,
+      "agree": false,
+      "reason": "Order-taking vulnerable to kiosks and robots; charm lingers in upscale"
+    },
+    {
+      "id": "housekeeper",
+      "title": "Housekeeper",
+      "our_score": 26,
+      "perplexity_score": 75,
+      "delta": 49,
+      "agree": false,
+      "reason": "Cleaning robots advancing rapidly for repetitive tasks"
+    },
+    {
+      "id": "welder",
+      "title": "Welder",
+      "our_score": 22,
+      "perplexity_score": 70,
+      "delta": 48,
+      "agree": false,
+      "reason": "Robotic welding arms handle most tasks; custom/field welding needs humans"
+    },
+    {
+      "id": "farmer",
+      "title": "Farmer",
+      "our_score": 25,
+      "perplexity_score": 70,
+      "delta": 45,
+      "agree": false,
+      "reason": "Robotics handle planting/harvesting but variable weather needs humans"
+    },
+    {
+      "id": "building-inspector",
+      "title": "Building Inspector",
+      "our_score": 31,
+      "perplexity_score": 75,
+      "delta": 44,
+      "agree": false,
+      "reason": "AI with drones and laser scanning automates structural checks"
+    },
+    {
+      "id": "fitter-and-turner",
+      "title": "Fitter and Turner",
+      "our_score": 27,
+      "perplexity_score": 70,
+      "delta": 43,
+      "agree": false,
+      "reason": "Advanced CNC and AI-optimized machining replace routine fitting"
+    },
+    {
+      "id": "video-editor",
+      "title": "Video Editor",
+      "our_score": 42,
+      "perplexity_score": 85,
+      "delta": 43,
+      "agree": false,
+      "reason": "AI auto-edits footage, generates cuts from scripts"
+    },
+    {
+      "id": "cabinet-maker",
+      "title": "Cabinet Maker",
+      "our_score": 24,
+      "perplexity_score": 65,
+      "delta": 41,
+      "agree": false,
+      "reason": "CNC machines and AI design tools automate precision woodworking"
+    },
+    {
+      "id": "supply-chain-analyst",
+      "title": "Supply Chain Analyst",
+      "our_score": 44,
+      "perplexity_score": 85,
+      "delta": 41,
+      "agree": false,
+      "reason": "Predictive AI fully automates forecasting and optimization"
+    },
+    {
+      "id": "truck-driver",
+      "title": "Truck Driver",
+      "our_score": 44,
+      "perplexity_score": 85,
+      "delta": 41,
+      "agree": false,
+      "reason": "Autonomous trucks advancing with Level 4 on highways; urban deployment and regulation limit full replacement"
+    },
+    {
+      "id": "florist",
+      "title": "Florist",
+      "our_score": 20,
+      "perplexity_score": 60,
+      "delta": 40,
+      "agree": false,
+      "reason": "Custom events and sensory creativity; arrangement design AI-aided"
+    },
+    {
+      "id": "barista",
+      "title": "Barista",
+      "our_score": 25,
+      "perplexity_score": 65,
+      "delta": 40,
+      "agree": false,
+      "reason": "High risk from automated coffee machines for repetitive brewing"
+    },
+    {
+      "id": "air-traffic-controller",
+      "title": "Air Traffic Controller",
+      "our_score": 16,
+      "perplexity_score": 55,
+      "delta": 39,
+      "agree": false,
+      "reason": "AI systems like ERAM handle routine monitoring but high-stakes decisions remain human; half baked"
+    },
+    {
+      "id": "concreter",
+      "title": "Concreter",
+      "our_score": 17,
+      "perplexity_score": 55,
+      "delta": 38,
+      "agree": false,
+      "reason": "Advancing robotics in construction targeting repetitive tasks; manual dexterity a barrier"
+    },
+    {
+      "id": "boilermaker",
+      "title": "Boilermaker",
+      "our_score": 22,
+      "perplexity_score": 60,
+      "delta": 38,
+      "agree": false,
+      "reason": "Robotics handle welding in controlled settings; field variability persists"
+    },
+    {
+      "id": "drone-operator",
+      "title": "Drone Operator",
+      "our_score": 28,
+      "perplexity_score": 65,
+      "delta": 37,
+      "agree": false,
+      "reason": "Routine flights automatable but complex missions need oversight"
+    },
+    {
+      "id": "logistics-coordinator",
+      "title": "Logistics Coordinator",
+      "our_score": 43,
+      "perplexity_score": 80,
+      "delta": 37,
+      "agree": false,
+      "reason": "AI platforms optimize routing, tracking, coordination"
+    },
+    {
+      "id": "bartender",
+      "title": "Bartender",
+      "our_score": 19,
+      "perplexity_score": 55,
+      "delta": 36,
+      "agree": false,
+      "reason": "Robotic mixers handle pours; social flair reduces full replacement"
+    },
+    {
+      "id": "radiologist",
+      "title": "Radiologist",
+      "our_score": 29,
+      "perplexity_score": 65,
+      "delta": 36,
+      "agree": false,
+      "reason": "High exposure from AI image analysis; final interpretation limits full replacement"
+    },
+    {
+      "id": "technical-writer",
+      "title": "Technical Writer",
+      "our_score": 44,
+      "perplexity_score": 80,
+      "delta": 36,
+      "agree": false,
+      "reason": "LLMs excel at documentation and structured text from data"
+    },
+    {
+      "id": "market-researcher",
+      "title": "Market Researcher",
+      "our_score": 40,
+      "perplexity_score": 75,
+      "delta": 35,
+      "agree": false,
+      "reason": "AI analytics and LLMs automate surveys and sentiment analysis"
+    },
+    {
+      "id": "music-producer",
+      "title": "Music Producer",
+      "our_score": 26,
+      "perplexity_score": 60,
+      "delta": 34,
+      "agree": false,
+      "reason": "Music AI composes and mixes; artistic arrangement human-led"
+    },
+    {
+      "id": "podcast-producer",
+      "title": "Podcast Producer",
+      "our_score": 36,
+      "perplexity_score": 70,
+      "delta": 34,
+      "agree": false,
+      "reason": "AI transcribes, edits audio, generates intros; human hosting remains"
+    },
+    {
+      "id": "drafter",
+      "title": "Drafter",
+      "our_score": 56,
+      "perplexity_score": 90,
+      "delta": 34,
+      "agree": false,
+      "reason": "Generative AI and CAD with LLMs fully automate technical drawings"
+    },
+    {
+      "id": "pathologist",
+      "title": "Pathologist",
+      "our_score": 28,
+      "perplexity_score": 60,
+      "delta": 32,
+      "agree": false,
+      "reason": "AI aids slide analysis and pattern recognition; complex judgment persists"
+    },
+    {
+      "id": "restaurant-manager",
+      "title": "Restaurant Manager",
+      "our_score": 28,
+      "perplexity_score": 60,
+      "delta": 32,
+      "agree": false,
+      "reason": "Scheduling/ordering use AI but staff motivation limits replacement"
+    },
+    {
+      "id": "rideshare-driver",
+      "title": "Rideshare Driver",
+      "our_score": 58,
+      "perplexity_score": 90,
+      "delta": 32,
+      "agree": false,
+      "reason": "Robotaxis like Waymo scaling in urban areas by 2026"
+    },
+    {
+      "id": "auto-electrician",
+      "title": "Auto Electrician",
+      "our_score": 29,
+      "perplexity_score": 60,
+      "delta": 31,
+      "agree": false,
+      "reason": "AI streamlines wiring diagnostics but intricate troubleshooting needs humans"
+    },
+    {
+      "id": "freight-broker",
+      "title": "Freight Broker",
+      "our_score": 66,
+      "perplexity_score": 35,
+      "delta": 31,
+      "agree": false,
+      "reason": "AI automates quotes and matching but negotiation and relationships need humans"
+    },
+    {
+      "id": "management-consultant",
+      "title": "Management Consultant",
+      "our_score": 35,
+      "perplexity_score": 65,
+      "delta": 30,
+      "agree": false,
+      "reason": "Routine consulting analysis at high risk from LLMs"
+    },
+    {
+      "id": "bank-teller",
+      "title": "Bank Teller",
+      "our_score": 55,
+      "perplexity_score": 85,
+      "delta": 30,
+      "agree": false,
+      "reason": "Pattern-based transactions fully handled by RPA and self-service kiosks"
+    },
+    {
+      "id": "plasterer",
+      "title": "Plasterer",
+      "our_score": 16,
+      "perplexity_score": 45,
+      "delta": 29,
+      "agree": false,
+      "reason": "Conflicting data (94% old vs 52% recent); robotics limited on-site, some tasks at risk"
+    },
+    {
+      "id": "business-analyst",
+      "title": "Business Analyst",
+      "our_score": 41,
+      "perplexity_score": 70,
+      "delta": 29,
+      "agree": false,
+      "reason": "Data analysis and reporting 90% automatable with current LLMs"
+    },
+    {
+      "id": "purchasing-agent",
+      "title": "Purchasing Agent",
+      "our_score": 51,
+      "perplexity_score": 80,
+      "delta": 29,
+      "agree": false,
+      "reason": "AI automates procurement, vendor analysis, pricing"
+    },
+    {
+      "id": "administrative-assistant",
+      "title": "Administrative Assistant",
+      "our_score": 56,
+      "perplexity_score": 85,
+      "delta": 29,
+      "agree": false,
+      "reason": "High exposure to LLMs and RPA for scheduling, email, data processing"
+    },
+    {
+      "id": "air-conditioning-installer",
+      "title": "Air Conditioning Installer",
+      "our_score": 17,
+      "perplexity_score": 45,
+      "delta": 28,
+      "agree": false,
+      "reason": "AI-driven planning and robotic assistance but on-site variability limits replacement"
+    },
+    {
+      "id": "sous-chef",
+      "title": "Sous Chef",
+      "our_score": 17,
+      "perplexity_score": 45,
+      "delta": 28,
+      "agree": false,
+      "reason": "Kitchen coordination partially automatable but real-time problem-solving protects"
+    },
+    {
+      "id": "orthotist",
+      "title": "Orthotist",
+      "our_score": 22,
+      "perplexity_score": 50,
+      "delta": 28,
+      "agree": false,
+      "reason": "CAD/CAM and 3D printing advance but fitting needs manual skill"
+    },
+    {
+      "id": "forklift-operator",
+      "title": "Forklift Operator",
+      "our_score": 62,
+      "perplexity_score": 90,
+      "delta": 28,
+      "agree": false,
+      "reason": "AGVs and AI forklifts dominate warehouses"
+    },
+    {
+      "id": "anaesthesiologist",
+      "title": "Anaesthesiologist",
+      "our_score": 8,
+      "perplexity_score": 35,
+      "delta": 27,
+      "agree": false,
+      "reason": "AI monitors vitals but real-time airway management and crisis response demand expert intervention"
+    },
+    {
+      "id": "dental-assistant",
+      "title": "Dental Assistant",
+      "our_score": 18,
+      "perplexity_score": 45,
+      "delta": 27,
+      "agree": false,
+      "reason": "Admin and prep tasks vulnerable but chairside assistance needs human presence"
+    },
+    {
+      "id": "diesel-mechanic",
+      "title": "Diesel Mechanic",
+      "our_score": 28,
+      "perplexity_score": 55,
+      "delta": 27,
+      "agree": false,
+      "reason": "AI aids heavy equipment diagnostics but rugged environments hinder robots"
+    },
+    {
+      "id": "crane-operator",
+      "title": "Crane Operator",
+      "our_score": 38,
+      "perplexity_score": 65,
+      "delta": 27,
+      "agree": false,
+      "reason": "AI-guided cranes automate lifts but remote human oversight remains"
+    },
+    {
+      "id": "animator",
+      "title": "Animator",
+      "our_score": 43,
+      "perplexity_score": 70,
+      "delta": 27,
+      "agree": false,
+      "reason": "Video AI produces rough animations from text reducing manual work"
+    },
+    {
+      "id": "receptionist",
+      "title": "Receptionist",
+      "our_score": 48,
+      "perplexity_score": 75,
+      "delta": 27,
+      "agree": false,
+      "reason": "Greeting, call routing automated by AI chatbots and virtual reception systems"
+    },
+    {
+      "id": "quantity-surveyor",
+      "title": "Quantity Surveyor",
+      "our_score": 48,
+      "perplexity_score": 75,
+      "delta": 27,
+      "agree": false,
+      "reason": "AI tools for cost estimation and predictive planning dominate"
+    },
+    {
+      "id": "illustrator",
+      "title": "Illustrator",
+      "our_score": 53,
+      "perplexity_score": 80,
+      "delta": 27,
+      "agree": false,
+      "reason": "Generative AI excels at creating illustrations from prompts"
+    },
+    {
+      "id": "translator",
+      "title": "Translator",
+      "our_score": 58,
+      "perplexity_score": 85,
+      "delta": 27,
+      "agree": false,
+      "reason": "Advanced LLMs provide near-human fluency in real-time translation"
+    },
+    {
+      "id": "inventory-manager",
+      "title": "Inventory Manager",
+      "our_score": 63,
+      "perplexity_score": 90,
+      "delta": 27,
+      "agree": false,
+      "reason": "AI-driven systems automate tracking and demand prediction"
+    },
+    {
+      "id": "bookkeeper",
+      "title": "Bookkeeper",
+      "our_score": 68,
+      "perplexity_score": 95,
+      "delta": 27,
+      "agree": false,
+      "reason": "Ledger, reconciliations, reporting replaced by AI accounting platforms"
+    },
+    {
+      "id": "emergency-medicine-doctor",
+      "title": "Emergency Medicine Doctor",
+      "our_score": 6,
+      "perplexity_score": 32,
+      "delta": 26,
+      "agree": false,
+      "reason": "AI aids triage/diagnosis but hands-on procedures and rapid judgment remain human-essential"
+    },
+    {
+      "id": "quality-assurance-tester",
+      "title": "QA Tester",
+      "our_score": 49,
+      "perplexity_score": 75,
+      "delta": 26,
+      "agree": false,
+      "reason": "Testing and bug detection dominated by AI tools; entry-level declining"
+    },
+    {
+      "id": "office-administrator",
+      "title": "Office Administrator",
+      "our_score": 56,
+      "perplexity_score": 82,
+      "delta": 26,
+      "agree": false,
+      "reason": "Supplies, filing, compliance checks vulnerable to RPA and document AI"
+    },
+    {
+      "id": "scheduling-coordinator",
+      "title": "Scheduling Coordinator",
+      "our_score": 64,
+      "perplexity_score": 90,
+      "delta": 26,
+      "agree": false,
+      "reason": "Calendar optimization fully handled by AI scheduling tools already deployed"
+    },
+    {
+      "id": "screenwriter",
+      "title": "Screenwriter",
+      "our_score": 40,
+      "perplexity_score": 65,
+      "delta": 25,
+      "agree": false,
+      "reason": "LLMs generate scripts but original narrative depth demands human strategy"
+    },
+    {
+      "id": "bus-driver",
+      "title": "Bus Driver",
+      "our_score": 45,
+      "perplexity_score": 70,
+      "delta": 25,
+      "agree": false,
+      "reason": "Autonomous shuttles in controlled routes but public trust and safety regulations keep humans"
+    },
+    {
+      "id": "cleaner",
+      "title": "Cleaner",
+      "our_score": 55,
+      "perplexity_score": 80,
+      "delta": 25,
+      "agree": false,
+      "reason": "Routine cleaning highly automatable by service robots"
+    },
+    {
+      "id": "courier",
+      "title": "Courier",
+      "our_score": 55,
+      "perplexity_score": 80,
+      "delta": 25,
+      "agree": false,
+      "reason": "Drone and ground robot couriers automate package handoffs"
+    },
+    {
+      "id": "billing-specialist",
+      "title": "Billing Specialist",
+      "our_score": 68,
+      "perplexity_score": 93,
+      "delta": 25,
+      "agree": false,
+      "reason": "Invoice generation, tracking, payments processed by RPA and AI billing tools"
+    },
+    {
+      "id": "payroll-specialist",
+      "title": "Payroll Specialist",
+      "our_score": 69,
+      "perplexity_score": 94,
+      "delta": 25,
+      "agree": false,
+      "reason": "Calculations, deductions, reporting automated by payroll software with AI"
+    },
+    {
+      "id": "word-processor-operator",
+      "title": "Word Processor Operator",
+      "our_score": 73,
+      "perplexity_score": 98,
+      "delta": 25,
+      "agree": false,
+      "reason": "Obsolete with voice-to-text LLMs and auto-formatting AI"
+    },
+    {
+      "id": "surgeon",
+      "title": "Surgeon",
+      "our_score": 4,
+      "perplexity_score": 28,
+      "delta": 24,
+      "agree": false,
+      "reason": "AI assists imaging/planning, robotic surgery needs human oversight for precision and complications"
+    },
+    {
+      "id": "corporate-trainer",
+      "title": "Corporate Trainer",
+      "our_score": 36,
+      "perplexity_score": 60,
+      "delta": 24,
+      "agree": false,
+      "reason": "Content delivery via AI platforms replaces much training"
+    },
+    {
+      "id": "it-manager",
+      "title": "IT Manager",
+      "our_score": 39,
+      "perplexity_score": 15,
+      "delta": 24,
+      "agree": false,
+      "reason": "Leadership, accountability, human judgment; low-risk"
+    },
+    {
+      "id": "advertising-executive",
+      "title": "Advertising Executive",
+      "our_score": 46,
+      "perplexity_score": 70,
+      "delta": 24,
+      "agree": false,
+      "reason": "Generative AI creates campaigns and targets audiences"
+    },
+    {
+      "id": "midwife",
+      "title": "Midwife",
+      "our_score": 7,
+      "perplexity_score": 30,
+      "delta": 23,
+      "agree": true,
+      "reason": "Emotional support, physical delivery assistance, real-time maternal monitoring require human empathy"
+    },
+    {
+      "id": "police-officer",
+      "title": "Police Officer",
+      "our_score": 17,
+      "perplexity_score": 40,
+      "delta": 23,
+      "agree": false,
+      "reason": "Physical presence and split-second decisions required; admin automatable"
+    },
+    {
+      "id": "environmental-scientist",
+      "title": "Environmental Scientist",
+      "our_score": 22,
+      "perplexity_score": 45,
+      "delta": 23,
+      "agree": false,
+      "reason": "Field sampling and regulatory interpretation hard to automate"
+    },
+    {
+      "id": "auto-mechanic",
+      "title": "Auto Mechanic",
+      "our_score": 27,
+      "perplexity_score": 50,
+      "delta": 23,
+      "agree": false,
+      "reason": "AI diagnostics assist but complex repairs and dexterity limit automation"
+    },
+    {
+      "id": "interior-designer",
+      "title": "Interior Designer",
+      "our_score": 27,
+      "perplexity_score": 50,
+      "delta": 23,
+      "agree": false,
+      "reason": "AI generates layouts but client taste and spatial empathy resist replacement"
+    },
+    {
+      "id": "production-planner",
+      "title": "Production Planner",
+      "our_score": 62,
+      "perplexity_score": 85,
+      "delta": 23,
+      "agree": false,
+      "reason": "AI forecasting and scheduling replace manual planning"
+    },
+    {
+      "id": "desktop-publisher",
+      "title": "Desktop Publisher",
+      "our_score": 67,
+      "perplexity_score": 90,
+      "delta": 23,
+      "agree": false,
+      "reason": "Layout and formatting fully automatable by AI design tools"
+    },
+    {
+      "id": "order-clerk",
+      "title": "Order Clerk",
+      "our_score": 73,
+      "perplexity_score": 96,
+      "delta": 23,
+      "agree": false,
+      "reason": "Order processing topped lists at 95.53% exposure"
+    },
+    {
+      "id": "executive-assistant",
+      "title": "Executive Assistant",
+      "our_score": 48,
+      "perplexity_score": 70,
+      "delta": 22,
+      "agree": false,
+      "reason": "Routine admin automatable with RPA/AI; executive judgment reduces full replaceability"
+    },
+    {
+      "id": "mortgage-broker",
+      "title": "Mortgage Broker",
+      "our_score": 67,
+      "perplexity_score": 45,
+      "delta": 22,
+      "agree": false,
+      "reason": "Relationship and negotiation safe; AI handles rates"
+    },
+    {
+      "id": "geologist",
+      "title": "Geologist",
+      "our_score": 21,
+      "perplexity_score": 42,
+      "delta": 21,
+      "agree": false,
+      "reason": "On-site fieldwork and geological interpretation demand physical presence"
+    },
+    {
+      "id": "forensic-scientist",
+      "title": "Forensic Scientist",
+      "our_score": 34,
+      "perplexity_score": 55,
+      "delta": 21,
+      "agree": false,
+      "reason": "Lab analysis partially automatable but evidence handling needs licensed humans"
+    },
+    {
+      "id": "marketing-manager",
+      "title": "Marketing Manager",
+      "our_score": 34,
+      "perplexity_score": 55,
+      "delta": 21,
+      "agree": false,
+      "reason": "Content and analytics automatable but creative strategy needs oversight"
+    },
+    {
+      "id": "store-manager",
+      "title": "Store Manager",
+      "our_score": 34,
+      "perplexity_score": 55,
+      "delta": 21,
+      "agree": false,
+      "reason": "Inventory and staffing automatable but customer service leadership persists"
+    },
+    {
+      "id": "video-game-tester",
+      "title": "Video Game Tester",
+      "our_score": 49,
+      "perplexity_score": 70,
+      "delta": 21,
+      "agree": false,
+      "reason": "Repetitive playtesting automated by AI agents"
+    },
+    {
+      "id": "telephone-operator",
+      "title": "Telephone Operator",
+      "our_score": 74,
+      "perplexity_score": 95,
+      "delta": 21,
+      "agree": false,
+      "reason": "Voice AI and IVR fully handle call routing; obsolete role"
+    },
+    {
+      "id": "sports-scorekeeper",
+      "title": "Sports Scorekeeper",
+      "our_score": 91,
+      "perplexity_score": 70,
+      "delta": 21,
+      "agree": false,
+      "reason": "Computer vision and sensors track stats in real-time"
+    },
+    {
+      "id": "mining-worker",
+      "title": "Mining Worker",
+      "our_score": 40,
+      "perplexity_score": 60,
+      "delta": 20,
+      "agree": false,
+      "reason": "Autonomous haul trucks operate but hazardous work still needs humans"
+    },
+    {
+      "id": "ux-designer",
+      "title": "UX Designer",
+      "our_score": 40,
+      "perplexity_score": 60,
+      "delta": 20,
+      "agree": false,
+      "reason": "AI prototypes interfaces rapidly disrupting routine design"
+    },
+    {
+      "id": "roofer",
+      "title": "Roofer",
+      "our_score": 6,
+      "perplexity_score": 25,
+      "delta": 19,
+      "agree": true,
+      "reason": "Heights, weather variability, material handling demand human agility beyond 2026 tech"
+    },
+    {
+      "id": "daycare-director",
+      "title": "Daycare Director",
+      "our_score": 16,
+      "perplexity_score": 35,
+      "delta": 19,
+      "agree": false,
+      "reason": "Admin/planning AI-automatable but child oversight/relationships irreplaceable"
+    },
+    {
+      "id": "pilot",
+      "title": "Pilot",
+      "our_score": 21,
+      "perplexity_score": 40,
+      "delta": 19,
+      "agree": false,
+      "reason": "AI co-pilots assist routine flights but regulatory mandates keep humans in cockpits"
+    },
+    {
+      "id": "carpenter",
+      "title": "Carpenter",
+      "our_score": 8,
+      "perplexity_score": 26,
+      "delta": 18,
+      "agree": true,
+      "reason": "Custom measurements, on-site adjustments, woodworking creativity beyond current robotics"
+    },
+    {
+      "id": "economist",
+      "title": "Economist",
+      "our_score": 47,
+      "perplexity_score": 65,
+      "delta": 18,
+      "agree": false,
+      "reason": "LLMs excel at data analysis, forecasting, report generation"
+    },
+    {
+      "id": "office-manager",
+      "title": "Office Manager",
+      "our_score": 47,
+      "perplexity_score": 65,
+      "delta": 18,
+      "agree": false,
+      "reason": "Coordination automatable via workflow AI; human leadership provides buffer"
+    },
+    {
+      "id": "conveyancer",
+      "title": "Conveyancer",
+      "our_score": 57,
+      "perplexity_score": 75,
+      "delta": 18,
+      "agree": false,
+      "reason": "Standardized property docs automatable via RPA"
+    },
+    {
+      "id": "claims-adjuster",
+      "title": "Claims Adjuster",
+      "our_score": 68,
+      "perplexity_score": 50,
+      "delta": 18,
+      "agree": false,
+      "reason": "AI aids assessment but investigations need humans"
+    },
+    {
+      "id": "parking-lot-attendant",
+      "title": "Parking Lot Attendant",
+      "our_score": 78,
+      "perplexity_score": 60,
+      "delta": 18,
+      "agree": false,
+      "reason": "Automated gates and license plate recognition; robotics emerging"
+    },
+    {
+      "id": "glazier",
+      "title": "Glazier",
+      "our_score": 7,
+      "perplexity_score": 24,
+      "delta": 17,
+      "agree": true,
+      "reason": "Precise glass handling, cutting, installation on uneven surfaces need human finesse"
+    },
+    {
+      "id": "film-director",
+      "title": "Film Director",
+      "our_score": 18,
+      "perplexity_score": 35,
+      "delta": 17,
+      "agree": false,
+      "reason": "Requires human vision, on-set leadership, emotional intuition"
+    },
+    {
+      "id": "urban-planner",
+      "title": "Urban Planner",
+      "our_score": 23,
+      "perplexity_score": 40,
+      "delta": 17,
+      "agree": false,
+      "reason": "AI optimizes layouts but stakeholder negotiations need human empathy"
+    },
+    {
+      "id": "construction-worker",
+      "title": "Construction Worker",
+      "our_score": 28,
+      "perplexity_score": 45,
+      "delta": 17,
+      "agree": false,
+      "reason": "Drones and exoskeletons aid but site variability demands human labor"
+    },
+    {
+      "id": "ceo",
+      "title": "CEO",
+      "our_score": 32,
+      "perplexity_score": 15,
+      "delta": 17,
+      "agree": false,
+      "reason": "Strategic vision and leadership; least at risk"
+    },
+    {
+      "id": "sports-coach-head",
+      "title": "Head Coach",
+      "our_score": 32,
+      "perplexity_score": 15,
+      "delta": 17,
+      "agree": false,
+      "reason": "Strategic planning and player psychology demand experienced human insight"
+    },
+    {
+      "id": "journalist",
+      "title": "Journalist",
+      "our_score": 43,
+      "perplexity_score": 60,
+      "delta": 17,
+      "agree": false,
+      "reason": "AI drafts articles but fact-checking and investigative work keep it mid-risk"
+    },
+    {
+      "id": "voice-actor",
+      "title": "Voice Actor",
+      "our_score": 48,
+      "perplexity_score": 65,
+      "delta": 17,
+      "agree": false,
+      "reason": "Voice AI clones speech realistically but nuanced emotion lags"
+    },
+    {
+      "id": "lawyer",
+      "title": "Lawyer",
+      "our_score": 52,
+      "perplexity_score": 35,
+      "delta": 17,
+      "agree": false,
+      "reason": "AI crushes research/drafting but courtroom and ethics demand humans"
+    },
+    {
+      "id": "warehouse-manager",
+      "title": "Warehouse Manager",
+      "our_score": 52,
+      "perplexity_score": 35,
+      "delta": 17,
+      "agree": false,
+      "reason": "Strategy and exceptions need human judgment; agentic AI aids decisions"
+    },
+    {
+      "id": "pharmacy-technician",
+      "title": "Pharmacy Technician",
+      "our_score": 53,
+      "perplexity_score": 70,
+      "delta": 17,
+      "agree": false,
+      "reason": "High vulnerability for routine filling, inventory, and admin"
+    },
+    {
+      "id": "content-writer",
+      "title": "Content Writer",
+      "our_score": 58,
+      "perplexity_score": 75,
+      "delta": 17,
+      "agree": false,
+      "reason": "LLMs produce high volumes quickly reducing need for routine writing"
+    },
+    {
+      "id": "medical-coder",
+      "title": "Medical Coder",
+      "our_score": 68,
+      "perplexity_score": 85,
+      "delta": 17,
+      "agree": false,
+      "reason": "Highly automatable via AI NLP for billing and records"
+    },
+    {
+      "id": "plumber",
+      "title": "Plumber",
+      "our_score": 6,
+      "perplexity_score": 22,
+      "delta": 16,
+      "agree": true,
+      "reason": "Tight-space diagnostics, improvised repairs, physical maneuvering challenge current AI/robotics"
+    },
+    {
+      "id": "tiler",
+      "title": "Tiler",
+      "our_score": 7,
+      "perplexity_score": 23,
+      "delta": 16,
+      "agree": true,
+      "reason": "Surface prep, pattern layout, grout adjustments involve craft not automated by current AI"
+    },
+    {
+      "id": "primary-school-teacher",
+      "title": "Primary School Teacher",
+      "our_score": 12,
+      "perplexity_score": 28,
+      "delta": 16,
+      "agree": false,
+      "reason": "Classroom management safe but lesson planning aids raise risk to Rare tier"
+    },
+    {
+      "id": "paediatrician",
+      "title": "Paediatrician",
+      "our_score": 16,
+      "perplexity_score": 32,
+      "delta": 16,
+      "agree": false,
+      "reason": "Diagnostics/imaging AI-strong but empathy/exams need humans"
+    },
+    {
+      "id": "fashion-designer",
+      "title": "Fashion Designer",
+      "our_score": 39,
+      "perplexity_score": 55,
+      "delta": 16,
+      "agree": false,
+      "reason": "Generative AI creates patterns but trend sensing relies on creativity"
+    },
+    {
+      "id": "radio-broadcaster",
+      "title": "Radio Broadcaster",
+      "our_score": 52,
+      "perplexity_score": 68,
+      "delta": 16,
+      "agree": false,
+      "reason": "AI generates scripts and voices but live interaction mid-risk"
+    },
+    {
+      "id": "factory-quality-inspector",
+      "title": "Factory Quality Inspector",
+      "our_score": 79,
+      "perplexity_score": 95,
+      "delta": 16,
+      "agree": false,
+      "reason": "AI-driven machine vision detects defects in real-time with sub-mm accuracy"
+    },
+    {
+      "id": "basic-bookkeeper",
+      "title": "Junior Bookkeeper",
+      "our_score": 80,
+      "perplexity_score": 96,
+      "delta": 16,
+      "agree": false,
+      "reason": "Entry-level routine tasks fully automatable with current tools"
+    },
+    {
+      "id": "ticket-agent",
+      "title": "Ticket Agent",
+      "our_score": 96,
+      "perplexity_score": 80,
+      "delta": 16,
+      "agree": false,
+      "reason": "Self-service kiosks, apps, and chatbots issue tickets"
+    },
+    {
+      "id": "veterinarian",
+      "title": "Veterinarian",
+      "our_score": 13,
+      "perplexity_score": 28,
+      "delta": 15,
+      "agree": false,
+      "reason": "Hands-on exams, surgeries, animal handling beyond robotics; diagnostics aided"
+    },
+    {
+      "id": "psychologist",
+      "title": "Psychologist",
+      "our_score": 14,
+      "perplexity_score": 29,
+      "delta": 15,
+      "agree": false,
+      "reason": "Interpersonal therapy partially exposed per data (29-57%) but core human"
+    },
+    {
+      "id": "hotel-manager",
+      "title": "Hotel Manager",
+      "our_score": 35,
+      "perplexity_score": 50,
+      "delta": 15,
+      "agree": false,
+      "reason": "Scheduling/inventory use AI but guest interactions and crisis management need judgment"
+    },
+    {
+      "id": "machine-learning-engineer",
+      "title": "Machine Learning Engineer",
+      "our_score": 35,
+      "perplexity_score": 20,
+      "delta": 15,
+      "agree": false,
+      "reason": "Builds AI systems; demand surges as job creator not replacer"
+    },
+    {
+      "id": "copywriter",
+      "title": "Copywriter",
+      "our_score": 55,
+      "perplexity_score": 70,
+      "delta": 15,
+      "agree": false,
+      "reason": "AI generates ad copy variations instantly"
+    },
+    {
+      "id": "it-support-specialist",
+      "title": "IT Support Specialist",
+      "our_score": 55,
+      "perplexity_score": 70,
+      "delta": 15,
+      "agree": false,
+      "reason": "Basic troubleshooting via chatbots and AI diagnostics"
+    },
+    {
+      "id": "front-desk-receptionist",
+      "title": "Front Desk Receptionist",
+      "our_score": 65,
+      "perplexity_score": 80,
+      "delta": 15,
+      "agree": false,
+      "reason": "AI virtual assistants and kiosks handle check-ins and scheduling"
+    },
+    {
+      "id": "legal-secretary",
+      "title": "Legal Secretary",
+      "our_score": 70,
+      "perplexity_score": 85,
+      "delta": 15,
+      "agree": false,
+      "reason": "Admin tasks like scheduling and filing replaced by AI tools"
+    },
+    {
+      "id": "statistical-assistant",
+      "title": "Statistical Assistant",
+      "our_score": 70,
+      "perplexity_score": 85,
+      "delta": 15,
+      "agree": false,
+      "reason": "LLMs excel at data cleaning, analysis, visualization making routine work automatable"
+    },
+    {
+      "id": "correspondence-clerk",
+      "title": "Correspondence Clerk",
+      "our_score": 74,
+      "perplexity_score": 89,
+      "delta": 15,
+      "agree": false,
+      "reason": "Email drafting, response generation via LLMs in office suites"
+    },
+    {
+      "id": "veterinary-nurse",
+      "title": "Veterinary Nurse",
+      "our_score": 16,
+      "perplexity_score": 30,
+      "delta": 14,
+      "agree": false,
+      "reason": "Monitoring/diagnostics AI but hands-on care/animal handling key"
+    },
+    {
+      "id": "sales-manager",
+      "title": "Sales Manager",
+      "our_score": 36,
+      "perplexity_score": 50,
+      "delta": 14,
+      "agree": false,
+      "reason": "AI automates lead gen/CRM but relationship-building resists automation"
+    },
+    {
+      "id": "sustainability-consultant",
+      "title": "Sustainability Consultant",
+      "our_score": 36,
+      "perplexity_score": 50,
+      "delta": 14,
+      "agree": false,
+      "reason": "ESG reporting automates but stakeholder engagement needs expertise"
+    },
+    {
+      "id": "clinic-manager",
+      "title": "Clinic Manager",
+      "our_score": 36,
+      "perplexity_score": 50,
+      "delta": 14,
+      "agree": false,
+      "reason": "Scheduling/compliance automate but patient/staff empathy persists"
+    },
+    {
+      "id": "game-designer",
+      "title": "Game Designer",
+      "our_score": 38,
+      "perplexity_score": 52,
+      "delta": 14,
+      "agree": false,
+      "reason": "AI assists asset creation but narrative design needs originality"
+    },
+    {
+      "id": "financial-analyst",
+      "title": "Financial Analyst",
+      "our_score": 41,
+      "perplexity_score": 55,
+      "delta": 14,
+      "agree": false,
+      "reason": "FP&A heavily impacted by AI predictive modeling but needs human interpretation"
+    },
+    {
+      "id": "graphic-designer",
+      "title": "Graphic Designer",
+      "our_score": 61,
+      "perplexity_score": 75,
+      "delta": 14,
+      "agree": false,
+      "reason": "AI image generators handle routine designs; humans shift to strategy/oversight"
+    },
+    {
+      "id": "map-drafter",
+      "title": "Map Drafter",
+      "our_score": 94,
+      "perplexity_score": 80,
+      "delta": 14,
+      "agree": false,
+      "reason": "GIS software with AI generates maps; manual drafting obsolete"
+    },
+    {
+      "id": "occupational-therapist",
+      "title": "Occupational Therapist",
+      "our_score": 12,
+      "perplexity_score": 25,
+      "delta": 13,
+      "agree": false,
+      "reason": "Human interaction and customized therapy hard for AI but assessment aids possible"
+    },
+    {
+      "id": "chef",
+      "title": "Chef",
+      "our_score": 15,
+      "perplexity_score": 28,
+      "delta": 13,
+      "agree": false,
+      "reason": "LLMs aid recipes/inventory, robotics handle prep in controlled settings but creativity requires humans"
+    },
+    {
+      "id": "optometrist",
+      "title": "Optometrist",
+      "our_score": 22,
+      "perplexity_score": 35,
+      "delta": 13,
+      "agree": false,
+      "reason": "AI supports retinal scans but physical exams and fitting remain human-centric"
+    },
+    {
+      "id": "physiotherapy-assistant",
+      "title": "Physiotherapy Assistant",
+      "our_score": 22,
+      "perplexity_score": 35,
+      "delta": 13,
+      "agree": false,
+      "reason": "Hands-on patient manipulation needs human touch despite AI planning"
+    },
+    {
+      "id": "nurse-practitioner",
+      "title": "Nurse Practitioner",
+      "our_score": 33,
+      "perplexity_score": 20,
+      "delta": 13,
+      "agree": false,
+      "reason": "Low risk due to advanced judgment, empathy, physical care"
+    },
+    {
+      "id": "cloud-architect",
+      "title": "Cloud Architect",
+      "our_score": 38,
+      "perplexity_score": 25,
+      "delta": 13,
+      "agree": false,
+      "reason": "Complex enterprise system design needing judgment; AI-resistant"
+    },
+    {
+      "id": "accountant",
+      "title": "Accountant",
+      "our_score": 52,
+      "perplexity_score": 65,
+      "delta": 13,
+      "agree": false,
+      "reason": "Routine tasks automatable via RPA/LLMs but strategic advisory needs judgment"
+    },
+    {
+      "id": "database-administrator",
+      "title": "Database Administrator",
+      "our_score": 52,
+      "perplexity_score": 65,
+      "delta": 13,
+      "agree": false,
+      "reason": "Query optimization and maintenance via AI/cloud automation"
+    },
+    {
+      "id": "technical-support-specialist",
+      "title": "Technical Support Specialist",
+      "our_score": 52,
+      "perplexity_score": 65,
+      "delta": 13,
+      "agree": false,
+      "reason": "AI handling tier-1 issues effectively"
+    },
+    {
+      "id": "food-delivery-driver",
+      "title": "Food Delivery Driver",
+      "our_score": 62,
+      "perplexity_score": 75,
+      "delta": 13,
+      "agree": false,
+      "reason": "Autonomous vehicles and drones handle last-mile; dense urban navigation poses challenges"
+    },
+    {
+      "id": "retail-sales-assistant",
+      "title": "Retail Sales Assistant",
+      "our_score": 62,
+      "perplexity_score": 75,
+      "delta": 13,
+      "agree": false,
+      "reason": "Self-checkout, AI kiosks, chatbots manage sales"
+    },
+    {
+      "id": "proofreader",
+      "title": "Proofreader",
+      "our_score": 72,
+      "perplexity_score": 85,
+      "delta": 13,
+      "agree": false,
+      "reason": "LLMs detect errors with near-perfect accuracy"
+    },
+    {
+      "id": "photo-retoucher",
+      "title": "Photo Retoucher",
+      "our_score": 77,
+      "perplexity_score": 90,
+      "delta": 13,
+      "agree": false,
+      "reason": "AI tools automate retouching, color correction with high precision"
+    },
+    {
+      "id": "aged-care-nurse",
+      "title": "Aged Care Nurse",
+      "our_score": 10,
+      "perplexity_score": 22,
+      "delta": 12,
+      "agree": false,
+      "reason": "Hands-on care, empathy, monitoring partially AI-assisted but human-essential"
+    },
+    {
+      "id": "mechanical-engineer",
+      "title": "Mechanical Engineer",
+      "our_score": 26,
+      "perplexity_score": 38,
+      "delta": 12,
+      "agree": false,
+      "reason": "Complex problem-solving and prototyping human-led"
+    },
+    {
+      "id": "dermatologist",
+      "title": "Dermatologist",
+      "our_score": 28,
+      "perplexity_score": 40,
+      "delta": 12,
+      "agree": false,
+      "reason": "AI excels in image-based skin diagnostics but hands-on procedures need humans"
+    },
+    {
+      "id": "robotics-engineer",
+      "title": "Robotics Engineer",
+      "our_score": 32,
+      "perplexity_score": 20,
+      "delta": 12,
+      "agree": false,
+      "reason": "Designs physical systems needing complex skill; AI-resistant"
+    },
+    {
+      "id": "compliance-officer",
+      "title": "Compliance Officer",
+      "our_score": 33,
+      "perplexity_score": 45,
+      "delta": 12,
+      "agree": false,
+      "reason": "Monitoring tools automate checks but ethical judgment needs humans"
+    },
+    {
+      "id": "influencer",
+      "title": "Influencer / Content Creator",
+      "our_score": 38,
+      "perplexity_score": 50,
+      "delta": 12,
+      "agree": false,
+      "reason": "AI aids production but personal brand and authenticity rely on human charisma"
+    },
+    {
+      "id": "web-developer",
+      "title": "Web Developer",
+      "our_score": 48,
+      "perplexity_score": 60,
+      "delta": 12,
+      "agree": false,
+      "reason": "High automation for static sites via no-code/AI builders"
+    },
+    {
+      "id": "recruitment-consultant",
+      "title": "Recruitment Consultant",
+      "our_score": 53,
+      "perplexity_score": 65,
+      "delta": 12,
+      "agree": false,
+      "reason": "Sourcing and screening highly automatable"
+    },
+    {
+      "id": "accounts-receivable-clerk",
+      "title": "Accounts Receivable Clerk",
+      "our_score": 78,
+      "perplexity_score": 90,
+      "delta": 12,
+      "agree": false,
+      "reason": "AI automates invoicing, payment tracking via OCR and LLMs"
+    },
+    {
+      "id": "data-entry-clerk",
+      "title": "Data Entry Clerk",
+      "our_score": 84,
+      "perplexity_score": 96,
+      "delta": 12,
+      "agree": false,
+      "reason": "Replaced by OCR, RPA platforms, and LLMs extracting from documents"
+    },
+    {
+      "id": "document-scanner",
+      "title": "Document Scanner Operator",
+      "our_score": 85,
+      "perplexity_score": 97,
+      "delta": 12,
+      "agree": false,
+      "reason": "Scanning and indexing done by AI scanners with auto-OCR"
+    },
+    {
+      "id": "speech-pathologist",
+      "title": "Speech Pathologist",
+      "our_score": 9,
+      "perplexity_score": 20,
+      "delta": 11,
+      "agree": false,
+      "reason": "Personalized therapy partially augmentable but hands-on elements persist"
+    },
+    {
+      "id": "social-worker",
+      "title": "Social Worker",
+      "our_score": 13,
+      "perplexity_score": 24,
+      "delta": 11,
+      "agree": false,
+      "reason": "Complex family dynamics and advocacy require human trust; slight admin automation"
+    },
+    {
+      "id": "community-development-officer",
+      "title": "Community Development Officer",
+      "our_score": 19,
+      "perplexity_score": 30,
+      "delta": 11,
+      "agree": false,
+      "reason": "Nuanced social engagement and relationship-building not replaceable"
+    },
+    {
+      "id": "optician",
+      "title": "Optician",
+      "our_score": 51,
+      "perplexity_score": 40,
+      "delta": 11,
+      "agree": false,
+      "reason": "AI assists measurements but custom fitting needs manual skill"
+    },
+    {
+      "id": "tax-preparer",
+      "title": "Tax Preparer",
+      "our_score": 59,
+      "perplexity_score": 70,
+      "delta": 11,
+      "agree": false,
+      "reason": "Routine filings automated; shifts to strategic planning"
+    },
+    {
+      "id": "flight-dispatcher",
+      "title": "Flight Dispatcher",
+      "our_score": 59,
+      "perplexity_score": 70,
+      "delta": 11,
+      "agree": false,
+      "reason": "AI systems handle flight planning with real-time data integration"
+    },
+    {
+      "id": "stock-analyst",
+      "title": "Stock Analyst",
+      "our_score": 66,
+      "perplexity_score": 55,
+      "delta": 11,
+      "agree": false,
+      "reason": "AI processes market data rapidly but judgment keeps it augmented"
+    },
+    {
+      "id": "loan-processor",
+      "title": "Loan Processor",
+      "our_score": 69,
+      "perplexity_score": 80,
+      "delta": 11,
+      "agree": false,
+      "reason": "Routine data verification ideal for RPA"
+    },
+    {
+      "id": "accounts-payable-clerk",
+      "title": "Accounts Payable Clerk",
+      "our_score": 79,
+      "perplexity_score": 90,
+      "delta": 11,
+      "agree": false,
+      "reason": "AI handles vendor matching, approvals, fraud checks seamlessly"
+    },
+    {
+      "id": "print-shop-operator",
+      "title": "Print Shop Operator",
+      "our_score": 81,
+      "perplexity_score": 70,
+      "delta": 11,
+      "agree": false,
+      "reason": "AI-driven digital presses automate most operations"
+    },
+    {
+      "id": "transcriptionist",
+      "title": "Transcriptionist",
+      "our_score": 84,
+      "perplexity_score": 95,
+      "delta": 11,
+      "agree": false,
+      "reason": "Speech-to-text LLMs achieve near-human accuracy"
+    },
+    {
+      "id": "cashier",
+      "title": "Cashier",
+      "our_score": 86,
+      "perplexity_score": 75,
+      "delta": 11,
+      "agree": false,
+      "reason": "Self-checkout kiosks and mobile payments dominant"
+    },
+    {
+      "id": "paramedic",
+      "title": "Paramedic",
+      "our_score": 8,
+      "perplexity_score": 18,
+      "delta": 10,
+      "agree": false,
+      "reason": "Emergency physical care, real-time decisions exceed AI/robotics despite some diagnostics"
+    },
+    {
+      "id": "dentist",
+      "title": "Dentist",
+      "our_score": 10,
+      "perplexity_score": 20,
+      "delta": 10,
+      "agree": false,
+      "reason": "Manual procedures demand physical skill; AI assists imaging but not replacement"
+    },
+    {
+      "id": "psychiatrist",
+      "title": "Psychiatrist",
+      "our_score": 12,
+      "perplexity_score": 22,
+      "delta": 10,
+      "agree": false,
+      "reason": "Deep empathy and diagnosis nuance beyond LLMs; AI assists but not replaces"
+    },
+    {
+      "id": "auto-detailer",
+      "title": "Auto Detailer",
+      "our_score": 15,
+      "perplexity_score": 25,
+      "delta": 10,
+      "agree": false,
+      "reason": "Manual dexterity and on-site variability limit robotics; mostly safe but higher than 15"
+    },
+    {
+      "id": "personal-trainer",
+      "title": "Personal Trainer",
+      "our_score": 16,
+      "perplexity_score": 26,
+      "delta": 10,
+      "agree": false,
+      "reason": "Apps track form/plans but motivation/adaptation personal"
+    },
+    {
+      "id": "pharmacist",
+      "title": "Pharmacist",
+      "our_score": 25,
+      "perplexity_score": 35,
+      "delta": 10,
+      "agree": false,
+      "reason": "AI handles dispensing and checks but counseling needs human accountability"
+    },
+    {
+      "id": "penetration-tester",
+      "title": "Penetration Tester",
+      "our_score": 35,
+      "perplexity_score": 25,
+      "delta": 10,
+      "agree": false,
+      "reason": "Creative ethical hacking evades AI; resistant role"
+    },
+    {
+      "id": "customer-service-manager",
+      "title": "Customer Service Manager",
+      "our_score": 50,
+      "perplexity_score": 60,
+      "delta": 10,
+      "agree": false,
+      "reason": "Reps vulnerable to chatbots; management shifts to AI supervision"
+    },
+    {
+      "id": "financial-planner",
+      "title": "Financial Planner",
+      "our_score": 50,
+      "perplexity_score": 40,
+      "delta": 10,
+      "agree": false,
+      "reason": "Client trust and complex judgment; AI aids data but not holistic planning"
+    },
+    {
+      "id": "typist",
+      "title": "Typist",
+      "our_score": 89,
+      "perplexity_score": 99,
+      "delta": 10,
+      "agree": false,
+      "reason": "Pure transcription replaced by real-time speech recognition"
+    },
+    {
+      "id": "travel-booking-agent",
+      "title": "Travel Booking Agent",
+      "our_score": 95,
+      "perplexity_score": 85,
+      "delta": 10,
+      "agree": false,
+      "reason": "Online platforms and AI fully manage bookings"
+    },
+    {
+      "id": "physical-therapist",
+      "title": "Physical Therapist",
+      "our_score": 11,
+      "perplexity_score": 20,
+      "delta": 9,
+      "agree": false,
+      "reason": "Manual therapy and patient-specific adjustments see AI augmentation but core remains human"
+    },
+    {
+      "id": "school-counselor",
+      "title": "School Counselor",
+      "our_score": 19,
+      "perplexity_score": 10,
+      "delta": 9,
+      "agree": false,
+      "reason": "Deep emotional intelligence and crisis intervention far beyond current AI"
+    },
+    {
+      "id": "general-manager",
+      "title": "General Manager",
+      "our_score": 44,
+      "perplexity_score": 35,
+      "delta": 9,
+      "agree": false,
+      "reason": "P&L and cross-department coordination exceed current AI capabilities"
+    },
+    {
+      "id": "auditor",
+      "title": "Auditor",
+      "our_score": 54,
+      "perplexity_score": 45,
+      "delta": 9,
+      "agree": false,
+      "reason": "AI enables continuous auditing but oversight and regulatory interpretation human-centric"
+    },
+    {
+      "id": "medical-lab-technician",
+      "title": "Medical Lab Technician",
+      "our_score": 59,
+      "perplexity_score": 50,
+      "delta": 9,
+      "agree": false,
+      "reason": "Routine testing automatable but oversight reduces full replacement"
+    },
+    {
+      "id": "invoice-processor",
+      "title": "Invoice Processor",
+      "our_score": 86,
+      "perplexity_score": 95,
+      "delta": 9,
+      "agree": false,
+      "reason": "Extraction, validation, approval workflows fully RPA-enabled"
+    },
+    {
+      "id": "telemarketer",
+      "title": "Telemarketer",
+      "our_score": 94,
+      "perplexity_score": 85,
+      "delta": 9,
+      "agree": false,
+      "reason": "AI voice bots and personalized LLM scripts handle outbound calls"
+    },
+    {
+      "id": "classified-ad-taker",
+      "title": "Classified Ad Taker",
+      "our_score": 99,
+      "perplexity_score": 90,
+      "delta": 9,
+      "agree": false,
+      "reason": "Online platforms with AI categorization automate ad intake"
+    },
+    {
+      "id": "pastry-chef",
+      "title": "Pastry Chef",
+      "our_score": 14,
+      "perplexity_score": 22,
+      "delta": 8,
+      "agree": false,
+      "reason": "Artistic creativity, texture sensing raise risk slightly with recipe AI but hands-on core"
+    },
+    {
+      "id": "nail-technician",
+      "title": "Nail Technician",
+      "our_score": 16,
+      "perplexity_score": 24,
+      "delta": 8,
+      "agree": false,
+      "reason": "Precision tools emerging but client interaction/customization human"
+    },
+    {
+      "id": "construction-manager",
+      "title": "Construction Manager",
+      "our_score": 22,
+      "perplexity_score": 30,
+      "delta": 8,
+      "agree": false,
+      "reason": "Manages teams and regulations; AI supports planning not leadership"
+    },
+    {
+      "id": "civil-engineer",
+      "title": "Civil Engineer",
+      "our_score": 24,
+      "perplexity_score": 32,
+      "delta": 8,
+      "agree": false,
+      "reason": "On-site assessments and licensed sign-offs resist automation"
+    },
+    {
+      "id": "university-professor",
+      "title": "University Professor",
+      "our_score": 28,
+      "perplexity_score": 20,
+      "delta": 8,
+      "agree": false,
+      "reason": "Research and complex debates resist AI; aids grading not scholarship"
+    },
+    {
+      "id": "electrical-engineer",
+      "title": "Electrical Engineer",
+      "our_score": 38,
+      "perplexity_score": 30,
+      "delta": 8,
+      "agree": false,
+      "reason": "Design automation advances but physical implementation needs humans"
+    },
+    {
+      "id": "retail-manager",
+      "title": "Retail Manager",
+      "our_score": 47,
+      "perplexity_score": 55,
+      "delta": 8,
+      "agree": false,
+      "reason": "Routine retail ops vulnerable but customer service leadership persists"
+    },
+    {
+      "id": "concierge",
+      "title": "Concierge",
+      "our_score": 48,
+      "perplexity_score": 40,
+      "delta": 8,
+      "agree": false,
+      "reason": "Chatbots handle recommendations; nuanced hospitality resists"
+    },
+    {
+      "id": "branch-manager",
+      "title": "Branch Manager",
+      "our_score": 53,
+      "perplexity_score": 45,
+      "delta": 8,
+      "agree": false,
+      "reason": "Branch ops advancing but local relationships remain human-led"
+    },
+    {
+      "id": "social-media-manager",
+      "title": "Social Media Manager",
+      "our_score": 57,
+      "perplexity_score": 65,
+      "delta": 8,
+      "agree": false,
+      "reason": "AI schedules posts and generates content; strategy safer"
+    },
+    {
+      "id": "news-anchor",
+      "title": "News Anchor",
+      "our_score": 62,
+      "perplexity_score": 70,
+      "delta": 8,
+      "agree": false,
+      "reason": "AI avatars and voice synthesis enable synthetic delivery"
+    },
+    {
+      "id": "travel-agent",
+      "title": "Travel Agent",
+      "our_score": 72,
+      "perplexity_score": 80,
+      "delta": 8,
+      "agree": false,
+      "reason": "AI booking platforms and chatbots handle itineraries and queries"
+    },
+    {
+      "id": "mortgage-processor",
+      "title": "Mortgage Processor",
+      "our_score": 72,
+      "perplexity_score": 80,
+      "delta": 8,
+      "agree": false,
+      "reason": "Data entry and verification fully RPA-susceptible"
+    },
+    {
+      "id": "medical-transcriptionist",
+      "title": "Medical Transcriptionist",
+      "our_score": 82,
+      "perplexity_score": 90,
+      "delta": 8,
+      "agree": false,
+      "reason": "Generative AI and voice tools fully replace routine transcription"
+    },
+    {
+      "id": "library-catalog-clerk",
+      "title": "Library Catalog Clerk",
+      "our_score": 93,
+      "perplexity_score": 85,
+      "delta": 8,
+      "agree": false,
+      "reason": "AI automates metadata extraction, classification, digitization"
+    },
+    {
+      "id": "locksmith",
+      "title": "Locksmith",
+      "our_score": 15,
+      "perplexity_score": 22,
+      "delta": 7,
+      "agree": false,
+      "reason": "Key cutting and diagnostics AI-enabled but physical installs and emergencies need human skill"
+    },
+    {
+      "id": "makeup-artist",
+      "title": "Makeup Artist",
+      "our_score": 18,
+      "perplexity_score": 25,
+      "delta": 7,
+      "agree": false,
+      "reason": "Tactile artistry and client interaction hard to automate; robotics lag"
+    },
+    {
+      "id": "fitness-instructor",
+      "title": "Fitness Instructor",
+      "our_score": 18,
+      "perplexity_score": 25,
+      "delta": 7,
+      "agree": false,
+      "reason": "Motivation and form correction require physical human presence"
+    },
+    {
+      "id": "architect",
+      "title": "Architect",
+      "our_score": 28,
+      "perplexity_score": 35,
+      "delta": 7,
+      "agree": false,
+      "reason": "Design creativity and licensing but AI aids drafting/simulations"
+    },
+    {
+      "id": "museum-curator",
+      "title": "Museum Curator",
+      "our_score": 32,
+      "perplexity_score": 25,
+      "delta": 7,
+      "agree": false,
+      "reason": "Cultural interpretation and relationship-building protect"
+    },
+    {
+      "id": "librarian",
+      "title": "Librarian",
+      "our_score": 37,
+      "perplexity_score": 30,
+      "delta": 7,
+      "agree": false,
+      "reason": "AI search tools reduce needs but curation and community events persist"
+    },
+    {
+      "id": "insurance-agent",
+      "title": "Insurance Agent",
+      "our_score": 38,
+      "perplexity_score": 45,
+      "delta": 7,
+      "agree": false,
+      "reason": "Client trust and sales persuasion resist AI"
+    },
+    {
+      "id": "property-manager",
+      "title": "Property Manager",
+      "our_score": 38,
+      "perplexity_score": 45,
+      "delta": 7,
+      "agree": false,
+      "reason": "Tenant relations need humans but leasing admin at risk"
+    },
+    {
+      "id": "procurement-manager",
+      "title": "Procurement Manager",
+      "our_score": 48,
+      "perplexity_score": 55,
+      "delta": 7,
+      "agree": false,
+      "reason": "Vendor analysis partially automatable but deal-making needs humans"
+    },
+    {
+      "id": "real-estate-agent",
+      "title": "Real Estate Agent",
+      "our_score": 48,
+      "perplexity_score": 55,
+      "delta": 7,
+      "agree": false,
+      "reason": "Listings and valuations use AI but negotiations endure"
+    },
+    {
+      "id": "assembly-line-worker",
+      "title": "Assembly Line Worker",
+      "our_score": 82,
+      "perplexity_score": 75,
+      "delta": 7,
+      "agree": false,
+      "reason": "Industrial robots with AI perform repetitive assembly precisely"
+    },
+    {
+      "id": "file-clerk",
+      "title": "File Clerk",
+      "our_score": 85,
+      "perplexity_score": 92,
+      "delta": 7,
+      "agree": false,
+      "reason": "Digital filing and retrieval automated by AI document management"
+    },
+    {
+      "id": "toll-booth-operator",
+      "title": "Toll Booth Operator",
+      "our_score": 88,
+      "perplexity_score": 95,
+      "delta": 7,
+      "agree": false,
+      "reason": "All-electronic tolling standard; booths phased out"
+    },
+    {
+      "id": "photo-lab-technician",
+      "title": "Photo Lab Technician",
+      "our_score": 97,
+      "perplexity_score": 90,
+      "delta": 7,
+      "agree": false,
+      "reason": "Digital printing kiosks and cloud services eliminate wet lab work"
+    },
+    {
+      "id": "hair-stylist",
+      "title": "Hair Stylist",
+      "our_score": 17,
+      "perplexity_score": 23,
+      "delta": 6,
+      "agree": false,
+      "reason": "AI styling apps but tactile cutting/client prefs human"
+    },
+    {
+      "id": "nutritionist",
+      "title": "Nutritionist/Dietitian",
+      "our_score": 19,
+      "perplexity_score": 25,
+      "delta": 6,
+      "agree": false,
+      "reason": "Personalized counseling relies on empathy; AI supports plans not relationships"
+    },
+    {
+      "id": "art-teacher",
+      "title": "Art Teacher",
+      "our_score": 21,
+      "perplexity_score": 15,
+      "delta": 6,
+      "agree": false,
+      "reason": "Hands-on creativity and subjective feedback AI struggles to replicate"
+    },
+    {
+      "id": "esl-teacher",
+      "title": "ESL Teacher",
+      "our_score": 24,
+      "perplexity_score": 30,
+      "delta": 6,
+      "agree": false,
+      "reason": "AI language apps handle basics but cultural nuance needs human empathy"
+    },
+    {
+      "id": "migration-agent",
+      "title": "Migration Agent",
+      "our_score": 38,
+      "perplexity_score": 32,
+      "delta": 6,
+      "agree": false,
+      "reason": "Licensed advice resists though form processing automates"
+    },
+    {
+      "id": "mobile-app-developer",
+      "title": "Mobile App Developer",
+      "our_score": 46,
+      "perplexity_score": 52,
+      "delta": 6,
+      "agree": false,
+      "reason": "Cross-platform tools and AI code gen handle much app building"
+    },
+    {
+      "id": "frontend-developer",
+      "title": "Frontend Developer",
+      "our_score": 49,
+      "perplexity_score": 55,
+      "delta": 6,
+      "agree": false,
+      "reason": "UI generation via AI raises risk for routine coding, custom UX needs oversight"
+    },
+    {
+      "id": "fast-food-cook",
+      "title": "Fast Food Cook",
+      "our_score": 79,
+      "perplexity_score": 85,
+      "delta": 6,
+      "agree": false,
+      "reason": "Repetitive assembly fully targeted by AI robotics"
+    },
+    {
+      "id": "doctor-gp",
+      "title": "General Practitioner",
+      "our_score": 20,
+      "perplexity_score": 25,
+      "delta": 5,
+      "agree": false,
+      "reason": "Low vulnerability due to human judgment, empathy, complex decision-making"
+    },
+    {
+      "id": "hr-manager",
+      "title": "HR Manager",
+      "our_score": 35,
+      "perplexity_score": 40,
+      "delta": 5,
+      "agree": false,
+      "reason": "Recruitment/admin face displacement but employee relations need human touch"
+    },
+    {
+      "id": "operations-manager",
+      "title": "Operations Manager",
+      "our_score": 40,
+      "perplexity_score": 45,
+      "delta": 5,
+      "agree": false,
+      "reason": "Process optimization augmented by AI but on-site coordination limits replacement"
+    },
+    {
+      "id": "teaching-assistant",
+      "title": "Teaching Assistant",
+      "our_score": 45,
+      "perplexity_score": 50,
+      "delta": 5,
+      "agree": false,
+      "reason": "Routine grading and admin automatable; human oversight still needed"
+    },
+    {
+      "id": "switchboard-operator",
+      "title": "Switchboard Operator",
+      "our_score": 90,
+      "perplexity_score": 95,
+      "delta": 5,
+      "agree": false,
+      "reason": "Call routing automated by AI phone systems with NLP"
+    },
+    {
+      "id": "textile-worker",
+      "title": "Textile Worker",
+      "our_score": 76,
+      "perplexity_score": 80,
+      "delta": 4,
+      "agree": false,
+      "reason": "Automated looms and AI quality control dominate repetitive production"
+    },
+    {
+      "id": "high-school-teacher",
+      "title": "High School Teacher",
+      "our_score": 22,
+      "perplexity_score": 25,
+      "delta": 3,
+      "agree": false,
+      "reason": "AI tutoring augments but doesnt replace classroom dynamics or emotional support"
+    },
+    {
+      "id": "backend-developer",
+      "title": "Backend Developer",
+      "our_score": 47,
+      "perplexity_score": 50,
+      "delta": 3,
+      "agree": false,
+      "reason": "API and logic coding automated but complex system design resists replacement"
+    },
+    {
+      "id": "library-assistant",
+      "title": "Library Assistant",
+      "our_score": 58,
+      "perplexity_score": 60,
+      "delta": 2,
+      "agree": false,
+      "reason": "Shelving, checkouts susceptible to robotic automation and self-service"
+    }
+  ],
+  "agreed": [
+    {
+      "id": "arborist",
+      "title": "Arborist",
+      "our_score": 4,
+      "perplexity_score": 12,
+      "delta": 8,
+      "agree": true,
+      "reason": "Physical tree work, climbing, hazard assessment require dexterity beyond 2026 capabilities"
+    },
+    {
+      "id": "firefighter",
+      "title": "Firefighter",
+      "our_score": 5,
+      "perplexity_score": 15,
+      "delta": 10,
+      "agree": true,
+      "reason": "Unpredictable environments, physical endurance, real-time decisions exceed current robotics"
+    },
+    {
+      "id": "massage-therapist",
+      "title": "Massage Therapist",
+      "our_score": 6,
+      "perplexity_score": 18,
+      "delta": 12,
+      "agree": true,
+      "reason": "Tactile feedback, customized pressure, client interaction not replicable by current robotics"
+    },
+    {
+      "id": "electrician",
+      "title": "Electrician",
+      "our_score": 7,
+      "perplexity_score": 20,
+      "delta": 13,
+      "agree": true,
+      "reason": "Complex wiring, safety judgments, troubleshooting in varied settings resist full automation"
+    },
+    {
+      "id": "bricklayer",
+      "title": "Bricklayer",
+      "our_score": 8,
+      "perplexity_score": 21,
+      "delta": 13,
+      "agree": true,
+      "reason": "Mortar mixing, leveling, structural adaptations exceed robotic precision in real-world builds"
+    },
+    {
+      "id": "dog-groomer",
+      "title": "Dog Groomer",
+      "our_score": 8,
+      "perplexity_score": 16,
+      "delta": 8,
+      "agree": true,
+      "reason": "Animal handling, behavior reading, gentle grooming need human touch and intuition"
+    },
+    {
+      "id": "elevator-installer",
+      "title": "Elevator Installer",
+      "our_score": 8,
+      "perplexity_score": 12,
+      "delta": 4,
+      "agree": true,
+      "reason": "Physical installation, dexterity, on-site troubleshooting beyond current robotics"
+    },
+    {
+      "id": "disability-support-worker",
+      "title": "Disability Support Worker",
+      "our_score": 8,
+      "perplexity_score": 15,
+      "delta": 7,
+      "agree": true,
+      "reason": "Core empathy, physical assistance, adaptive care hard for AI to replicate"
+    },
+    {
+      "id": "hvac-technician",
+      "title": "HVAC Technician",
+      "our_score": 9,
+      "perplexity_score": 14,
+      "delta": 5,
+      "agree": true,
+      "reason": "Hands-on repairs, diagnostics in varied environments resist full automation"
+    },
+    {
+      "id": "kindergarten-teacher",
+      "title": "Kindergarten Teacher",
+      "our_score": 9,
+      "perplexity_score": 16,
+      "delta": 7,
+      "agree": true,
+      "reason": "Emotional bonding, improvisation, child management require human touch"
+    },
+    {
+      "id": "childcare-worker",
+      "title": "Childcare Worker",
+      "our_score": 10,
+      "perplexity_score": 17,
+      "delta": 7,
+      "agree": true,
+      "reason": "Nurturing, safety oversight, spontaneous interaction safe from current AI"
+    },
+    {
+      "id": "house-painter",
+      "title": "House Painter",
+      "our_score": 10,
+      "perplexity_score": 13,
+      "delta": 3,
+      "agree": true,
+      "reason": "Manual labor, surface prep, adaptability in homes evade current robotics"
+    },
+    {
+      "id": "special-education-teacher",
+      "title": "Special Education Teacher",
+      "our_score": 10,
+      "perplexity_score": 18,
+      "delta": 8,
+      "agree": true,
+      "reason": "Tailored emotional/physical support for diverse needs protects from AI"
+    },
+    {
+      "id": "youth-worker",
+      "title": "Youth Worker",
+      "our_score": 10,
+      "perplexity_score": 16,
+      "delta": 6,
+      "agree": true,
+      "reason": "Counseling and relationship-building resist automation"
+    },
+    {
+      "id": "athletic-trainer",
+      "title": "Athletic Trainer",
+      "our_score": 11,
+      "perplexity_score": 14,
+      "delta": 3,
+      "agree": true,
+      "reason": "Hands-on rehab and real-time assessment low-risk per 2025/2026 data"
+    },
+    {
+      "id": "landscaper",
+      "title": "Landscaper",
+      "our_score": 11,
+      "perplexity_score": 12,
+      "delta": 1,
+      "agree": true,
+      "reason": "Outdoor physical work, creativity, variability beyond current robotics"
+    },
+    {
+      "id": "aged-care-worker",
+      "title": "Aged Care Worker",
+      "our_score": 12,
+      "perplexity_score": 18,
+      "delta": 6,
+      "agree": true,
+      "reason": "Hands-on physical care, empathy, unpredictable patient needs exceed current robotics"
+    },
+    {
+      "id": "butcher",
+      "title": "Butcher",
+      "our_score": 12,
+      "perplexity_score": 15,
+      "delta": 3,
+      "agree": true,
+      "reason": "Precise meat cutting requires dexterity and sensory judgment beyond 2026 robotics"
+    },
+    {
+      "id": "pest-control-technician",
+      "title": "Pest Control Technician",
+      "our_score": 12,
+      "perplexity_score": 20,
+      "delta": 8,
+      "agree": true,
+      "reason": "On-site adaptation, physical application, variable environments limit automation"
+    },
+    {
+      "id": "mental-health-nurse",
+      "title": "Mental Health Nurse",
+      "our_score": 12,
+      "perplexity_score": 20,
+      "delta": 8,
+      "agree": true,
+      "reason": "Direct patient care and crisis response demand physical/human presence"
+    },
+    {
+      "id": "marine-biologist",
+      "title": "Marine Biologist",
+      "our_score": 13,
+      "perplexity_score": 25,
+      "delta": 12,
+      "agree": true,
+      "reason": "Fieldwork and observation in dynamic environments not fully automatable"
+    },
+    {
+      "id": "barber",
+      "title": "Barber",
+      "our_score": 13,
+      "perplexity_score": 12,
+      "delta": 1,
+      "agree": true,
+      "reason": "Fine motor skills, client interaction, styling creativity resist automation"
+    },
+    {
+      "id": "pool-technician",
+      "title": "Pool Technician",
+      "our_score": 14,
+      "perplexity_score": 18,
+      "delta": 4,
+      "agree": true,
+      "reason": "Physical maintenance, troubleshooting variables limit AI/robotics"
+    },
+    {
+      "id": "scaffolder",
+      "title": "Scaffolder",
+      "our_score": 14,
+      "perplexity_score": 12,
+      "delta": 2,
+      "agree": true,
+      "reason": "High-risk physical construction, safety judgments exceed current robotics"
+    },
+    {
+      "id": "archaeologist",
+      "title": "Archaeologist",
+      "our_score": 16,
+      "perplexity_score": 12,
+      "delta": 4,
+      "agree": true,
+      "reason": "Field excavation and interpretation demand physical/human judgment beyond current AI"
+    },
+    {
+      "id": "sommelier",
+      "title": "Sommelier",
+      "our_score": 16,
+      "perplexity_score": 18,
+      "delta": 2,
+      "agree": true,
+      "reason": "AI apps analyze pairings but sensory expertise human"
+    },
+    {
+      "id": "tattoo-artist",
+      "title": "Tattoo Artist",
+      "our_score": 16,
+      "perplexity_score": 14,
+      "delta": 2,
+      "agree": true,
+      "reason": "Custom art/design AI-aided but skin application artistic/physical"
+    },
+    {
+      "id": "musician",
+      "title": "Musician/Performer",
+      "our_score": 17,
+      "perplexity_score": 20,
+      "delta": 3,
+      "agree": true,
+      "reason": "AI generates music but live performance/emotion human"
+    },
+    {
+      "id": "wedding-planner",
+      "title": "Wedding Planner",
+      "our_score": 17,
+      "perplexity_score": 20,
+      "delta": 3,
+      "agree": true,
+      "reason": "High-emotion customization and client rapport defy AI replacement"
+    },
+    {
+      "id": "choreographer",
+      "title": "Choreographer",
+      "our_score": 18,
+      "perplexity_score": 15,
+      "delta": 3,
+      "agree": true,
+      "reason": "Creative human-judgment-heavy role resists AI automation"
+    },
+    {
+      "id": "funeral-director",
+      "title": "Funeral Director",
+      "our_score": 18,
+      "perplexity_score": 12,
+      "delta": 6,
+      "agree": true,
+      "reason": "Deep empathy and ritual handling build trust machines cant replicate"
+    },
+    {
+      "id": "housewife",
+      "title": "Housewife",
+      "our_score": 18,
+      "perplexity_score": 20,
+      "delta": 2,
+      "agree": true,
+      "reason": "Unpredictable caregiving and emotional intelligence beyond current AI"
+    },
+    {
+      "id": "park-ranger",
+      "title": "Park Ranger",
+      "our_score": 18,
+      "perplexity_score": 20,
+      "delta": 2,
+      "agree": true,
+      "reason": "On-site enforcement and environmental adaptation need human body"
+    },
+    {
+      "id": "nurse",
+      "title": "Registered Nurse",
+      "our_score": 18,
+      "perplexity_score": 15,
+      "delta": 3,
+      "agree": true,
+      "reason": "Consistently low vulnerability from hands-on care and empathy"
+    },
+    {
+      "id": "diplomat",
+      "title": "Diplomat",
+      "our_score": 19,
+      "perplexity_score": 15,
+      "delta": 4,
+      "agree": true,
+      "reason": "Empathy negotiation and geopolitical nuance irreplaceable"
+    },
+    {
+      "id": "sports-coach",
+      "title": "Sports Coach",
+      "our_score": 19,
+      "perplexity_score": 20,
+      "delta": 1,
+      "agree": true,
+      "reason": "Physical demonstration and team dynamics resist AI"
+    },
+    {
+      "id": "chiropractor",
+      "title": "Chiropractor",
+      "our_score": 20,
+      "perplexity_score": 15,
+      "delta": 5,
+      "agree": true,
+      "reason": "Physical manipulation and tactile feedback; low risk as AI lacks dexterity"
+    },
+    {
+      "id": "flight-attendant",
+      "title": "Flight Attendant",
+      "our_score": 23,
+      "perplexity_score": 20,
+      "delta": 3,
+      "agree": true,
+      "reason": "Human-centric passenger service and safety; robots cannot replicate"
+    },
+    {
+      "id": "dental-hygienist",
+      "title": "Dental Hygienist",
+      "our_score": 31,
+      "perplexity_score": 30,
+      "delta": 1,
+      "agree": true,
+      "reason": "Routine cleanings partially automatable but direct patient care protects"
+    },
+    {
+      "id": "event-planner",
+      "title": "Event Planner",
+      "our_score": 32,
+      "perplexity_score": 35,
+      "delta": 3,
+      "agree": true,
+      "reason": "Logistics automatable but vendor negotiation needs human networks"
+    },
+    {
+      "id": "research-scientist",
+      "title": "Research Scientist",
+      "our_score": 33,
+      "perplexity_score": 28,
+      "delta": 5,
+      "agree": true,
+      "reason": "AI accelerates data analysis but original hypothesis generation needs humans"
+    },
+    {
+      "id": "audiologist",
+      "title": "Audiologist",
+      "our_score": 34,
+      "perplexity_score": 30,
+      "delta": 4,
+      "agree": true,
+      "reason": "AI aids hearing tests but fitting devices needs hands-on expertise"
+    },
+    {
+      "id": "immigration-consultant",
+      "title": "Immigration Consultant",
+      "our_score": 34,
+      "perplexity_score": 35,
+      "delta": 1,
+      "agree": true,
+      "reason": "Licensed advice resists but personalized trust needs humans"
+    },
+    {
+      "id": "cybersecurity-analyst",
+      "title": "Cybersecurity Analyst",
+      "our_score": 35,
+      "perplexity_score": 30,
+      "delta": 5,
+      "agree": true,
+      "reason": "Threat detection automated but ethical decisions human-essential"
+    },
+    {
+      "id": "project-manager",
+      "title": "Project Manager",
+      "our_score": 37,
+      "perplexity_score": 40,
+      "delta": 3,
+      "agree": true,
+      "reason": "PM tools handle scheduling but human negotiation and motivation essential"
+    },
+    {
+      "id": "education-coordinator",
+      "title": "Education Coordinator",
+      "our_score": 37,
+      "perplexity_score": 35,
+      "delta": 2,
+      "agree": true,
+      "reason": "Planning partially automatable but stakeholder coordination needs judgment"
+    },
+    {
+      "id": "devops-engineer",
+      "title": "DevOps Engineer",
+      "our_score": 38,
+      "perplexity_score": 40,
+      "delta": 2,
+      "agree": true,
+      "reason": "Pipeline automation but strategic orchestration persists"
+    },
+    {
+      "id": "product-manager",
+      "title": "Product Manager",
+      "our_score": 38,
+      "perplexity_score": 35,
+      "delta": 3,
+      "agree": true,
+      "reason": "LLMs aid analysis but customer empathy and innovation demand human insight"
+    },
+    {
+      "id": "public-relations-specialist",
+      "title": "Public Relations Specialist",
+      "our_score": 38,
+      "perplexity_score": 40,
+      "delta": 2,
+      "agree": true,
+      "reason": "LLMs generate content but human networking and crisis nuance essential"
+    },
+    {
+      "id": "tutor",
+      "title": "Tutor",
+      "our_score": 38,
+      "perplexity_score": 40,
+      "delta": 2,
+      "agree": true,
+      "reason": "AI tutoring platforms excel at personalized drills; live adaptation lowers risk"
+    },
+    {
+      "id": "photographer",
+      "title": "Photographer",
+      "our_score": 39,
+      "perplexity_score": 40,
+      "delta": 1,
+      "agree": true,
+      "reason": "On-site capture and lighting make full replacement low; editing more at risk"
+    },
+    {
+      "id": "data-scientist",
+      "title": "Data Scientist",
+      "our_score": 40,
+      "perplexity_score": 35,
+      "delta": 5,
+      "agree": true,
+      "reason": "Routine analysis automated but advanced judgment safeguards role"
+    },
+    {
+      "id": "regional-manager",
+      "title": "Regional Manager",
+      "our_score": 41,
+      "perplexity_score": 40,
+      "delta": 1,
+      "agree": true,
+      "reason": "Data analytics helps but travel and team leadership require humans"
+    },
+    {
+      "id": "software-engineer",
+      "title": "Software Engineer",
+      "our_score": 42,
+      "perplexity_score": 45,
+      "delta": 3,
+      "agree": true,
+      "reason": "Coding tasks automated by agents but roles evolve to architecture and AI integration"
+    },
+    {
+      "id": "business-manager",
+      "title": "Business Manager",
+      "our_score": 42,
+      "perplexity_score": 40,
+      "delta": 2,
+      "agree": true,
+      "reason": "Admin augmentable by AI but strategic development needs judgment"
+    },
+    {
+      "id": "sonographer",
+      "title": "Sonographer",
+      "our_score": 43,
+      "perplexity_score": 40,
+      "delta": 3,
+      "agree": true,
+      "reason": "AI improves interpretation but probe manipulation needs skilled operation"
+    },
+    {
+      "id": "lab-technician",
+      "title": "Lab Technician",
+      "our_score": 48,
+      "perplexity_score": 45,
+      "delta": 3,
+      "agree": true,
+      "reason": "AI automates analysis but humans needed for prep and quality control"
+    },
+    {
+      "id": "actuary",
+      "title": "Actuary",
+      "our_score": 49,
+      "perplexity_score": 50,
+      "delta": 1,
+      "agree": true,
+      "reason": "Algorithmic risk scoring augments work but regulatory decisions limit replacement"
+    },
+    {
+      "id": "network-administrator",
+      "title": "Network Administrator",
+      "our_score": 50,
+      "perplexity_score": 50,
+      "delta": 0,
+      "agree": true,
+      "reason": "Monitoring automated but physical troubleshooting needs humans"
+    },
+    {
+      "id": "loan-officer",
+      "title": "Loan Officer",
+      "our_score": 54,
+      "perplexity_score": 50,
+      "delta": 4,
+      "agree": true,
+      "reason": "Relationship-building safe but AI assesses eligibility"
+    },
+    {
+      "id": "sports-journalist",
+      "title": "Sports Journalist",
+      "our_score": 54,
+      "perplexity_score": 55,
+      "delta": 1,
+      "agree": true,
+      "reason": "LLMs handle recaps and stats but live analysis needs human insight"
+    },
+    {
+      "id": "systems-administrator",
+      "title": "Systems Administrator",
+      "our_score": 54,
+      "perplexity_score": 55,
+      "delta": 1,
+      "agree": true,
+      "reason": "Routine server management automated; complex integration resists"
+    },
+    {
+      "id": "risk-analyst",
+      "title": "Risk Analyst",
+      "our_score": 55,
+      "perplexity_score": 50,
+      "delta": 5,
+      "agree": true,
+      "reason": "Algorithmic tools handle modeling; human needed for uncertainty"
+    },
+    {
+      "id": "security-guard",
+      "title": "Security Guard",
+      "our_score": 55,
+      "perplexity_score": 50,
+      "delta": 5,
+      "agree": true,
+      "reason": "Surveillance AI covers monitoring; patrols and judgment lower risk"
+    },
+    {
+      "id": "insurance-underwriter",
+      "title": "Insurance Underwriter",
+      "our_score": 56,
+      "perplexity_score": 55,
+      "delta": 1,
+      "agree": true,
+      "reason": "AI automates scoring but complex cases require judgment"
+    },
+    {
+      "id": "scrum-master",
+      "title": "Scrum Master",
+      "our_score": 58,
+      "perplexity_score": 60,
+      "delta": 2,
+      "agree": true,
+      "reason": "AI agile tools automate facilitation but team dynamics need humans"
+    },
+    {
+      "id": "patent-examiner",
+      "title": "Patent Examiner",
+      "our_score": 63,
+      "perplexity_score": 60,
+      "delta": 3,
+      "agree": true,
+      "reason": "AI scans prior art but nuanced novelty judgment persists"
+    },
+    {
+      "id": "credit-analyst",
+      "title": "Credit Analyst",
+      "our_score": 65,
+      "perplexity_score": 60,
+      "delta": 5,
+      "agree": true,
+      "reason": "AI excels at risk scoring but needs oversight"
+    },
+    {
+      "id": "survey-researcher",
+      "title": "Survey Researcher",
+      "our_score": 66,
+      "perplexity_score": 65,
+      "delta": 1,
+      "agree": true,
+      "reason": "LLMs design surveys and analyze data; complex methodology may persist"
+    },
+    {
+      "id": "paralegal",
+      "title": "Paralegal",
+      "our_score": 71,
+      "perplexity_score": 70,
+      "delta": 1,
+      "agree": true,
+      "reason": "Document review and routine prep automated by LLMs"
+    },
+    {
+      "id": "title-examiner",
+      "title": "Title Examiner",
+      "our_score": 71,
+      "perplexity_score": 75,
+      "delta": 4,
+      "agree": true,
+      "reason": "AI document analysis scans legal records and flags issues accurately"
+    },
+    {
+      "id": "claims-processor",
+      "title": "Claims Processor",
+      "our_score": 72,
+      "perplexity_score": 75,
+      "delta": 3,
+      "agree": true,
+      "reason": "Routine processing via RPA; high automation pressure"
+    },
+    {
+      "id": "call-centre-agent",
+      "title": "Call Centre Agent",
+      "our_score": 77,
+      "perplexity_score": 70,
+      "delta": 7,
+      "agree": true,
+      "reason": "LLM chatbots handle routine inquiries; 70%+ volume automatable"
+    },
+    {
+      "id": "warehouse-picker",
+      "title": "Warehouse Picker",
+      "our_score": 83,
+      "perplexity_score": 85,
+      "delta": 2,
+      "agree": true,
+      "reason": "Robotic arms and mobile picking robots handle order fulfillment"
+    },
+    {
+      "id": "postal-sorter",
+      "title": "Postal Sorter",
+      "our_score": 85,
+      "perplexity_score": 80,
+      "delta": 5,
+      "agree": true,
+      "reason": "Robotics and machine vision sort mail at scale"
+    },
+    {
+      "id": "meter-reader",
+      "title": "Meter Reader",
+      "our_score": 87,
+      "perplexity_score": 90,
+      "delta": 3,
+      "agree": true,
+      "reason": "Smart meters transmit data automatically"
+    },
+    {
+      "id": "mail-room-clerk",
+      "title": "Mail Room Clerk",
+      "our_score": 88,
+      "perplexity_score": 88,
+      "delta": 0,
+      "agree": true,
+      "reason": "Sorting, scanning, distribution via AI-powered mail robots and OCR"
+    },
+    {
+      "id": "telephone-survey-interviewer",
+      "title": "Telephone Survey Interviewer",
+      "our_score": 93,
+      "perplexity_score": 90,
+      "delta": 3,
+      "agree": true,
+      "reason": "AI voice agents conduct surveys scalably"
+    },
+    {
+      "id": "check-processing-clerk",
+      "title": "Check Processing Clerk",
+      "our_score": 96,
+      "perplexity_score": 95,
+      "delta": 1,
+      "agree": true,
+      "reason": "OCR and AI validate/process checks digitally"
+    },
+    {
+      "id": "directory-assistance-operator",
+      "title": "Directory Assistance Operator",
+      "our_score": 98,
+      "perplexity_score": 98,
+      "delta": 0,
+      "agree": true,
+      "reason": "Search engines and voice assistants provide instant results"
+    }
+  ],
+  "missing": []
+}

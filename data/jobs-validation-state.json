@@ -1,6 +1,6 @@
 {
   "source_file": "data/jobs.json",
-  "created": "2026-04-03T10:01:04.319649",
+  "created": "2026-04-03T12:05:27.926595",
   "current_pass": 1,
   "max_passes": 3,
   "jobs": {
@@ -242,7 +242,7 @@
         {
           "field": "timeline",
           "query": "How many years until AI significantly impacts Massage Therapist jobs? What do major reports say?",
-          "context": "We estimated ~20 YRS"
+          "context": "We estimated ~15 YRS"
         },
         {
           "field": "savingGraces[0]",
@@ -4154,7 +4154,7 @@
         {
           "field": "timeline",
           "query": "How many years until AI significantly impacts Fitness Instructor jobs? What do major reports say?",
-          "context": "We estimated ~15 YRS"
+          "context": "We estimated ~10 YRS"
         },
         {
           "field": "savingGraces[0]",
@@ -5258,15 +5258,8 @@
     "orthotist": {
       "title": "Orthotist",
       "score": 22,
-      "rule_issues": [
-        {
-          "field": "gettingCooked[2].text",
-          "type": "controversial",
-          "severity": "fail",
-          "message": "Contains potentially controversial term: 'race' in \"Standard brace ordering\""
-        }
-      ],
-      "rule_status": "fail",
+      "rule_issues": [],
+      "rule_status": "pass",
       "fact_checks": [
         {
           "field": "score",
@@ -5310,8 +5303,8 @@
         },
         {
           "field": "gettingCooked[2]",
-          "query": "Is 'Standard brace ordering' actually being automated right now for Orthotist roles? Any evidence?",
-          "context": "Standard brace ordering"
+          "query": "Is 'Standard orthotic ordering' actually being automated right now for Orthotist roles? Any evidence?",
+          "context": "Standard orthotic ordering"
         }
       ],
       "fact_check_results": [],
@@ -6803,7 +6796,7 @@
         {
           "field": "timeline",
           "query": "How many years until AI significantly impacts Dental Hygienist jobs? What do major reports say?",
-          "context": "We estimated ~8 YRS"
+          "context": "We estimated ~12 YRS"
         },
         {
           "field": "savingGraces[0]",
@@ -14190,7 +14183,7 @@
         {
           "field": "timeline",
           "query": "How many years until AI significantly impacts Patent Examiner jobs? What do major reports say?",
-          "context": "We estimated ~3 YRS"
+          "context": "We estimated ~5 YRS"
         },
         {
           "field": "savingGraces[0]",
@@ -17458,6 +17451,230 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Category assignment' actually being automated right now for Classified Ad Taker roles? Any evidence?",
           "context": "Category assignment"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "sales-representative": {
+      "title": "Sales Representative",
+      "score": 42,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Sales Representative tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Sales Representative at 42/100 cooked (higher = more replaceable) with 45% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Sales Representative jobs? What do major reports say?",
+          "context": "We estimated ~6 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Client relationship building' genuinely difficult for AI to replicate for Sales Representative roles?",
+          "context": "Client relationship building"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Complex deal negotiation' genuinely difficult for AI to replicate for Sales Representative roles?",
+          "context": "Complex deal negotiation"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Reading body language and intent' genuinely difficult for AI to replicate for Sales Representative roles?",
+          "context": "Reading body language and intent"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Navigating client org politics' genuinely difficult for AI to replicate for Sales Representative roles?",
+          "context": "Navigating client org politics"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Lead generation and prospecting' actually being automated right now for Sales Representative roles? Any evidence?",
+          "context": "Lead generation and prospecting"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Pipeline reporting and forecasting' actually being automated right now for Sales Representative roles? Any evidence?",
+          "context": "Pipeline reporting and forecasting"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Follow-up email sequences' actually being automated right now for Sales Representative roles? Any evidence?",
+          "context": "Follow-up email sequences"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "account-manager": {
+      "title": "Account Manager",
+      "score": 38,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Account Manager tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Account Manager at 38/100 cooked (higher = more replaceable) with 40% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Account Manager jobs? What do major reports say?",
+          "context": "We estimated ~6 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Client retention through rapport' genuinely difficult for AI to replicate for Account Manager roles?",
+          "context": "Client retention through rapport"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Upselling through trust' genuinely difficult for AI to replicate for Account Manager roles?",
+          "context": "Upselling through trust"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Escalation and conflict handling' genuinely difficult for AI to replicate for Account Manager roles?",
+          "context": "Escalation and conflict handling"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Cross-functional coordination' genuinely difficult for AI to replicate for Account Manager roles?",
+          "context": "Cross-functional coordination"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Account health dashboards' actually being automated right now for Account Manager roles? Any evidence?",
+          "context": "Account health dashboards"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Contract renewal tracking' actually being automated right now for Account Manager roles? Any evidence?",
+          "context": "Contract renewal tracking"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Meeting prep and summary docs' actually being automated right now for Account Manager roles? Any evidence?",
+          "context": "Meeting prep and summary docs"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "violinist": {
+      "title": "Violinist / Classical Musician",
+      "score": 14,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Violinist / Classical Musician tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Violinist / Classical Musician at 14/100 cooked (higher = more replaceable) with 12% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Violinist / Classical Musician jobs? What do major reports say?",
+          "context": "We estimated ~20 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Live orchestral performance' genuinely difficult for AI to replicate for Violinist / Classical Musician roles?",
+          "context": "Live orchestral performance"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Physical expression and stagecraft' genuinely difficult for AI to replicate for Violinist / Classical Musician roles?",
+          "context": "Physical expression and stagecraft"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Decades of muscle memory and technique' genuinely difficult for AI to replicate for Violinist / Classical Musician roles?",
+          "context": "Decades of muscle memory and technique"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Ensemble dynamics and improvisation' genuinely difficult for AI to replicate for Violinist / Classical Musician roles?",
+          "context": "Ensemble dynamics and improvisation"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Studio session work for film and ads' actually being automated right now for Violinist / Classical Musician roles? Any evidence?",
+          "context": "Studio session work for film and ads"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Practice accompaniment tracks' actually being automated right now for Violinist / Classical Musician roles? Any evidence?",
+          "context": "Practice accompaniment tracks"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Sheet music transcription' actually being automated right now for Violinist / Classical Musician roles? Any evidence?",
+          "context": "Sheet music transcription"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "founder": {
+      "title": "Founder / Entrepreneur",
+      "score": 22,
+      "rule_issues": [],
+      "rule_status": "pass",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Founder / Entrepreneur tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Founder / Entrepreneur at 22/100 cooked (higher = more replaceable) with 25% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Founder / Entrepreneur jobs? What do major reports say?",
+          "context": "We estimated ~15 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Vision and risk tolerance' genuinely difficult for AI to replicate for Founder / Entrepreneur roles?",
+          "context": "Vision and risk tolerance"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Fundraising and investor relationships' genuinely difficult for AI to replicate for Founder / Entrepreneur roles?",
+          "context": "Fundraising and investor relationships"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Team building and culture' genuinely difficult for AI to replicate for Founder / Entrepreneur roles?",
+          "context": "Team building and culture"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Pivoting under chaos' genuinely difficult for AI to replicate for Founder / Entrepreneur roles?",
+          "context": "Pivoting under chaos"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Market research and competitor analysis' actually being automated right now for Founder / Entrepreneur roles? Any evidence?",
+          "context": "Market research and competitor analysis"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Financial modelling and projections' actually being automated right now for Founder / Entrepreneur roles? Any evidence?",
+          "context": "Financial modelling and projections"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Pitch deck creation' actually being automated right now for Founder / Entrepreneur roles? Any evidence?",
+          "context": "Pitch deck creation"
         }
       ],
       "fact_check_results": [],

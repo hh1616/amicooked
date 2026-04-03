@@ -1,0 +1,610 @@
+[
+  {
+    "job_id": "aged-care-nurse",
+    "title": "Aged Care Nurse",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Highly physical, emotionally intensive care role. Robotics for elder care still primitive. Regulatory barriers in healthcare plus chronic workforce shortages mean AI augments, not replaces. Frey-Osborne gives nursing very low automation probability (0.009). 20 years is right."
+  },
+  {
+    "job_id": "aged-care-worker",
+    "title": "Aged Care Worker",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Similar to aged care nursing — physical assistance, companionship, personal hygiene tasks. Robotics not close to handling this. McKinsey rates personal care activities as among the hardest to automate. 20 years appropriate."
+  },
+  {
+    "job_id": "anaesthesiologist",
+    "title": "Anaesthesiologist",
+    "our_years": 20,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "High-stakes real-time decision-making with physical procedures. AI monitoring systems exist (e.g., closed-loop anaesthesia) but full autonomy faces massive liability/regulatory barriers. Some drug titration may automate sooner, but 50%+ of core tasks is 15-20 years out."
+  },
+  {
+    "job_id": "audiologist",
+    "title": "Audiologist",
+    "our_years": 8,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "Hearing tests increasingly automated (OTC hearing aids, app-based audiometry). But fitting, counseling, and complex diagnostics still need human judgment. 8 years is slightly aggressive — closer to 10, but within 3-year tolerance."
+  },
+  {
+    "job_id": "chiropractor",
+    "title": "Chiropractor",
+    "our_years": 15,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Heavily physical manipulation work. AI can help with diagnostics and treatment planning, but spinal adjustments require dexterous physical intervention. Robotics for this niche is far off. 15-18 year range is reasonable."
+  },
+  {
+    "job_id": "clinic-manager",
+    "title": "Clinic Manager",
+    "our_years": 8,
+    "estimated_years": 7,
+    "agree": true,
+    "reason": "Scheduling, billing, compliance, staff coordination — many administrative tasks already being automated by AI tools. McKinsey rates management/admin activities as moderately automatable. 7-8 years is well-calibrated."
+  },
+  {
+    "job_id": "dental-assistant",
+    "title": "Dental Assistant",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Physical chairside assistance, patient comfort, sterilization, X-ray positioning. Most tasks require physical presence and manual dexterity. Admin portions will automate but core clinical support won't. 15 years is fair."
+  },
+  {
+    "job_id": "dental-hygienist",
+    "title": "Dental Hygienist",
+    "our_years": 8,
+    "estimated_years": 12,
+    "agree": false,
+    "reason": "Core tasks are physical — scaling, polishing, applying sealants, taking X-rays. While AI can handle charting and some diagnostics (cavity detection from images), the hands-in-mouth work is far from automated. 8 years is too aggressive; 12 is more realistic."
+  },
+  {
+    "job_id": "dentist",
+    "title": "Dentist",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Combines diagnostic imaging (where AI helps already) with complex physical procedures (fillings, extractions, root canals). Robotic dentistry is early-stage. Regulatory barriers are high. 18 years is well-calibrated."
+  },
+  {
+    "job_id": "dermatologist",
+    "title": "Dermatologist",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "AI already matches or exceeds dermatologists in image-based skin cancer detection (multiple FDA-cleared tools). But biopsies, procedures, patient counseling, and complex differential diagnosis remain human. 10 years for 50%+ is reasonable — diagnostics automate fast but procedures don't."
+  },
+  {
+    "job_id": "disability-support-worker",
+    "title": "Disability Support Worker",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Intensely physical and emotional role — personal care, community access, behavioral support. Among the lowest automation risk in any study. Frey-Osborne: very low probability. 20 years is correct."
+  },
+  {
+    "job_id": "doctor-gp",
+    "title": "General Practitioner",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "AI diagnostic tools advancing rapidly (symptom checkers, clinical decision support, AI triage). But physical examination, complex multi-morbidity management, patient relationships, and regulatory requirements keep the human central. McKinsey estimates 12-15 years for significant disruption. 12 years is reasonable."
+  },
+  {
+    "job_id": "emergency-medicine-doctor",
+    "title": "Emergency Medicine Doctor",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Unpredictable environment, rapid physical interventions, multi-system crisis management. AI assists with triage and imaging reads, but core emergency work is deeply physical and judgment-intensive. Among the most resilient medical specialties. 20 years is right."
+  },
+  {
+    "job_id": "massage-therapist",
+    "title": "Massage Therapist",
+    "our_years": 20,
+    "estimated_years": 15,
+    "agree": false,
+    "reason": "Robotic massage chairs and devices already exist and are improving. While deep tissue/therapeutic massage from a human is preferred, AI-guided robotic massage could handle 50%+ of routine relaxation massage within 12-15 years. The human touch premium will persist but for 50% task disruption, 15 years is more realistic than 20."
+  },
+  {
+    "job_id": "medical-coder",
+    "title": "Medical Coder",
+    "our_years": 2,
+    "estimated_years": 2,
+    "agree": true,
+    "reason": "AI medical coding tools (e.g., 3M, Nym Health, Fathom) already automating large portions of ICD/CPT coding. NLP-based auto-coding achieving 85%+ accuracy. Goldman Sachs flags this as a prime generative AI target. 2 years for 50%+ disruption is accurate."
+  },
+  {
+    "job_id": "medical-lab-technician",
+    "title": "Medical Lab Technician",
+    "our_years": 4,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Lab automation (robotic sample handling, AI-powered microscopy, automated analyzers) advancing rapidly. Many routine tests already highly automated. But specimen collection, quality control, and troubleshooting still need humans. 4-5 years is well-calibrated."
+  },
+  {
+    "job_id": "medical-transcriptionist",
+    "title": "Medical Transcriptionist",
+    "our_years": 1,
+    "estimated_years": 1,
+    "agree": true,
+    "reason": "Already largely disrupted. AI speech-to-text (Nuance DAX, Amazon Transcribe Medical, Whisper) handles most transcription. Ambient clinical documentation is mainstream. This role is essentially automated now. 1 year (or already happening) is correct."
+  },
+  {
+    "job_id": "mental-health-nurse",
+    "title": "Mental Health Nurse",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Requires therapeutic relationships, de-escalation, physical safety interventions, and emotional support. AI chatbots (Woebot, Wysa) supplement but cannot replace human connection in acute mental health. 18 years is well-calibrated."
+  },
+  {
+    "job_id": "midwife",
+    "title": "Midwife",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Intensely physical and relational — labor support, delivery, postpartum care. AI monitoring helps (fetal heart rate analysis, risk scoring) but core work is hands-on. Among the most resilient healthcare roles. 20 years is correct."
+  },
+  {
+    "job_id": "nurse",
+    "title": "Registered Nurse",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "RNs have a broader scope than aged care nurses — includes charting, medication management, care coordination, and some diagnostic tasks. AI automates documentation, scheduling, and some monitoring. But bedside care, patient assessment, and procedures remain human. McKinsey estimates nursing automation potential at 30-35%. 12 years for 50%+ of all tasks is reasonable."
+  },
+  {
+    "job_id": "nurse-practitioner",
+    "title": "Nurse Practitioner",
+    "our_years": 8,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "NPs do independent diagnosis, prescribing, and patient management. AI clinical decision support tools are advancing rapidly. But physical exams, procedures, and complex clinical judgment keep humans essential. 8 years may be slightly aggressive — 10 is more likely, but within tolerance."
+  },
+  {
+    "job_id": "occupational-therapist",
+    "title": "Occupational Therapist",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Highly individualized physical and cognitive rehabilitation. Requires hands-on assessment, adaptive equipment fitting, and home environment modification. AI can help with treatment planning and progress tracking but core delivery is physical. 18 years is well-calibrated."
+  },
+  {
+    "job_id": "optician",
+    "title": "Optician",
+    "our_years": 4,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "Frame fitting and lens dispensing increasingly automated (virtual try-on, automated pupillary distance measurement, online ordering). But complex fittings and adjustments still need humans. 4-5 years is reasonable for 50%+ disruption."
+  },
+  {
+    "job_id": "optometrist",
+    "title": "Optometrist",
+    "our_years": 12,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "AI retinal screening (e.g., IDx-DR) already FDA-approved. Autorefractors handle basic prescriptions. But comprehensive eye exams, disease management, and contact lens fitting need human expertise. 10-12 years is a fair range."
+  },
+  {
+    "job_id": "orthotist",
+    "title": "Orthotist",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "3D scanning and printing automating device fabrication. AI-assisted gait analysis improving assessment. But custom fitting, patient education, and adjustment require hands-on work. 12 years is well-calibrated."
+  },
+  {
+    "job_id": "paediatrician",
+    "title": "Paediatrician",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Child patients require special communication skills and physical examination techniques. AI helps with diagnostics and growth monitoring. But developmental assessment, vaccination, and parent counseling are deeply human. Slightly more resilient than adult GP due to patient population. 15 years is appropriate."
+  },
+  {
+    "job_id": "paramedic",
+    "title": "Paramedic",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Unpredictable field environments, rapid physical interventions, driving, scene safety assessment. Among the most physically demanding and least automatable healthcare roles. 20 years is correct."
+  },
+  {
+    "job_id": "pathologist",
+    "title": "Pathologist",
+    "our_years": 10,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "AI pathology tools (Paige AI, PathAI) already achieving high accuracy in cancer detection from slides. Digital pathology enables AI analysis at scale. But complex cases, rare diseases, and clinical correlation still need humans. Moving fast — 8-10 years is the right window."
+  },
+  {
+    "job_id": "pharmacist",
+    "title": "Pharmacist",
+    "our_years": 10,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "Robotic dispensing systems already in hospitals. AI drug interaction checking and medication management advancing. But patient counseling, compounding, and clinical pharmacy roles remain. 8-10 years for 50%+ is fair."
+  },
+  {
+    "job_id": "pharmacy-technician",
+    "title": "Pharmacy Technician",
+    "our_years": 4,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "Robotic dispensing (e.g., ScriptPro) handles counting and labeling. Automated systems manage inventory. Most routine tasks are highly automatable. 4 years is well-calibrated."
+  },
+  {
+    "job_id": "physical-therapist",
+    "title": "Physical Therapist",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Hands-on manual therapy, exercise prescription, and real-time movement correction. AI/wearable sensors help with monitoring and home exercise programs, but core treatment is physical. Frey-Osborne rates physical therapy very low for automation. 18 years is right."
+  },
+  {
+    "job_id": "physiotherapy-assistant",
+    "title": "Physiotherapy Assistant",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Assists with exercises, applies modalities, and helps with patient transfers. More routine than PT but still physically demanding. AI-guided exercise apps could replace some instruction tasks. 12 years is reasonable."
+  },
+  {
+    "job_id": "psychiatrist",
+    "title": "Psychiatrist",
+    "our_years": 20,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Therapeutic relationship is central. AI chatbots supplement but cannot replace complex diagnostic interviews, medication management for severe mental illness, or involuntary treatment decisions. Very high regulatory and ethical barriers. 18-20 years is right."
+  },
+  {
+    "job_id": "psychologist",
+    "title": "Psychologist",
+    "our_years": 20,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Therapy requires deep rapport, empathy, and real-time clinical judgment. AI therapy tools exist but evidence for serious conditions is limited. Assessment (neuropsych testing) may automate faster, but therapy is resilient. 18-20 years — within range."
+  },
+  {
+    "job_id": "radiologist",
+    "title": "Radiologist",
+    "our_years": 8,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "AI radiology tools (Viz.ai, Aidoc, Zebra Medical) already FDA-cleared and deployed. Mammography, chest X-ray, and CT analysis being automated. But interventional radiology, complex reads, and clinical correlation keep humans essential. Hinton's 2016 prediction was too aggressive, but 8 years for 50%+ task disruption is realistic."
+  },
+  {
+    "job_id": "sonographer",
+    "title": "Sonographer",
+    "our_years": 6,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "AI-guided ultrasound (Caption Health/GE, Butterfly Network) reducing skill requirements for image acquisition. But complex scans, fetal anatomy, and echocardiography still need experienced operators. 6 years is slightly aggressive — 8 is more likely, but within 3-year tolerance."
+  },
+  {
+    "job_id": "speech-pathologist",
+    "title": "Speech Pathologist",
+    "our_years": 20,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Highly individualized therapy requiring real-time assessment, rapport, and physical observation (swallowing, articulation). AI speech analysis tools help with assessment but therapy delivery is human-intensive. 18-20 years is correct."
+  },
+  {
+    "job_id": "surgeon",
+    "title": "Surgeon",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Robotic surgery (Da Vinci) is surgeon-assisted, not autonomous. Autonomous surgical AI is decades away due to safety, liability, and the unpredictable nature of surgical fields. Frey-Osborne: 0.004 automation probability for surgeons. 20 years is conservative but appropriate."
+  },
+  {
+    "job_id": "veterinarian",
+    "title": "Veterinarian",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Similar physical examination and surgical requirements to human medicine but with less regulatory oversight and more diverse patient anatomy. AI diagnostics lag behind human medicine. 18 years is well-calibrated."
+  },
+  {
+    "job_id": "veterinary-nurse",
+    "title": "Veterinary Nurse",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Physical restraint, anesthesia monitoring, wound care, and animal handling. Less regulatory protection than human nursing but equally physical. 15 years is appropriate."
+  },
+  {
+    "job_id": "nutritionist",
+    "title": "Nutritionist/Dietitian",
+    "our_years": 12,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "AI nutrition apps (Noom, MyFitnessPal AI, personalized nutrition platforms) already disrupting basic meal planning. But clinical nutrition (tube feeding, renal diets, eating disorders) requires human expertise. 10-12 years — within tolerance."
+  },
+  {
+    "job_id": "art-teacher",
+    "title": "Art Teacher",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "AI art generation tools change the discipline but teaching art involves hands-on guidance, critique, emotional development, and classroom management. Physical presence and mentorship are central. 12 years is reasonable."
+  },
+  {
+    "job_id": "corporate-trainer",
+    "title": "Corporate Trainer",
+    "our_years": 6,
+    "estimated_years": 5,
+    "agree": true,
+    "reason": "AI-powered training platforms (adaptive learning, LLM-based role-play, automated content creation) rapidly automating content delivery and assessment. McKinsey highlights corporate training as high-exposure to generative AI. Live facilitation for soft skills persists but 50%+ of tasks automatable in 5-6 years."
+  },
+  {
+    "job_id": "education-coordinator",
+    "title": "Education Coordinator",
+    "our_years": 8,
+    "estimated_years": 7,
+    "agree": true,
+    "reason": "Program design, scheduling, compliance tracking, report generation — heavily administrative. AI tools already handling much of this. Stakeholder relationship management is the resilient part. 7-8 years is well-calibrated."
+  },
+  {
+    "job_id": "esl-teacher",
+    "title": "ESL Teacher",
+    "our_years": 10,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "AI language learning tools (Duolingo AI, GPT-powered tutors) advancing rapidly. Real-time pronunciation feedback, conversation practice, and grammar correction are largely automated. But cultural context, motivation, and classroom community remain human. 8-10 years for 50%+ is the right range."
+  },
+  {
+    "job_id": "high-school-teacher",
+    "title": "High School Teacher",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Content delivery increasingly automated (Khan Academy AI, adaptive platforms). But classroom management, mentorship, behavioral guidance, and social development are deeply human. WEF rates teaching as low automation risk. 12 years is appropriate."
+  },
+  {
+    "job_id": "kindergarten-teacher",
+    "title": "Kindergarten Teacher",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Primarily about social-emotional development, physical safety, play facilitation, and basic care. Young children need human connection. Among the most resilient education roles in every study. Frey-Osborne: 0.007 automation probability. 20 years is correct."
+  },
+  {
+    "job_id": "librarian",
+    "title": "Librarian",
+    "our_years": 6,
+    "estimated_years": 6,
+    "agree": true,
+    "reason": "AI search and recommendation systems, automated cataloging, and digital resource management are advancing fast. Research assistance is a prime generative AI target. But community programming, information literacy instruction, and curation remain human. 6 years for 50%+ is realistic."
+  },
+  {
+    "job_id": "library-assistant",
+    "title": "Library Assistant",
+    "our_years": 4,
+    "estimated_years": 3,
+    "agree": true,
+    "reason": "Shelving, check-in/out (already automated at many libraries via self-service), catalog updates, and routine queries. Highly automatable routine tasks. 3-4 years is accurate."
+  },
+  {
+    "job_id": "primary-school-teacher",
+    "title": "Primary School Teacher",
+    "our_years": 20,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Young children need physical care, emotional support, behavioral management, and socialization. AI can supplement learning content but cannot replace the teacher's role as caregiver and guide. Very resilient, though slightly less than kindergarten due to more content delivery. 18-20 years is the right range."
+  },
+  {
+    "job_id": "school-counselor",
+    "title": "School Counselor",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Emotional support, crisis intervention, college/career guidance, and child safeguarding. AI can assist with scheduling and college matching but therapeutic and protective duties are human. 15 years is well-calibrated."
+  },
+  {
+    "job_id": "special-education-teacher",
+    "title": "Special Education Teacher",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Highly individualized, physical, and relational work. Behavioral management, adaptive instruction, and advocacy for students with complex needs. Among the most resilient teaching roles. 20 years is correct."
+  },
+  {
+    "job_id": "teaching-assistant",
+    "title": "Teaching Assistant",
+    "our_years": 5,
+    "estimated_years": 6,
+    "agree": true,
+    "reason": "Grading, worksheet preparation, and routine tutoring are highly automatable by AI. But classroom supervision, small-group work, and one-on-one student support involve physical presence. 5-6 years is well-calibrated."
+  },
+  {
+    "job_id": "tutor",
+    "title": "Tutor",
+    "our_years": 6,
+    "estimated_years": 4,
+    "agree": true,
+    "reason": "AI tutoring systems (Khan Academy's Khanmigo, GPT-based tutors) already performing well for content-based tutoring. Personalized 1-on-1 instruction is a prime AI target. The human premium persists for motivation and complex learning needs. 4-6 years — within range, though 4 may be more accurate for routine subject tutoring."
+  },
+  {
+    "job_id": "university-professor",
+    "title": "University Professor",
+    "our_years": 10,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "Lectures increasingly supplemented by AI (automated content generation, grading). But original research, graduate mentorship, peer review, and grant writing have significant human components. Goldman Sachs flags higher ed as moderate exposure. 10 years for 50%+ of tasks is reasonable."
+  },
+  {
+    "job_id": "daycare-director",
+    "title": "Daycare Director",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Mix of administrative tasks (scheduling, compliance, billing — automatable) and leadership/relationship tasks (staff management, parent relations, child welfare — human). The admin side automates faster but the people side keeps this resilient. 15 years is appropriate."
+  },
+  {
+    "job_id": "auto-detailer",
+    "title": "Auto Detailer",
+    "our_years": 15,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Automated car washes handle basic exterior cleaning. But interior detailing, paint correction, and ceramic coating require skilled manual work in varied conditions. Robotic detailing advancing but not yet handling complex interiors. 12-15 years — within tolerance."
+  },
+  {
+    "job_id": "barber",
+    "title": "Barber",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Requires fine motor skills on unpredictable head shapes, social interaction, and artistic judgment. Robotic haircutting is extremely early-stage. The social/cultural aspect of barbershops adds resilience. 18 years is well-calibrated."
+  },
+  {
+    "job_id": "childcare-worker",
+    "title": "Childcare Worker",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Physical care, safety supervision, emotional nurturing of young children. Among the lowest automation risk in Frey-Osborne (0.008). Cannot be replaced by AI. 20 years is correct."
+  },
+  {
+    "job_id": "cleaner",
+    "title": "Cleaner",
+    "our_years": 8,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "Robotic vacuums and floor cleaners already deployed. But cleaning diverse spaces (bathrooms, kitchens, varied surfaces, clutter) requires adaptability current robots lack. McKinsey estimates 10-15 years for significant displacement. 8 years is slightly aggressive — 10 is more likely, but within tolerance."
+  },
+  {
+    "job_id": "community-development-officer",
+    "title": "Community Development Officer",
+    "our_years": 12,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Relationship-building, stakeholder engagement, cultural sensitivity, and community advocacy are deeply human. AI can help with data analysis, grant writing, and program design. But the core is interpersonal. 12-15 years — within tolerance."
+  },
+  {
+    "job_id": "dog-groomer",
+    "title": "Dog Groomer",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Handling unpredictable animals, breed-specific cuts, nail trimming, and temperament management. Robotics nowhere near ready for this. Extremely low automation risk. 20 years is correct."
+  },
+  {
+    "job_id": "farmer",
+    "title": "Farmer",
+    "our_years": 12,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Precision agriculture, autonomous tractors, drone monitoring, and AI crop management advancing. But livestock handling, equipment repair, weather adaptation, and diverse farm tasks keep humans essential. McKinsey rates agriculture as moderate automation potential. 12 years is well-calibrated."
+  },
+  {
+    "job_id": "firefighter",
+    "title": "Firefighter",
+    "our_years": 20,
+    "estimated_years": 20,
+    "agree": true,
+    "reason": "Unpredictable environments, physical rescue, structural assessment, hazmat response. Drones and robots assist but cannot replace entry into burning buildings or victim extraction. Among the most resilient physical roles. 20 years is correct."
+  },
+  {
+    "job_id": "fitness-instructor",
+    "title": "Fitness Instructor",
+    "our_years": 15,
+    "estimated_years": 10,
+    "agree": false,
+    "reason": "AI fitness apps (Peloton AI, Mirror/Lululemon, Apple Fitness+) already delivering personalized workouts, form correction via camera, and coaching. Wearable integration advancing rapidly. While in-person motivation and complex training persist, 50%+ of routine group fitness instruction is automatable within 10 years. 15 is too generous."
+  },
+  {
+    "job_id": "funeral-director",
+    "title": "Funeral Director",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Deeply emotional and cultural role. Administrative tasks (paperwork, scheduling) will automate but body preparation, family counseling, and ceremony coordination require human sensitivity. 15 years is appropriate."
+  },
+  {
+    "job_id": "hair-stylist",
+    "title": "Hair Stylist",
+    "our_years": 15,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Similar to barber but with more complex services (coloring, chemical treatments, styling). Artistic judgment and manual dexterity on varied hair types make automation very difficult. 15-18 years — within tolerance."
+  },
+  {
+    "job_id": "housewife",
+    "title": "Housewife",
+    "our_years": 15,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Cooking, cleaning, childcare, household management, and emotional labor. Robotic vacuums and smart home devices automate portions. AI handles meal planning, scheduling, and finances. But childcare and physical housework remain human-intensive. 12-15 years — within tolerance."
+  },
+  {
+    "job_id": "nail-technician",
+    "title": "Nail Technician",
+    "our_years": 15,
+    "estimated_years": 12,
+    "agree": true,
+    "reason": "Robotic nail painting exists (Clockwork, Nimble) but limited to simple designs. Complex nail art, gel application, acrylic sculpting, and cuticle work require human skill. Social aspect of nail salons adds resilience. 12-15 years — within tolerance."
+  },
+  {
+    "job_id": "park-ranger",
+    "title": "Park Ranger",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Combines physical fieldwork (trail maintenance, wildlife management, search and rescue) with public education and law enforcement. Drones help with surveillance but core duties are physical and interpersonal. 15 years is well-calibrated."
+  },
+  {
+    "job_id": "personal-trainer",
+    "title": "Personal Trainer",
+    "our_years": 12,
+    "estimated_years": 10,
+    "agree": true,
+    "reason": "AI fitness coaching advancing rapidly (form correction, program design, progress tracking). But hands-on spotting, motivation, and injury-specific training remain human. The line between AI-replaceable and premium human service will split this market. 10-12 years — within range."
+  },
+  {
+    "job_id": "pest-control-technician",
+    "title": "Pest Control Technician",
+    "our_years": 18,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Physical inspection of varied structures, chemical application in tight spaces, wildlife removal. AI helps with identification and scheduling but fieldwork is highly physical and unpredictable. 15-18 years — within tolerance."
+  },
+  {
+    "job_id": "police-officer",
+    "title": "Police Officer",
+    "our_years": 15,
+    "estimated_years": 15,
+    "agree": true,
+    "reason": "Physical enforcement, de-escalation, community policing, and emergency response. AI helps with surveillance, report writing, and predictive policing. But public safety, arrests, and community trust are deeply human. Major regulatory and ethical barriers to AI policing. 15 years is appropriate."
+  },
+  {
+    "job_id": "security-guard",
+    "title": "Security Guard",
+    "our_years": 8,
+    "estimated_years": 8,
+    "agree": true,
+    "reason": "AI-powered surveillance (facial recognition, anomaly detection), robotic patrols (Knightscope), and remote monitoring already deployed. Routine site patrol is highly automatable. But incident response, customer interaction, and access control in complex settings still need humans. 8 years is well-calibrated."
+  },
+  {
+    "job_id": "social-worker",
+    "title": "Social Worker",
+    "our_years": 18,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Case management, crisis intervention, home visits, child protection, and advocacy. Requires empathy, cultural competency, and complex judgment in sensitive situations. AI can help with paperwork and risk assessment tools but core work is relational. 18 years is correct."
+  },
+  {
+    "job_id": "youth-worker",
+    "title": "Youth Worker",
+    "our_years": 20,
+    "estimated_years": 18,
+    "agree": true,
+    "reason": "Mentoring, crisis support, recreational activities, and building trust with at-risk youth. Deeply relational and often physical (outdoor activities, sports). AI tools can supplement but not replace human connection. 18-20 years — within tolerance."
+  }
+]
