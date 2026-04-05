@@ -1,6 +1,6 @@
 {
   "source_file": "data/jobs.json",
-  "created": "2026-04-03T12:05:27.926595",
+  "created": "2026-04-03T22:40:08.979128",
   "current_pass": 1,
   "max_passes": 3,
   "jobs": {
@@ -17675,6 +17675,258 @@
           "field": "gettingCooked[2]",
           "query": "Is 'Pitch deck creation' actually being automated right now for Founder / Entrepreneur roles? Any evidence?",
           "context": "Pitch deck creation"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "professional-athlete": {
+      "title": "Professional Athlete",
+      "score": 8,
+      "rule_issues": [
+        {
+          "field": "pivotPotential",
+          "type": "enum",
+          "severity": "error",
+          "message": "pivotPotential must be LOW, MED, or HIGH \u2014 got 'MEDIUM'"
+        }
+      ],
+      "rule_status": "fail",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Professional Athlete tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Professional Athlete at 8/100 cooked (higher = more replaceable) with 8% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Professional Athlete jobs? What do major reports say?",
+          "context": "We estimated ~20 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Physical peak performance' genuinely difficult for AI to replicate for Professional Athlete roles?",
+          "context": "Physical peak performance"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Fan connection and personal brand' genuinely difficult for AI to replicate for Professional Athlete roles?",
+          "context": "Fan connection and personal brand"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Split-second tactical decisions under pressure' genuinely difficult for AI to replicate for Professional Athlete roles?",
+          "context": "Split-second tactical decisions under pressure"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Team chemistry and locker room leadership' genuinely difficult for AI to replicate for Professional Athlete roles?",
+          "context": "Team chemistry and locker room leadership"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Performance analytics and game film review' actually being automated right now for Professional Athlete roles? Any evidence?",
+          "context": "Performance analytics and game film review"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Training program optimisation' actually being automated right now for Professional Athlete roles? Any evidence?",
+          "context": "Training program optimisation"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Opponent scouting and pattern analysis' actually being automated right now for Professional Athlete roles? Any evidence?",
+          "context": "Opponent scouting and pattern analysis"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "composer": {
+      "title": "Composer",
+      "score": 32,
+      "rule_issues": [
+        {
+          "field": "pivotPotential",
+          "type": "enum",
+          "severity": "error",
+          "message": "pivotPotential must be LOW, MED, or HIGH \u2014 got 'MEDIUM'"
+        }
+      ],
+      "rule_status": "fail",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Composer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Composer at 32/100 cooked (higher = more replaceable) with 35% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Composer jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Emotional storytelling through music' genuinely difficult for AI to replicate for Composer roles?",
+          "context": "Emotional storytelling through music"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Director collaboration and creative vision' genuinely difficult for AI to replicate for Composer roles?",
+          "context": "Director collaboration and creative vision"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Cultural context and artistic intent' genuinely difficult for AI to replicate for Composer roles?",
+          "context": "Cultural context and artistic intent"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Live orchestral scoring and conducting' genuinely difficult for AI to replicate for Composer roles?",
+          "context": "Live orchestral scoring and conducting"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Stock music and library tracks' actually being automated right now for Composer roles? Any evidence?",
+          "context": "Stock music and library tracks"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Simple jingles and background music' actually being automated right now for Composer roles? Any evidence?",
+          "context": "Simple jingles and background music"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'MIDI arrangement and orchestration drafts' actually being automated right now for Composer roles? Any evidence?",
+          "context": "MIDI arrangement and orchestration drafts"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "grant-writer": {
+      "title": "Grant Writer",
+      "score": 62,
+      "rule_issues": [
+        {
+          "field": "pivotPotential",
+          "type": "enum",
+          "severity": "error",
+          "message": "pivotPotential must be LOW, MED, or HIGH \u2014 got 'MEDIUM'"
+        }
+      ],
+      "rule_status": "fail",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Grant Writer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Grant Writer at 62/100 cooked (higher = more replaceable) with 65% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Grant Writer jobs? What do major reports say?",
+          "context": "We estimated ~4 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Relationship building with funders' genuinely difficult for AI to replicate for Grant Writer roles?",
+          "context": "Relationship building with funders"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Strategic alignment of org goals to funding priorities' genuinely difficult for AI to replicate for Grant Writer roles?",
+          "context": "Strategic alignment of org goals to funding priorities"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Navigating complex government portals' genuinely difficult for AI to replicate for Grant Writer roles?",
+          "context": "Navigating complex government portals"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Drafting standard grant narratives' actually being automated right now for Grant Writer roles? Any evidence?",
+          "context": "Drafting standard grant narratives"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Budget template completion' actually being automated right now for Grant Writer roles? Any evidence?",
+          "context": "Budget template completion"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Compliance and formatting checks' actually being automated right now for Grant Writer roles? Any evidence?",
+          "context": "Compliance and formatting checks"
+        },
+        {
+          "field": "gettingCooked[3]",
+          "query": "Is 'Boilerplate org descriptions' actually being automated right now for Grant Writer roles? Any evidence?",
+          "context": "Boilerplate org descriptions"
+        }
+      ],
+      "fact_check_results": [],
+      "passes": [],
+      "final_status": "pending"
+    },
+    "embedded-systems-engineer": {
+      "title": "Embedded Systems Engineer",
+      "score": 34,
+      "rule_issues": [
+        {
+          "field": "savingGraces[0].quip",
+          "type": "controversial",
+          "severity": "fail",
+          "message": "Contains potentially controversial term: 'race' in \"you can't stack-trace a fried capacitor\""
+        }
+      ],
+      "rule_status": "fail",
+      "fact_checks": [
+        {
+          "field": "score",
+          "query": "What percentage of Embedded Systems Engineer tasks can be automated by AI? Cite specific studies (Oxford, McKinsey, Goldman Sachs, World Economic Forum).",
+          "context": "We scored Embedded Systems Engineer at 34/100 cooked (higher = more replaceable) with 30% automatable"
+        },
+        {
+          "field": "timeline",
+          "query": "How many years until AI significantly impacts Embedded Systems Engineer jobs? What do major reports say?",
+          "context": "We estimated ~10 YRS"
+        },
+        {
+          "field": "savingGraces[0]",
+          "query": "Is 'Hardware-software integration debugging' genuinely difficult for AI to replicate for Embedded Systems Engineer roles?",
+          "context": "Hardware-software integration debugging"
+        },
+        {
+          "field": "savingGraces[1]",
+          "query": "Is 'Real-time system constraints and safety-critical design' genuinely difficult for AI to replicate for Embedded Systems Engineer roles?",
+          "context": "Real-time system constraints and safety-critical design"
+        },
+        {
+          "field": "savingGraces[2]",
+          "query": "Is 'Physical prototyping and board bring-up' genuinely difficult for AI to replicate for Embedded Systems Engineer roles?",
+          "context": "Physical prototyping and board bring-up"
+        },
+        {
+          "field": "savingGraces[3]",
+          "query": "Is 'Cross-domain knowledge (electrical + software)' genuinely difficult for AI to replicate for Embedded Systems Engineer roles?",
+          "context": "Cross-domain knowledge (electrical + software)"
+        },
+        {
+          "field": "gettingCooked[0]",
+          "query": "Is 'Boilerplate driver and HAL code generation' actually being automated right now for Embedded Systems Engineer roles? Any evidence?",
+          "context": "Boilerplate driver and HAL code generation"
+        },
+        {
+          "field": "gettingCooked[1]",
+          "query": "Is 'Datasheet parsing and register map setup' actually being automated right now for Embedded Systems Engineer roles? Any evidence?",
+          "context": "Datasheet parsing and register map setup"
+        },
+        {
+          "field": "gettingCooked[2]",
+          "query": "Is 'Unit test generation for firmware' actually being automated right now for Embedded Systems Engineer roles? Any evidence?",
+          "context": "Unit test generation for firmware"
         }
       ],
       "fact_check_results": [],

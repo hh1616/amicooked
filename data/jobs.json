@@ -6796,7 +6796,11 @@
       "penetration tester",
       "pen tester",
       "ethical hacker",
-      "security engineer"
+      "security engineer",
+      "cybersecurity director",
+      "director of cybersecurity",
+      "CISO",
+      "security director"
     ]
   },
   {
@@ -7402,7 +7406,9 @@
       "scrum master",
       "delivery manager",
       "project coordinator",
-      "project lead"
+      "project lead",
+      "senior program manager",
+      "senior project manager"
     ]
   },
   {
@@ -8533,7 +8539,11 @@
       "interaction designer",
       "product designer",
       "UI/UX",
-      "experience designer"
+      "experience designer",
+      "ux director",
+      "director of ux",
+      "head of design",
+      "design director"
     ]
   },
   {
@@ -9994,7 +10004,10 @@
       "full stack developer",
       "web designer",
       "WordPress developer",
-      "Shopify developer"
+      "Shopify developer",
+      "website builder",
+      "website creator",
+      "website developer"
     ]
   },
   {
@@ -10195,7 +10208,9 @@
       "quality analyst",
       "software tester",
       "test analyst",
-      "SDET"
+      "SDET",
+      "quality control",
+      "security quality control"
     ]
   },
   {
@@ -15766,6 +15781,230 @@
       "solopreneur",
       "startup CEO",
       "small business owner"
+    ]
+  },
+  {
+    "id": "professional-athlete",
+    "title": "Professional Athlete",
+    "score": 8,
+    "verdict": "Raw",
+    "verdictQuip": "you're untouchable. for now.",
+    "timeline": "~20",
+    "timelineUnit": "YRS",
+    "automatable": "8%",
+    "pivotPotential": "MEDIUM",
+    "savingGraces": [
+      {
+        "text": "Physical peak performance",
+        "quip": "no algorithm has ever won a gold medal"
+      },
+      {
+        "text": "Fan connection and personal brand",
+        "quip": null
+      },
+      {
+        "text": "Split-second tactical decisions under pressure",
+        "quip": null
+      },
+      {
+        "text": "Team chemistry and locker room leadership",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Performance analytics and game film review",
+        "quip": "your coach's iPad knows more than the clipboard ever did"
+      },
+      {
+        "text": "Training program optimisation",
+        "quip": null
+      },
+      {
+        "text": "Opponent scouting and pattern analysis",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "athlete",
+      "professional athlete",
+      "sports player",
+      "footballer",
+      "basketball player",
+      "tennis player",
+      "swimmer",
+      "runner",
+      "cricketer",
+      "rugby player",
+      "olympian",
+      "sportsperson"
+    ]
+  },
+  {
+    "id": "composer",
+    "title": "Composer",
+    "score": 32,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "35%",
+    "pivotPotential": "MEDIUM",
+    "savingGraces": [
+      {
+        "text": "Emotional storytelling through music",
+        "quip": "AI can write a melody but it can't write one that makes you cry at the right moment"
+      },
+      {
+        "text": "Director collaboration and creative vision",
+        "quip": null
+      },
+      {
+        "text": "Cultural context and artistic intent",
+        "quip": null
+      },
+      {
+        "text": "Live orchestral scoring and conducting",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Stock music and library tracks",
+        "quip": "royalty-free AI beats are already flooding the market"
+      },
+      {
+        "text": "Simple jingles and background music",
+        "quip": null
+      },
+      {
+        "text": "MIDI arrangement and orchestration drafts",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "composer",
+      "music composer",
+      "film composer",
+      "songwriter",
+      "score composer",
+      "music writer",
+      "jingle writer",
+      "orchestrator",
+      "film scorer",
+      "TV composer",
+      "game composer"
+    ]
+  },
+  {
+    "id": "grant-writer",
+    "title": "Grant Writer",
+    "score": 62,
+    "verdict": "Well Done",
+    "verdictQuip": "the robots are warming up your seat.",
+    "timeline": "~4",
+    "timelineUnit": "YRS",
+    "automatable": "65%",
+    "pivotPotential": "MEDIUM",
+    "savingGraces": [
+      {
+        "text": "Relationship building with funders",
+        "quip": "the program officer still wants to hear from a human"
+      },
+      {
+        "text": "Strategic alignment of org goals to funding priorities",
+        "quip": null
+      },
+      {
+        "text": "Navigating complex government portals",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Drafting standard grant narratives",
+        "quip": "LLMs are already writing first drafts that pass review"
+      },
+      {
+        "text": "Budget template completion",
+        "quip": null
+      },
+      {
+        "text": "Compliance and formatting checks",
+        "quip": null
+      },
+      {
+        "text": "Boilerplate org descriptions",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "grant writer",
+      "grants officer",
+      "grants manager",
+      "grant writing",
+      "fundraiser",
+      "grant coordinator",
+      "proposal writer",
+      "grants administrator",
+      "development writer",
+      "funding officer"
+    ]
+  },
+  {
+    "id": "embedded-systems-engineer",
+    "title": "Embedded Systems Engineer",
+    "score": 34,
+    "verdict": "Lightly Toasted",
+    "verdictQuip": "some parts of your job are already on borrowed time.",
+    "timeline": "~10",
+    "timelineUnit": "YRS",
+    "automatable": "30%",
+    "pivotPotential": "HIGH",
+    "savingGraces": [
+      {
+        "text": "Hardware-software integration debugging",
+        "quip": "you can't stack-trace a fried capacitor"
+      },
+      {
+        "text": "Real-time system constraints and safety-critical design",
+        "quip": null
+      },
+      {
+        "text": "Physical prototyping and board bring-up",
+        "quip": null
+      },
+      {
+        "text": "Cross-domain knowledge (electrical + software)",
+        "quip": null
+      }
+    ],
+    "gettingCooked": [
+      {
+        "text": "Boilerplate driver and HAL code generation",
+        "quip": null
+      },
+      {
+        "text": "Datasheet parsing and register map setup",
+        "quip": null
+      },
+      {
+        "text": "Unit test generation for firmware",
+        "quip": null
+      }
+    ],
+    "searchTerms": [
+      "embedded systems engineer",
+      "embedded engineer",
+      "firmware engineer",
+      "embedded developer",
+      "embedded software engineer",
+      "firmware developer",
+      "embedded programmer",
+      "IoT engineer",
+      "microcontroller programmer",
+      "RTOS developer",
+      "embedded C developer"
     ]
   }
 ]

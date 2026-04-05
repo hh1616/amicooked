@@ -10,8 +10,8 @@
 | 2. Design spec | Done | `docs/design-spec.md` |
 | 3. Validator tool | Done | `tools/validate_jobs.py` + `workflows/validate-job-data.md` |
 | 4. Sample dataset (10 jobs) | Done | `data/jobs-sample.json` — passed rule-based validation |
-| 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 316 jobs (expanded from 264), all pass rule-based validation, searchTerms added |
-| 6. Fact-check dataset | Done | 15 Perplexity category queries, 12 jobs corrected, all 316 pass validation |
+| 5. Full dataset (~200 jobs) | Done | `data/jobs.json` — 324 jobs (expanded from 264), all pass rule-based validation, searchTerms added |
+| 6. Fact-check dataset | Done | Batch fact-checked via Perplexity (scores + timelines). 324 jobs pass validation |
 | 7. Build the site | Done | `index.html` — all features wired up, tested on desktop + mobile |
 | 8. Growth setup | **In progress** | OG image done, domain live, Tally feedback form added, OG tags tested. Waiting on: Coursera affiliate approval |
 | 9. Launch | Pending | Reddit + Hacker News — see `docs/growth-strategy.md` section 4 |
